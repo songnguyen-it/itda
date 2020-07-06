@@ -194,26 +194,23 @@ function ncbpn_view_guid()
                                         </div>
                                     </div>
 
-                                    <div class="row m-1" id="add_field">
-                                      <button type="button" class="btn btn-info btn-sm">Add Another</button>
+                                    <div class="row m-1" >
+                                      <button type="button" class="btn btn-info btn-sm" id="add_field">Add Another</button>
                                     </div>
 
 
-                                  
-
+                            
 
                                     <script>
-
-
-                                    document.addEventListener("DOMContentLoaded", function(){
-                                     
-                                      var name = document.getElementById("test-btn");
-                                      name.onclick = function(){
-                                        console.log("hello");
-                                      }
-                                    });
-                                      
+                                      document.addEventListener("DOMContentLoaded", function(){
+                                        var name = document.getElementById("test-btn");
+                                        name.onclick = function(){
+                                          console.log("hello");
+                                        }
+                                      });  
                                     </script>
+
+
 
                                     
                                     <div class="form-group">
