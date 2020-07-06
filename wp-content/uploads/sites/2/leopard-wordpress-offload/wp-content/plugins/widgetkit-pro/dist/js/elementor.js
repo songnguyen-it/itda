@@ -1,0 +1,1 @@
+!function(t){"use strict";var e=document.createElement("link");e.setAttribute("type","text/css"),e.setAttribute("rel","stylesheet"),e.setAttribute("id","wp-fontello-css"),e.href="/wp-content/plugins/widgetkit-pro/dist/css/fontello.css",window.top.document.getElementsByTagName("head")[0].appendChild(e)}(jQuery)

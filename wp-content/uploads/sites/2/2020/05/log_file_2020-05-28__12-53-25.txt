@@ -1,0 +1,71 @@
+
+---Downloaded files---
+The import files for: Jobs were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://apnlp.com/social
+Data file = /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/assets/dummy-data/jobs/dummy-data.xml
+Widget file = /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/assets/dummy-data/jobs/widgets.wie
+Customizer file = not defined!
+Redux files:
+front_options -> /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/assets/dummy-data/jobs/redux-options.json 
+
+
+---pt-ocdi/before_content_import---
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---pt-ocdi/before_widgets_import---
+
+
+---Importing widgets---
+Blog Sidebar : 
+
+Search - No Title - Imported
+Recent Posts - No Title - Imported
+Recent Comments - No Title - Imported
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+
+Footer Column 1 : 
+
+Navigation Menu - Account - Imported
+
+Footer Column 2 : 
+
+Navigation Menu - Company - Imported
+
+Footer Column 3 : 
+
+Navigation Menu - Resources - Imported
+
+Footer Column 4 : 
+
+Custom HTML - Events - Imported
+
+Jobs Sidebar : 
+
+Front Filter Job by Taxonomy - JOB TYPE - Imported
+Front Filter Job by Company - COMPANY - Imported
+Front Filter Job by Taxonomy - CATEGORY - Imported
+
+Resume Sidebar : 
+
+Front Filter Resume by Taxonomy - Category - Imported
+Front Filter Resume by Taxonomy - SKILLS - Imported
+
+
+
+---Importing Redux settings---
+Redux settings import for: front_options finished successfully!
+
+---pt-ocdi/after_import---
+

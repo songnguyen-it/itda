@@ -1,0 +1,2394 @@
+# Copyright (C) 2019 Automattic
+# This file is distributed under the GPL2+.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Job Manager 1.34.1\n"
+"Report-Msgid-Bugs-To: https://github.com/Automattic/WP-Job-Manager/issues\n"
+"POT-Creation-Date: 2019-10-30 18:24:14+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-05-28 19:53+0000\n"
+"Last-Translator: Andy Ng\n"
+"Language-Team: Chinese (China)\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Loco-Version: 2.4.0; wp-5.4.1"
+
+#: includes/3rd-party/wpml.php:94
+msgid "Page Not Set"
+msgstr "页面未设置"
+
+#. translators: Placeholder (%s) is the URL to edit the primary language in
+#. WPML.
+#: includes/3rd-party/wpml.php:108
+msgid "<a href=\"%s\">Switch to primary language</a> to edit this setting."
+msgstr "<a href=\"%s\">切换至主要语言</a>以编辑此设置。"
+
+#. translators: Placeholder is for the label of the reCAPTCHA field.
+#. translators: %s is the name of the form validation that failed.
+#: includes/abstracts/abstract-wp-job-manager-form.php:371
+#: includes/abstracts/abstract-wp-job-manager-form.php:387
+msgid "\"%s\" check failed. Please try again."
+msgstr "“％s”检查失败。请再试一遍。"
+
+#: includes/admin/class-wp-job-manager-addons.php:125
+#: includes/admin/class-wp-job-manager-admin.php:128
+#: includes/admin/views/html-admin-page-addons.php:12
+msgid "WP Job Manager Add-ons"
+msgstr "WP Job Manager附加组件"
+
+#: includes/admin/class-wp-job-manager-addons.php:133
+#: includes/helper/views/html-licences.php:12
+msgid "Licenses"
+msgstr "执照"
+
+#: includes/admin/class-wp-job-manager-admin-notices.php:109
+msgid "Action failed. Please refresh the page and retry."
+msgstr "动作失败。请刷新页面，然后重试。"
+
+#: includes/admin/class-wp-job-manager-admin-notices.php:113
+msgid "You don&#8217;t have permission to do this."
+msgstr "您无权执行此操作。"
+
+#: includes/admin/class-wp-job-manager-admin.php:125
+msgid "Settings"
+msgstr "设定值"
+
+#: includes/admin/class-wp-job-manager-admin.php:128
+msgid "Add-ons"
+msgstr "附加组件"
+
+#. translators: Placeholder (%s) is the plural name of the job listings post
+#. type.
+#: includes/admin/class-wp-job-manager-cpt.php:81
+msgid "Approve %s"
+msgstr "批准％s"
+
+#. translators: Placeholder (%s) is the plural name of the job listings post
+#. type.
+#: includes/admin/class-wp-job-manager-cpt.php:83
+msgid "%s approved"
+msgstr "已批准％s"
+
+#. translators: Placeholder (%s) is the plural name of the job listings post
+#. type.
+#: includes/admin/class-wp-job-manager-cpt.php:88
+msgid "Expire %s"
+msgstr "使％s过期"
+
+#. translators: Placeholder (%s) is the plural name of the job listings post
+#. type.
+#: includes/admin/class-wp-job-manager-cpt.php:90
+msgid "%s expired"
+msgstr "％s已过期"
+
+#. translators: Placeholder (%s) is the plural name of the job listings post
+#. type.
+#: includes/admin/class-wp-job-manager-cpt.php:95
+msgid "Mark %s Filled"
+msgstr "将％s标记为已填充"
+
+#. translators: Placeholder (%s) is the plural name of the job listings post
+#. type.
+#: includes/admin/class-wp-job-manager-cpt.php:97
+msgid "%s marked as filled"
+msgstr "％s被标记为已填充"
+
+#. translators: Placeholder (%s) is the plural name of the job listings post
+#. type.
+#: includes/admin/class-wp-job-manager-cpt.php:102
+msgid "Mark %s Not Filled"
+msgstr "标记％s未填写"
+
+#. translators: Placeholder (%s) is the plural name of the job listings post
+#. type.
+#: includes/admin/class-wp-job-manager-cpt.php:104
+msgid "%s marked as not filled"
+msgstr "％s被标记为未填充"
+
+#: includes/admin/class-wp-job-manager-cpt.php:337
+msgid "Select category"
+msgstr "选择类别"
+
+#: includes/admin/class-wp-job-manager-cpt.php:362
+msgid "Select Filled"
+msgstr "选择填充"
+
+#: includes/admin/class-wp-job-manager-cpt.php:366
+msgid "Filled"
+msgstr "填充"
+
+#: includes/admin/class-wp-job-manager-cpt.php:370
+msgid "Not Filled"
+msgstr "未填满"
+
+#: includes/admin/class-wp-job-manager-cpt.php:381
+msgid "Select Featured"
+msgstr "选择精选"
+
+#: includes/admin/class-wp-job-manager-cpt.php:385
+msgid "Featured"
+msgstr "精选"
+
+#: includes/admin/class-wp-job-manager-cpt.php:389
+msgid "Not Featured"
+msgstr "没有特色"
+
+#: includes/admin/class-wp-job-manager-cpt.php:435
+#: includes/admin/class-wp-job-manager-cpt.php:495
+msgid "Position"
+msgstr "位置"
+
+#. translators: %1$s is the singular name of the job listing post type; %2$s is
+#. the URL to view the listing.
+#: includes/admin/class-wp-job-manager-cpt.php:455
+msgid "%1$s updated. <a href=\"%2$s\">View</a>"
+msgstr "％1 $ s已更新。 <a href=\"%2$s\">视图</a>"
+
+#: includes/admin/class-wp-job-manager-cpt.php:456
+msgid "Custom field updated."
+msgstr "自定义字段已更新。"
+
+#: includes/admin/class-wp-job-manager-cpt.php:457
+msgid "Custom field deleted."
+msgstr "自定义字段已删除。"
+
+#. translators: %s is the singular name of the job listing post type.
+#: includes/admin/class-wp-job-manager-cpt.php:459
+msgid "%s updated."
+msgstr "％s已更新。"
+
+#. translators: %1$s is the singular name of the job listing post type; %2$s is
+#. the revision number.
+#: includes/admin/class-wp-job-manager-cpt.php:461
+msgid "%1$s restored to revision from %2$s"
+msgstr "％1 $ s已从％2 $ s恢复至修订版本"
+
+#. translators: %1$s is the singular name of the job listing post type; %2$s is
+#. the URL to view the listing.
+#: includes/admin/class-wp-job-manager-cpt.php:463
+msgid "%1$s published. <a href=\"%2$s\">View</a>"
+msgstr "％1 $ s已发布。 <a href=\"%2$s\">视图</a>"
+
+#. translators: %1$s is the singular name of the job listing post type; %2$s is
+#. the URL to view the listing.
+#: includes/admin/class-wp-job-manager-cpt.php:465
+msgid "%s saved."
+msgstr "已保存％s。"
+
+#. translators: %1$s is the singular name of the job listing post type; %2$s is
+#. the URL to preview the listing.
+#: includes/admin/class-wp-job-manager-cpt.php:467
+msgid "%1$s submitted. <a target=\"_blank\" href=\"%2$s\">Preview</a>"
+msgstr "已提交％1 $ s。 <a target=\"_blank\" href=\"%2$s\">预习</a>"
+
+#. translators: %1$s is the singular name of the post type; %2$s is the date
+#. the post will be published; %3$s is the URL to preview the listing.
+#: includes/admin/class-wp-job-manager-cpt.php:470
+msgid ""
+"%1$s scheduled for: <strong>%2$s</strong>. <a target=\"_blank\" "
+"href=\"%3$s\">Preview</a>"
+msgstr ""
+"预定％1 $ s用于： <strong>％2 $ s</strong> 。 <a target=\"_blank\" href=\"%3$s\">"
+"预习</a>"
+
+#. translators: %1$s is the singular name of the job listing post type; %2$s is
+#. the URL to view the listing.
+#: includes/admin/class-wp-job-manager-cpt.php:476
+msgid "%1$s draft updated. <a target=\"_blank\" href=\"%2$s\">Preview</a>"
+msgstr "％1 $ s草稿已更新。 <a target=\"_blank\" href=\"%2$s\">预习</a>"
+
+#: includes/admin/class-wp-job-manager-cpt.php:496
+msgid "Type"
+msgstr "类型"
+
+#: includes/admin/class-wp-job-manager-cpt.php:497
+#: includes/class-wp-job-manager-email-notifications.php:270
+#: includes/class-wp-job-manager-post-types.php:1254
+#: includes/forms/class-wp-job-manager-form-submit-job.php:213
+#: includes/widgets/class-wp-job-manager-widget-recent-jobs.php:46
+#: templates/job-filters.php:35 templates/job-filters.php:36
+msgid "Location"
+msgstr "位置"
+
+#: includes/admin/class-wp-job-manager-cpt.php:498
+msgid "Status"
+msgstr "状态"
+
+#: includes/admin/class-wp-job-manager-cpt.php:499
+msgid "Posted"
+msgstr "发表于"
+
+#: includes/admin/class-wp-job-manager-cpt.php:500
+msgid "Expires"
+msgstr "过期"
+
+#: includes/admin/class-wp-job-manager-cpt.php:501
+#: includes/admin/class-wp-job-manager-settings.php:162
+msgid "Categories"
+msgstr "分类目录"
+
+#: includes/admin/class-wp-job-manager-cpt.php:502
+msgid "Featured?"
+msgstr "有特色吗？"
+
+#: includes/admin/class-wp-job-manager-cpt.php:503
+#: includes/class-wp-job-manager-shortcodes.php:257
+msgid "Filled?"
+msgstr "填充？"
+
+#: includes/admin/class-wp-job-manager-cpt.php:504
+msgid "Actions"
+msgstr "动作"
+
+#. translators: %d is the post ID for the job listing.
+#: includes/admin/class-wp-job-manager-cpt.php:569
+msgid "ID: %d"
+msgstr "ID：％d"
+
+#. translators: %s placeholder is the username of the user.
+#: includes/admin/class-wp-job-manager-cpt.php:613
+msgid "by a guest"
+msgstr "由客人"
+
+#: includes/admin/class-wp-job-manager-cpt.php:613
+msgid "by %s"
+msgstr "按％s"
+
+#: includes/admin/class-wp-job-manager-cpt.php:632
+msgid "Approve"
+msgstr "批准"
+
+#: includes/admin/class-wp-job-manager-cpt.php:640
+#: includes/admin/class-wp-job-manager-writepanels.php:227
+#: includes/admin/class-wp-job-manager-writepanels.php:232
+#: includes/admin/class-wp-job-manager-writepanels.php:237
+msgid "View"
+msgstr "视图"
+
+#: includes/admin/class-wp-job-manager-cpt.php:647
+#: includes/class-wp-job-manager-post-types.php:334
+#: templates/job-dashboard.php:52 templates/job-dashboard.php:70
+msgid "Edit"
+msgstr "编辑"
+
+#: includes/admin/class-wp-job-manager-cpt.php:654
+#: templates/job-dashboard.php:79
+msgid "Delete"
+msgstr "删除"
+
+#: includes/admin/class-wp-job-manager-permalink-settings.php:64
+msgid "Job base"
+msgstr "职位基础"
+
+#: includes/admin/class-wp-job-manager-permalink-settings.php:71
+msgid "Job category base"
+msgstr "工作类别库"
+
+#: includes/admin/class-wp-job-manager-permalink-settings.php:78
+msgid "Job type base"
+msgstr "工作类型库"
+
+#: includes/admin/class-wp-job-manager-permalink-settings.php:86
+msgid "Job listing archive page"
+msgstr "职位列表存档页面"
+
+#: includes/admin/class-wp-job-manager-settings.php:89
+msgid "General"
+msgstr "一般"
+
+#: includes/admin/class-wp-job-manager-settings.php:94
+msgid "Date Format"
+msgstr "日期格式"
+
+#: includes/admin/class-wp-job-manager-settings.php:95
+msgid ""
+"Choose how you want the published date for jobs to be displayed on the front-"
+"end."
+msgstr "选择希望作业的发布日期显示在前端的方式。"
+
+#: includes/admin/class-wp-job-manager-settings.php:98
+msgid "Relative to the current date (e.g., 1 day, 1 week, 1 month ago)"
+msgstr "相对于当前日期（例如1天1周1个月前）"
+
+#: includes/admin/class-wp-job-manager-settings.php:99
+msgid "Default date format as defined in Settings"
+msgstr "设置中定义的默认日期格式"
+
+#: includes/admin/class-wp-job-manager-settings.php:105
+msgid "Google Maps API Key"
+msgstr "Google Maps API密钥"
+
+#. translators: Placeholder %s is URL to set up a Google Maps API key.
+#: includes/admin/class-wp-job-manager-settings.php:107
+msgid ""
+"Google requires an API key to retrieve location information for job listings."
+" Acquire an API key from the <a href=\"%s\">Google Maps API developer "
+"site</a>."
+msgstr ""
+"Google需要API密钥才能检索职位列表的位置信息。从<a href=\"%s\">Google Maps API开发人员网站</a>获取API密钥。"
+
+#: includes/admin/class-wp-job-manager-settings.php:113
+msgid "Delete Data On Uninstall"
+msgstr "卸载时删除数据"
+
+#: includes/admin/class-wp-job-manager-settings.php:114
+msgid ""
+"Delete WP Job Manager data when the plugin is deleted. Once removed, this "
+"data cannot be restored."
+msgstr "删除插件后，删除WP Job Manager数据。一旦删除，该数据将无法恢复。"
+
+#: includes/admin/class-wp-job-manager-settings.php:122
+#: includes/class-wp-job-manager-post-types.php:328
+#: includes/class-wp-job-manager-post-types.php:431
+msgid "Job Listings"
+msgstr "工作清单"
+
+#: includes/admin/class-wp-job-manager-settings.php:128
+msgid "Listings Per Page"
+msgstr "每页列表"
+
+#: includes/admin/class-wp-job-manager-settings.php:129
+msgid "Number of job listings to display per page."
+msgstr "每页显示的职位列表数。"
+
+#: includes/admin/class-wp-job-manager-settings.php:135
+msgid "Filled Positions"
+msgstr "填补职位"
+
+#: includes/admin/class-wp-job-manager-settings.php:136
+msgid "Hide filled positions"
+msgstr "隐藏空缺职位"
+
+#: includes/admin/class-wp-job-manager-settings.php:137
+msgid "Filled positions will not display in your archives."
+msgstr "职位空缺不会显示在您的档案中。"
+
+#: includes/admin/class-wp-job-manager-settings.php:144
+msgid "Hide Expired Listings"
+msgstr "隐藏过期的列表"
+
+#: includes/admin/class-wp-job-manager-settings.php:145
+msgid "Hide expired listings in job archives/search"
+msgstr "隐藏工作档案/搜索中的过期清单"
+
+#: includes/admin/class-wp-job-manager-settings.php:146
+msgid "Expired job listings will not be searchable."
+msgstr "过期的职位列表将无法搜索。"
+
+#: includes/admin/class-wp-job-manager-settings.php:153
+msgid "Hide Expired Listings Content"
+msgstr "隐藏过期的列表内容"
+
+#: includes/admin/class-wp-job-manager-settings.php:154
+msgid "Hide content in expired single job listings"
+msgstr "隐藏过期的单个职位列表中的内容"
+
+#: includes/admin/class-wp-job-manager-settings.php:155
+msgid ""
+"Your site will display the titles of expired listings, but not the content "
+"of the listings. Otherwise, expired listings display their full content "
+"minus the application area."
+msgstr "您的网站将显示过期列表的标题，但不显示列表的内容。否则，过期列表将显示其完整内容减去应用程序区域。"
+
+#: includes/admin/class-wp-job-manager-settings.php:163
+msgid "Enable listing categories"
+msgstr "启用列表类别"
+
+#: includes/admin/class-wp-job-manager-settings.php:164
+msgid ""
+"This lets users select from a list of categories when submitting a job. Note:"
+" an admin has to create categories before site users can select them."
+msgstr "这使用户可以在提交作业时从类别列表中进行选择。注意：管理员必须先创建类别，然后网站用户才能选择它们。"
+
+#: includes/admin/class-wp-job-manager-settings.php:171
+msgid "Multi-select Categories"
+msgstr "多选类别"
+
+#: includes/admin/class-wp-job-manager-settings.php:172
+msgid "Default to category multiselect"
+msgstr "默认为类别多选"
+
+#: includes/admin/class-wp-job-manager-settings.php:173
+msgid ""
+"The category selection box will default to allowing multiple selections on "
+"the [jobs] shortcode. Without this, visitors will only be able to select a "
+"single category when filtering jobs."
+msgstr "默认情况下，类别选择框允许在[jobs]短代码上进行多个选择。如果没有此选项，访问者只能在筛选作业时选择一个类别。"
+
+#: includes/admin/class-wp-job-manager-settings.php:180
+msgid "Category Filter Type"
+msgstr "类别过滤器类型"
+
+#: includes/admin/class-wp-job-manager-settings.php:181
+msgid ""
+"Determines the logic used to display jobs when selecting multiple categories."
+msgstr "确定选择多个类别时用于显示作业的逻辑。"
+
+#: includes/admin/class-wp-job-manager-settings.php:184
+msgid "Jobs will be shown if within ANY selected category"
+msgstr "如果在任何选定类别内，将显示工作"
+
+#: includes/admin/class-wp-job-manager-settings.php:185
+msgid "Jobs will be shown if within ALL selected categories"
+msgstr "如果在所有选定类别中，将显示工作"
+
+#: includes/admin/class-wp-job-manager-settings.php:191
+msgid "Types"
+msgstr "种类"
+
+#: includes/admin/class-wp-job-manager-settings.php:192
+msgid "Enable listing types"
+msgstr "启用清单类型"
+
+#: includes/admin/class-wp-job-manager-settings.php:193
+msgid ""
+"This lets users select from a list of types when submitting a job. Note: an "
+"admin has to create types before site users can select them."
+msgstr "这使用户可以在提交作业时从类型列表中进行选择。注意：管理员必须先创建类型，然后网站用户才能选择它们。"
+
+#: includes/admin/class-wp-job-manager-settings.php:200
+msgid "Multi-select Listing Types"
+msgstr "多选清单类型"
+
+#: includes/admin/class-wp-job-manager-settings.php:201
+msgid "Allow multiple types for listings"
+msgstr "允许多种类型的列表"
+
+#: includes/admin/class-wp-job-manager-settings.php:202
+msgid ""
+"This allows users to select more than one type when submitting a job. The "
+"metabox on the post editor and the selection box on the front-end job "
+"submission form will both reflect this."
+msgstr "这使用户在提交作业时可以选择一种以上的类型。帖子编辑器上的metabox和前端作业提交表单上的选择框都将反映这一点。"
+
+#: includes/admin/class-wp-job-manager-settings.php:209
+msgid "Job Submission"
+msgstr "职位提交"
+
+#: includes/admin/class-wp-job-manager-settings.php:214
+msgid "Account Required"
+msgstr "需要帐号"
+
+#: includes/admin/class-wp-job-manager-settings.php:215
+msgid "Require an account to submit listings"
+msgstr "需要一个帐户来提交列表"
+
+#: includes/admin/class-wp-job-manager-settings.php:216
+msgid "Limits job listing submissions to registered, logged-in users."
+msgstr "将职位列表提交限制为注册的登录用户。"
+
+#: includes/admin/class-wp-job-manager-settings.php:223
+msgid "Account Creation"
+msgstr "账户创建"
+
+#: includes/admin/class-wp-job-manager-settings.php:224
+msgid "Enable account creation during submission"
+msgstr "在提交过程中启用帐户创建"
+
+#: includes/admin/class-wp-job-manager-settings.php:225
+msgid ""
+"Includes account creation on the listing submission form, to allow non-"
+"registered users to create an account and submit a job listing "
+"simultaneously."
+msgstr "在列表提交表单中包括帐户创建，以允许未注册用户创建帐户并同时提交工作列表。"
+
+#: includes/admin/class-wp-job-manager-settings.php:232
+msgid "Account Username"
+msgstr "帐号用户名"
+
+#: includes/admin/class-wp-job-manager-settings.php:233
+msgid "Generate usernames from email addresses"
+msgstr "从电子邮件地址生成用户名"
+
+#: includes/admin/class-wp-job-manager-settings.php:234
+msgid ""
+"Automatically generates usernames for new accounts from the registrant's "
+"email address. If this is not enabled, a \"username\" field will display "
+"instead."
+msgstr "从注册者的电子邮件地址自动为新帐户生成用户名。如果未启用此选项，则会显示“用户名”字段。"
+
+#: includes/admin/class-wp-job-manager-settings.php:241
+msgid "Account Password"
+msgstr "户口密码"
+
+#: includes/admin/class-wp-job-manager-settings.php:242
+msgid "Email new users a link to set a password"
+msgstr "通过电子邮件向新用户发送设置密码的链接"
+
+#: includes/admin/class-wp-job-manager-settings.php:243
+msgid ""
+"Sends an email to the user with their username and a link to set their "
+"password. If this is not enabled, a \"password\" field will display instead, "
+"and their email address won't be verified."
+msgstr "向用户发送电子邮件，其中包含用户名和设置密码的链接。如果未启用此选项，则会显示“密码”字段，并且不会验证其电子邮件地址。"
+
+#: includes/admin/class-wp-job-manager-settings.php:250
+msgid "Account Role"
+msgstr "帐户角色"
+
+#: includes/admin/class-wp-job-manager-settings.php:251
+msgid ""
+"Any new accounts created during submission will have this role. If you "
+"haven't enabled account creation during submission in the options above, "
+"your own method of assigning roles will apply."
+msgstr "在提交过程中创建的任何新帐户都将扮演此角色。如果您在上述选项中尚未在提交过程中启用帐户创建功能，则将使用您自己的角色分配方法。"
+
+#: includes/admin/class-wp-job-manager-settings.php:258
+msgid "Moderate New Listings"
+msgstr "适度的新房源"
+
+#: includes/admin/class-wp-job-manager-settings.php:259
+msgid "Require admin approval of all new listing submissions"
+msgstr "需要所有新列表提交的管理员批准"
+
+#: includes/admin/class-wp-job-manager-settings.php:260
+msgid ""
+"Sets all new submissions to \"pending.\" They will not appear on your site "
+"until an admin approves them."
+msgstr "将所有新提交设置为“待处理”。除非管理员批准，否则它们不会出现在您的网站上。"
+
+#: includes/admin/class-wp-job-manager-settings.php:267
+msgid "Allow Pending Edits"
+msgstr "允许待编辑"
+
+#: includes/admin/class-wp-job-manager-settings.php:268
+msgid "Allow editing of pending listings"
+msgstr "允许编辑待处理的列表"
+
+#: includes/admin/class-wp-job-manager-settings.php:269
+msgid ""
+"Users can continue to edit pending listings until they are approved by an "
+"admin."
+msgstr "用户可以继续编辑待处理的列表，直到得到管理员的批准。"
+
+#: includes/admin/class-wp-job-manager-settings.php:276
+msgid "Allow Published Edits"
+msgstr "允许发布编辑"
+
+#: includes/admin/class-wp-job-manager-settings.php:277
+msgid "Allow editing of published listings"
+msgstr "允许编辑已发布的列表"
+
+#: includes/admin/class-wp-job-manager-settings.php:278
+msgid ""
+"Choose whether published job listings can be edited and if edits require "
+"admin approval. When moderation is required, the original job listings will "
+"be unpublished while edits await admin approval."
+msgstr "选择是否可以编辑已发布的职位列表以及编辑是否需要管理员批准。当需要审核时，原始作业列表将在编辑等待管理员批准的同时取消发布。"
+
+#: includes/admin/class-wp-job-manager-settings.php:281
+msgid "Users cannot edit"
+msgstr "用户无法编辑"
+
+#: includes/admin/class-wp-job-manager-settings.php:282
+msgid "Users can edit without admin approval"
+msgstr "用户可以在未经管理员批准的情况下进行编辑"
+
+#: includes/admin/class-wp-job-manager-settings.php:283
+msgid "Users can edit, but edits require admin approval"
+msgstr "用户可以编辑，但编辑需要管理员批准"
+
+#: includes/admin/class-wp-job-manager-settings.php:290
+msgid "Listing Duration"
+msgstr "上市时间"
+
+#: includes/admin/class-wp-job-manager-settings.php:291
+msgid ""
+"Listings will display for the set number of days, then expire. Leave this "
+"field blank if you don't want listings to have an expiration date."
+msgstr "列表将显示设置的天数，然后过期。如果您不希望列表具有到期日期，请将此字段留空。"
+
+#: includes/admin/class-wp-job-manager-settings.php:297
+msgid "Application Method"
+msgstr "申请方法"
+
+#: includes/admin/class-wp-job-manager-settings.php:298
+msgid ""
+"Choose the application method job listers will need to provide. Specify URL "
+"or email address only, or allow listers to choose which they prefer."
+msgstr "选择工作清单人员需要提供的申请方法。仅指定URL或电子邮件地址，或允许列表者选择他们喜欢的人。"
+
+#: includes/admin/class-wp-job-manager-settings.php:301
+msgid "Email address or website URL"
+msgstr "电子邮件地址或网站网址"
+
+#: includes/admin/class-wp-job-manager-settings.php:302
+msgid "Email addresses only"
+msgstr "仅电子邮件地址"
+
+#: includes/admin/class-wp-job-manager-settings.php:303
+msgid "Website URLs only"
+msgstr "仅网站网址"
+
+#: includes/admin/class-wp-job-manager-settings.php:309
+msgid "reCAPTCHA"
+msgstr "验证码"
+
+#: includes/admin/class-wp-job-manager-settings.php:313
+msgid "Are you human?"
+msgstr "你是人类？"
+
+#: includes/admin/class-wp-job-manager-settings.php:315
+msgid "Field Label"
+msgstr "栏位标签"
+
+#: includes/admin/class-wp-job-manager-settings.php:316
+msgid "The label used for the reCAPTCHA field on forms."
+msgstr "表单上reCAPTCHA字段所使用的标签。"
+
+#: includes/admin/class-wp-job-manager-settings.php:323
+msgid "Site Key"
+msgstr "网站金钥"
+
+#. translators: Placeholder %s is URL to set up Google reCAPTCHA API key.
+#: includes/admin/class-wp-job-manager-settings.php:325
+msgid ""
+"You can retrieve your site key from <a href=\"%s\">Google's reCAPTCHA admin "
+"dashboard</a>."
+msgstr "您可以从<a href=\"%s\">Google的reCAPTCHA管理控制台</a>检索站点密钥。"
+
+#: includes/admin/class-wp-job-manager-settings.php:332
+msgid "Secret Key"
+msgstr "密钥"
+
+#. translators: Placeholder %s is URL to set up Google reCAPTCHA API key.
+#: includes/admin/class-wp-job-manager-settings.php:334
+msgid ""
+"You can retrieve your secret key from <a href=\"%s\">Google's reCAPTCHA "
+"admin dashboard</a>."
+msgstr "您可以从<a href=\"%s\">Google的reCAPTCHA管理控制台</a>检索您的密钥。"
+
+#: includes/admin/class-wp-job-manager-settings.php:340
+msgid "Job Submission Form"
+msgstr "职位提交表格"
+
+#: includes/admin/class-wp-job-manager-settings.php:341
+msgid "Display a reCAPTCHA field on job submission form."
+msgstr "在作业提交表单上显示reCAPTCHA字段。"
+
+#: includes/admin/class-wp-job-manager-settings.php:342
+msgid ""
+"This will help prevent bots from submitting job listings. You must have "
+"entered a valid site key and secret key above."
+msgstr "这将有助于防止漫游器提交工作清单。您必须在上面输入了有效的站点密钥和秘密密钥。"
+
+#: includes/admin/class-wp-job-manager-settings.php:349
+msgid "Pages"
+msgstr "页数"
+
+#: includes/admin/class-wp-job-manager-settings.php:354
+msgid "Submit Job Form Page"
+msgstr "提交工作表页面"
+
+#: includes/admin/class-wp-job-manager-settings.php:355
+msgid ""
+"Select the page where you've used the [submit_job_form] shortcode. This lets "
+"the plugin know the location of the form."
+msgstr "选择您使用[submit_job_form]简码的页面。这使插件知道表单的位置。"
+
+#: includes/admin/class-wp-job-manager-settings.php:361
+msgid "Job Dashboard Page"
+msgstr "作业仪表板页面"
+
+#: includes/admin/class-wp-job-manager-settings.php:362
+msgid ""
+"Select the page where you've used the [job_dashboard] shortcode. This lets "
+"the plugin know the location of the dashboard."
+msgstr "选择您使用[job_dashboard]简码的页面。这使插件知道仪表板的位置。"
+
+#: includes/admin/class-wp-job-manager-settings.php:368
+msgid "Job Listings Page"
+msgstr "工作清单页面"
+
+#: includes/admin/class-wp-job-manager-settings.php:369
+msgid ""
+"Select the page where you've used the [jobs] shortcode. This lets the plugin "
+"know the location of the job listings page."
+msgstr "选择您使用[jobs]简码的页面。这使插件知道作业列表页面的位置。"
+
+#: includes/admin/class-wp-job-manager-settings.php:417
+msgid "Settings successfully saved"
+msgstr "设置成功保存"
+
+#: includes/admin/class-wp-job-manager-settings.php:442
+msgid "Save Changes"
+msgstr "保存更改"
+
+#: includes/admin/class-wp-job-manager-settings.php:643
+msgid "--no page--"
+msgstr "-没有页面-"
+
+#: includes/admin/class-wp-job-manager-settings.php:649
+msgid "Select a page&hellip;"
+msgstr "选择一个页面…"
+
+#: includes/admin/class-wp-job-manager-setup.php:58
+msgid "Setup"
+msgstr "设定"
+
+#: includes/admin/class-wp-job-manager-taxonomy-meta.php:87
+#: includes/admin/class-wp-job-manager-taxonomy-meta.php:110
+#: includes/admin/class-wp-job-manager-taxonomy-meta.php:129
+#: includes/class-wp-job-manager-post-types.php:287
+msgid "Employment Type"
+msgstr "雇佣类型"
+
+#: includes/admin/class-wp-job-manager-writepanels.php:64
+#: includes/class-wp-job-manager-email-notifications.php:324
+msgid "Posted by"
+msgstr "张贴者"
+
+#. translators: Placeholder %s is the singular name for a job listing post
+#. type.
+#: includes/admin/class-wp-job-manager-writepanels.php:150
+msgid "%s Data"
+msgstr "％s数据"
+
+#: includes/admin/class-wp-job-manager-writepanels.php:227
+#: includes/admin/class-wp-job-manager-writepanels.php:232
+#: includes/admin/class-wp-job-manager-writepanels.php:237
+msgid "Use file"
+msgstr "使用档案"
+
+#: includes/admin/class-wp-job-manager-writepanels.php:227
+#: includes/admin/class-wp-job-manager-writepanels.php:232
+#: includes/admin/class-wp-job-manager-writepanels.php:237
+msgid "Upload"
+msgstr "上载"
+
+#: includes/admin/class-wp-job-manager-writepanels.php:237
+msgid "Add file"
+msgstr "添加文件"
+
+#. translators: Used in user select. %1$s is the user's display name; #%2$s is
+#. the user ID; %3$s is the user email.
+#: includes/admin/class-wp-job-manager-writepanels.php:471
+#: includes/class-wp-job-manager-ajax.php:419
+msgid "%1$s (#%2$s – %3$s)"
+msgstr "％1 $ s（＃％2 $ s –％3 $ s）"
+
+#: includes/admin/class-wp-job-manager-writepanels.php:478
+msgid "Guest User"
+msgstr "来宾用户"
+
+#: includes/admin/class-wp-job-manager-writepanels.php:482
+msgid "Change"
+msgstr "更改"
+
+#: includes/admin/class-wp-job-manager-writepanels.php:485
+msgid "Guest"
+msgstr "来宾"
+
+#. translators: %1$s is placeholder for singular name of the job listing post
+#. type; %2$s is the intl formatted date the listing was last modified.
+#: includes/admin/class-wp-job-manager-writepanels.php:556
+msgid "%1$s was last modified by the user on %2$s."
+msgstr "用户上次在％2 $ s上修改了％1 $ s。"
+
+#: includes/admin/views/html-admin-notice-core-setup.php:15
+msgid ""
+"You are nearly ready to start listing jobs with <strong>WP Job "
+"Manager</strong>."
+msgstr "您几乎可以开始使用<strong> WP Job Manager </ strong>列出工作了。"
+
+#: includes/admin/views/html-admin-notice-core-setup.php:19
+msgid "Run Setup Wizard"
+msgstr "运行安装向导"
+
+#: includes/admin/views/html-admin-notice-core-setup.php:20
+msgid "Skip Setup"
+msgstr "跳过设置"
+
+#: includes/admin/views/html-admin-page-addons.php:23
+msgid "More Information &rarr;"
+msgstr "更多信息→"
+
+#: includes/admin/views/html-admin-page-addons.php:54
+msgid "No add-ons were found."
+msgstr "找不到加载项。"
+
+#: includes/admin/views/html-admin-setup-header.php:13
+msgid "WP Job Manager Setup"
+msgstr "WP Job Manager设置"
+
+#: includes/admin/views/html-admin-setup-header.php:20
+msgid "1. Introduction"
+msgstr "1.简介"
+
+#: includes/admin/views/html-admin-setup-header.php:21
+msgid "2. Page Setup"
+msgstr "2.页面设置"
+
+#: includes/admin/views/html-admin-setup-header.php:22
+msgid "3. Done"
+msgstr "3.完成"
+
+#: includes/admin/views/html-admin-setup-step-1.php:12
+msgid "Welcome to the Setup Wizard!"
+msgstr "欢迎使用安装向导！"
+
+#: includes/admin/views/html-admin-setup-step-1.php:14
+msgid ""
+"Thanks for installing <em>WP Job Manager</em>! Let's get your site ready to "
+"accept job listings."
+msgstr "感谢您安装<em> WP Job Manager </ em>！让我们让您的网站准备好接受工作清单。"
+
+#: includes/admin/views/html-admin-setup-step-1.php:15
+msgid ""
+"This setup wizard will walk you through the process of creating pages for "
+"job submissions, management, and listings."
+msgstr "此设置向导将引导您完成创建作业提交，管理和列表页面的过程。"
+
+#. translators: Placeholder %s is the path to WPJM documentation site.
+#: includes/admin/views/html-admin-setup-step-1.php:19
+msgid ""
+"If you'd prefer to skip this and set up your pages manually, our <a "
+"href=\"%s\">documentation</a> will walk you through each step."
+msgstr "如果您想跳过此步骤并手动设置页面，我们的<a href=\"%s\">文档</a>将引导您完成每个步骤。"
+
+#: includes/admin/views/html-admin-setup-step-1.php:29
+msgid "Start setup"
+msgstr "开始设定"
+
+#: includes/admin/views/html-admin-setup-step-1.php:30
+msgid "Skip setup. I will set up the plugin manually."
+msgstr "跳过设置。我将手动设置插件。"
+
+#: includes/admin/views/html-admin-setup-step-2.php:12
+msgid "Page Setup"
+msgstr "页面设置"
+
+#: includes/admin/views/html-admin-setup-step-2.php:14
+msgid ""
+"With WP Job Manager, employers and applicants can post, manage, and browse "
+"job listings right on your website. Tell us which of these common pages "
+"you'd like your site to have and we'll create and configure them for you."
+msgstr ""
+"借助WP Job Manager，雇主和申请人可以直接在您的网站上发布，管理和浏览工作清单。告诉我们您希望网站拥有哪些常见页面，我们将为您创建和配置它们。"
+
+#. translators: %1$s is URL to WordPress core shortcode documentation. %2$s is
+#. URL to WPJM specific shortcode reference.
+#: includes/admin/views/html-admin-setup-step-2.php:20
+msgid ""
+"(These pages are created using <a href=\"%1$s\" title=\"What is a shortcode?"
+"\" class=\"help-page-link\">shortcodes</a>,\n"
+"\t\t\t\t\t\t\t\twhich we take care of in this step. If you'd like to build "
+"these pages yourself or want to add one of these options to an existing\n"
+"\t\t\t\t\t\t\t\tpage on your site, you can skip this step and take a look at "
+"<a href=\"%2$s\" class=\"help-page-link\">shortcode documentation</a> for "
+"detailed instructions.)"
+msgstr ""
+"（这些页面是使用<a href=\"%1$s\" title=\"什么是简码？\" class=\"help-page-link\">"
+"shortcodes</a>"
+"创建的，我们将在此步骤中进行处理。如果您想自己构建这些页面，或者想将这些选项之一添加到网站上的现有页面上，则可以跳过此步骤并执行请查看<a "
+"href=\"%2$s\" class=\"help-page-link\">简码文档</a>以获取详细说明。）"
+
+#: includes/admin/views/html-admin-setup-step-2.php:39
+msgid "Page Title"
+msgstr "页面标题"
+
+#: includes/admin/views/html-admin-setup-step-2.php:40
+msgid "Page Description"
+msgstr "页面说明"
+
+#: includes/admin/views/html-admin-setup-step-2.php:41
+msgid "Content Shortcode"
+msgstr "内容简码"
+
+#: includes/admin/views/html-admin-setup-step-2.php:49
+msgid ""
+"Creates a page that allows employers to post new jobs directly from a page "
+"on your website, instead of requiring them to log in to an admin area. If "
+"you'd rather not allow this -- for example, if you want employers to use the "
+"admin dashboard only -- you can uncheck this setting."
+msgstr ""
+"创建一个页面，使雇主可以直接从您网站上的页面发布新工作，而不是要求他们登录到管理区域。如果您不想这样做（例如，如果您只希望雇主使用管理控制台），则可以取消选中此设置。"
+
+#: includes/admin/views/html-admin-setup-step-2.php:57
+msgid ""
+"Creates a page that allows employers to manage their job listings directly "
+"from a page on your website, instead of requiring them to log in to an admin "
+"area. If you want to manage all job listings from the admin dashboard only, "
+"you can uncheck this setting."
+msgstr ""
+"创建一个页面，使雇主可以直接从您网站上的页面管理其工作清单，而无需要求他们登录到管理区域。如果您只想通过管理控制台管理所有职位列表，则可以取消选中此设置。"
+
+#: includes/admin/views/html-admin-setup-step-2.php:64
+msgid ""
+"Creates a page where visitors can browse, search, and filter job listings."
+msgstr "创建一个页面，访客可以在其中浏览，搜索和过滤工作清单。"
+
+#: includes/admin/views/html-admin-setup-step-2.php:72
+msgid "Skip this step"
+msgstr "跳过此步骤"
+
+#: includes/admin/views/html-admin-setup-step-3.php:12
+msgid "You're ready to start using WP Job Manager!"
+msgstr "您已经准备好开始使用WP Job Manager！"
+
+#: includes/admin/views/html-admin-setup-step-3.php:14
+msgid "Wondering what to do now? Here are some of the most common next steps:"
+msgstr "想知道现在该怎么办？以下是一些最常见的下一步："
+
+#: includes/admin/views/html-admin-setup-step-3.php:17
+msgid "Tweak your settings"
+msgstr "调整设置"
+
+#: includes/admin/views/html-admin-setup-step-3.php:18
+msgid "Add a job using the admin dashboard"
+msgstr "使用管理控制台添加作业"
+
+#: includes/admin/views/html-admin-setup-step-3.php:23
+msgid "View submitted job listings"
+msgstr "查看已提交的工作清单"
+
+#: includes/admin/views/html-admin-setup-step-3.php:25
+msgid "Add job listings to a page using the [jobs] shortcode"
+msgstr "使用[jobs]简码将职位列表添加到页面"
+
+#: includes/admin/views/html-admin-setup-step-3.php:32
+msgid "Add a job via the front-end"
+msgstr "通过前端添加作业"
+
+#: includes/admin/views/html-admin-setup-step-3.php:34
+msgid "Learn to use the front-end job submission board"
+msgstr "学习使用前端作业提交板"
+
+#: includes/admin/views/html-admin-setup-step-3.php:41
+msgid "View the job dashboard"
+msgstr "查看工作仪表板"
+
+#: includes/admin/views/html-admin-setup-step-3.php:43
+msgid "Learn to use the front-end job dashboard"
+msgstr "学习使用前端作业仪表板"
+
+#. translators: %1$s is the URL to WPJM support documentation; %2$s is the URL
+#. to WPJM support forums.
+#: includes/admin/views/html-admin-setup-step-3.php:52
+msgid ""
+"If you need help, you can find more detail in our\n"
+"\t\t\t\t\t\t\t<a href=\"%1$s\">support documentation</a> or post your "
+"question on the\n"
+"\t\t\t\t\t\t\t<a href=\"%2$s\">WP Job Manager support forums</a>. Happy "
+"hiring!"
+msgstr ""
+"如果需要帮助，可以在我们的<a href=\"%1$s\">支持文档中</a>找到更多详细信息，或者在<a href=\"%2$s\">WP Job "
+"Manager支持论坛</a>上发布您的问题。招聘愉快！"
+
+#: includes/admin/views/html-admin-setup-step-3.php:66
+msgid "Support WP Job Manager's Ongoing Development"
+msgstr "支持WP Job Manager的持续发展"
+
+#: includes/admin/views/html-admin-setup-step-3.php:67
+msgid ""
+"There are lots of ways you can support open source software projects like "
+"this one: contributing code, fixing a bug, assisting with non-English "
+"translation, or just telling your friends about WP Job Manager to help "
+"spread the word. We appreciate your support!"
+msgstr ""
+"您可以通过多种方法来支持像这样的开源软件项目：提供代码，修复错误，协助非英语翻译，或者只是告诉您的朋友WP Job "
+"Manager来帮助传播信息。感谢您的支持！"
+
+#: includes/admin/views/html-admin-setup-step-3.php:69
+msgid "Leave a positive review"
+msgstr "留下积极的评价"
+
+#: includes/admin/views/html-admin-setup-step-3.php:70
+msgid "Contribute a localization"
+msgstr "贡献本地化"
+
+#: includes/admin/views/html-admin-setup-step-3.php:71
+msgid "Contribute code or report a bug"
+msgstr "贡献代码或报告错误"
+
+#: includes/admin/views/html-admin-setup-step-3.php:72
+msgid "Help other users on the forums"
+msgstr "帮助论坛上的其他用户"
+
+#. translators: Placeholder %d is the number of found search results.
+#: includes/class-wp-job-manager-ajax.php:186
+msgid "Search completed. Found %d matching record."
+msgid_plural "Search completed. Found %d matching records."
+msgstr[0] "搜索完成。找到％d个匹配记录。"
+msgstr[1] ""
+
+#: includes/class-wp-job-manager-ajax.php:284
+msgid "You must be logged in to upload files using this method."
+msgstr "您必须先登录才能使用此方法上传文件。"
+
+#. Plugin Name of the plugin/theme
+msgid "WP Job Manager"
+msgstr "WP工作经理"
+
+#: includes/class-wp-job-manager-data-exporter.php:51
+#: includes/class-wp-job-manager-post-types.php:351
+msgid "Company Logo"
+msgstr "公司标志"
+
+#: includes/class-wp-job-manager-data-exporter.php:52
+#: includes/class-wp-job-manager-post-types.php:1273
+msgid "Company Name"
+msgstr "公司名"
+
+#: includes/class-wp-job-manager-data-exporter.php:53
+#: includes/class-wp-job-manager-post-types.php:1281
+msgid "Company Website"
+msgstr "公司网站"
+
+#: includes/class-wp-job-manager-data-exporter.php:54
+#: includes/class-wp-job-manager-post-types.php:1290
+msgid "Company Tagline"
+msgstr "公司标语"
+
+#: includes/class-wp-job-manager-data-exporter.php:55
+#: includes/class-wp-job-manager-post-types.php:1298
+msgid "Company Twitter"
+msgstr "公司推特"
+
+#: includes/class-wp-job-manager-data-exporter.php:56
+#: includes/class-wp-job-manager-post-types.php:1306
+msgid "Company Video"
+msgstr "公司宣传片"
+
+#: includes/class-wp-job-manager-data-exporter.php:81
+msgid "WP Job Manager User Data"
+msgstr "WP Job Manager用户数据"
+
+#. translators: %1$s is version of PHP that WP Job Manager requires; %2$s is
+#. the version of PHP WordPress is running on.
+#: includes/class-wp-job-manager-dependency-checker.php:66
+msgid ""
+"<strong>WP Job Manager</strong> requires a minimum PHP version of %1$s, but "
+"you are running %2$s."
+msgstr "<strong> WP Job Manager </ strong>需要最低PHP版本为％1 $ s，但您正在运行％2 $ s。"
+
+#: includes/class-wp-job-manager-dependency-checker.php:77
+msgid "Learn more about updating PHP"
+msgstr "了解有关更新PHP的更多信息"
+
+#. translators: accessibility text
+#: includes/class-wp-job-manager-dependency-checker.php:79
+msgid "(opens in a new tab)"
+msgstr "（在新标签页中打开）"
+
+#. translators: %s is the URL for the page where users can go to update
+#. WordPress.
+#: includes/class-wp-job-manager-dependency-checker.php:122
+msgid ""
+"<strong>WP Job Manager</strong> requires a more recent version of WordPress."
+msgstr "<strong> WP Job Manager </ strong>需要WordPress的更新版本。"
+
+#: includes/class-wp-job-manager-dependency-checker.php:136
+#: includes/class-wp-job-manager-dependency-checker.php:138
+msgid "WordPress Update Required"
+msgstr "需要WordPress更新"
+
+#: includes/class-wp-job-manager-email-notifications.php:259
+msgid "Job title"
+msgstr "职称"
+
+#: includes/class-wp-job-manager-email-notifications.php:279
+#: includes/class-wp-job-manager-post-types.php:218
+#: includes/forms/class-wp-job-manager-form-submit-job.php:221
+msgid "Job type"
+msgstr "工作类型"
+
+#: includes/class-wp-job-manager-email-notifications.php:289
+#: includes/class-wp-job-manager-post-types.php:154
+#: includes/forms/class-wp-job-manager-form-submit-job.php:230
+msgid "Job category"
+msgstr "工作类别"
+
+#: includes/class-wp-job-manager-email-notifications.php:298
+#: includes/forms/class-wp-job-manager-form-submit-job.php:255
+msgid "Company name"
+msgstr "公司名"
+
+#: includes/class-wp-job-manager-email-notifications.php:306
+msgid "Company website"
+msgstr "公司网站"
+
+#: includes/class-wp-job-manager-email-notifications.php:315
+msgid "Listing expires"
+msgstr "清单到期"
+
+#: includes/class-wp-job-manager-email-notifications.php:474
+msgid "Email Notifications"
+msgstr "邮件通知"
+
+#: includes/class-wp-job-manager-email-notifications.php:477
+msgid "Select the email notifications to enable."
+msgstr "选择要启用的电子邮件通知。"
+
+#: includes/class-wp-job-manager-email-notifications.php:630
+msgid "Format"
+msgstr "格式"
+
+#: includes/class-wp-job-manager-email-notifications.php:633
+msgid "Send plain text email"
+msgstr "发送纯文本电子邮件"
+
+#: includes/class-wp-job-manager-email-notifications.php:634
+msgid "Send rich text email"
+msgstr "发送富文本电子邮件"
+
+#: includes/class-wp-job-manager-geocode.php:234
+msgid "No results found"
+msgstr "未找到结果"
+
+#: includes/class-wp-job-manager-geocode.php:237
+msgid "Query limit reached"
+msgstr "达到查询限制"
+
+#: includes/class-wp-job-manager-geocode.php:241
+#: includes/class-wp-job-manager-geocode.php:244
+msgid "Geocoding error"
+msgstr "地理编码错误"
+
+#: includes/class-wp-job-manager-install.php:84
+msgid "Employer"
+msgstr "雇主"
+
+#: includes/class-wp-job-manager-post-types.php:155
+msgid "Job categories"
+msgstr "工作类别"
+
+#. translators: Placeholder %s is the plural label of the job listing category
+#. taxonomy type.
+#. translators: Placeholder %s is the plural label of the job listing job type
+#. taxonomy type.
+#. translators: Placeholder %s is the singular label of the job listing post
+#. type.
+#: includes/class-wp-job-manager-post-types.php:183
+#: includes/class-wp-job-manager-post-types.php:246
+#: includes/class-wp-job-manager-post-types.php:344
+msgid "Search %s"
+msgstr "搜索％s"
+
+#. translators: Placeholder %s is the plural label of the job listing category
+#. taxonomy type.
+#. translators: Placeholder %s is the plural label of the job listing job type
+#. taxonomy type.
+#. translators: Placeholder %s is the plural label of the job listing post
+#. type.
+#: includes/class-wp-job-manager-post-types.php:185
+#: includes/class-wp-job-manager-post-types.php:248
+#: includes/class-wp-job-manager-post-types.php:330
+msgid "All %s"
+msgstr "所有％s"
+
+#. translators: Placeholder %s is the singular label of the job listing
+#. category taxonomy type.
+#. translators: Placeholder %s is the singular label of the job listing job
+#. type taxonomy type.
+#. translators: Placeholder %s is the singular label of the job listing post
+#. type.
+#: includes/class-wp-job-manager-post-types.php:187
+#: includes/class-wp-job-manager-post-types.php:250
+#: includes/class-wp-job-manager-post-types.php:350
+msgid "Parent %s"
+msgstr "父级％s"
+
+#. translators: Placeholder %s is the singular label of the job listing
+#. category taxonomy type.
+#. translators: Placeholder %s is the singular label of the job listing job
+#. type taxonomy type.
+#: includes/class-wp-job-manager-post-types.php:189
+#: includes/class-wp-job-manager-post-types.php:252
+msgid "Parent %s:"
+msgstr "父级％s："
+
+#. translators: Placeholder %s is the singular label of the job listing
+#. category taxonomy type.
+#. translators: Placeholder %s is the singular label of the job listing job
+#. type taxonomy type.
+#. translators: Placeholder %s is the singular label of the job listing post
+#. type.
+#: includes/class-wp-job-manager-post-types.php:191
+#: includes/class-wp-job-manager-post-types.php:254
+#: includes/class-wp-job-manager-post-types.php:336
+msgid "Edit %s"
+msgstr "编辑％s"
+
+#. translators: Placeholder %s is the singular label of the job listing
+#. category taxonomy type.
+#. translators: Placeholder %s is the singular label of the job listing job
+#. type taxonomy type.
+#: includes/class-wp-job-manager-post-types.php:193
+#: includes/class-wp-job-manager-post-types.php:256
+msgid "Update %s"
+msgstr "更新"
+
+#. translators: Placeholder %s is the singular label of the job listing
+#. category taxonomy type.
+#. translators: Placeholder %s is the singular label of the job listing job
+#. type taxonomy type.
+#: includes/class-wp-job-manager-post-types.php:195
+#: includes/class-wp-job-manager-post-types.php:258
+msgid "Add New %s"
+msgstr "添加新的％s"
+
+#. translators: Placeholder %s is the singular label of the job listing
+#. category taxonomy type.
+#. translators: Placeholder %s is the singular label of the job listing job
+#. type taxonomy type.
+#: includes/class-wp-job-manager-post-types.php:197
+#: includes/class-wp-job-manager-post-types.php:260
+msgid "New %s Name"
+msgstr "新的％s名称"
+
+#: includes/class-wp-job-manager-post-types.php:219
+msgid "Job types"
+msgstr "工作类型"
+
+#: includes/class-wp-job-manager-post-types.php:297
+msgid "Job"
+msgstr "工作"
+
+#: includes/class-wp-job-manager-post-types.php:298
+msgid "Jobs"
+msgstr "职位"
+
+#: includes/class-wp-job-manager-post-types.php:331
+msgid "Add New"
+msgstr "添新"
+
+#. translators: Placeholder %s is the singular label of the job listing post
+#. type.
+#: includes/class-wp-job-manager-post-types.php:333
+msgid "Add %s"
+msgstr "添加％s"
+
+#. translators: Placeholder %s is the singular label of the job listing post
+#. type.
+#: includes/class-wp-job-manager-post-types.php:338
+msgid "New %s"
+msgstr "新％s"
+
+#. translators: Placeholder %s is the singular label of the job listing post
+#. type.
+#: includes/class-wp-job-manager-post-types.php:340
+#: includes/class-wp-job-manager-post-types.php:342
+msgid "View %s"
+msgstr "查看％s"
+
+#. translators: Placeholder %s is the singular label of the job listing post
+#. type.
+#: includes/class-wp-job-manager-post-types.php:346
+msgid "No %s found"
+msgstr "找不到％s"
+
+#. translators: Placeholder %s is the plural label of the job listing post
+#. type.
+#: includes/class-wp-job-manager-post-types.php:348
+msgid "No %s found in trash"
+msgstr "在垃圾桶中找不到％s"
+
+#: includes/class-wp-job-manager-post-types.php:352
+msgid "Set company logo"
+msgstr "设置公司徽标"
+
+#: includes/class-wp-job-manager-post-types.php:353
+msgid "Remove company logo"
+msgstr "删除公司徽标"
+
+#: includes/class-wp-job-manager-post-types.php:354
+msgid "Use as company logo"
+msgstr "用作公司徽标"
+
+#. translators: Placeholder %s is the plural label of the job listing post
+#. type.
+#: includes/class-wp-job-manager-post-types.php:357
+msgid "This is where you can create and manage %s."
+msgstr "您可以在这里创建和管理％s。"
+
+#. translators: Placeholder %s is the number of expired posts of this type.
+#: includes/class-wp-job-manager-post-types.php:399
+msgid "Expired <span class=\"count\">(%s)</span>"
+msgid_plural "Expired <span class=\"count\">(%s)</span>"
+msgstr[0] "已过期<span class=\"count\">（％s）</span>"
+msgstr[1] ""
+
+#. translators: Placeholder %s is the number of posts in a preview state.
+#: includes/class-wp-job-manager-post-types.php:411
+msgid "Preview <span class=\"count\">(%s)</span>"
+msgid_plural "Preview <span class=\"count\">(%s)</span>"
+msgstr[0] "预览<span class=\"count\">（％s）</span>"
+msgstr[1] ""
+
+#: includes/class-wp-job-manager-post-types.php:1241
+#: includes/forms/class-wp-job-manager-form-submit-job.php:190
+msgid "Application email/URL"
+msgstr "申请电子邮件/ URL"
+
+#: includes/class-wp-job-manager-post-types.php:1242
+#: includes/forms/class-wp-job-manager-form-submit-job.php:191
+msgid "Enter an email address or website URL"
+msgstr "输入电子邮件地址或网站URL"
+
+#: includes/class-wp-job-manager-post-types.php:1245
+#: includes/forms/class-wp-job-manager-form-submit-job.php:180
+msgid "Application email"
+msgstr "申请电子邮件"
+
+#: includes/class-wp-job-manager-post-types.php:1246
+#: includes/forms/class-wp-job-manager-form-submit-job.php:181
+msgid "you@example.com"
+msgstr "you@example.com"
+
+#: includes/class-wp-job-manager-post-types.php:1248
+#: includes/forms/class-wp-job-manager-form-submit-job.php:185
+msgid "Application URL"
+msgstr "申请网址"
+
+#: includes/class-wp-job-manager-post-types.php:1249
+#: includes/forms/class-wp-job-manager-form-submit-job.php:186
+msgid "https://"
+msgstr "https：//"
+
+#: includes/class-wp-job-manager-post-types.php:1255
+#: includes/forms/class-wp-job-manager-form-submit-job.php:217
+msgid "e.g. \"London\""
+msgstr "例如“伦敦”"
+
+#: includes/class-wp-job-manager-post-types.php:1256
+msgid "Leave this blank if the location is not important."
+msgstr "如果位置不重要，请将此空白留空。"
+
+#: includes/class-wp-job-manager-post-types.php:1265
+msgid ""
+"This field is required for the \"application\" area to appear beneath the "
+"listing."
+msgstr "要在列表下方显示“应用程序”区域，此字段是必填字段。"
+
+#: includes/class-wp-job-manager-post-types.php:1291
+msgid "Brief description about the company"
+msgstr "公司简介"
+
+#: includes/class-wp-job-manager-post-types.php:1307
+msgid "URL to the company video"
+msgstr "公司视频的网址"
+
+#: includes/class-wp-job-manager-post-types.php:1316
+msgid "Position Filled"
+msgstr "职位空缺"
+
+#: includes/class-wp-job-manager-post-types.php:1322
+msgid "Filled listings will no longer accept applications."
+msgstr "填充列表将不再接受申请。"
+
+#: includes/class-wp-job-manager-post-types.php:1325
+msgid "Featured Listing"
+msgstr "精选房源"
+
+#: includes/class-wp-job-manager-post-types.php:1327
+msgid ""
+"Featured listings will be sticky during searches, and can be styled "
+"differently."
+msgstr "精选列表会在搜索过程中发粘，并且样式可以不同。"
+
+#: includes/class-wp-job-manager-post-types.php:1335
+msgid "Listing Expiry Date"
+msgstr "上市到期日"
+
+#: includes/class-wp-job-manager-shortcodes.php:108
+msgid "Invalid ID"
+msgstr "无效的ID"
+
+#: includes/class-wp-job-manager-shortcodes.php:115
+msgid "This position has already been filled"
+msgstr "这个职位已经被填补"
+
+#. translators: Placeholder %s is the job listing title.
+#: includes/class-wp-job-manager-shortcodes.php:123
+msgid "%s has been filled"
+msgstr "％s已满"
+
+#: includes/class-wp-job-manager-shortcodes.php:128
+msgid "This position is not filled"
+msgstr "这个职位没有填补"
+
+#. translators: Placeholder %s is the job listing title.
+#: includes/class-wp-job-manager-shortcodes.php:136
+msgid "%s has been marked as not filled"
+msgstr "％s已被标记为未填充"
+
+#. translators: Placeholder %s is the job listing title.
+#: includes/class-wp-job-manager-shortcodes.php:144
+msgid "%s has been deleted"
+msgstr "％s已被删除"
+
+#: includes/class-wp-job-manager-shortcodes.php:149
+#: includes/class-wp-job-manager-shortcodes.php:163
+msgid "Missing submission page."
+msgstr "缺少提交页面。"
+
+#: includes/class-wp-job-manager-shortcodes.php:256
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:36
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:52
+#: includes/widgets/class-wp-job-manager-widget-recent-jobs.php:36
+msgid "Title"
+msgstr "标题"
+
+#: includes/class-wp-job-manager-shortcodes.php:258
+msgid "Date Posted"
+msgstr "发布日期"
+
+#: includes/class-wp-job-manager-shortcodes.php:259
+msgid "Listing Expires"
+msgstr "上市过期"
+
+#: includes/class-wp-job-manager-shortcodes.php:415
+#: includes/class-wp-job-manager-shortcodes.php:453
+msgid "Load more listings"
+msgstr "加载更多列表"
+
+#. translators: Placeholder %s is a URL to the document on wpjobmanager.com
+#. with info on usage tracking.
+#: includes/class-wp-job-manager-usage-tracking.php:228
+msgid ""
+"We'd love if you helped us make WP Job Manager better by allowing us to "
+"collect\n"
+"\t\t\t\t<a href=\"%s\">usage tracking data</a>. No sensitive information is\n"
+"\t\t\t\tcollected, and you can opt out at any time."
+msgstr ""
+"如果您能通过允许我们收集<a href=\"%s\">使用情况跟踪数据</a>来帮助我们使WP Job "
+"Manager更好，我们将非常高兴。没有收集敏感信息，您可以随时选择退出。"
+
+#. translators: the href tag contains the URL for the page telling users what
+#. data WPJM tracks.
+#: includes/class-wp-job-manager-usage-tracking.php:297
+msgid ""
+"Help us make WP Job Manager better by allowing us to collect\n"
+"\t\t\t\t<a href=\"%s\">usage tracking data</a>.\n"
+"\t\t\t\tNo sensitive information is collected."
+msgstr "通过允许我们收集<a href=\"%s\">使用情况跟踪数据</a>来帮助我们使WP Job Manager更好。没有收集敏感信息。"
+
+#: includes/class-wp-job-manager-usage-tracking.php:324
+#: lib/usage-tracking/class-usage-tracking-base.php:483
+msgid "Enable Usage Tracking"
+msgstr "启用使用情况跟踪"
+
+#. translators: Placeholders %1$s and %2$s are the names of the two cookies
+#. used in WP Job Manager.
+#: includes/class-wp-job-manager.php:139
+msgid ""
+"This site adds the following cookies to help users resume job submissions "
+"that they\n"
+"\t\t\t\thave started but have not completed: %1$s and %2$s"
+msgstr ""
+"该网站添加了以下cookie，以帮助用户恢复他们提交的作业\n"
+"已开始但尚未完成：％1 $ s和％2 $ s"
+
+#: includes/class-wp-job-manager.php:295
+msgid "Load previous listings"
+msgstr "加载以前的列表"
+
+#: includes/class-wp-job-manager.php:422
+msgid "Invalid file type. Accepted types:"
+msgstr "文件类型无效。接受的类型："
+
+#. translators: Placeholder %d is the number of files to that users are limited
+#. to.
+#: includes/class-wp-job-manager.php:439
+#: includes/forms/class-wp-job-manager-form-submit-job.php:406
+msgid "You are only allowed to upload a maximum of %d files."
+msgstr "您最多只能上传％d个文件。"
+
+#: includes/class-wp-job-manager.php:447
+msgid "Are you sure you want to delete this listing?"
+msgstr "您确定要删除此列表吗？"
+
+#: includes/class-wp-job-manager.php:455
+msgid "This field is required."
+msgstr "这是必填栏。"
+
+#: includes/emails/class-wp-job-manager-email-admin-expiring-job.php:34
+msgid "Admin Notice of Expiring Job Listings"
+msgstr "即将到期的工作清单的管理员通知"
+
+#: includes/emails/class-wp-job-manager-email-admin-expiring-job.php:44
+msgid "Send notices to the site administrator before a job listing expires."
+msgstr "在工作清单到期之前向站点管理员发送通知。"
+
+#: includes/emails/class-wp-job-manager-email-admin-new-job.php:34
+msgid "Admin Notice of New Listing"
+msgstr "新上市的行政通知"
+
+#: includes/emails/class-wp-job-manager-email-admin-new-job.php:44
+msgid ""
+"Send a notice to the site administrator when a new job is submitted on the "
+"frontend."
+msgstr "在前端提交新作业时，向站点管理员发送通知。"
+
+#. translators: Placeholder %s is the job listing post title.
+#: includes/emails/class-wp-job-manager-email-admin-new-job.php:63
+msgid "New Job Listing Submitted: %s"
+msgstr "提交的新工作清单：％s"
+
+#: includes/emails/class-wp-job-manager-email-admin-updated-job.php:34
+msgid "Admin Notice of Updated Listing"
+msgstr "更新清单的管理员通知"
+
+#: includes/emails/class-wp-job-manager-email-admin-updated-job.php:44
+msgid ""
+"Send a notice to the site administrator when a job is updated on the "
+"frontend."
+msgstr "在前端更新作业时，向站点管理员发送通知。"
+
+#. translators: Placeholder %s is the job listing post title.
+#: includes/emails/class-wp-job-manager-email-admin-updated-job.php:63
+msgid "Job Listing Updated: %s"
+msgstr "职位列表已更新：％s"
+
+#: includes/emails/class-wp-job-manager-email-employer-expiring-job.php:37
+msgid "Employer Notice of Expiring Job Listings"
+msgstr "过期工作清单的雇主通知"
+
+#: includes/emails/class-wp-job-manager-email-employer-expiring-job.php:47
+msgid "Send notices to employers before a job listing expires."
+msgstr "在工作清单到期之前向雇主发送通知。"
+
+#. translators: Placeholder %s is the job listing post title.
+#: includes/emails/class-wp-job-manager-email-employer-expiring-job.php:79
+msgid "Job Listing Expiring: %s"
+msgstr "职位列表到期：％s"
+
+#: includes/emails/class-wp-job-manager-email-employer-expiring-job.php:132
+msgid "Notice Period"
+msgstr "通知期"
+
+#: includes/emails/class-wp-job-manager-email-employer-expiring-job.php:134
+msgid "days"
+msgstr "天"
+
+#: includes/forms/class-wp-job-manager-form-edit-job.php:104
+msgid "Invalid listing"
+msgstr "无效的清单"
+
+#: includes/forms/class-wp-job-manager-form-edit-job.php:136
+msgid "Save changes"
+msgstr "保存更改"
+
+#: includes/forms/class-wp-job-manager-form-edit-job.php:141
+msgid "Submit changes for approval"
+msgstr "提交更改以供批准"
+
+#: includes/forms/class-wp-job-manager-form-edit-job.php:195
+msgid "Your changes have been saved."
+msgstr "你的修改已被保存。"
+
+#: includes/forms/class-wp-job-manager-form-edit-job.php:201
+msgid "View &rarr;"
+msgstr "查看→"
+
+#: includes/forms/class-wp-job-manager-form-edit-job.php:203
+msgid ""
+"Your changes have been submitted and your listing will be visible again once "
+"approved."
+msgstr "您的更改已提交，批准后您的清单将再次显示。"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:82
+msgid "Submit Details"
+msgstr "提交详细资料"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:88
+#: includes/forms/class-wp-job-manager-form-submit-job.php:562
+#: templates/job-preview.php:30
+msgid "Preview"
+msgstr "预习"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:94
+msgid "Done"
+msgstr "完成了"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:206
+msgid "Job Title"
+msgstr "职称"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:214
+msgid "Leave this blank if the location is not important"
+msgstr "如果位置不重要，请将此空白留空"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:224
+msgid "Choose job type&hellip;"
+msgstr "选择工作类型..."
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:239
+msgid "Description"
+msgstr "描述"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:258
+msgid "Enter the name of the company"
+msgstr "输入公司名称"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:262
+#: templates/content-single-job_listing-company.php:30
+msgid "Website"
+msgstr "网站"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:266
+msgid "http://"
+msgstr "http：//"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:270
+msgid "Tagline"
+msgstr "标语"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:273
+msgid "Briefly describe your company"
+msgstr "简要描述您的公司"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:278
+msgid "Video"
+msgstr "视频"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:282
+msgid "A link to a video about your company"
+msgstr "有关您公司的视频的链接"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:286
+msgid "Twitter username"
+msgstr "Twitter用户名"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:289
+msgid "@yourcompany"
+msgstr "@你的公司"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:293
+msgid "Logo"
+msgstr "商标"
+
+#. translators: Placeholder %s is the label for the required field.
+#: includes/forms/class-wp-job-manager-form-submit-job.php:343
+msgid "%s is a required field"
+msgstr "％s是必填字段"
+
+#. translators: Placeholder %s is the field label that is did not validate.
+#: includes/forms/class-wp-job-manager-form-submit-job.php:354
+msgid "%s is invalid"
+msgstr "％s无效"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:371
+msgid "Invalid attachment provided."
+msgstr "提供的附件无效。"
+
+#. translators: Placeholder %1$s is field label; %2$s is the file mime type;
+#. %3$s is the allowed mime-types.
+#. translators: %1$s is the file field label; %2$s is the file type; %3$s is
+#. the list of allowed file types.
+#: includes/forms/class-wp-job-manager-form-submit-job.php:389
+#: wp-job-manager-functions.php:1308
+msgid ""
+"\"%1$s\" (filetype %2$s) needs to be one of the following file types: %3$s"
+msgstr "“％1 $ s”（文件类型％2 $ s）必须是以下文件类型之一：％3 $ s"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:424
+msgid "Please enter a valid application email address"
+msgstr "请输入有效的申请电子邮件地址"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:433
+msgid "Please enter a valid application URL"
+msgstr "请输入有效的申请网址"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:443
+msgid "Please enter a valid application email address or URL"
+msgstr "请输入有效的申请电子邮件地址或网址"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:621
+msgid "Please enter a username."
+msgstr "请填入一个用户名。"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:625
+msgid "Please enter a password."
+msgstr "请输入密码。"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:629
+msgid "Please enter your email address."
+msgstr "请输入您的电子邮件地址。"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:635
+msgid "Passwords must match."
+msgstr "密码必须匹配。"
+
+#. translators: Placeholder %s is the password hint.
+#: includes/forms/class-wp-job-manager-form-submit-job.php:641
+msgid "Invalid Password: %s"
+msgstr "无效的密码：％s"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:643
+msgid "Password is not valid."
+msgstr "密码无效。"
+
+#: includes/forms/class-wp-job-manager-form-submit-job.php:666
+msgid "You must be signed in to post a new listing."
+msgstr "您必须登录才能发布新列表。"
+
+#. translators: placeholder is the URL to the job dashboard page.
+#: includes/forms/class-wp-job-manager-form-submit-job.php:689
+msgid ""
+"Draft was saved. Job listing drafts can be resumed from the <a href=\"%s\">"
+"job dashboard</a>."
+msgstr "草稿已保存。可以从<a href=\"%s\">工作仪表板</a>恢复工作清单草稿。"
+
+#: includes/helper/class-wp-job-manager-helper.php:279
+msgid "Manage License (Requires Attention)"
+msgstr "管理许可证（需要注意）"
+
+#: includes/helper/class-wp-job-manager-helper.php:282
+msgid "Manage License"
+msgstr "管理许可证"
+
+#: includes/helper/class-wp-job-manager-helper.php:285
+#: includes/helper/views/html-licences.php:75
+msgid "Activate License"
+msgstr "激活许可证"
+
+#: includes/helper/class-wp-job-manager-helper.php:494
+msgid ""
+"Please enter a valid license key and email address in order to activate this "
+"plugin's license."
+msgstr "请输入有效的许可证密钥和电子邮件地址，以激活此插件的许可证。"
+
+#: includes/helper/class-wp-job-manager-helper.php:526
+msgid ""
+"Connection failed to the License Key API server - possible server issue."
+msgstr "与许可证密钥API服务器的连接失败-可能是服务器问题。"
+
+#: includes/helper/class-wp-job-manager-helper.php:535
+msgid "Plugin license has been activated."
+msgstr "插件许可证已激活。"
+
+#: includes/helper/class-wp-job-manager-helper.php:538
+msgid "An unknown error occurred while attempting to activate the license"
+msgstr "尝试激活许可证时发生未知错误"
+
+#: includes/helper/class-wp-job-manager-helper.php:558
+msgid "license is not active."
+msgstr "许可证无效。"
+
+#: includes/helper/class-wp-job-manager-helper.php:574
+msgid "Plugin license has been deactivated."
+msgstr "插件许可证已被停用。"
+
+#: includes/helper/views/html-licence-key-error.php:13
+#: includes/helper/views/html-licence-key-notice.php:13
+msgid "Hide notice"
+msgstr "隐藏通知"
+
+#: includes/helper/views/html-licences.php:56
+#: includes/helper/views/html-licences.php:69
+msgid "License"
+msgstr "执照"
+
+#: includes/helper/views/html-licences.php:59
+#: includes/helper/views/html-licences.php:72
+msgid "Email"
+msgstr "电子邮件"
+
+#: includes/helper/views/html-licences.php:63
+msgid "Deactivate License"
+msgstr "停用许可证"
+
+#: includes/helper/views/html-licences.php:85
+msgid "No plugins are activated that have licenses managed by WP Job Manager."
+msgstr "没有激活具有由WP Job Manager管理的许可证的插件。"
+
+#. translators: Placeholder %s is the plural label for the job listing post
+#. type.
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:27
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:35
+msgid "Featured %s"
+msgstr "特色％s"
+
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:29
+msgid "Display a list of featured listings on your site."
+msgstr "显示您网站上的特色列表。"
+
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:44
+#: includes/widgets/class-wp-job-manager-widget-recent-jobs.php:54
+msgid "Number of listings to show"
+msgstr "要显示的列表数量"
+
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:49
+msgid "Sort By"
+msgstr "排序方式"
+
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:51
+msgid "Date"
+msgstr "日期"
+
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:53
+msgid "Author"
+msgstr "作者"
+
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:54
+msgid "Random"
+msgstr "随机"
+
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:60
+msgid "Sort Direction"
+msgstr "排序方向"
+
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:62
+msgid "Ascending"
+msgstr "上升"
+
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:63
+msgid "Descending"
+msgstr "降序"
+
+#: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:69
+#: includes/widgets/class-wp-job-manager-widget-recent-jobs.php:59
+msgid "Show Company Logo"
+msgstr "显示公司徽标"
+
+#. translators: Placeholder %s is the plural label for the job listing post
+#. type.
+#: includes/widgets/class-wp-job-manager-widget-recent-jobs.php:27
+#: includes/widgets/class-wp-job-manager-widget-recent-jobs.php:35
+msgid "Recent %s"
+msgstr "最近的％s"
+
+#: includes/widgets/class-wp-job-manager-widget-recent-jobs.php:29
+msgid ""
+"Display a list of recent listings on your site, optionally matching a "
+"keyword and location."
+msgstr "显示您网站上最近列表的列表，可以选择匹配关键字和位置。"
+
+#: includes/widgets/class-wp-job-manager-widget-recent-jobs.php:41
+msgid "Keyword"
+msgstr "关键词"
+
+#: lib/usage-tracking/class-usage-tracking-base.php:344
+msgid "Every Two Weeks"
+msgstr "每两周一次"
+
+#: lib/usage-tracking/class-usage-tracking-base.php:486
+msgid "Disable Usage Tracking"
+msgstr "禁用使用情况跟踪"
+
+#: lib/usage-tracking/class-usage-tracking-base.php:492
+msgid "Usage data enabled. Thank you!"
+msgstr "使用数据已启用。谢谢！"
+
+#: lib/usage-tracking/class-usage-tracking-base.php:495
+msgid "Disabled usage tracking."
+msgstr "禁用使用情况跟踪。"
+
+#: lib/usage-tracking/class-usage-tracking-base.php:498
+msgid "Something went wrong. Please try again later."
+msgstr "出问题了。请稍后再试。"
+
+#: templates/account-signin.php:21
+msgid "Your account"
+msgstr "你的帐户"
+
+#: templates/account-signin.php:25
+msgid "You are currently signed in as <strong>%s</strong>."
+msgstr "您当前以<strong>％s </ strong>的身份登录。"
+
+#: templates/account-signin.php:28
+msgid "Sign out"
+msgstr "登出"
+
+#: templates/account-signin.php:39
+msgid "Have an account?"
+msgstr "有一个账户？"
+
+#: templates/account-signin.php:41 templates/job-dashboard-login.php:20
+msgid "Sign in"
+msgstr "登入"
+
+#: templates/account-signin.php:45
+msgid ""
+"If you don't have an account you can %screate one below by entering your "
+"email address/username."
+msgstr "如果您没有帐户，则可以通过输入您的电子邮件地址/用户名％s在下面创建一个帐户。"
+
+#: templates/account-signin.php:45
+msgid "optionally"
+msgstr "可选地"
+
+#: templates/account-signin.php:47
+msgid "Your account details will be confirmed via email."
+msgstr "您的帐户详细信息将通过电子邮件确认。"
+
+#: templates/account-signin.php:52
+msgid "You must sign in to create a new listing."
+msgstr "您必须登录才能创建新列表。"
+
+#: templates/account-signin.php:63 templates/job-submit.php:43
+#: templates/job-submit.php:60
+msgid "(optional)"
+msgstr "（可选的）"
+
+#: templates/content-no-jobs-found.php:20
+msgid "There are no listings matching your search."
+msgstr "没有符合您搜索条件的列表。"
+
+#: templates/content-no-jobs-found.php:22
+msgid "There are currently no vacancies."
+msgstr "目前没有职位空缺。"
+
+#: templates/content-single-job_listing-meta.php:42
+msgid "This position has been filled"
+msgstr "这个职位已经填补"
+
+#: templates/content-single-job_listing-meta.php:44
+msgid "Applications have closed"
+msgstr "申请已关闭"
+
+#: templates/content-single-job_listing.php:23
+msgid "This listing has expired."
+msgstr "此列表已过期。"
+
+#. translators: %1$s placeholder is URL to the blog. %2$s placeholder is the
+#. name of the site.
+#: templates/emails/admin-expiring-job.php:32
+msgid ""
+"The following job listing is expiring today from <a href=\"%1$s\">%2$s</a>."
+msgstr "以下工作清单今天从<a href=\"%1$s\">％2 $ s</a>到期。"
+
+#. translators: %1$s placeholder is URL to the blog. %2$s placeholder is the
+#. name of the site.
+#: templates/emails/admin-expiring-job.php:35
+msgid ""
+"The following job listing is expiring soon from <a href=\"%1$s\">%2$s</a>."
+msgstr "以下工作清单即将从<a href=\"%1$s\">％2 $ s</a>到期。"
+
+#. translators: Placeholder is URL to site's WP admin.
+#: templates/emails/admin-expiring-job.php:41
+msgid "Visit <a href=\"%s\">WordPress admin</a> to manage the listing."
+msgstr "访问<a href=\"%s\">WordPress管理员</a>以管理列表。"
+
+#: templates/emails/admin-new-job.php:26
+msgid "A new job listing has been submitted to <a href=\"%s\">%s</a>."
+msgstr "新的职位清单已提交给<a href=\"%s\">％s</a> 。"
+
+#: templates/emails/admin-new-job.php:33
+#: templates/emails/plain/admin-new-job.php:26
+msgid "It has been published and is now available to the public."
+msgstr "它已经出版，现已向公众公开。"
+
+#: templates/emails/admin-new-job.php:38
+msgid ""
+"It is awaiting approval by an administrator in <a href=\"%s\">WordPress "
+"admin</a>."
+msgstr "它正在等待<a href=\"%s\">WordPress管理员中</a>的管理员批准。"
+
+#: templates/emails/admin-updated-job.php:25
+msgid "A job listing has been updated on <a href=\"%s\">%s</a>."
+msgstr "职位列表已在<a href=\"%s\">％s</a>上更新。"
+
+#: templates/emails/admin-updated-job.php:28
+#: templates/emails/plain/admin-updated-job.php:26
+msgid "The changes have been published and are now available to the public."
+msgstr "所做的更改已发布，现在可供公众使用。"
+
+#: templates/emails/admin-updated-job.php:32
+msgid ""
+"The job listing is not publicly available until the changes are approved by "
+"an administrator in the site's <a href=\"%s\">WordPress admin</a>."
+msgstr "在网站<a href=\"%s\">管理员WordPress管理员</a>中批准更改之前，该工作清单不会公开显示。"
+
+#: templates/emails/employer-expiring-job.php:32
+msgid "The following job listing is expiring today from <a href=\"%s\">%s</a>."
+msgstr "以下工作清单今天从<a href=\"%s\">％s</a>到期。"
+
+#: templates/emails/employer-expiring-job.php:40
+msgid "The following job listing is expiring soon from <a href=\"%s\">%s</a>."
+msgstr "以下工作清单即将从<a href=\"%s\">％s</a>到期。"
+
+#: templates/emails/employer-expiring-job.php:48
+msgid ""
+"Visit the <a href=\"%s\">job listing dashboard</a> to manage the listing."
+msgstr "访问<a href=\"%s\">工作清单仪表板</a>以管理清单。"
+
+#: templates/emails/plain/admin-expiring-job.php:30
+#: templates/emails/plain/employer-expiring-job.php:29
+msgid "The following job listing is expiring today from %s (%s)."
+msgstr "以下职位列表今天从％s（％s）起过期。"
+
+#: templates/emails/plain/admin-expiring-job.php:36
+#: templates/emails/plain/employer-expiring-job.php:31
+msgid "The following job listing is expiring soon from %s (%s)."
+msgstr "以下工作清单即将从％s（％s）到期。"
+
+#: templates/emails/plain/admin-expiring-job.php:43
+msgid "Visit WordPress admin (%s) to manage the listing."
+msgstr "访问WordPress管理员（％s）来管理列表。"
+
+#: templates/emails/plain/admin-new-job.php:23
+msgid "A new job listing has been submitted to %s (%s)."
+msgstr "新的工作清单已提交到％s（％s）。"
+
+#: templates/emails/plain/admin-new-job.php:29
+msgid "It is awaiting approval by an administrator in WordPress admin (%s)."
+msgstr "它正在等待WordPress管理员（％s）中的管理员批准。"
+
+#: templates/emails/plain/admin-updated-job.php:23
+msgid "A job listing has been updated on %s (%s)."
+msgstr "作业列表已在％s（％s）上更新。"
+
+#: templates/emails/plain/admin-updated-job.php:29
+msgid ""
+"The job listing is not publicly available until the changes are approved by "
+"an administrator in the site's WordPress admin (%s)."
+msgstr "除非更改已由站点的WordPress管理员（％s）中的管理员批准，否则该工作列表不会公开显示。"
+
+#: templates/emails/plain/employer-expiring-job.php:33
+msgid "Visit the job listing dashboard (%s) to manage the listing."
+msgstr "访问工作清单信息中心（％s）来管理列表。"
+
+#: templates/form-fields/file-field.php:60
+msgid "Maximum file size: %s."
+msgstr "档案大小上限：％s。"
+
+#: templates/form-fields/multiselect-field.php:20
+#: wp-job-manager-functions.php:1087
+msgid "No results match"
+msgstr "没有结果匹配"
+
+#: templates/form-fields/multiselect-field.php:20
+#: wp-job-manager-functions.php:1088
+msgid "Select Some Options"
+msgstr "选择一些选项"
+
+#: templates/form-fields/uploaded-file-html.php:28
+#: templates/form-fields/uploaded-file-html.php:30
+msgid "remove"
+msgstr "去掉"
+
+#: templates/job-application-email.php:18
+msgid ""
+"To apply for this job <strong>email your details to</strong> <a "
+"class=\"job_application_email\" href=\"mailto:%1$s%2$s\">%1$s</a>"
+msgstr ""
+"要申请此职位， <strong>请将您的详细信息通过电子邮件发送给</strong> <a "
+"class=\"job_application_email\" href=\"mailto:%1$s%2$s\">％1 $ s</a>"
+
+#: templates/job-application-url.php:18
+msgid "To apply for this job please visit"
+msgstr "申请这份工作，请访问"
+
+#: templates/job-application.php:24
+msgid "Apply for job"
+msgstr "申请工作"
+
+#: templates/job-dashboard-login.php:20
+msgid "You need to be signed in to manage your listings."
+msgstr "您需要登录才能管理自己的列表。"
+
+#: templates/job-dashboard.php:19
+msgid "Your listings are shown in the table below."
+msgstr "您的列表显示在下表中。"
+
+#: templates/job-dashboard.php:31
+msgid "You do not have any active listings."
+msgstr "您没有任何有效的列表。"
+
+#: templates/job-dashboard.php:44
+msgid "Featured Job"
+msgstr "特色工作"
+
+#: templates/job-dashboard.php:55
+msgid "Mark not filled"
+msgstr "标记未填充"
+
+#: templates/job-dashboard.php:57
+msgid "Mark filled"
+msgstr "标记已满"
+
+#: templates/job-dashboard.php:60
+msgid "Duplicate"
+msgstr "重复"
+
+#: templates/job-dashboard.php:64
+msgid "Relist"
+msgstr "重新列出"
+
+#: templates/job-dashboard.php:75
+msgid "Continue Submission"
+msgstr "继续提交"
+
+#: templates/job-filters.php:30 templates/job-filters.php:31
+msgid "Keywords"
+msgstr "关键词"
+
+#: templates/job-filters.php:47
+msgid "Category"
+msgstr "类别"
+
+#: templates/job-filters.php:51
+msgid "Any category"
+msgstr "任何类别"
+
+#: templates/job-filters.php:68
+msgid "Search Jobs"
+msgstr "搜索工作"
+
+#: templates/job-filters.php:80
+msgid ""
+"Your browser does not support JavaScript, or it is disabled. JavaScript must "
+"be enabled in order to view listings."
+msgstr "您的浏览器不支持JavaScript，或者已被禁用。必须启用JavaScript才能查看列表。"
+
+#: templates/job-preview.php:28
+msgid "Submit Listing"
+msgstr "提交清单"
+
+#: templates/job-preview.php:29
+msgid "Edit listing"
+msgstr "编辑清单"
+
+#: templates/job-submit.php:24
+msgid "You are editing an existing job. %s"
+msgstr "您正在编辑现有作业。 ％s"
+
+#: templates/job-submit.php:24
+msgid "Create A New Job"
+msgstr "创造新工作"
+
+#: templates/job-submit.php:54
+msgid "Company Details"
+msgstr "公司资料"
+
+#: templates/job-submit.php:79
+msgid "Save Draft"
+msgstr "保存草稿"
+
+#: templates/job-submitted.php:24
+msgid ""
+"%s listed successfully. To view your listing <a href=\"%s\">click here</a>."
+msgstr "％s已成功列出。要查看您的列表， <a href=\"%s\">请单击此处</a> 。"
+
+#: templates/job-submitted.php:33
+msgid "%s submitted successfully. Your listing will be visible once approved."
+msgstr "％s已成功提交。您的商家信息一经批准即会显示。"
+
+#: wp-job-manager-functions.php:460
+msgid "Reset"
+msgstr "重启"
+
+#: wp-job-manager-functions.php:464
+msgid "RSS"
+msgstr "的RSS"
+
+#: wp-job-manager-functions.php:572
+msgid "Invalid email address."
+msgstr "无效的邮件地址。"
+
+#: wp-job-manager-functions.php:580
+msgid "Your email address isn&#8217;t correct."
+msgstr "您的电子邮件地址不正确。"
+
+#: wp-job-manager-functions.php:584
+msgid "This email is already registered, please choose another one."
+msgstr "该电子邮件已被注册，请选择另一个。"
+
+#: wp-job-manager-functions.php:893
+msgid "Full Time"
+msgstr "全职"
+
+#: wp-job-manager-functions.php:894
+msgid "Part Time"
+msgstr "兼职"
+
+#: wp-job-manager-functions.php:895
+msgid "Contractor"
+msgstr "承包商"
+
+#: wp-job-manager-functions.php:896
+msgid "Temporary"
+msgstr "临时"
+
+#: wp-job-manager-functions.php:897
+msgid "Intern"
+msgstr "实习生"
+
+#: wp-job-manager-functions.php:898
+msgid "Volunteer"
+msgstr "志愿者"
+
+#: wp-job-manager-functions.php:899
+msgid "Per Diem"
+msgstr "每日"
+
+#: wp-job-manager-functions.php:900
+msgid "Other"
+msgstr "其他"
+
+#: wp-job-manager-functions.php:967
+msgid "Passwords must be at least 8 characters long."
+msgstr "密码必须至少8个字符长。"
+
+#: wp-job-manager-functions.php:1086
+msgid "Choose a category&hellip;"
+msgstr "选择一个类别…"
+
+#. translators: %s is the list of allowed file types.
+#: wp-job-manager-functions.php:1311
+msgid "Uploaded files need to be one of the following file types: %s"
+msgstr "上传的文件必须是以下文件类型之一：％s"
+
+#: wp-job-manager-template.php:155
+msgid "Inactive"
+msgstr "不活跃"
+
+#. translators: %1$s is the job listing title; %2$s is the URL for the current
+#. WordPress instance.
+#: wp-job-manager-template.php:249
+msgid "Application via %1$s listing on %2$s"
+msgstr "通过％1 $ s在％2 $ s上列出的申请"
+
+#: wp-job-manager-template.php:692
+msgid "Your email"
+msgstr "你的邮件"
+
+#: wp-job-manager-template.php:693
+msgid "you@yourdomain.com"
+msgstr "you@yourdomain.com"
+
+#: wp-job-manager-template.php:701
+msgid "Username"
+msgstr "用户名"
+
+#: wp-job-manager-template.php:710
+msgid "Password"
+msgstr "密码"
+
+#: wp-job-manager-template.php:720
+msgid "Verify Password"
+msgstr "验证密码"
+
+#: wp-job-manager-template.php:747
+msgid "Posted on "
+msgstr "发表于"
+
+#. translators: Placeholder %s is the relative, human readable time since the
+#. job listing was posted.
+#: wp-job-manager-template.php:750 wp-job-manager-template.php:771
+msgid "Posted %s ago"
+msgstr "％s前发布"
+
+#: wp-job-manager-template.php:801
+msgid "Anywhere"
+msgstr "任何地方"
+
+#. Author URI of the plugin/theme
+msgid "https://wpjobmanager.com/"
+msgstr "https://wpjobmanager.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"Manage job listings from the WordPress admin panel, and allow users to post "
+"jobs directly to your site."
+msgstr "通过WordPress管理面板管理职位列表，并允许用户将职位直接发布到您的网站。"
+
+#. Author of the plugin/theme
+msgid "Automattic"
+msgstr "自动的"
+
+#: includes/admin/class-wp-job-manager-admin.php:105
+msgctxt "user selection"
+msgid "No matches found"
+msgstr "找不到匹配项"
+
+#: includes/admin/class-wp-job-manager-admin.php:106
+msgctxt "user selection"
+msgid "Loading failed"
+msgstr "加载失败"
+
+#: includes/admin/class-wp-job-manager-admin.php:107
+msgctxt "user selection"
+msgid "Please enter 1 or more characters"
+msgstr "请输入1个或更多字符"
+
+#: includes/admin/class-wp-job-manager-admin.php:108
+msgctxt "user selection"
+msgid "Please enter %qty% or more characters"
+msgstr "请输入％qty％或更多字符"
+
+#: includes/admin/class-wp-job-manager-admin.php:109
+msgctxt "user selection"
+msgid "Loading more results&hellip;"
+msgstr "正在加载更多结果…"
+
+#: includes/admin/class-wp-job-manager-admin.php:110
+msgctxt "user selection"
+msgid "Searching&hellip;"
+msgstr "正在搜寻…"
+
+#: includes/admin/class-wp-job-manager-permalink-settings.php:108
+#: includes/class-wp-job-manager-post-types.php:976
+msgctxt "Job permalink - resave permalinks after changing this"
+msgid "job"
+msgstr "工作"
+
+#: includes/admin/class-wp-job-manager-permalink-settings.php:117
+#: includes/class-wp-job-manager-post-types.php:977
+msgctxt "Job category slug - resave permalinks after changing this"
+msgid "job-category"
+msgstr "工作类别"
+
+#: includes/admin/class-wp-job-manager-permalink-settings.php:126
+#: includes/class-wp-job-manager-post-types.php:978
+msgctxt "Job type slug - resave permalinks after changing this"
+msgid "job-type"
+msgstr "工作类型"
+
+#: includes/admin/views/html-admin-setup-step-2.php:47
+msgctxt "Default page title (wizard)"
+msgid "Post a Job"
+msgstr "发布工作"
+
+#: includes/admin/views/html-admin-setup-step-2.php:55
+msgctxt "Default page title (wizard)"
+msgid "Job Dashboard"
+msgstr "工作仪表板"
+
+#: includes/admin/views/html-admin-setup-step-2.php:63
+msgctxt "Default page title (wizard)"
+msgid "Jobs"
+msgstr "职位"
+
+#: includes/class-wp-job-manager-post-types.php:392
+#: wp-job-manager-functions.php:335
+msgctxt "post status"
+msgid "Expired"
+msgstr "已过期"
+
+#: includes/class-wp-job-manager-post-types.php:405
+#: wp-job-manager-functions.php:336
+msgctxt "post status"
+msgid "Preview"
+msgstr "预习"
+
+#: wp-job-manager-functions.php:334
+msgctxt "post status"
+msgid "Draft"
+msgstr "草案"
+
+#: wp-job-manager-functions.php:337
+msgctxt "post status"
+msgid "Pending approval"
+msgstr "待批准"
+
+#: wp-job-manager-functions.php:338
+msgctxt "post status"
+msgid "Pending payment"
+msgstr "待付款"
+
+#: wp-job-manager-functions.php:339
+msgctxt "post status"
+msgid "Active"
+msgstr "活性"
+
+#: includes/class-wp-job-manager-post-types.php:960
+msgctxt "Post type archive slug - resave permalinks after changing this"
+msgid "jobs"
+msgstr "职位"

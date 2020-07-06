@@ -1,0 +1,10 @@
+2020-05-25T01:33:55+00:00 CRITICAL Cannot redeclare getDirList() (previously declared in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/class.plugin-modules.php:25) in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/10-WPJM-wp-job-manager-application-deadline/class.plugin-modules.php on line 41
+
+2020-05-25T17:58:28+00:00 CRITICAL Uncaught Error: Call to undefined function do_rms_activation_task() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/BuddyPress Moderation Tools 1.2.5/rms-script-ini.php:127
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/BuddyPress Moderation Tools 1.2.5/bp-moderation-tools.php(9): require_once()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-admin/includes/plugin.php(659): include_once('/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-admin/plugins.php(44): activate_plugin('BuddyPress Mode...', 'https://apnlp.c...', false)
+#3 {main}
+  thrown in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/BuddyPress Moderation Tools 1.2.5/rms-script-ini.php on line 127
+

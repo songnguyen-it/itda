@@ -1,0 +1,81 @@
+2020-05-28T13:35:41+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '[job_alerts]\n')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+
+2020-05-28T13:36:20+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '[job_alerts]\n')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+
+2020-05-28T13:37:06+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '[job_alerts]\n')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+
+2020-05-28T13:38:17+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '[job_alerts]\n')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+
+2020-05-28T13:38:53+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '[job_alerts]\n')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+
+2020-05-28T13:40:18+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '<pre><code>[job...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/c in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+
+2020-05-28T13:41:23+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '<pre><code>[job...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/c in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+
+2020-05-28T13:57:23+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '<pre><code>[job...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/c in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+
+2020-05-28T14:38:45+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '<pre><code>[job...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/c in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+

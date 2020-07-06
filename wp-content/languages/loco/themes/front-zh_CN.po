@@ -1,0 +1,5344 @@
+# <!=Copyright (C) 2020 MadrasThemes
+# This file is distributed under the GNU General Public License v2 or later.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Front 1.0.16\n"
+"Report-Msgid-Bugs-To: https://madrasthemes.freshdesk.com/\n"
+"POT-Creation-Date: 2020-05-08 07:15:03+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-05-28 18:39+0000\n"
+"Last-Translator: Andy Ng\n"
+"Language-Team: Chinese (China)\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Loco-Version: 2.4.0; wp-5.4.1"
+
+#: 404.php:8 inc/redux-framework/options/404-options.php:44
+msgid "Page not <span class=\"font-weight-semi-bold\">found</span>"
+msgstr "<span class=\"font-weight-semi-bold\">找不到</span>页面"
+
+#: 404.php:10
+msgid "Oops! Looks like you followed a bad link."
+msgstr "糟糕！好像您关注了错误的链接。"
+
+#: 404.php:13 inc/redux-framework/options/404-options.php:61
+msgid "Go Back"
+msgstr "回去"
+
+#: classes/class-front-categories.php:16
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:16
+#: inc/redux-framework/options/blog-options.php:23
+#: inc/redux-framework/options/blog-options.php:59
+#: inc/redux-framework/options/portfolio-options.php:85
+#: inc/redux-framework/options/portfolio-options.php:297
+msgid "Classic"
+msgstr "经典"
+
+#: classes/class-front-categories.php:17
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:17
+#: inc/redux-framework/options/blog-options.php:24
+#: inc/redux-framework/options/portfolio-options.php:86
+#: inc/redux-framework/options/portfolio-options.php:298
+#: inc/redux-framework/options/shop-options.php:114
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1018
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:570
+msgid "Grid"
+msgstr "格网"
+
+#: classes/class-front-categories.php:18
+#: inc/redux-framework/options/blog-options.php:25
+#: inc/redux-framework/options/shop-options.php:115
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1024
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:576
+msgid "List"
+msgstr "清单"
+
+#: classes/class-front-categories.php:19
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:18
+#: inc/redux-framework/options/blog-options.php:26
+#: inc/redux-framework/options/portfolio-options.php:87
+#: inc/redux-framework/options/portfolio-options.php:299
+msgid "Masonry"
+msgstr "石工"
+
+#: classes/class-front-categories.php:20
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:19
+#: inc/redux-framework/options/blog-options.php:27
+#: inc/redux-framework/options/portfolio-options.php:88
+#: inc/redux-framework/options/portfolio-options.php:300
+msgid "Modern"
+msgstr "现代"
+
+#: classes/class-front-categories.php:24
+#: inc/redux-framework/options/blog-options.php:38
+#: inc/redux-framework/options/shop-options.php:100
+msgid "Right Sidebar"
+msgstr "右侧边栏"
+
+#: classes/class-front-categories.php:25
+#: inc/redux-framework/options/blog-options.php:39
+#: inc/redux-framework/options/shop-options.php:101
+msgid "Left Sidebar"
+msgstr "左侧边栏"
+
+#: classes/class-front-categories.php:26
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:24
+#: inc/redux-framework/options/blog-options.php:40
+#: inc/redux-framework/options/portfolio-options.php:100
+#: inc/redux-framework/options/shop-options.php:102
+msgid "Fullwidth"
+msgstr "全屏宽度"
+
+#: classes/class-front-categories.php:47 classes/class-front-categories.php:83
+msgid "Blog View"
+msgstr "博客视图"
+
+#: classes/class-front-categories.php:49 classes/class-front-categories.php:88
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:47
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:86
+msgid "Select a View"
+msgstr "选择一个视图"
+
+#: classes/class-front-categories.php:58 classes/class-front-categories.php:99
+msgid "Blog Layout"
+msgstr "博客布局"
+
+#: classes/class-front-categories.php:60 classes/class-front-categories.php:104
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:58
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:102
+msgid "Select a Layout"
+msgstr "选择布局"
+
+#: classes/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr "安装所需的插件"
+
+#: classes/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr "安装插件"
+
+#. translators: %s: plugin name.
+#: classes/class-tgm-plugin-activation.php:337
+msgid "Installing Plugin: %s"
+msgstr "安装插件：％s"
+
+#. translators: %s: plugin name.
+#: classes/class-tgm-plugin-activation.php:339
+msgid "Updating Plugin: %s"
+msgstr "更新插件：％s"
+
+#: classes/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr "插件API出了点问题。"
+
+#. translators: 1: plugin name(s).
+#: classes/class-tgm-plugin-activation.php:377
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "开始安装插件"
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "开始更新插件"
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:387
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "开始激活插件"
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr "返回所需的插件安装程序"
+
+#: classes/class-tgm-plugin-activation.php:393
+#: classes/class-tgm-plugin-activation.php:912
+#: classes/class-tgm-plugin-activation.php:2618
+#: classes/class-tgm-plugin-activation.php:3668
+msgid "Return to the Dashboard"
+msgstr "返回仪表盘"
+
+#: classes/class-tgm-plugin-activation.php:394
+#: classes/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr "插件已成功激活。"
+
+#: classes/class-tgm-plugin-activation.php:395
+#: classes/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgstr "以下插件已成功激活："
+
+#. translators: 1: plugin name.
+#: classes/class-tgm-plugin-activation.php:397
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "不采取行动。插件％1 $ s已处于活动状态。"
+
+#. translators: 1: plugin name.
+#: classes/class-tgm-plugin-activation.php:399
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr "插件未激活。此主题需要更高版本的％s。请更新插件。"
+
+#. translators: 1: dashboard link.
+#: classes/class-tgm-plugin-activation.php:401
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "已成功安装并激活所有插件。 ％1 $ s"
+
+#: classes/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr "取消此通知"
+
+#: classes/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr "有一个或多个必需或推荐的插件来安装，更新或激活。"
+
+#: classes/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr "请与该站点的管理员联系以获取帮助。"
+
+#: classes/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "该插件需要更新以与您的主题兼容。"
+
+#: classes/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr "需要更新"
+
+#: classes/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr "远程插件包不包含带有所需文件名的文件夹，并且重命名不起作用。"
+
+#: classes/class-tgm-plugin-activation.php:1019
+#: classes/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr "请联系插件提供商，并要求他们根据WordPress指南打包其插件。"
+
+#: classes/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr "远程插件程序包包含多个文件，但这些文件未打包在一个文件夹中。"
+
+#. translators: %s: version number
+#: classes/class-tgm-plugin-activation.php:2067
+msgid "TGMPA v%s"
+msgstr "TGMPA v％s"
+
+#: classes/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr "需要"
+
+#: classes/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr "推荐的"
+
+#: classes/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr "WordPress资料库"
+
+#: classes/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr "外部源"
+
+#: classes/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr "预包装"
+
+#: classes/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr "未安装"
+
+#: classes/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr "已安装但未激活"
+
+#: classes/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr "活性"
+
+#: classes/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr "所需的更新不可用"
+
+#: classes/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr "需要更新"
+
+#: classes/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr "建议更新"
+
+#. translators: 1: number of plugins.
+#: classes/class-tgm-plugin-activation.php:2477
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "要安装<span class=\"count\">（％s）</span>"
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: classes/class-tgm-plugin-activation.php:2481
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "有可用更新<span class=\"count\">（％s）</span>"
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: classes/class-tgm-plugin-activation.php:2485
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "激活<span class=\"count\">（％s）</span>"
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr "安装版本："
+
+#: classes/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr "最低要求版本："
+
+#: classes/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr "可用版本："
+
+#: classes/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr "无需安装，更新或激活插件。"
+
+#: classes/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr "插入"
+
+#: classes/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr "资源"
+
+#: classes/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr "类型"
+
+#: classes/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr "版"
+
+#: classes/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr "状态"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: classes/class-tgm-plugin-activation.php:2688
+msgid "Install %2$s"
+msgstr "安装％2 $ s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: classes/class-tgm-plugin-activation.php:2693
+msgid "Update %2$s"
+msgstr "更新％2 $ s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: classes/class-tgm-plugin-activation.php:2699
+msgid "Activate %2$s"
+msgstr "激活％2 $ s"
+
+#: classes/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr "插件作者的升级消息："
+
+#: classes/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr "安装"
+
+#: classes/class-tgm-plugin-activation.php:2808
+#: woocommerce/cart/shipping-calculator.php:84
+msgid "Update"
+msgstr "更新资料"
+
+#: classes/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr "启用"
+
+#: classes/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "没有选择要安装的插件。不采取行动。"
+
+#: classes/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "没有选择要更新的插件。不采取行动。"
+
+#: classes/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr "目前没有插件可以安装。"
+
+#: classes/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr "目前没有插件可以更新。"
+
+#: classes/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "没有选择要激活的插件。不采取行动。"
+
+#: classes/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr "目前没有插件可以激活。"
+
+#: classes/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr "插件激活失败。"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: classes/class-tgm-plugin-activation.php:3583
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "更新插件％1 $ s（％2 $ d /％3 $ d）"
+
+#. translators: 1: plugin name, 2: error message.
+#: classes/class-tgm-plugin-activation.php:3586
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "安装％1 $ s时发生错误：<strong>％2 $ s </ strong>。"
+
+#. translators: 1: plugin name.
+#: classes/class-tgm-plugin-activation.php:3588
+msgid "The installation of %1$s failed."
+msgstr "％1 $ s的安装失败。"
+
+#: classes/class-tgm-plugin-activation.php:3591
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr "安装和激活过程正在开始。在某些主机上，此过程可能需要一段时间，因此请耐心等待。"
+
+#. translators: 1: plugin name.
+#: classes/class-tgm-plugin-activation.php:3593
+msgid "%1$s installed and activated successfully."
+msgstr "％1 $ s已成功安装并激活。"
+
+#: classes/class-tgm-plugin-activation.php:3594
+msgid "All installations and activations have been completed."
+msgstr "所有安装和激活均已完成。"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: classes/class-tgm-plugin-activation.php:3596
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "安装和激活插件％1 $ s（％2 $ d /％3 $ d）"
+
+#: classes/class-tgm-plugin-activation.php:3599
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr "安装过程开始。在某些主机上，此过程可能需要一段时间，因此请耐心等待。"
+
+#. translators: 1: plugin name.
+#: classes/class-tgm-plugin-activation.php:3601
+msgid "%1$s installed successfully."
+msgstr "已成功安装％1 $ s。"
+
+#: classes/class-tgm-plugin-activation.php:3602
+msgid "All installations have been completed."
+msgstr "所有安装均已完成。"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: classes/class-tgm-plugin-activation.php:3604
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "安装插件％1 $ s（％2 $ d /％3 $ d）"
+
+#: classes/class-tgm-plugin-activation.php:3608
+msgid "Show Details"
+msgstr "显示详细资料"
+
+#: classes/class-tgm-plugin-activation.php:3608
+msgid "Hide Details"
+msgstr "隐藏细节"
+
+#: classes/walkers/class-front-walker-bootstrap-nav-menu.php:486
+#: classes/walkers/class-front-walker-offcanvas-modal-menu.php:404
+#: classes/walkers/class-front-walker-offcanvas-sidebar-menu.php:414
+msgid "Add a menu"
+msgstr "添加菜单"
+
+#: classes/walkers/class-front-walker-category.php:80
+msgid "Feed for all posts filed under %s"
+msgstr "供稿下％s下归档的所有帖子"
+
+#. translators: 1: comment date, 2: comment time
+#: classes/walkers/class-front-walker-comment.php:53
+#: inc/mas-wp-job-manager-company/class-front-walker-company-comment.php:134
+msgid "%1$s at %2$s"
+msgstr "％1 $ s，共％2 $ s"
+
+#: classes/walkers/class-front-walker-comment.php:61
+#: inc/mas-wp-job-manager-company/class-front-walker-company-comment.php:141
+msgid "Your comment is awaiting moderation."
+msgstr "您的评论正在等待审核。"
+
+#. translators: %d: ID of a post
+#: classes/walkers/class-front-walker-page.php:102
+#: inc/wedocs/front-wedocs-functions.php:259
+msgid "#%d (no title)"
+msgstr "＃％d（无标题）"
+
+#: comments.php:38 comments.php:103
+msgid "Post a comment"
+msgstr "发表评论"
+
+#: comments.php:88 comments.php:91 comments.php:92
+#: mas-wp-job-manager-company/comments.php:119
+#: mas-wp-job-manager-company/comments.php:122
+#: mas-wp-job-manager-company/comments.php:123
+msgid "Comments"
+msgstr "注释"
+
+#: comments.php:91 mas-wp-job-manager-company/comments.php:122
+#: woocommerce/myaccount/orders.php:144
+msgid "Previous"
+msgstr "以前"
+
+#: comments.php:92 inc/front-template-functions.php:2083
+#: mas-wp-job-manager-company/comments.php:123
+#: woocommerce/myaccount/orders.php:148
+msgid "Next"
+msgstr "下一个"
+
+#: comments.php:101
+msgid "Leave a comment"
+msgstr "发表评论"
+
+#: comments.php:112 mas-wp-job-manager-company/comments.php:130
+msgid "Comments are closed."
+msgstr "评论被关闭。"
+
+#: inc/class-front.php:165
+msgid "Primary Menu"
+msgstr "主菜单"
+
+#: inc/class-front.php:166
+msgid "Topbar Links - Left"
+msgstr "顶栏链接-左"
+
+#: inc/class-front.php:167
+msgid "Topbar Links - Right"
+msgstr "顶栏链接-右"
+
+#: inc/class-front.php:168
+msgid "Topbar Links - Mobile"
+msgstr "顶栏链接-移动"
+
+#: inc/class-front.php:169
+msgid "Header User Account Menu"
+msgstr "标头用户帐户菜单"
+
+#: inc/class-front.php:170
+msgid "Header Sidebar Footer Menu"
+msgstr "页眉边栏页脚菜单"
+
+#: inc/class-front.php:171
+msgid "Header Offcanvas Menu"
+msgstr "页眉Offcanvas菜单"
+
+#: inc/class-front.php:172
+msgid "Footer Social Menu"
+msgstr "页脚社交菜单"
+
+#: inc/class-front.php:173
+msgid "Footer Primary Menu"
+msgstr "页脚主菜单"
+
+#: inc/class-front.php:243 inc/redux-framework/options/header-options.php:627
+#: inc/redux-framework/options/portfolio-options.php:248
+msgid "Primary"
+msgstr "主"
+
+#: inc/class-front.php:248 inc/redux-framework/options/header-options.php:628
+#: inc/redux-framework/options/portfolio-options.php:249
+msgid "Secondary"
+msgstr "次要的"
+
+#: inc/class-front.php:253 inc/redux-framework/options/header-options.php:629
+#: inc/redux-framework/options/portfolio-options.php:250
+msgid "Success"
+msgstr "成功"
+
+#: inc/class-front.php:258 inc/redux-framework/options/header-options.php:630
+#: inc/redux-framework/options/portfolio-options.php:251
+msgid "Danger"
+msgstr "危险"
+
+#: inc/class-front.php:263 inc/redux-framework/options/header-options.php:631
+#: inc/redux-framework/options/portfolio-options.php:252
+msgid "Warning"
+msgstr "警告"
+
+#: inc/class-front.php:268 inc/redux-framework/options/header-options.php:632
+#: inc/redux-framework/options/portfolio-options.php:253
+msgid "Info"
+msgstr "信息"
+
+#: inc/class-front.php:273 inc/redux-framework/options/header-options.php:288
+#: inc/redux-framework/options/header-options.php:633
+#: inc/redux-framework/options/portfolio-options.php:254
+msgid "Dark"
+msgstr "暗"
+
+#: inc/class-front.php:278 inc/redux-framework/options/header-options.php:634
+#: inc/redux-framework/options/portfolio-options.php:255
+msgid "Light"
+msgstr "光"
+
+#: inc/class-front.php:283 inc/redux-framework/options/header-options.php:635
+#: inc/redux-framework/options/portfolio-options.php:256
+msgid "Indigo"
+msgstr "靛青"
+
+#: inc/class-front.php:288 inc/redux-framework/options/header-options.php:636
+msgid "White"
+msgstr "白色"
+
+#: inc/class-front.php:355
+msgid "Blog Sidebar"
+msgstr "博客侧栏"
+
+#: inc/class-front.php:365
+msgid "Shop Sidebar"
+msgstr "商店侧栏"
+
+#: inc/class-front.php:375
+msgid "Product Category Sidebar"
+msgstr "产品类别侧栏"
+
+#. translators: 1: column number
+#: inc/class-front.php:394
+msgid "Footer Column %1$d"
+msgstr "页脚列％1 $ d"
+
+#. translators: 1: column number
+#: inc/class-front.php:397
+msgid "Widgets added here will appear in column %1$d of the footer."
+msgstr "此处添加的小部件将显示在页脚的％1 $ d列中。"
+
+#. translators: 1: row number, 2: column number
+#: inc/class-front.php:400
+msgid "Footer Row %1$d - Column %2$d"
+msgstr "页脚行％1 $ d-列％2 $ d"
+
+#. translators: 1: column number, 2: row number
+#: inc/class-front.php:403
+msgid "Widgets added here will appear in column %1$d of footer row %2$d."
+msgstr "此处添加的小部件将显示在页脚行％2 $ d的％1 $ d列中。"
+
+#: inc/class-front.php:820
+msgid "Are you sure you want to remove this item?"
+msgstr "您确定要删除此项目吗？"
+
+#: inc/class-front.php:825
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:296
+msgid "View more"
+msgstr "查看更多"
+
+#: inc/class-front.php:826
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:297
+msgid "View less"
+msgstr "少看"
+
+#: inc/class-front.php:1013
+msgid "Post Navigation"
+msgstr "帖子导航"
+
+#: inc/class-front.php:1050
+msgid "Front Extensions"
+msgstr "前扩展"
+
+#: inc/class-front.php:1060
+msgid "Front Gutenberg Blocks"
+msgstr "古登堡前街区"
+
+#: inc/class-front.php:1070
+msgid "MAS Static Content"
+msgstr "MAS静态内容"
+
+#: inc/class-front.php:1079
+msgid "One Click Demo Import"
+msgstr "一键演示导入"
+
+#: inc/class-front.php:1088
+msgid "Redux Framework"
+msgstr "Redux框架"
+
+#: inc/class-front.php:1097 inc/class-front.php:1168
+msgid "WPForms Lite"
+msgstr "WPForms Lite"
+
+#: inc/class-front.php:1113
+msgid "Custom Sidebars"
+msgstr "自定义边栏"
+
+#: inc/class-front.php:1122
+msgid "Envato Market"
+msgstr "Envato市场"
+
+#: inc/class-front.php:1133
+msgid "Jetpack by WordPress.com"
+msgstr "WordPress.com的Jetpack"
+
+#: inc/class-front.php:1142
+msgid "Menu Image"
+msgstr "菜单图片"
+
+#: inc/class-front.php:1151
+msgid "Safe SVG"
+msgstr "安全的SVG"
+
+#: inc/class-front.php:1160
+msgid "User Profile Picture"
+msgstr "用户资料图片"
+
+#: inc/class-front.php:1185 inc/class-front.php:1223
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: inc/class-front.php:1194 inc/class-front.php:1232
+msgid "WP Job Manager"
+msgstr "WP工作经理"
+
+#: inc/class-front.php:1205
+msgid "MAS Companies For WP Job Manager"
+msgstr "MAS公司的WP工作经理"
+
+#: inc/class-front.php:1214
+msgid "MAS Company Reviews For WP Job Manager"
+msgstr "MAS公司对WP Job Manager的评论"
+
+#: inc/class-front.php:1243
+msgid "weDocs"
+msgstr "weDocs"
+
+#: inc/class-front.php:1254
+msgid "Essential Real Estate"
+msgstr "基本房地产"
+
+#: inc/customer-story/front-customer-story-template-functions.php:17
+#: inc/redux-framework/options/customer-story-options.php:66
+msgid "Customer success story"
+msgstr "客户成功故事"
+
+#: inc/customer-story/front-customer-story-template-functions.php:85
+msgid "Products used"
+msgstr "使用产品"
+
+#: inc/front-functions.php:207
+msgid "&laquo; Prev"
+msgstr "«上一页"
+
+#: inc/front-functions.php:208
+msgid "Next &raquo;"
+msgstr "下一个 ”"
+
+#: inc/front-functions.php:220
+msgid "Page navigation"
+msgstr "页面导航"
+
+#: inc/front-functions.php:243
+msgid "Category Archives - "
+msgstr "分类档案-"
+
+#: inc/front-functions.php:245
+msgid "Tag Archives - "
+msgstr "标签档案-"
+
+#: inc/front-functions.php:247
+msgid "Author Archives - "
+msgstr "作者档案-"
+
+#: inc/front-functions.php:249
+msgid "Yearly Archives - "
+msgstr "年度档案-"
+
+#: inc/front-functions.php:251
+msgid "Monthly Archives - "
+msgstr "月度档案-"
+
+#: inc/front-functions.php:253
+msgid "Daily Archives - "
+msgstr "每日成就 -"
+
+#: inc/front-functions.php:255
+msgid "Post Type Archives - "
+msgstr "帖子类型档案-"
+
+#. translators: %s: Taxonomy singular name
+#: inc/front-functions.php:259
+msgid "Archives - %s"
+msgstr "封存-％s"
+
+#: inc/front-functions.php:261
+msgid "Search results for - %s"
+msgstr "-％s的搜索结果"
+
+#: inc/front-functions.php:263 inc/redux-framework/options/blog-options.php:4
+msgid "Blog"
+msgstr "博客"
+
+#: inc/front-functions.php:972
+#: inc/woocommerce/template-tags/single-product.php:227
+msgid "SVG"
+msgstr "SVG"
+
+#. translators: %s: title of menu item which is invalid
+#: inc/front-menu-functions.php:113
+msgid "%s (Invalid)"
+msgstr "％s（无效）"
+
+#. translators: %s: title of menu item in draft status
+#: inc/front-menu-functions.php:117
+msgid "%s (Pending)"
+msgstr "％s（待定）"
+
+#: inc/front-menu-functions.php:131
+msgid "sub item"
+msgstr "子项目"
+
+#: inc/front-menu-functions.php:148
+msgid "Move up"
+msgstr "提升"
+
+#: inc/front-menu-functions.php:163
+msgid "Move down"
+msgstr "下移"
+
+#: inc/front-menu-functions.php:169
+msgid "Edit menu item"
+msgstr "编辑菜单项"
+
+#: inc/front-menu-functions.php:169 job_manager/job-dashboard.php:77
+#: job_manager/job-dashboard.php:95
+#: mas-wp-job-manager-company/company-dashboard.php:53
+#: mas-wp-job-manager-company/company-dashboard.php:60
+#: woocommerce/myaccount/my-address.php:56
+#: wp-job-manager-alerts/my-alerts.php:62
+#: wp-job-manager-resumes/candidate-dashboard.php:53
+#: wp-job-manager-resumes/candidate-dashboard.php:57
+msgid "Edit"
+msgstr "编辑"
+
+#: inc/front-menu-functions.php:178
+msgid "URL"
+msgstr "网址"
+
+#: inc/front-menu-functions.php:185
+msgid "Navigation Label"
+msgstr "导航标签"
+
+#: inc/front-menu-functions.php:191
+msgid "Title Attribute"
+msgstr "标题属性"
+
+#: inc/front-menu-functions.php:198
+msgid "Open link in a new tab"
+msgstr "在新标签页中打开链接"
+
+#: inc/front-menu-functions.php:203
+msgid "CSS Classes (optional)"
+msgstr "CSS类（可选）"
+
+#: inc/front-menu-functions.php:209
+msgid "Link Relationship (XFN)"
+msgstr "链接关系（XFN）"
+
+#: inc/front-menu-functions.php:215
+msgid "Description"
+msgstr "描述"
+
+#: inc/front-menu-functions.php:217
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr "如果当前主题支持，说明将显示在菜单中。"
+
+#: inc/front-menu-functions.php:228
+msgid "Move"
+msgstr "移动"
+
+#: inc/front-menu-functions.php:229
+msgid "Up one"
+msgstr "上一个"
+
+#: inc/front-menu-functions.php:230
+msgid "Down one"
+msgstr "倒一"
+
+#: inc/front-menu-functions.php:233
+msgid "To the top"
+msgstr "到顶部"
+
+#. translators: %s: original title
+#: inc/front-menu-functions.php:241
+msgid "Original: %s"
+msgstr "原始：％s"
+
+#: inc/front-menu-functions.php:258
+#: inc/woocommerce/front-woocommerce-template-hooks.php:63
+#: job_manager/form-fields/repeated-field.php:21
+#: job_manager/form-fields/repeated-field.php:45 woocommerce/cart/cart.php:134
+#: wp-job-manager-resumes/form-fields/repeated-field.php:22
+#: wp-job-manager-resumes/form-fields/repeated-field.php:46
+msgid "Remove"
+msgstr "去掉"
+
+#: inc/front-menu-functions.php:270
+msgid "Cancel"
+msgstr "取消"
+
+#: inc/front-menu-functions.php:292
+msgid "Icon Class"
+msgstr "图标类"
+
+#: inc/front-menu-functions.php:300
+msgid "Has Megamenu ?"
+msgstr "有Megamenu吗？"
+
+#: inc/front-menu-functions.php:305
+msgid "Megamenu Max Width"
+msgstr "Megamenu最大宽度"
+
+#: inc/front-menu-functions.php:311
+msgid "Megamenu Position"
+msgstr "Megamenu位置"
+
+#: inc/front-menu-functions.php:313
+#: inc/redux-framework/options/header-options.php:496
+#: inc/redux-framework/options/header-options.php:563
+msgid "Left"
+msgstr "剩下"
+
+#: inc/front-menu-functions.php:313
+#: inc/redux-framework/options/header-options.php:564
+msgid "Right"
+msgstr "对"
+
+#: inc/front-template-functions.php:71
+#: inc/redux-framework/options/header-options.php:612
+msgid "Buy Now"
+msgstr "立即购买"
+
+#: inc/front-template-functions.php:207 inc/front-template-functions.php:218
+#: inc/front-template-functions.php:1069
+msgid "Toggle navigation"
+msgstr "切换导航"
+
+#: inc/front-template-functions.php:498 inc/front-template-functions.php:2227
+#: inc/redux-framework/options/header-options.php:688
+#: inc/redux-framework/options/header-options.php:692
+msgid "Address"
+msgstr "地址"
+
+#: inc/front-template-functions.php:517
+#: inc/redux-framework/options/header-options.php:703
+msgid "Social"
+msgstr "社会的"
+
+#: inc/front-template-functions.php:708
+msgid "Jump to"
+msgstr "跳到"
+
+#: inc/front-template-functions.php:931
+msgid "by"
+msgstr "通过"
+
+#: inc/front-template-functions.php:1027
+#: mas-wp-job-manager-company/comments.php:143
+#: templates/shop/single-product-advanced-reviews.php:146
+msgid "Name"
+msgstr "名称"
+
+#: inc/front-template-functions.php:1027 inc/front-template-functions.php:1028
+msgid "Please enter your name."
+msgstr "请输入你的名字。"
+
+#: inc/front-template-functions.php:1028 inc/front-template-functions.php:3698
+#: woocommerce/myaccount/form-edit-account.php:53
+#: woocommerce/myaccount/form-login.php:124
+msgid "Email address"
+msgstr "电子邮件地址"
+
+#: inc/front-template-functions.php:1029
+#: inc/wp-job-manager/front-wpjm-template-functions.php:630
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:13
+#: mas-wp-job-manager-company/comments.php:147
+msgid "Website"
+msgstr "网站"
+
+#: inc/front-template-functions.php:1030
+msgid ""
+"Save my name, email, and website in this browser for the next time I comment."
+msgstr "下次我评论时，请在此浏览器中保存我的姓名，电子邮件和网站。"
+
+#: inc/front-template-functions.php:1032
+msgid "Comment"
+msgstr "评论"
+
+#: inc/front-template-functions.php:1032
+msgid "Please enter your message."
+msgstr "请输入您的信息。"
+
+#: inc/front-template-functions.php:1119
+msgid "Add a social menu"
+msgstr "添加社交菜单"
+
+#: inc/front-template-functions.php:1163
+#: inc/redux-framework/options/footer-options.php:367
+msgid "contact us"
+msgstr "联系我们"
+
+#: inc/front-template-functions.php:1334 inc/front-template-functions.php:1640
+msgid "Pages:"
+msgstr "页数："
+
+#: inc/front-template-functions.php:1417
+msgid "&copy; %s. %s Htmlstream. All rights reserved"
+msgstr "©％s。 ％s Htmlstream。版权所有"
+
+#: inc/front-template-functions.php:1428
+msgid "Viewed %s time"
+msgid_plural "Viewed %s times"
+msgstr[0] "已观看％s时间"
+msgstr[1] ""
+
+#: inc/front-template-functions.php:1504
+msgid "Go to"
+msgstr "去"
+
+#: inc/front-template-functions.php:1696
+msgid "Tags:"
+msgstr "标签："
+
+#: inc/front-template-functions.php:1746
+msgid "Follow"
+msgstr "跟随"
+
+#: inc/front-template-functions.php:1919
+#: inc/wedocs/front-wedocs-template-functions.php:231
+msgid "Related Articles"
+msgstr "相关文章"
+
+#: inc/front-template-functions.php:2000
+msgid "Load More"
+msgstr "装载更多"
+
+#: inc/front-template-functions.php:2005
+msgid "Loading..."
+msgstr "载入中..."
+
+#: inc/front-template-functions.php:2006
+msgid "No more works"
+msgstr "没有更多的作品"
+
+#: inc/front-template-functions.php:2052
+#: inc/wp-job-manager/front-wpjm-functions.php:969
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:772
+msgid "Featured"
+msgstr "精选"
+
+#: inc/front-template-functions.php:2067
+msgid "Post navigation"
+msgstr "帖子导航"
+
+#: inc/front-template-functions.php:2073
+msgid "Prev"
+msgstr "上一个"
+
+#: inc/front-template-functions.php:2074
+msgid "Previous post:"
+msgstr "上一篇："
+
+#: inc/front-template-functions.php:2084
+msgid "Next post:"
+msgstr "下一篇："
+
+#: inc/front-template-functions.php:2105
+msgid "Is Social Icon Menu"
+msgstr "是社交图标菜单"
+
+#: inc/front-template-functions.php:2196
+msgid ""
+"This content is password protected. To view it please enter your password "
+"below:"
+msgstr "此内容受密码保护。要查看它，请在下面输入您的密码："
+
+#: inc/front-template-functions.php:2198
+msgid "Password:"
+msgstr "密码："
+
+#: inc/front-template-functions.php:2215
+msgid "General enquiries"
+msgstr "通用查询"
+
+#: inc/front-template-functions.php:2216
+msgid "hello@htmlstream.com"
+msgstr "hello@htmlstream.com"
+
+#: inc/front-template-functions.php:2217 inc/front-template-functions.php:2223
+#: inc/front-template-functions.php:2229
+msgid "#"
+msgstr "＃"
+
+#: inc/front-template-functions.php:2221
+#: inc/redux-framework/options/portfolio-options.php:353
+msgid "Phone Number"
+msgstr "电话号码"
+
+#: inc/front-template-functions.php:2222
+#: inc/redux-framework/options/portfolio-options.php:355
+msgid "+1 (062) 109-9222"
+msgstr "+1（062）109-9222"
+
+#: inc/front-template-functions.php:2228
+msgid "153 Williamson Plaza, 09514"
+msgstr "威廉姆森广场153号，09514"
+
+#: inc/front-template-functions.php:2407
+msgid "User"
+msgstr "用户"
+
+#: inc/front-template-functions.php:2444
+msgid "Job Dashboard"
+msgstr "工作仪表板"
+
+#: inc/front-template-functions.php:2451 job_manager/job-dashboard.php:31
+msgid "Candidate Dashboard"
+msgstr "候选仪表板"
+
+#: inc/front-template-functions.php:2458 job_manager/job-dashboard.php:38
+msgid "Company Dashboard"
+msgstr "公司仪表板"
+
+#: inc/front-template-functions.php:2496 inc/front-template-functions.php:3003
+#: inc/front-template-functions.php:3026
+msgid "Logout"
+msgstr "登出"
+
+#: inc/front-template-functions.php:2622 inc/front-template-functions.php:2628
+#: inc/front-template-functions.php:3067 inc/front-template-functions.php:3073
+msgid "Welcome Back!"
+msgstr "欢迎回来！"
+
+#: inc/front-template-functions.php:2629 inc/front-template-functions.php:3074
+#: inc/front-template-functions.php:3615
+#: inc/redux-framework/options/general-options.php:56
+#: woocommerce/myaccount/form-login.php:52
+msgid "Login to manage your account."
+msgstr "登录以管理您的帐户。"
+
+#: inc/front-template-functions.php:2635 inc/front-template-functions.php:3080
+msgid "Login to Front"
+msgstr "登录到前台"
+
+#: inc/front-template-functions.php:2644 inc/front-template-functions.php:2651
+#: inc/front-template-functions.php:2748 inc/front-template-functions.php:2755
+#: inc/front-template-functions.php:3089 inc/front-template-functions.php:3096
+#: inc/front-template-functions.php:3281 inc/front-template-functions.php:3288
+#: mas-wp-job-manager-company/comments.php:145
+#: templates/shop/single-product-advanced-reviews.php:148
+msgid "Email"
+msgstr "电子邮件"
+
+#: inc/front-template-functions.php:2657 inc/front-template-functions.php:2664
+#: inc/front-template-functions.php:2762 inc/front-template-functions.php:2769
+#: inc/front-template-functions.php:3102 inc/front-template-functions.php:3109
+#: inc/front-template-functions.php:3295 inc/front-template-functions.php:3302
+#: inc/front-template-functions.php:3630 inc/front-template-functions.php:3705
+#: woocommerce/myaccount/form-login.php:67
+#: woocommerce/myaccount/form-login.php:131
+msgid "Password"
+msgstr "密码"
+
+#: inc/front-template-functions.php:2670 inc/front-template-functions.php:3115
+#: inc/front-template-functions.php:3631
+#: woocommerce/myaccount/form-login.php:68
+msgid "Forgot Password?"
+msgstr "忘记密码？"
+
+#: inc/front-template-functions.php:2680 inc/front-template-functions.php:3127
+#: inc/front-template-functions.php:3659 inc/front-template-functions.php:3667
+#: woocommerce/myaccount/form-login.php:87
+#: woocommerce/myaccount/form-login.php:93
+msgid "Log in"
+msgstr "登录"
+
+#: inc/front-template-functions.php:2680 inc/front-template-functions.php:2813
+#: inc/front-template-functions.php:3127 inc/front-template-functions.php:3347
+#: inc/front-template-functions.php:3750
+#: woocommerce/myaccount/form-login.php:171
+msgid "Login"
+msgstr "登录"
+
+#: inc/front-template-functions.php:2684 inc/front-template-functions.php:3131
+msgid "Don't have an account?"
+msgstr "还没有帐号？"
+
+#: inc/front-template-functions.php:2686 inc/front-template-functions.php:3133
+#: inc/front-template-functions.php:3652
+#: woocommerce/myaccount/form-login.php:82
+msgid "Signup"
+msgstr "注册"
+
+#: inc/front-template-functions.php:2713 inc/front-template-functions.php:2719
+#: inc/front-template-functions.php:3246 inc/front-template-functions.php:3252
+msgid "Welcome to Front."
+msgstr "欢迎来到前线。"
+
+#: inc/front-template-functions.php:2720 inc/front-template-functions.php:3253
+#: inc/front-template-functions.php:3681
+#: inc/redux-framework/options/general-options.php:72
+#: woocommerce/myaccount/form-login.php:107
+msgid "Fill out the form to get started."
+msgstr "填写表格开始。"
+
+#: inc/front-template-functions.php:2726 inc/front-template-functions.php:3259
+msgid "Create a free Front account"
+msgstr "创建一个免费的前台账户"
+
+#: inc/front-template-functions.php:2735 inc/front-template-functions.php:2742
+#: inc/front-template-functions.php:3268 inc/front-template-functions.php:3275
+#: inc/front-template-functions.php:3691
+#: woocommerce/myaccount/form-login.php:117
+msgid "Username"
+msgstr "用户名"
+
+#: inc/front-template-functions.php:2755 inc/front-template-functions.php:2863
+#: inc/front-template-functions.php:3288 inc/front-template-functions.php:3541
+msgid "Please enter a valid email address."
+msgstr "请输入有效的电子邮件地址。"
+
+#: inc/front-template-functions.php:2770 inc/front-template-functions.php:3707
+msgid "Please enter your password."
+msgstr "请输入您的密码。"
+
+#: inc/front-template-functions.php:2782 inc/front-template-functions.php:2789
+#: inc/front-template-functions.php:3308 inc/front-template-functions.php:3315
+#: inc/front-template-functions.php:3718
+#: woocommerce/myaccount/form-login.php:144
+msgid "Confirm Password"
+msgstr "确认密码"
+
+#: inc/front-template-functions.php:2789 inc/front-template-functions.php:3315
+msgid "Password does not match the confirm password."
+msgstr "密码与确认密码不匹配。"
+
+#: inc/front-template-functions.php:2794 inc/front-template-functions.php:3320
+#: inc/front-template-functions.php:3724
+#: woocommerce/myaccount/form-login.php:150
+msgid "A password will be sent to your email address."
+msgstr "密码将发送到您的电子邮件地址。"
+
+#: inc/front-template-functions.php:2808 inc/front-template-functions.php:3342
+#: inc/front-template-functions.php:3757
+#: woocommerce/myaccount/form-login.php:176
+msgid "Register"
+msgstr "寄存器"
+
+#: inc/front-template-functions.php:2808 inc/front-template-functions.php:3342
+#: inc/front-template-functions.php:3659 inc/front-template-functions.php:3667
+#: inc/front-template-functions.php:3757
+#: woocommerce/myaccount/form-login.php:87
+#: woocommerce/myaccount/form-login.php:93
+#: woocommerce/myaccount/form-login.php:176
+msgid "Get Started"
+msgstr "开始使用"
+
+#: inc/front-template-functions.php:2811 inc/front-template-functions.php:3345
+#: inc/front-template-functions.php:3749
+#: woocommerce/myaccount/form-login.php:170
+msgid "Already have an account?"
+msgstr "已经有帐号了？"
+
+#: inc/front-template-functions.php:2835 inc/front-template-functions.php:2841
+#: inc/front-template-functions.php:3513 inc/front-template-functions.php:3519
+msgid "Recover Password."
+msgstr "恢复密码。"
+
+#: inc/front-template-functions.php:2842 inc/front-template-functions.php:3520
+msgid ""
+"Enter your email address and an email with instructions will be sent to you."
+msgstr "输入您的电子邮件地址，一封包含说明的电子邮件将发送给您。"
+
+#: inc/front-template-functions.php:2848 inc/front-template-functions.php:3526
+msgid "Recover password"
+msgstr "恢复密码"
+
+#: inc/front-template-functions.php:2856 inc/front-template-functions.php:2863
+#: inc/front-template-functions.php:3534 inc/front-template-functions.php:3541
+msgid "Your email"
+msgstr "你的邮件"
+
+#: inc/front-template-functions.php:2876 inc/front-template-functions.php:3547
+msgid "Recover Password"
+msgstr "恢复密码"
+
+#: inc/front-template-functions.php:2880 inc/front-template-functions.php:3550
+msgid "Remember your password?"
+msgstr "记住密码了吗？"
+
+#: inc/front-template-functions.php:2946
+#: inc/redux-framework/options/general-options.php:36
+msgid "My Account"
+msgstr "我的帐户"
+
+#: inc/front-template-functions.php:3159
+msgid "Invalid username or email address"
+msgstr "用户名或电子邮件地址无效"
+
+#: inc/front-template-functions.php:3167
+msgid "Please enter a password"
+msgstr "请输入密码"
+
+#: inc/front-template-functions.php:3174
+msgid "Incorrect password"
+msgstr "密码错误"
+
+#: inc/front-template-functions.php:3302
+msgid "Your password is invalid. Please try again."
+msgstr "您的密码无效。请再试一遍。"
+
+#: inc/front-template-functions.php:3325 inc/front-template-functions.php:3732
+msgid "I want to register as"
+msgstr "我想注册为"
+
+#: inc/front-template-functions.php:3327 inc/front-template-functions.php:3734
+msgid "Candidate"
+msgstr "候选人"
+
+#: inc/front-template-functions.php:3328 inc/front-template-functions.php:3735
+msgid "Employer"
+msgstr "雇主"
+
+#: inc/front-template-functions.php:3396
+msgid "Username already taken"
+msgstr "用户名已存在"
+
+#: inc/front-template-functions.php:3400
+msgid "Invalid username"
+msgstr "无效的用户名"
+
+#: inc/front-template-functions.php:3404
+msgid "Please enter a username"
+msgstr "请填入一个用户名"
+
+#: inc/front-template-functions.php:3408
+msgid "Invalid email"
+msgstr "不合规电邮"
+
+#: inc/front-template-functions.php:3412
+msgid "Email already registered"
+msgstr "电子邮件已注册"
+
+#: inc/front-template-functions.php:3426
+msgid "Password you entered is mismatched"
+msgstr "您输入的密码不匹配"
+
+#: inc/front-template-functions.php:3597
+#: inc/redux-framework/options/general-options.php:48
+#: woocommerce/myaccount/form-login.php:33
+msgid "Welcome"
+msgstr "欢迎"
+
+#: inc/front-template-functions.php:3597
+#: inc/redux-framework/options/general-options.php:48
+#: woocommerce/myaccount/form-login.php:33
+msgid "back"
+msgstr "背部"
+
+#: inc/front-template-functions.php:3598
+#: inc/redux-framework/options/general-options.php:64
+#: woocommerce/myaccount/form-login.php:34
+msgid "Welcome to"
+msgstr "欢迎来到"
+
+#. Theme Name of the plugin/theme
+msgid "Front"
+msgstr "面前"
+
+#: inc/front-template-functions.php:3623
+#: inc/redux-framework/options/portfolio-options.php:336
+#: woocommerce/myaccount/form-login.php:60
+#: woocommerce/myaccount/form-lost-password.php:36
+msgid "Email Address"
+msgstr "电子邮件地址"
+
+#: inc/front-template-functions.php:3651
+#: woocommerce/myaccount/form-login.php:81
+msgid "Don&#039;t have an account?"
+msgstr "还没有帐号？"
+
+#: inc/front-template-functions.php:3706
+msgid "Enter your password"
+msgstr "输入密码"
+
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:23
+#: inc/redux-framework/options/portfolio-options.php:99
+msgid "Boxed"
+msgstr "盒装"
+
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:45
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:81
+#: inc/redux-framework/options/portfolio-options.php:82
+msgid "Portfolio View"
+msgstr "投资组合视图"
+
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:56
+#: inc/jetpack/class-front-jetpack-portfolio-taxonomies.php:97
+#: inc/redux-framework/options/portfolio-options.php:96
+msgid "Portfolio Layout"
+msgstr "作品集布局"
+
+#: inc/jetpack/front-jetpack-template-functions.php:13
+#: inc/redux-framework/options/portfolio-options.php:168
+msgid "Portfolio %s card %s"
+msgstr "投资组合％s卡％s"
+
+#: inc/jetpack/front-jetpack-template-functions.php:15
+#: inc/redux-framework/options/portfolio-options.php:178
+msgid "Your portfolio should tell your story."
+msgstr "您的作品集应该讲述您的故事。"
+
+#: inc/jetpack/front-jetpack-template-functions.php:97
+#: inc/wp-job-manager/front-wpjm-functions.php:134
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:250
+msgid "All"
+msgstr "所有"
+
+#: inc/jetpack/front-jetpack-template-functions.php:203
+#: inc/jetpack/front-jetpack-template-functions.php:228
+#: inc/jetpack/front-jetpack-template-functions.php:262
+#: inc/jetpack/front-jetpack-template-functions.php:294
+msgid "by %s"
+msgstr "按％s"
+
+#: inc/jetpack/front-jetpack-template-functions.php:332
+msgid "You wish us %s to talk about %s your project %s?"
+msgstr "您希望我们％s谈论％s您的项目％s？"
+
+#: inc/jetpack/front-jetpack-template-functions.php:410
+msgid "Portfolio Navigation"
+msgstr "作品集导航"
+
+#: inc/jetpack/front-jetpack-template-functions.php:539
+#: inc/redux-framework/options/portfolio-options.php:4
+#: inc/redux-framework/options/portfolio-options.php:239
+msgid "Portfolio"
+msgstr "作品集"
+
+#: inc/jetpack/front-jetpack-template-functions.php:541
+msgid "Our %s Branding %s works"
+msgstr "我们的％s品牌％s有效"
+
+#: inc/jetpack/front-jetpack-template-functions.php:542
+#: inc/redux-framework/options/portfolio-options.php:286
+msgid "Experience a level of our quality in both design & customization works."
+msgstr "在设计和定制工作中体验我们的质量水平。"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-functions.php:36
+msgid "Company name or job title"
+msgstr "公司名称或职务"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-functions.php:37
+msgid "Company or title"
+msgstr "公司或头衔"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-functions.php:38
+#: inc/mas-wp-job-manager-company/front-wpjmc-functions.php:39
+#: inc/wp-job-manager/front-wpjm-functions.php:1076
+#: inc/wp-job-manager/front-wpjm-template-functions.php:960
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:831
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:516
+#: job_manager/job-filters.php:28
+msgid "City, state, or zip"
+msgstr "城市，州或邮编"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-functions.php:40
+#: inc/redux-framework/options/header-options.php:709
+#: templates/header/topbar-search-form.php:18
+msgid "Search"
+msgstr "搜索"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:58
+msgid "About Company"
+msgstr "关于公司"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:90
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:285
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:363
+#: inc/wp-job-manager/front-wpjm-template-functions.php:364
+#: mas-wp-job-manager-company/comments.php:65
+#: templates/shop/single-product-advanced-reviews.php:37
+msgid "%s review"
+msgid_plural "%s reviews"
+msgstr[0] "％s评论"
+msgstr[1] ""
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:137
+msgid "%s Open Job"
+msgid_plural "%s Open Jobs"
+msgstr[0] "％s职位空缺"
+msgstr[1] ""
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:149
+msgid "Headquarters"
+msgstr "总公司"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:154
+msgid "Founded"
+msgstr "成立时间"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:159
+msgid "Employees"
+msgstr "雇员"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:164
+msgid "Industry"
+msgstr "行业"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:169
+msgid "Revenue"
+msgstr "收入"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:174
+msgid "Avg. Salary"
+msgstr "平均薪水"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:200
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:20
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:55
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:480
+msgid "Twitter"
+msgstr "推特"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:205
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:27
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:485
+msgid "Facebook"
+msgstr "脸书"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:215
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:495
+msgid "Linked Accounts"
+msgstr "关联账户"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:261
+msgid "Job Seekers Also Viewed"
+msgstr "求职者还查看了"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:373
+msgid "Salaries"
+msgstr "薪水"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:376
+msgid "Q&A"
+msgstr "问答环节"
+
+#: inc/mas-wp-job-manager-company/front-wpjmc-template-functions.php:390
+msgid "Open Job - %s"
+msgid_plural "Open Jobs - %s"
+msgstr[0] "职位空缺-％s"
+msgstr[1] ""
+
+#: inc/ocdi/functions.php:328
+msgid ""
+"Import process may take %s minutes. If you facing any issues please contact "
+"our support."
+msgstr "导入过程可能需要％s分钟。如果您遇到任何问题，请联系我们的支持。"
+
+#: inc/ocdi/functions.php:329
+msgid "Before you begin, make sure all the required plugins are activated."
+msgstr "在开始之前，请确保所有必需的插件都已激活。"
+
+#: inc/ocdi/functions.php:378 inc/redux-framework/options/blog-options.php:60
+msgid "Simple"
+msgstr "简单"
+
+#: inc/ocdi/functions.php:380 inc/redux-framework/options/job-options.php:7
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1005
+msgid "Jobs"
+msgstr "职位"
+
+#: inc/ocdi/functions.php:381
+msgid "Crypto"
+msgstr "加密货币"
+
+#: inc/ocdi/functions.php:382
+msgid "Help Desk"
+msgstr "服务台"
+
+#: inc/ocdi/functions.php:386
+msgid "Front Select Demo"
+msgstr "前选择演示"
+
+#: inc/ocdi/functions.php:386
+msgid "We should select any one demo here to install recommended plugins."
+msgstr "我们应该在这里选择任何一个演示来安装推荐的插件。"
+
+#: inc/redux-framework/functions/shop-functions.php:30
+msgid "View Product"
+msgstr "查看产品"
+
+#: inc/redux-framework/options/404-options.php:7
+msgid "404 Page"
+msgstr "404页"
+
+#: inc/redux-framework/options/404-options.php:13
+msgid "Use separate header for 404 page"
+msgstr "为404页使用单独的标题"
+
+#: inc/redux-framework/options/404-options.php:14
+msgid "Do you want to display a separate header for 404 page ?"
+msgstr "您要显示404页的单独标题吗？"
+
+#: inc/redux-framework/options/404-options.php:15
+#: inc/redux-framework/options/blog-options.php:70
+#: inc/redux-framework/options/blog-options.php:81
+#: inc/redux-framework/options/blog-options.php:92
+#: inc/redux-framework/options/blog-options.php:102
+#: inc/redux-framework/options/blog-options.php:113
+#: inc/redux-framework/options/blog-options.php:135
+#: inc/redux-framework/options/customer-story-options.php:25
+#: inc/redux-framework/options/customer-story-options.php:56
+#: inc/redux-framework/options/customer-story-options.php:90
+#: inc/redux-framework/options/docs-options.php:25
+#: inc/redux-framework/options/docs-options.php:56
+#: inc/redux-framework/options/footer-options.php:77
+#: inc/redux-framework/options/footer-options.php:96
+#: inc/redux-framework/options/header-options.php:65
+#: inc/redux-framework/options/header-options.php:74
+#: inc/redux-framework/options/header-options.php:112
+#: inc/redux-framework/options/header-options.php:163
+#: inc/redux-framework/options/header-options.php:173
+#: inc/redux-framework/options/header-options.php:210
+#: inc/redux-framework/options/header-options.php:234
+#: inc/redux-framework/options/header-options.php:258
+#: inc/redux-framework/options/header-options.php:268
+#: inc/redux-framework/options/header-options.php:311
+#: inc/redux-framework/options/header-options.php:321
+#: inc/redux-framework/options/header-options.php:332
+#: inc/redux-framework/options/header-options.php:343
+#: inc/redux-framework/options/header-options.php:356
+#: inc/redux-framework/options/header-options.php:387
+#: inc/redux-framework/options/header-options.php:463
+#: inc/redux-framework/options/header-options.php:483
+#: inc/redux-framework/options/header-options.php:584
+#: inc/redux-framework/options/header-options.php:602
+#: inc/redux-framework/options/header-options.php:670
+#: inc/redux-framework/options/job-options.php:25
+#: inc/redux-framework/options/job-options.php:48
+#: inc/redux-framework/options/job-options.php:79
+#: inc/redux-framework/options/portfolio-options.php:22
+#: inc/redux-framework/options/portfolio-options.php:53
+#: inc/redux-framework/options/shop-options.php:25
+#: inc/redux-framework/options/shop-options.php:56
+#: inc/redux-framework/options/style-options.php:44
+#: inc/redux-framework/options/typography-options.php:16
+#: wedocs/content-feedback.php:16
+msgid "Yes"
+msgstr "是"
+
+#: inc/redux-framework/options/404-options.php:16
+#: inc/redux-framework/options/blog-options.php:71
+#: inc/redux-framework/options/blog-options.php:82
+#: inc/redux-framework/options/blog-options.php:93
+#: inc/redux-framework/options/blog-options.php:103
+#: inc/redux-framework/options/blog-options.php:114
+#: inc/redux-framework/options/blog-options.php:136
+#: inc/redux-framework/options/customer-story-options.php:26
+#: inc/redux-framework/options/customer-story-options.php:57
+#: inc/redux-framework/options/customer-story-options.php:91
+#: inc/redux-framework/options/docs-options.php:26
+#: inc/redux-framework/options/docs-options.php:57
+#: inc/redux-framework/options/footer-options.php:78
+#: inc/redux-framework/options/footer-options.php:97
+#: inc/redux-framework/options/header-options.php:66
+#: inc/redux-framework/options/header-options.php:75
+#: inc/redux-framework/options/header-options.php:113
+#: inc/redux-framework/options/header-options.php:164
+#: inc/redux-framework/options/header-options.php:174
+#: inc/redux-framework/options/header-options.php:211
+#: inc/redux-framework/options/header-options.php:235
+#: inc/redux-framework/options/header-options.php:259
+#: inc/redux-framework/options/header-options.php:269
+#: inc/redux-framework/options/header-options.php:312
+#: inc/redux-framework/options/header-options.php:322
+#: inc/redux-framework/options/header-options.php:333
+#: inc/redux-framework/options/header-options.php:344
+#: inc/redux-framework/options/header-options.php:357
+#: inc/redux-framework/options/header-options.php:388
+#: inc/redux-framework/options/header-options.php:464
+#: inc/redux-framework/options/header-options.php:484
+#: inc/redux-framework/options/header-options.php:585
+#: inc/redux-framework/options/header-options.php:603
+#: inc/redux-framework/options/header-options.php:671
+#: inc/redux-framework/options/job-options.php:26
+#: inc/redux-framework/options/job-options.php:49
+#: inc/redux-framework/options/job-options.php:80
+#: inc/redux-framework/options/portfolio-options.php:23
+#: inc/redux-framework/options/portfolio-options.php:54
+#: inc/redux-framework/options/shop-options.php:26
+#: inc/redux-framework/options/shop-options.php:57
+#: inc/redux-framework/options/style-options.php:45
+#: inc/redux-framework/options/typography-options.php:17
+#: wedocs/content-feedback.php:23
+msgid "No"
+msgstr "没有"
+
+#: inc/redux-framework/options/404-options.php:22
+msgid "404 Page Header"
+msgstr "404页面标题"
+
+#: inc/redux-framework/options/404-options.php:23
+msgid "Choose a static block header for 404 page"
+msgstr "为404页选择一个静态块标题"
+
+#: inc/redux-framework/options/404-options.php:34
+msgid "Background Image"
+msgstr "背景图片"
+
+#: inc/redux-framework/options/404-options.php:35
+msgid "Upload your 404 page background image."
+msgstr "上传您的404页面背景图片。"
+
+#: inc/redux-framework/options/404-options.php:41
+msgid "Page Title"
+msgstr "页面标题"
+
+#: inc/redux-framework/options/404-options.php:48
+msgid "Sub Title"
+msgstr "副标题"
+
+#: inc/redux-framework/options/404-options.php:52
+msgid "Oops! Looks like you followed a bad link"
+msgstr "糟糕！看起来您跟随了错误的链接"
+
+#: inc/redux-framework/options/404-options.php:53
+msgid ""
+"If you think this is a problem with us, please <a href=\"#\">tell us</a>."
+msgstr "如果您认为这是我们的问题，请<a href=\"#\">告诉我们</a> 。"
+
+#: inc/redux-framework/options/404-options.php:58
+msgid "Button Text"
+msgstr "按钮文字"
+
+#: inc/redux-framework/options/404-options.php:65
+msgid "Button Link"
+msgstr "按钮链接"
+
+#: inc/redux-framework/options/blog-options.php:5
+msgid "Options available for your Blog, Single Post and Post Archive pages"
+msgstr "您的博客，单个帖子和帖子存档页面可用的选项"
+
+#: inc/redux-framework/options/blog-options.php:12
+#: inc/redux-framework/options/footer-options.php:417
+#: inc/redux-framework/options/general-options.php:17
+#: inc/redux-framework/options/header-options.php:30
+#: inc/redux-framework/options/portfolio-options.php:74
+#: inc/redux-framework/options/shop-options.php:77
+#: inc/redux-framework/options/style-options.php:37
+msgid "General"
+msgstr "一般"
+
+#: inc/redux-framework/options/blog-options.php:20
+#: inc/redux-framework/options/blog-options.php:56
+msgid "Style"
+msgstr "样式"
+
+#: inc/redux-framework/options/blog-options.php:21
+msgid "Select your Blog style"
+msgstr "选择您的博客样式"
+
+#: inc/redux-framework/options/blog-options.php:35
+msgid "Layout"
+msgstr "布局"
+
+#: inc/redux-framework/options/blog-options.php:36
+msgid "Select your Blog layout"
+msgstr "选择您的博客布局"
+
+#: inc/redux-framework/options/blog-options.php:48
+msgid "Single Post"
+msgstr "单发"
+
+#: inc/redux-framework/options/blog-options.php:57
+msgid "Select the style for single post"
+msgstr "选择单个帖子的样式"
+
+#: inc/redux-framework/options/blog-options.php:68
+msgid "Enable Tags"
+msgstr "启用标签"
+
+#: inc/redux-framework/options/blog-options.php:69
+msgid "Do you want to enable tags in Single Post ?"
+msgstr "是否要在“ Single Post”中启用标签？"
+
+#: inc/redux-framework/options/blog-options.php:79
+msgid "Enable Sharing"
+msgstr "启用分享"
+
+#: inc/redux-framework/options/blog-options.php:80
+msgid "Do you want to enable share block in Single Post ?"
+msgstr "是否要在“单个帖子”中启用共享阻止？"
+
+#: inc/redux-framework/options/blog-options.php:90
+msgid "Enable Author Info"
+msgstr "启用作者信息"
+
+#: inc/redux-framework/options/blog-options.php:91
+msgid "Do you want to enable author info block in Single Post ?"
+msgstr "是否要在“单个帖子”中启用作者信息块？"
+
+#: inc/redux-framework/options/blog-options.php:100
+msgid "Enable Single Post Navigation"
+msgstr "启用单篇文章导航"
+
+#: inc/redux-framework/options/blog-options.php:101
+msgid "Do you want to enable post navigation in Single Post ?"
+msgstr "是否要在“单个帖子”中启用帖子导航？"
+
+#: inc/redux-framework/options/blog-options.php:111
+msgid "Enable Related Posts"
+msgstr "启用相关帖子"
+
+#: inc/redux-framework/options/blog-options.php:112
+msgid "Do you want to enable related posts in Single Post ?"
+msgstr "是否要在“单个帖子”中启用相关帖子？"
+
+#: inc/redux-framework/options/blog-options.php:120
+msgid "Footer Before Content"
+msgstr "内容前的页脚"
+
+#: inc/redux-framework/options/blog-options.php:121
+msgid "Choose a Static Block to display above footer in Single Blog Post"
+msgstr "选择一个静态块以在“单个博客文章”的页脚上方显示"
+
+#: inc/redux-framework/options/blog-options.php:133
+msgid "Use separate header for single post"
+msgstr "对单个帖子使用单独的标题"
+
+#: inc/redux-framework/options/blog-options.php:134
+msgid "Do you want to display a separate header for single post ?"
+msgstr "是否要为单个帖子显示单独的标题？"
+
+#: inc/redux-framework/options/blog-options.php:142
+msgid "Single Post Header"
+msgstr "单帖子标题"
+
+#: inc/redux-framework/options/blog-options.php:143
+msgid "Choose a static block header for single post"
+msgstr "为单个帖子选择一个静态块标题"
+
+#: inc/redux-framework/options/customer-story-options.php:7
+msgid "Customer Story"
+msgstr "客户故事"
+
+#: inc/redux-framework/options/customer-story-options.php:8
+msgid "Options available for your customer stories"
+msgstr "客户故事的可用选项"
+
+#: inc/redux-framework/options/customer-story-options.php:15
+#: inc/redux-framework/options/docs-options.php:15
+#: inc/redux-framework/options/header-options.php:21
+#: inc/redux-framework/options/job-options.php:15
+#: inc/redux-framework/options/portfolio-options.php:12
+#: inc/redux-framework/options/shop-options.php:15
+msgid "Header"
+msgstr "标头"
+
+#: inc/redux-framework/options/customer-story-options.php:23
+msgid "Use separate header for customer stories"
+msgstr "对客户故事使用单独的标题"
+
+#: inc/redux-framework/options/customer-story-options.php:24
+msgid "Do you want to display a separate header for customer stories ?"
+msgstr "您是否要为客户案例显示单独的标题？"
+
+#: inc/redux-framework/options/customer-story-options.php:32
+msgid "Customer Story Header"
+msgstr "客户案例标题"
+
+#: inc/redux-framework/options/customer-story-options.php:33
+msgid "Choose a static block header for customer stories"
+msgstr "为客户案例选择静态块标题"
+
+#: inc/redux-framework/options/customer-story-options.php:46
+msgid "Single"
+msgstr "单"
+
+#: inc/redux-framework/options/customer-story-options.php:54
+msgid "Enable Customer Story Single Pretitle"
+msgstr "启用客户案例单个标题"
+
+#: inc/redux-framework/options/customer-story-options.php:55
+msgid "Do you want to display a Customer Story Single Pretitle ?"
+msgstr "您是否要显示客户案例单个字幕？"
+
+#: inc/redux-framework/options/customer-story-options.php:64
+msgid "Customer Story Single Pretitle Text"
+msgstr "客户案例单标题文本"
+
+#: inc/redux-framework/options/customer-story-options.php:65
+msgid "Enter the customer story single Pretitle Text"
+msgstr "输入客户案例单标题文字"
+
+#: inc/redux-framework/options/customer-story-options.php:73
+msgid "Customer Story Single Background Image"
+msgstr "客户案例单背景图片"
+
+#: inc/redux-framework/options/customer-story-options.php:74
+msgid "Upload your customer story single page background image."
+msgstr "上传您的客户案例单页背景图片。"
+
+#: inc/redux-framework/options/customer-story-options.php:80
+#: inc/redux-framework/options/docs-options.php:46
+#: inc/redux-framework/options/footer-options.php:409
+#: inc/redux-framework/options/job-options.php:69
+#: inc/redux-framework/options/portfolio-options.php:43
+#: inc/redux-framework/options/shop-options.php:46
+msgid "Footer"
+msgstr "页脚"
+
+#: inc/redux-framework/options/customer-story-options.php:88
+msgid "Use separate footer for customer stories"
+msgstr "为客户案例使用单独的页脚"
+
+#: inc/redux-framework/options/customer-story-options.php:89
+msgid "Do you want to display a separate footer for customer stories ?"
+msgstr "您是否要为客户案例显示单独的页脚？"
+
+#: inc/redux-framework/options/customer-story-options.php:97
+msgid "Customer Story Footer"
+msgstr "客户案例页脚"
+
+#: inc/redux-framework/options/customer-story-options.php:98
+msgid "Choose a static block footer for customer stories"
+msgstr "为客户案例选择静态的页脚"
+
+#: inc/redux-framework/options/docs-options.php:7
+#: inc/wedocs/front-wedocs-functions.php:100
+msgid "Docs"
+msgstr "文件"
+
+#: inc/redux-framework/options/docs-options.php:8
+msgid "Options available for your docs"
+msgstr "适用于您的文档的选项"
+
+#: inc/redux-framework/options/docs-options.php:23
+msgid "Use separate header for docs"
+msgstr "为文档使用单独的标题"
+
+#: inc/redux-framework/options/docs-options.php:24
+msgid "Do you want to display a separate header for docs ?"
+msgstr "您是否要为文档显示单独的标题？"
+
+#: inc/redux-framework/options/docs-options.php:32
+msgid "Docs Header"
+msgstr "文件标题"
+
+#: inc/redux-framework/options/docs-options.php:33
+msgid "Choose a static block header for docs"
+msgstr "为文档选择一个静态块标题"
+
+#: inc/redux-framework/options/docs-options.php:54
+msgid "Use separate footer for docs"
+msgstr "为文档使用单独的页脚"
+
+#: inc/redux-framework/options/docs-options.php:55
+msgid "Do you want to display a separate footer for docs ?"
+msgstr "是否要为文档显示单独的页脚？"
+
+#: inc/redux-framework/options/docs-options.php:63
+msgid "Docs Footer"
+msgstr "文件页脚"
+
+#: inc/redux-framework/options/docs-options.php:64
+msgid "Choose a static block footer for docs"
+msgstr "为文档选择一个静态的页脚"
+
+#: inc/redux-framework/options/footer-options.php:12
+msgid "Footer Contact Info "
+msgstr "页脚联系信息"
+
+#: inc/redux-framework/options/footer-options.php:22
+msgid "Footer Contact Info Icon "
+msgstr "页脚联系信息图标"
+
+#: inc/redux-framework/options/footer-options.php:23
+msgid "Enter footer contact info icon class"
+msgstr "输入页脚联系信息图标类别"
+
+#: inc/redux-framework/options/footer-options.php:29
+msgid "Footer Contact Title"
+msgstr "页脚联系人标题"
+
+#: inc/redux-framework/options/footer-options.php:30
+msgid "Enter footer contact info title"
+msgstr "输入页脚联系信息标题"
+
+#: inc/redux-framework/options/footer-options.php:36
+msgid "Footer Contact Details Link"
+msgstr "页脚联系方式链接"
+
+#: inc/redux-framework/options/footer-options.php:37
+msgid "Enter footer contact info description link"
+msgstr "输入页脚联系信息说明链接"
+
+#: inc/redux-framework/options/footer-options.php:43
+msgid "Footer Contact Details"
+msgstr "页脚联系方式"
+
+#: inc/redux-framework/options/footer-options.php:44
+msgid "Enter footer contact info description"
+msgstr "输入页脚联系信息说明"
+
+#: inc/redux-framework/options/footer-options.php:67
+#: inc/redux-framework/options/footer-options.php:85
+msgid "Footer Logo"
+msgstr "页脚徽标"
+
+#: inc/redux-framework/options/footer-options.php:74
+msgid "Use separate logo for Footer"
+msgstr "页脚使用单独的徽标"
+
+#: inc/redux-framework/options/footer-options.php:75
+msgid "Do you want to display a separate logo for footer ?"
+msgstr "是否要为页脚显示单独的徽标？"
+
+#: inc/redux-framework/options/footer-options.php:76
+msgid ""
+"By default the logo uploaded to Appearance > Customize > Site Identity > "
+"Site Logo is displayed in footer"
+msgstr "默认情况下，上传到外观>自定义>网站标识>网站徽标的徽标显示在页脚中"
+
+#: inc/redux-framework/options/footer-options.php:86
+msgid "Upload an image file. Recommended Size : 150x57 pixels"
+msgstr "上载图片文件。建议尺寸：150x57像素"
+
+#: inc/redux-framework/options/footer-options.php:87
+msgid "Upload a separate logo that you want to be displayed in footer"
+msgstr "上载您想在页脚中显示的单独徽标"
+
+#: inc/redux-framework/options/footer-options.php:94
+msgid "Use Light SVG logo for Footer"
+msgstr "页脚使用Light SVG徽标"
+
+#: inc/redux-framework/options/footer-options.php:95
+msgid "Do you want to display a light svg logo for footer ?"
+msgstr "是否要为页脚显示淡淡的svg徽标？"
+
+#: inc/redux-framework/options/footer-options.php:123
+msgid "Footer Style"
+msgstr "页脚样式"
+
+#: inc/redux-framework/options/footer-options.php:124
+msgid "Select the style for footer"
+msgstr "选择页脚样式"
+
+#: inc/redux-framework/options/footer-options.php:126
+#: inc/redux-framework/options/header-options.php:287
+#: inc/redux-framework/options/header-options.php:648
+#: inc/redux-framework/options/header-options.php:660
+msgid "Default"
+msgstr "默认"
+
+#: inc/redux-framework/options/footer-options.php:127
+msgid "Dark Background"
+msgstr "黑暗的背景"
+
+#: inc/redux-framework/options/footer-options.php:128
+#: inc/redux-framework/options/footer-options.php:194
+msgid "Primary Background"
+msgstr "主要背景"
+
+#: inc/redux-framework/options/footer-options.php:136
+#: inc/redux-framework/options/footer-options.php:164
+#: inc/redux-framework/options/footer-options.php:179
+msgid "Footer Version"
+msgstr "页脚版本"
+
+#: inc/redux-framework/options/footer-options.php:137
+#: inc/redux-framework/options/footer-options.php:165
+#: inc/redux-framework/options/footer-options.php:180
+msgid "Select the version for footer"
+msgstr "选择页脚的版本"
+
+#: inc/redux-framework/options/footer-options.php:139
+#: inc/redux-framework/options/footer-options.php:167
+#: inc/redux-framework/options/footer-options.php:182
+msgid "Version 1"
+msgstr "版本1"
+
+#: inc/redux-framework/options/footer-options.php:140
+#: inc/redux-framework/options/footer-options.php:168
+#: inc/redux-framework/options/footer-options.php:183
+msgid "Version 2"
+msgstr "版本2"
+
+#: inc/redux-framework/options/footer-options.php:141
+#: inc/redux-framework/options/footer-options.php:169
+#: inc/redux-framework/options/footer-options.php:184
+msgid "Version 3"
+msgstr "版本3"
+
+#: inc/redux-framework/options/footer-options.php:142
+#: inc/redux-framework/options/footer-options.php:170
+#: inc/redux-framework/options/footer-options.php:185
+msgid "Version 4"
+msgstr "版本4"
+
+#: inc/redux-framework/options/footer-options.php:143
+#: inc/redux-framework/options/footer-options.php:186
+msgid "Version 5"
+msgstr "版本5"
+
+#: inc/redux-framework/options/footer-options.php:144
+#: inc/redux-framework/options/footer-options.php:187
+msgid "Version 6"
+msgstr "版本6"
+
+#: inc/redux-framework/options/footer-options.php:145
+msgid "Version 7"
+msgstr "版本7"
+
+#: inc/redux-framework/options/footer-options.php:146
+msgid "Version 8"
+msgstr "版本8"
+
+#: inc/redux-framework/options/footer-options.php:147
+msgid "Version 9"
+msgstr "版本9"
+
+#: inc/redux-framework/options/footer-options.php:148
+msgid "Version 10"
+msgstr "版本10"
+
+#: inc/redux-framework/options/footer-options.php:149
+msgid "Version 11"
+msgstr "版本11"
+
+#: inc/redux-framework/options/footer-options.php:150
+msgid "Version 12"
+msgstr "女12"
+
+#: inc/redux-framework/options/footer-options.php:151
+msgid "Version 13"
+msgstr "版本13"
+
+#: inc/redux-framework/options/footer-options.php:152
+msgid "Version 14"
+msgstr "女14"
+
+#: inc/redux-framework/options/footer-options.php:153
+msgid "Version 15"
+msgstr "15版"
+
+#: inc/redux-framework/options/footer-options.php:154
+msgid "Version 16"
+msgstr "女16"
+
+#: inc/redux-framework/options/footer-options.php:155
+msgid "Version 17"
+msgstr "女17"
+
+#: inc/redux-framework/options/footer-options.php:195
+msgid "Enable to add primary background in footer"
+msgstr "启用在页脚中添加主要背景"
+
+#: inc/redux-framework/options/footer-options.php:198
+#: inc/redux-framework/options/general-options.php:28
+#: inc/redux-framework/options/header-options.php:600
+#: wp-job-manager-alerts/my-alerts.php:66
+msgid "Enable"
+msgstr "启用"
+
+#: inc/redux-framework/options/footer-options.php:199
+#: inc/redux-framework/options/general-options.php:29
+#: wp-job-manager-alerts/my-alerts.php:66
+msgid "Disable"
+msgstr "禁用"
+
+#: inc/redux-framework/options/footer-options.php:210
+msgid "Footer Copyright Text"
+msgstr "页脚版权文字"
+
+#: inc/redux-framework/options/footer-options.php:211
+msgid "Enter the footer copyright text"
+msgstr "输入页脚版权文字"
+
+#: inc/redux-framework/options/footer-options.php:217
+msgid "Footer Site Description"
+msgstr "页脚网站说明"
+
+#: inc/redux-framework/options/footer-options.php:218
+msgid "Enter the footer site description"
+msgstr "输入页脚网站说明"
+
+#: inc/redux-framework/options/footer-options.php:227
+msgid "Show Static Blocks"
+msgstr "显示静态块"
+
+#: inc/redux-framework/options/footer-options.php:237
+msgid "Footer Before Static Block"
+msgstr "静态块之前的页脚"
+
+#: inc/redux-framework/options/footer-options.php:238
+msgid "Choose a static block for footer before"
+msgstr "在页脚之前选择一个静态块"
+
+#: inc/redux-framework/options/footer-options.php:252
+msgid "Footer Button Text"
+msgstr "页脚按钮文字"
+
+#: inc/redux-framework/options/footer-options.php:253
+msgid "Enter the footer button text"
+msgstr "输入页脚按钮文本"
+
+#: inc/redux-framework/options/footer-options.php:263
+msgid "Footer Button URL"
+msgstr "页脚按钮网址"
+
+#: inc/redux-framework/options/footer-options.php:264
+msgid "Enter the footer button url"
+msgstr "输入页脚按钮网址"
+
+#: inc/redux-framework/options/footer-options.php:274
+msgid "Footer Goto Icon Class"
+msgstr "页脚转到图标类"
+
+#: inc/redux-framework/options/footer-options.php:275
+msgid "Enter the footer goto icon class"
+msgstr "输入页脚转到图标类"
+
+#: inc/redux-framework/options/footer-options.php:285
+msgid "Footer Form Shortcode"
+msgstr "页脚表格简码"
+
+#: inc/redux-framework/options/footer-options.php:286
+msgid "Enter the footer form shortcode"
+msgstr "输入页脚形式的简码"
+
+#: inc/redux-framework/options/footer-options.php:295
+msgid "Footer Title"
+msgstr "页脚标题"
+
+#: inc/redux-framework/options/footer-options.php:296
+msgid "Enter the footer title"
+msgstr "输入页脚标题"
+
+#: inc/redux-framework/options/footer-options.php:305
+msgid "Footer Description"
+msgstr "页脚说明"
+
+#: inc/redux-framework/options/footer-options.php:306
+msgid "Enter the footer description"
+msgstr "输入页脚说明"
+
+#: inc/redux-framework/options/footer-options.php:315
+msgid "Footer Description Link Text"
+msgstr "页脚说明链接文本"
+
+#: inc/redux-framework/options/footer-options.php:316
+msgid "Enter the footer description link text"
+msgstr "输入页脚描述链接文本"
+
+#: inc/redux-framework/options/footer-options.php:325
+msgid "Footer Description Link"
+msgstr "页脚说明链接"
+
+#: inc/redux-framework/options/footer-options.php:326
+msgid "Enter the footer description link"
+msgstr "输入页脚说明链接"
+
+#: inc/redux-framework/options/footer-options.php:335
+msgid "Footer No Of Contact Infos"
+msgstr "页脚没有联系信息"
+
+#: inc/redux-framework/options/footer-options.php:336
+msgid "How many contact info should be shown in footer?"
+msgstr "页脚应显示多少联系信息？"
+
+#: inc/redux-framework/options/footer-options.php:349
+msgid "Footer Contact Block"
+msgstr "页脚接触块"
+
+#: inc/redux-framework/options/footer-options.php:350
+msgid ""
+"The Footer Contact Block is part of Footer widgets. However it is not "
+"available as a separate widget but are fully customizable with the options "
+"given below."
+msgstr "页脚接触块是页脚小部件的一部分。但是，它不能作为单独的小部件使用，而是可以通过以下给出的选项完全自定义。"
+
+#: inc/redux-framework/options/footer-options.php:359
+msgid "Show Footer Contact Block"
+msgstr "显示页脚接触块"
+
+#: inc/redux-framework/options/footer-options.php:366
+msgid "Contact Block Title"
+msgstr "触点块标题"
+
+#: inc/redux-framework/options/footer-options.php:374
+msgid "Call us Number"
+msgstr "给我们打电话"
+
+#: inc/redux-framework/options/footer-options.php:382
+msgid "Mail Us"
+msgstr "给我们发邮件"
+
+#: inc/redux-framework/options/footer-options.php:390
+msgid "Mail URL"
+msgstr "邮件网址"
+
+#: inc/redux-framework/options/footer-options.php:411
+msgid ""
+"Options available for your footer. Please note these options will not work "
+"on pages that have custom Footer assigned."
+msgstr "页脚可用的选项。请注意，这些选项在分配了自定义页脚的页面上不起作用。"
+
+#: inc/redux-framework/options/footer-options.php:419
+msgid ""
+"Use the options below to set the general behaviour of your website's footer"
+msgstr "使用以下选项设置网站页脚的常规行为"
+
+#: inc/redux-framework/options/footer-options.php:426
+#: inc/redux-framework/options/header-options.php:473
+msgid "Logo"
+msgstr "商标"
+
+#: inc/redux-framework/options/footer-options.php:428
+msgid ""
+"Use the options below to set the logo behaviour of your website's footer"
+msgstr "使用以下选项设置网站页脚的徽标行为"
+
+#: inc/redux-framework/options/general-options.php:18
+msgid "General Options available in theme"
+msgstr "主题中的常规选项"
+
+#: inc/redux-framework/options/general-options.php:24
+msgid "Scroll To Top"
+msgstr "滚动到顶部"
+
+#: inc/redux-framework/options/general-options.php:25
+msgid "Enable to display the scroll to top arrow"
+msgstr "启用以显示滚动到顶部箭头"
+
+#: inc/redux-framework/options/general-options.php:44
+msgid "My Account Login Form Title"
+msgstr "我的帐户登录表格标题"
+
+#: inc/redux-framework/options/general-options.php:45
+msgid "Enter my account login form title"
+msgstr "输入我的帐户登录表单标题"
+
+#: inc/redux-framework/options/general-options.php:52
+msgid "My Account Login Form Description"
+msgstr "我的帐户登录表说明"
+
+#: inc/redux-framework/options/general-options.php:53
+msgid "Enter my account login form description"
+msgstr "输入我的帐户登录表单说明"
+
+#: inc/redux-framework/options/general-options.php:60
+msgid "My Account Register Form Title"
+msgstr "我的帐户注册表格标题"
+
+#: inc/redux-framework/options/general-options.php:61
+msgid "Enter my account register form title"
+msgstr "输入我的帐户注册表格标题"
+
+#: inc/redux-framework/options/general-options.php:68
+msgid "My Account Register Form Description"
+msgstr "我的帐户注册表格说明"
+
+#: inc/redux-framework/options/general-options.php:69
+msgid "Enter my account register form description"
+msgstr "输入我的帐户注册表格说明"
+
+#: inc/redux-framework/options/general-options.php:76
+msgid "My Account Reset Password Form Title"
+msgstr "我的帐户重设密码表格标题"
+
+#: inc/redux-framework/options/general-options.php:77
+msgid "Enter my account reset password form title"
+msgstr "输入我的帐户重设密码表格标题"
+
+#: inc/redux-framework/options/general-options.php:80
+#: woocommerce/myaccount/form-lost-password.php:20
+msgid "Forgot your"
+msgstr "忘了你的"
+
+#: inc/redux-framework/options/general-options.php:80
+#: woocommerce/myaccount/form-lost-password.php:20
+msgid "password?"
+msgstr "密码？"
+
+#: inc/redux-framework/options/general-options.php:84
+msgid "My Account Reset Password Form Description"
+msgstr "我的帐户重设密码表格说明"
+
+#: inc/redux-framework/options/general-options.php:85
+msgid "Enter my account reset password form description"
+msgstr "输入我的帐户重设密码表格说明"
+
+#: inc/redux-framework/options/general-options.php:88
+#: woocommerce/myaccount/form-lost-password.php:32
+msgid "Enter your email address below and well get you back on track."
+msgstr "在下面输入您的电子邮件地址，以使您重回正轨。"
+
+#: inc/redux-framework/options/header-options.php:23
+msgid "Options available for your header"
+msgstr "标头可用的选项"
+
+#: inc/redux-framework/options/header-options.php:26
+msgid "These settings are not applied to pages that have Custom Header."
+msgstr "这些设置不适用于具有“自定义标题”的页面。"
+
+#: inc/redux-framework/options/header-options.php:32
+msgid ""
+"Use the options below to set the general behaviour of your website's header"
+msgstr "使用以下选项设置网站标题的一般行为"
+
+#: inc/redux-framework/options/header-options.php:39
+msgid "Menu Style"
+msgstr "菜单样式"
+
+#: inc/redux-framework/options/header-options.php:41
+msgid "Navbar"
+msgstr "导航栏"
+
+#: inc/redux-framework/options/header-options.php:42
+msgid "Off Screen"
+msgstr "屏幕外"
+
+#: inc/redux-framework/options/header-options.php:43
+msgid "Full Screen"
+msgstr "全屏"
+
+#: inc/redux-framework/options/header-options.php:44
+msgid "Logo Only"
+msgstr "仅徽标"
+
+#: inc/redux-framework/options/header-options.php:52
+msgid "Full Screen Nav Style"
+msgstr "全屏导航样式"
+
+#: inc/redux-framework/options/header-options.php:54
+#: inc/redux-framework/options/header-options.php:372
+#: inc/redux-framework/options/header-options.php:403
+msgid "Modal"
+msgstr "模态"
+
+#: inc/redux-framework/options/header-options.php:55
+#: inc/redux-framework/options/header-options.php:373
+#: inc/redux-framework/options/header-options.php:404
+msgid "Sidebar Right"
+msgstr "侧边栏右"
+
+#: inc/redux-framework/options/header-options.php:56
+#: inc/redux-framework/options/header-options.php:374
+#: inc/redux-framework/options/header-options.php:405
+msgid "Sidebar Left"
+msgstr "左侧边栏"
+
+#: inc/redux-framework/options/header-options.php:63
+msgid "Is Container Fluid ?"
+msgstr "容器是液体吗？"
+
+#: inc/redux-framework/options/header-options.php:72
+msgid "Enable Postion"
+msgstr "启用位置"
+
+#: inc/redux-framework/options/header-options.php:83
+msgid "Position"
+msgstr "位置"
+
+#: inc/redux-framework/options/header-options.php:85
+msgid "Absolute Top"
+msgstr "绝对顶"
+
+#: inc/redux-framework/options/header-options.php:86
+msgid "Absolute Bottom"
+msgstr "绝对底部"
+
+#: inc/redux-framework/options/header-options.php:87
+msgid "Second Screen"
+msgstr "第二屏"
+
+#: inc/redux-framework/options/header-options.php:88
+msgid "Floating"
+msgstr "漂浮的"
+
+#: inc/redux-framework/options/header-options.php:97
+msgid "Position Only in"
+msgstr "仅在"
+
+#: inc/redux-framework/options/header-options.php:99
+#: inc/redux-framework/options/header-options.php:135
+#: inc/redux-framework/options/header-options.php:184
+#: inc/redux-framework/options/header-options.php:221
+#: inc/redux-framework/options/header-options.php:245
+#: inc/redux-framework/options/header-options.php:507
+msgid "All Screens"
+msgstr "所有画面"
+
+#: inc/redux-framework/options/header-options.php:100
+#: inc/redux-framework/options/header-options.php:136
+#: inc/redux-framework/options/header-options.php:185
+#: inc/redux-framework/options/header-options.php:222
+#: inc/redux-framework/options/header-options.php:246
+#: inc/redux-framework/options/header-options.php:508
+#: inc/redux-framework/options/header-options.php:549
+msgid "sm"
+msgstr "短信"
+
+#: inc/redux-framework/options/header-options.php:101
+#: inc/redux-framework/options/header-options.php:137
+#: inc/redux-framework/options/header-options.php:186
+#: inc/redux-framework/options/header-options.php:223
+#: inc/redux-framework/options/header-options.php:247
+#: inc/redux-framework/options/header-options.php:509
+#: inc/redux-framework/options/header-options.php:550
+msgid "md"
+msgstr "md"
+
+#: inc/redux-framework/options/header-options.php:102
+#: inc/redux-framework/options/header-options.php:138
+#: inc/redux-framework/options/header-options.php:187
+#: inc/redux-framework/options/header-options.php:224
+#: inc/redux-framework/options/header-options.php:248
+#: inc/redux-framework/options/header-options.php:510
+#: inc/redux-framework/options/header-options.php:551
+msgid "lg"
+msgstr "lg"
+
+#: inc/redux-framework/options/header-options.php:103
+#: inc/redux-framework/options/header-options.php:139
+#: inc/redux-framework/options/header-options.php:188
+#: inc/redux-framework/options/header-options.php:225
+#: inc/redux-framework/options/header-options.php:249
+#: inc/redux-framework/options/header-options.php:511
+#: inc/redux-framework/options/header-options.php:552
+msgid "xl"
+msgstr "l"
+
+#: inc/redux-framework/options/header-options.php:110
+msgid "Enable Sticky"
+msgstr "启用粘性"
+
+#: inc/redux-framework/options/header-options.php:121
+msgid "Sticky Position"
+msgstr "粘性位置"
+
+#: inc/redux-framework/options/header-options.php:123
+msgid "Top"
+msgstr "最佳"
+
+#: inc/redux-framework/options/header-options.php:124
+msgid "Bottom"
+msgstr "底部"
+
+#: inc/redux-framework/options/header-options.php:133
+msgid "Sticky Breakpoint"
+msgstr "粘性断点"
+
+#: inc/redux-framework/options/header-options.php:148
+msgid "Sticky On scroll behavior"
+msgstr "粘滞滚动行为"
+
+#: inc/redux-framework/options/header-options.php:150
+#: inc/redux-framework/options/header-options.php:199
+#: inc/redux-framework/options/header-options.php:537
+msgid "None"
+msgstr "没有"
+
+#: inc/redux-framework/options/header-options.php:151
+#: inc/redux-framework/options/header-options.php:200
+msgid "Hide topbar"
+msgstr "隐藏顶部栏"
+
+#: inc/redux-framework/options/header-options.php:152
+msgid "Toggle topbar"
+msgstr "切换顶部栏"
+
+#: inc/redux-framework/options/header-options.php:153
+#: inc/redux-framework/options/header-options.php:201
+msgid "Changing logo on scroll"
+msgstr "更改滚动徽标"
+
+#: inc/redux-framework/options/header-options.php:154
+msgid "White Background on Scroll"
+msgstr "滚动上的白色背景"
+
+#: inc/redux-framework/options/header-options.php:161
+msgid "Enable Toggle Section"
+msgstr "启用切换部分"
+
+#: inc/redux-framework/options/header-options.php:171
+msgid "Enable Show/Hide"
+msgstr "启用显示/隐藏"
+
+#: inc/redux-framework/options/header-options.php:182
+msgid "Show/Hide Breakpoint"
+msgstr "显示/隐藏断点"
+
+#: inc/redux-framework/options/header-options.php:197
+msgid "Show/Hide On scroll behavior"
+msgstr "显示/隐藏滚动行为"
+
+#: inc/redux-framework/options/header-options.php:208
+msgid "Enable White Nav Links"
+msgstr "启用白色导航链接"
+
+#: inc/redux-framework/options/header-options.php:219
+msgid "White Nav Links Breakpoint"
+msgstr "白色导航链接断点"
+
+#: inc/redux-framework/options/header-options.php:232
+msgid "Enable Transparent"
+msgstr "启用透明"
+
+#: inc/redux-framework/options/header-options.php:243
+msgid "Transparent Breakpoint"
+msgstr "透明断点"
+
+#: inc/redux-framework/options/header-options.php:256
+msgid "Enable Border"
+msgstr "启用边框"
+
+#: inc/redux-framework/options/header-options.php:266
+msgid "Enable Fix Effect"
+msgstr "启用修复效果"
+
+#: inc/redux-framework/options/header-options.php:277
+#: inc/redux-framework/options/header-options.php:285
+msgid "Background"
+msgstr "背景"
+
+#: inc/redux-framework/options/header-options.php:289
+msgid "Navbar Primary"
+msgstr "导航栏主要"
+
+#: inc/redux-framework/options/header-options.php:290
+msgid "Navbar Gradient"
+msgstr "导航栏渐变"
+
+#: inc/redux-framework/options/header-options.php:291
+msgid "Navbar Dark"
+msgstr "Navbar黑暗"
+
+#: inc/redux-framework/options/header-options.php:292
+msgid "White-to-dark on scroll"
+msgstr "滚动时从白到黑"
+
+#: inc/redux-framework/options/header-options.php:293
+msgid "Dark-to-white on scroll"
+msgstr "暗白色滚动"
+
+#: inc/redux-framework/options/header-options.php:294
+msgid "Submenu dark"
+msgstr "子菜单暗"
+
+#: inc/redux-framework/options/header-options.php:302
+msgid "Topbar"
+msgstr "顶栏"
+
+#: inc/redux-framework/options/header-options.php:308
+msgid "Enable Topbar"
+msgstr "启用顶栏"
+
+#: inc/redux-framework/options/header-options.php:310
+msgid "Enable to display top bar in header"
+msgstr "启用以显示标题中的顶部栏"
+
+#: inc/redux-framework/options/header-options.php:318
+msgid "Enable Topbar Left"
+msgstr "启用左侧的顶栏"
+
+#: inc/redux-framework/options/header-options.php:320
+msgid "Enable to display top bar left in header"
+msgstr "启用以显示标题左侧的顶部栏"
+
+#: inc/redux-framework/options/header-options.php:329
+msgid "Enable Topbar Right"
+msgstr "启用右上角"
+
+#: inc/redux-framework/options/header-options.php:331
+msgid "Enable to display top bar right in header"
+msgstr "启用以在标题中显示顶部栏"
+
+#: inc/redux-framework/options/header-options.php:340
+msgid "Enable Search"
+msgstr "启用搜寻"
+
+#: inc/redux-framework/options/header-options.php:342
+msgid "Enable to display Search in header"
+msgstr "启用以在标题中显示搜索"
+
+#: inc/redux-framework/options/header-options.php:353
+msgid "Enable Mini Cart"
+msgstr "启用迷你购物车"
+
+#: inc/redux-framework/options/header-options.php:355
+msgid "Enable to display Mini Cart in header"
+msgstr "启用在标题中显示迷你购物车"
+
+#: inc/redux-framework/options/header-options.php:368
+msgid "Mini Cart View"
+msgstr "迷你购物车视图"
+
+#: inc/redux-framework/options/header-options.php:369
+msgid "Select the view for mini cart"
+msgstr "选择迷你手推车的视图"
+
+#: inc/redux-framework/options/header-options.php:371
+#: inc/redux-framework/options/header-options.php:402
+msgid "Dropdown"
+msgstr "落下"
+
+#: inc/redux-framework/options/header-options.php:375
+#: inc/redux-framework/options/header-options.php:616
+msgid "Link"
+msgstr "链接"
+
+#: inc/redux-framework/options/header-options.php:384
+msgid "Enable User Account"
+msgstr "启用用户帐号"
+
+#: inc/redux-framework/options/header-options.php:386
+msgid "Enable to display User Account in header"
+msgstr "启用在标题中显示用户帐户"
+
+#: inc/redux-framework/options/header-options.php:399
+msgid "Header User Account View"
+msgstr "标头用户帐户视图"
+
+#: inc/redux-framework/options/header-options.php:400
+msgid ""
+"Select the view for user account. To view meta box option for header form "
+"save & refresh the page."
+msgstr "选择用户帐户的视图。要查看标题表单的元框选项，请保存并刷新页面。"
+
+#: inc/redux-framework/options/header-options.php:412
+msgid "Header Login Form Title"
+msgstr "标头登录表单标题"
+
+#: inc/redux-framework/options/header-options.php:413
+msgid "Enter header my account login form title"
+msgstr "输入标题我的帐户登录表单标题"
+
+#: inc/redux-framework/options/header-options.php:420
+msgid "Header Login Form Description"
+msgstr "标头登录表单说明"
+
+#: inc/redux-framework/options/header-options.php:421
+msgid "Enter header my account login form description"
+msgstr "输入标题我的帐户登录表单说明"
+
+#: inc/redux-framework/options/header-options.php:428
+msgid "Header Register Form Title"
+msgstr "标题注册表格标题"
+
+#: inc/redux-framework/options/header-options.php:429
+msgid "Enter header my account register form title"
+msgstr "输入标题我的帐户注册表格标题"
+
+#: inc/redux-framework/options/header-options.php:436
+msgid "Header Register Form Description"
+msgstr "标题寄存器表格说明"
+
+#: inc/redux-framework/options/header-options.php:437
+msgid "Enter header my account register form description"
+msgstr "输入标题我的帐户注册表格说明"
+
+#: inc/redux-framework/options/header-options.php:444
+msgid "Header Reset Password Form Title"
+msgstr "标头重置密码表单标题"
+
+#: inc/redux-framework/options/header-options.php:445
+msgid "Enter header my account reset password form title"
+msgstr "输入标题我的帐户重置密码表格标题"
+
+#: inc/redux-framework/options/header-options.php:452
+msgid "Header Reset Password Form Description"
+msgstr "标头重置密码表单说明"
+
+#: inc/redux-framework/options/header-options.php:453
+msgid "Enter header my account reset password form description"
+msgstr "输入标题我的帐户重置密码表格说明"
+
+#: inc/redux-framework/options/header-options.php:460
+msgid "Header My Account Username"
+msgstr "标头我的帐户用户名"
+
+#: inc/redux-framework/options/header-options.php:462
+msgid "Enable to show username in my account in header"
+msgstr "启用在标题中显示我的帐户中的用户名"
+
+#: inc/redux-framework/options/header-options.php:474
+msgid ""
+"Please use Appearance > Customize > Site Identity > Site Logo to upload your "
+"Site Logo & Favicon"
+msgstr "请使用外观>自定义>网站标识>网站徽标上传您的网站徽标和网站图标"
+
+#: inc/redux-framework/options/header-options.php:480
+msgid "Enable Logo White"
+msgstr "启用徽标白色"
+
+#: inc/redux-framework/options/header-options.php:482
+msgid "Use this option to enable to display White Logo for darker backgrounds."
+msgstr "使用此选项可以启用深色背景的白色徽标。"
+
+#: inc/redux-framework/options/header-options.php:493
+msgid "Logo Align"
+msgstr "徽标对齐"
+
+#: inc/redux-framework/options/header-options.php:494
+msgid ""
+"If you select \"Center\" option, the navbar will appear in the next line."
+msgstr "如果选择“居中”选项，则导航栏将出现在下一行。"
+
+#: inc/redux-framework/options/header-options.php:497
+#: inc/redux-framework/options/header-options.php:565
+msgid "Center"
+msgstr "中央"
+
+#: inc/redux-framework/options/header-options.php:505
+msgid "Logo Align Breakpoint"
+msgstr "徽标对齐断点"
+
+#: inc/redux-framework/options/header-options.php:518
+msgid "Upload Scroll Logo"
+msgstr "上传滚动徽标"
+
+#: inc/redux-framework/options/header-options.php:519
+msgid ""
+"Scroll Logo is the Logo that you want to appear when the user scrolls down "
+"and the header sticks."
+msgstr "滚动徽标是您要在用户向下滚动并且页眉粘贴时显示的徽标。"
+
+#: inc/redux-framework/options/header-options.php:527
+msgid "Primary Menu ( Navbar )"
+msgstr "主菜单（导航栏）"
+
+#: inc/redux-framework/options/header-options.php:535
+msgid "Responsive Type"
+msgstr "响应式"
+
+#: inc/redux-framework/options/header-options.php:538
+msgid "Collapse"
+msgstr "坍方"
+
+#: inc/redux-framework/options/header-options.php:539
+msgid "Scroll"
+msgstr "滚动"
+
+#: inc/redux-framework/options/header-options.php:547
+msgid "Collapse Breakpoint"
+msgstr "崩溃断点"
+
+#: inc/redux-framework/options/header-options.php:561
+msgid "Align"
+msgstr "对齐"
+
+#: inc/redux-framework/options/header-options.php:573
+msgid "Dropdown Trigger"
+msgstr "下拉触发"
+
+#: inc/redux-framework/options/header-options.php:575
+msgid "Hover"
+msgstr "徘徊"
+
+#: inc/redux-framework/options/header-options.php:576
+msgid "Click"
+msgstr "请点击"
+
+#: inc/redux-framework/options/header-options.php:582
+msgid "Enable Scroll Nav"
+msgstr "启用滚动导航"
+
+#: inc/redux-framework/options/header-options.php:593
+msgid "Header Action Button"
+msgstr "标头操作按钮"
+
+#: inc/redux-framework/options/header-options.php:597
+msgid ""
+"This is the button that appears to the right of the Header when there is no "
+"Primary Menu ( navbar ) or if it is center aligned."
+msgstr "当没有主菜单（navbar）或居中对齐时，这是显示在标题右侧的按钮。"
+
+#: inc/redux-framework/options/header-options.php:609
+msgid "Text"
+msgstr "文本"
+
+#: inc/redux-framework/options/header-options.php:625
+msgid "Background Color"
+msgstr "背景颜色"
+
+#: inc/redux-framework/options/header-options.php:644
+msgid "Size"
+msgstr "尺寸"
+
+#: inc/redux-framework/options/header-options.php:646
+msgid "Extra Small"
+msgstr "特小"
+
+#: inc/redux-framework/options/header-options.php:647
+msgid "Small"
+msgstr "小"
+
+#: inc/redux-framework/options/header-options.php:649
+msgid "Large"
+msgstr "大"
+
+#: inc/redux-framework/options/header-options.php:657
+msgid "Border Radius"
+msgstr "边界半径"
+
+#: inc/redux-framework/options/header-options.php:659
+msgid "Rounded 0"
+msgstr "四舍五入"
+
+#: inc/redux-framework/options/header-options.php:661
+msgid "Pill"
+msgstr "丸"
+
+#: inc/redux-framework/options/header-options.php:662
+msgid "Circle"
+msgstr "圈"
+
+#: inc/redux-framework/options/header-options.php:668
+msgid "Enable Transition"
+msgstr "启用过渡"
+
+#: inc/redux-framework/options/header-options.php:679
+msgid "Fullscreen Modal"
+msgstr "全屏模式"
+
+#: inc/redux-framework/options/header-options.php:685
+msgid "Address Title"
+msgstr "地址标题"
+
+#: inc/redux-framework/options/header-options.php:695
+msgid "Add Address"
+msgstr "新增地址"
+
+#: inc/redux-framework/options/header-options.php:696
+msgid "153 Williamson Plaza, Maggieberg, MT 09514"
+msgstr "蒙大拿州玛吉贝格153 Williamson Plaza，09514"
+
+#: inc/redux-framework/options/header-options.php:700
+msgid "Social Title"
+msgstr "社会头衔"
+
+#: inc/redux-framework/options/header-options.php:716
+msgid "Push Top Static Content"
+msgstr "推送顶部静态内容"
+
+#: inc/redux-framework/options/header-options.php:717
+msgid "Choose a static content for search push top"
+msgstr "选择静态内容进行搜索"
+
+#: inc/redux-framework/options/job-options.php:8
+msgid "Options available for your jobs"
+msgstr "适用于您工作的选项"
+
+#: inc/redux-framework/options/job-options.php:23
+msgid "Use separate header for job"
+msgstr "对作业使用单独的标题"
+
+#: inc/redux-framework/options/job-options.php:24
+msgid "Do you want to display a separate header for job ?"
+msgstr "您是否要显示作业的单独标题？"
+
+#: inc/redux-framework/options/job-options.php:32
+msgid "Job Header"
+msgstr "职位标题"
+
+#: inc/redux-framework/options/job-options.php:33
+msgid "Choose a static block header for job"
+msgstr "为作业选择一个静态块标题"
+
+#: inc/redux-framework/options/job-options.php:46
+msgid "Use separate header for single job"
+msgstr "对单个作业使用单独的标题"
+
+#: inc/redux-framework/options/job-options.php:47
+msgid "Do you want to display a separate header for single job ?"
+msgstr "是否要为单个作业显示单独的标题？"
+
+#: inc/redux-framework/options/job-options.php:55
+msgid "Job Single Header"
+msgstr "作业单页眉"
+
+#: inc/redux-framework/options/job-options.php:56
+msgid "Choose a static block header for single job"
+msgstr "为单个作业选择一个静态块标题"
+
+#: inc/redux-framework/options/job-options.php:77
+msgid "Use separate footer for job"
+msgstr "使用单独的页脚进行工作"
+
+#: inc/redux-framework/options/job-options.php:78
+msgid "Do you want to display a separate footer for job ?"
+msgstr "您是否要为工作显示单独的页脚？"
+
+#: inc/redux-framework/options/job-options.php:86
+msgid "Job Footer"
+msgstr "作业页脚"
+
+#: inc/redux-framework/options/job-options.php:87
+msgid "Choose a static block footer for job"
+msgstr "为工作选择一个静态的页脚"
+
+#: inc/redux-framework/options/portfolio-options.php:5
+msgid "Options available for your portfolio"
+msgstr "您的投资组合可用的选项"
+
+#: inc/redux-framework/options/portfolio-options.php:20
+msgid "Use separate header for portfolio"
+msgstr "对投资组合使用单独的标题"
+
+#: inc/redux-framework/options/portfolio-options.php:21
+msgid "Do you want to display a separate header for portfolio ?"
+msgstr "您要显示投资组合的单独标题吗？"
+
+#: inc/redux-framework/options/portfolio-options.php:29
+msgid "Portfolio Header"
+msgstr "投资组合标题"
+
+#: inc/redux-framework/options/portfolio-options.php:30
+msgid "Choose a static block header for portfolio"
+msgstr "为投资组合选择静态块头"
+
+#: inc/redux-framework/options/portfolio-options.php:51
+msgid "Use separate footer for portfolio"
+msgstr "对投资组合使用单独的页脚"
+
+#: inc/redux-framework/options/portfolio-options.php:52
+msgid "Do you want to display a separate footer for portfolio ?"
+msgstr "您要显示投资组合的单独页脚吗？"
+
+#: inc/redux-framework/options/portfolio-options.php:60
+msgid "Portfolio Footer"
+msgstr "投资组合页脚"
+
+#: inc/redux-framework/options/portfolio-options.php:61
+msgid "Choose a static block footer for portfolio"
+msgstr "为投资组合选择一个静态的页脚"
+
+#: inc/redux-framework/options/portfolio-options.php:83
+msgid "Select your portfolio view"
+msgstr "选择您的投资组合视图"
+
+#: inc/redux-framework/options/portfolio-options.php:97
+msgid "Select your portfolio layout"
+msgstr "选择您的投资组合布局"
+
+#: inc/redux-framework/options/portfolio-options.php:108
+msgid "Projects per page"
+msgstr "每页项目"
+
+#: inc/redux-framework/options/portfolio-options.php:109
+msgid "How many projects should be shown per page?"
+msgstr "每页应显示多少个项目？"
+
+#: inc/redux-framework/options/portfolio-options.php:118
+msgid "Enable Portfolio Type Filters"
+msgstr "启用投资组合类型过滤器"
+
+#: inc/redux-framework/options/portfolio-options.php:119
+msgid "Please choose if you want to enable Filters in Portfolio page"
+msgstr "请选择是否要启用“投资组合中的过滤器”页面"
+
+#: inc/redux-framework/options/portfolio-options.php:121
+#: inc/redux-framework/options/portfolio-options.php:131
+#: inc/redux-framework/options/portfolio-options.php:141
+#: inc/redux-framework/options/portfolio-options.php:159
+#: inc/redux-framework/options/portfolio-options.php:197
+#: inc/redux-framework/options/portfolio-options.php:207
+#: inc/redux-framework/options/portfolio-options.php:218
+#: inc/redux-framework/options/portfolio-options.php:229
+#: inc/redux-framework/options/portfolio-options.php:320
+msgid "Enabled"
+msgstr "已启用"
+
+#: inc/redux-framework/options/portfolio-options.php:122
+#: inc/redux-framework/options/portfolio-options.php:132
+#: inc/redux-framework/options/portfolio-options.php:142
+#: inc/redux-framework/options/portfolio-options.php:160
+#: inc/redux-framework/options/portfolio-options.php:198
+#: inc/redux-framework/options/portfolio-options.php:208
+#: inc/redux-framework/options/portfolio-options.php:219
+#: inc/redux-framework/options/portfolio-options.php:230
+#: inc/redux-framework/options/portfolio-options.php:321
+msgid "Disabled"
+msgstr "残障人士"
+
+#: inc/redux-framework/options/portfolio-options.php:128
+msgid "Enable Portfolio Author"
+msgstr "启用投资组合作者"
+
+#: inc/redux-framework/options/portfolio-options.php:129
+msgid "Please choose if you want to show Author in Portfolio"
+msgstr "请选择是否要在投资组合中显示作者"
+
+#: inc/redux-framework/options/portfolio-options.php:138
+msgid "Enable Portfolio Content"
+msgstr "启用投资组合内容"
+
+#: inc/redux-framework/options/portfolio-options.php:139
+msgid "Please choose if you want to show portfolio content"
+msgstr "请选择是否要显示投资组合内容"
+
+#: inc/redux-framework/options/portfolio-options.php:148
+msgid "Hero Block"
+msgstr "英雄座"
+
+#: inc/redux-framework/options/portfolio-options.php:156
+msgid "Enable Hero"
+msgstr "启用英雄"
+
+#: inc/redux-framework/options/portfolio-options.php:157
+msgid "Please choose if you want to enable Hero block in Portfolio page"
+msgstr "请选择是否要在“投资组合”页面中启用英雄阻止"
+
+#: inc/redux-framework/options/portfolio-options.php:166
+#: inc/redux-framework/options/portfolio-options.php:274
+#: inc/redux-framework/options/portfolio-options.php:327
+msgid "Title"
+msgstr "标题"
+
+#: inc/redux-framework/options/portfolio-options.php:167
+msgid "Enter the hero title. HTML tags permitted."
+msgstr "输入英雄标题。允许使用HTML标签。"
+
+#: inc/redux-framework/options/portfolio-options.php:176
+#: inc/redux-framework/options/portfolio-options.php:284
+msgid "Subtitle"
+msgstr "字幕"
+
+#: inc/redux-framework/options/portfolio-options.php:177
+msgid "Enter the text that you want to appear below hero title."
+msgstr "输入要显示在英雄标题下的文本。"
+
+#: inc/redux-framework/options/portfolio-options.php:186
+msgid "Related Projects"
+msgstr "相关项目"
+
+#: inc/redux-framework/options/portfolio-options.php:194
+msgid "Enable Related Works"
+msgstr "启用相关作品"
+
+#: inc/redux-framework/options/portfolio-options.php:195
+msgid ""
+"Please choose if you want to enable related works block in Single Portfolio "
+"page"
+msgstr "请选择是否要在“单个投资组合”页面中启用相关工作块"
+
+#: inc/redux-framework/options/portfolio-options.php:204
+msgid "Enable Portfolio Related Works Author"
+msgstr "启用与作品集相关的作品"
+
+#: inc/redux-framework/options/portfolio-options.php:205
+msgid "Please choose if you want to show Author in Portfolio Related Works"
+msgstr "请选择是否在作品集相关作品中显示作者"
+
+#: inc/redux-framework/options/portfolio-options.php:215
+msgid "Enable Portfolio Related Works Content"
+msgstr "启用与作品集相关的作品内容"
+
+#: inc/redux-framework/options/portfolio-options.php:216
+msgid "Please choose if you want to show Portfolio Related Works Content"
+msgstr "请选择是否要显示与作品集相关的作品内容"
+
+#: inc/redux-framework/options/portfolio-options.php:226
+msgid "Enable Related Works Pretitle"
+msgstr "启用相关作品标题"
+
+#: inc/redux-framework/options/portfolio-options.php:227
+msgid ""
+"Please choose if you want to enable related works block pretitle in Single "
+"Portfolio page"
+msgstr "请选择是否要在“单个作品集”页面中启用相关的作品阻止标题"
+
+#: inc/redux-framework/options/portfolio-options.php:237
+msgid "Pre-Title"
+msgstr "预标题"
+
+#: inc/redux-framework/options/portfolio-options.php:238
+msgid "Enter the text that you want to appear above the section title"
+msgstr "输入要显示在部分标题上方的文本"
+
+#: inc/redux-framework/options/portfolio-options.php:246
+msgid "Pretitle Color"
+msgstr "标题颜色"
+
+#: inc/redux-framework/options/portfolio-options.php:257
+msgid "white"
+msgstr "白色"
+
+#: inc/redux-framework/options/portfolio-options.php:258
+msgid "Soft Primary"
+msgstr "软小学"
+
+#: inc/redux-framework/options/portfolio-options.php:259
+msgid "Soft Secondary"
+msgstr "软中学"
+
+#: inc/redux-framework/options/portfolio-options.php:260
+msgid "Soft Success"
+msgstr "软成功"
+
+#: inc/redux-framework/options/portfolio-options.php:261
+msgid "Soft Danger"
+msgstr "软危险"
+
+#: inc/redux-framework/options/portfolio-options.php:262
+msgid "Soft Warning"
+msgstr "软警告"
+
+#: inc/redux-framework/options/portfolio-options.php:263
+msgid "Soft Indigo"
+msgstr "柔和的靛蓝"
+
+#: inc/redux-framework/options/portfolio-options.php:264
+msgid "Soft Info"
+msgstr "软信息"
+
+#: inc/redux-framework/options/portfolio-options.php:265
+msgid "Soft Dark"
+msgstr "软暗"
+
+#: inc/redux-framework/options/portfolio-options.php:275
+msgid "Enter the section title. HTML tags permitted."
+msgstr "输入章节标题。允许使用HTML标签。"
+
+#: inc/redux-framework/options/portfolio-options.php:276
+msgid "Our %s branding %s works"
+msgstr "我们的％s品牌％s有效"
+
+#: inc/redux-framework/options/portfolio-options.php:285
+msgid "Enter the text that you want to appear below title."
+msgstr "输入要显示在标题下方的文本。"
+
+#: inc/redux-framework/options/portfolio-options.php:294
+msgid "Projects View"
+msgstr "专案检视"
+
+#: inc/redux-framework/options/portfolio-options.php:295
+msgid "Select the view for related projects"
+msgstr "选择相关项目的视图"
+
+#: inc/redux-framework/options/portfolio-options.php:309
+#: wp-job-manager-resumes/contact-details.php:30
+#: wp-job-manager-resumes/contact-details.php:36
+msgid "Contact"
+msgstr "联系"
+
+#: inc/redux-framework/options/portfolio-options.php:317
+msgid "Enable Contact Block in Portfolio Page"
+msgstr "在投资组合页面中启用联系人阻止"
+
+#: inc/redux-framework/options/portfolio-options.php:318
+msgid "Please choose if you want to enable contact block in Portfolio page"
+msgstr "请选择是否要在“投资组合”页面中启用联系人阻止"
+
+#: inc/redux-framework/options/portfolio-options.php:328
+msgid "Enter the contact section title. HTML tags permitted."
+msgstr "输入联系人部分的标题。允许使用HTML标签。"
+
+#: inc/redux-framework/options/portfolio-options.php:329
+msgid "You wish us %s to talk about %s your project %s"
+msgstr "您希望我们％s谈论％s您的项目％s"
+
+#: inc/redux-framework/options/portfolio-options.php:337
+msgid "Enter your contact email address"
+msgstr "输入您的联系电子邮件地址"
+
+#: inc/redux-framework/options/portfolio-options.php:338
+msgid "support@htmlstream.com"
+msgstr "support@htmlstream.com"
+
+#: inc/redux-framework/options/portfolio-options.php:344
+msgid "Social Network Menu"
+msgstr "社交网络菜单"
+
+#: inc/redux-framework/options/portfolio-options.php:345
+msgid "Select the menu that displays your social networks"
+msgstr "选择显示您的社交网络的菜单"
+
+#: inc/redux-framework/options/portfolio-options.php:354
+msgid "Enter your phone number "
+msgstr "输入你的电话号码"
+
+#: inc/redux-framework/options/shop-options.php:7
+msgid "Shop"
+msgstr "店"
+
+#: inc/redux-framework/options/shop-options.php:8
+msgid "Options available for your shop"
+msgstr "您的商店可用的选项"
+
+#: inc/redux-framework/options/shop-options.php:23
+msgid "Use separate header for shop"
+msgstr "为商店使用单独的标题"
+
+#: inc/redux-framework/options/shop-options.php:24
+msgid "Do you want to display a separate header for shop ?"
+msgstr "您是否要为商店显示单独的标题？"
+
+#: inc/redux-framework/options/shop-options.php:32
+msgid "Shop Header"
+msgstr "店铺标题"
+
+#: inc/redux-framework/options/shop-options.php:33
+msgid "Choose a static block header for shop"
+msgstr "为商店选择一个静态块标题"
+
+#: inc/redux-framework/options/shop-options.php:54
+msgid "Use separate footer for shop"
+msgstr "在商店使用单独的页脚"
+
+#: inc/redux-framework/options/shop-options.php:55
+msgid "Do you want to display a separate footer for shop ?"
+msgstr "是否要为商店显示单独的页脚？"
+
+#: inc/redux-framework/options/shop-options.php:63
+msgid "Shop Footer"
+msgstr "店铺页脚"
+
+#: inc/redux-framework/options/shop-options.php:64
+msgid "Choose a static block footer for shop"
+msgstr "选择商店的静态块页脚"
+
+#: inc/redux-framework/options/shop-options.php:84
+msgid "Shop Page Jumbotron"
+msgstr "商店页面巨无霸"
+
+#: inc/redux-framework/options/shop-options.php:85
+msgid "Choose a static block that will be the jumbotron element for shop page"
+msgstr "选择一个静态块作为商店页面的巨型元素"
+
+#: inc/redux-framework/options/shop-options.php:97
+msgid "Shop Layout"
+msgstr "店铺布局"
+
+#: inc/redux-framework/options/shop-options.php:98
+msgid "Select from the two available layouts for shop"
+msgstr "从商店的两种可用布局中选择"
+
+#: inc/redux-framework/options/shop-options.php:110
+msgid "Product archive views"
+msgstr "产品档案视图"
+
+#: inc/redux-framework/options/shop-options.php:111
+msgid ""
+"Please drag and arrange the views. Top most view will be the default view"
+msgstr "请拖动并排列视图。最高的视图将是默认视图"
+
+#: inc/redux-framework/options/shop-options.php:124
+msgid "Single Product"
+msgstr "单品"
+
+#: inc/redux-framework/options/shop-options.php:131
+msgid "Enable Related Products"
+msgstr "启用相关产品"
+
+#: inc/redux-framework/options/shop-options.php:138
+msgid "Single Product Before Footer Content"
+msgstr "页脚内容之前的单个产品"
+
+#: inc/redux-framework/options/shop-options.php:139
+msgid ""
+"Choose a static block that will be the jumbotron element for single product "
+"page"
+msgstr "选择一个静态块作为单个产品页面的巨型元素"
+
+#: inc/redux-framework/options/shop-options.php:150
+msgid "Show Single Product Features List"
+msgstr "显示单个产品功能列表"
+
+#: inc/redux-framework/options/shop-options.php:157
+msgid "Feature List Icon"
+msgstr "功能列表图标"
+
+#: inc/redux-framework/options/shop-options.php:158
+msgid "Upload Image"
+msgstr "上传图片"
+
+#: inc/redux-framework/options/shop-options.php:161
+msgid "fgb-icon-65"
+msgstr "fgb-icon-65"
+
+#: inc/redux-framework/options/shop-options.php:162
+msgid "fgb-icon-64"
+msgstr "fgb-icon-64"
+
+#: inc/redux-framework/options/shop-options.php:171
+msgid "Feature List Title"
+msgstr "功能列表标题"
+
+#: inc/redux-framework/options/shop-options.php:172
+msgid "Add Title"
+msgstr "添加标题"
+
+#: inc/redux-framework/options/shop-options.php:174
+#: inc/woocommerce/template-tags/single-product.php:184
+msgid "Free Shipping"
+msgstr "免费送货"
+
+#: inc/redux-framework/options/shop-options.php:175
+#: inc/woocommerce/template-tags/single-product.php:189
+msgid "30 Days return"
+msgstr "30天退货"
+
+#: inc/redux-framework/options/shop-options.php:183
+msgid "Feature List Text"
+msgstr "功能列表文字"
+
+#: inc/redux-framework/options/shop-options.php:184
+msgid "Add Description"
+msgstr "添加说明"
+
+#: inc/redux-framework/options/shop-options.php:186
+#: inc/redux-framework/options/shop-options.php:187
+#: inc/woocommerce/template-tags/single-product.php:185
+#: inc/woocommerce/template-tags/single-product.php:190
+msgid ""
+"We offer free shipping anywhere in the U.S. A skilled delivery team will "
+"bring the boxes into your office."
+msgstr "我们在美国任何地方都提供免费送货服务。经验丰富的送货团队会将包装箱带入您的办公室。"
+
+#: inc/redux-framework/options/style-options.php:10
+msgid "How to include custom color ?"
+msgstr "如何包含自定义颜色？"
+
+#: inc/redux-framework/options/style-options.php:14
+msgid "Inline"
+msgstr "排队"
+
+#: inc/redux-framework/options/style-options.php:15
+msgid "External File"
+msgstr "外部档案"
+
+#: inc/redux-framework/options/style-options.php:24
+msgid "Custom Primary Color CSS"
+msgstr "自定义原色CSS"
+
+#: inc/redux-framework/options/style-options.php:25
+msgid ""
+"Please activate child theme to load custom color CSS using \"External File\"."
+" Also you need to make custom-color.css file writable."
+msgstr "请激活子主题以使用“外部文件”加载自定义颜色CSS。另外，您需要使custom-color.css文件可写。"
+
+#: inc/redux-framework/options/style-options.php:31
+msgid "Styling"
+msgstr "造型"
+
+#: inc/redux-framework/options/style-options.php:38
+msgid "General Theme Style Settings"
+msgstr "常规主题样式设置"
+
+#: inc/redux-framework/options/style-options.php:43
+msgid "Use a predefined color scheme"
+msgstr "使用预定义的配色方案"
+
+#: inc/redux-framework/options/style-options.php:65
+msgid "Custom Primary Color"
+msgstr "自定义原色"
+
+#: inc/redux-framework/options/style-options.php:75
+msgid "Custom Secondary Color"
+msgstr "自定义二级颜色"
+
+#: inc/redux-framework/options/style-options.php:85
+msgid "Custom Indigo Gradient Color"
+msgstr "自定义靛蓝渐变色"
+
+#: inc/redux-framework/options/style-options.php:95
+msgid "Custom Info Gradient Color"
+msgstr "自定义信息渐变色"
+
+#: inc/redux-framework/options/style-options.php:105
+msgid "Custom Warning Gradient Color"
+msgstr "自定义警告渐变颜色"
+
+#: inc/redux-framework/options/style-options.php:115
+msgid "Custom Danger Gradient Color"
+msgstr "自定义危险渐变颜色"
+
+#: inc/redux-framework/options/style-options.php:125
+msgid "Custom White Gradient Color"
+msgstr "自定义白色渐变色"
+
+#: inc/redux-framework/options/style-options.php:135
+msgid "Custom Dark Gradient Color"
+msgstr "自定义深色渐变颜色"
+
+#: inc/redux-framework/options/typography-options.php:8
+msgid "Typography"
+msgstr "版式"
+
+#: inc/redux-framework/options/typography-options.php:9
+msgid "Typography Options available in theme"
+msgstr "主题中可用的版式选项"
+
+#: inc/redux-framework/options/typography-options.php:15
+msgid "Use default font scheme ?"
+msgstr "使用默认字体方案？"
+
+#: inc/redux-framework/options/typography-options.php:24
+msgid "Title Font Family"
+msgstr "标题字体家族"
+
+#: inc/redux-framework/options/typography-options.php:43
+msgid "Content Font Family"
+msgstr "内容字体系列"
+
+#: inc/wedocs/front-wedocs-functions.php:77
+msgid "Home"
+msgstr "家"
+
+#: inc/wedocs/front-wedocs-template-functions.php:33
+msgid "Documentation Search &hellip;"
+msgstr "文档搜索…"
+
+#: inc/wedocs/front-wedocs-template-functions.php:71
+#: templates/docs/content-docs.php:61 wedocs/shortcode.php:64
+msgid "Written by"
+msgstr "撰写者"
+
+#: inc/wedocs/front-wedocs-template-functions.php:77
+msgid "Updated on %s"
+msgstr "已于％s更新"
+
+#. translators: %s: Name of current post.
+#: inc/wedocs/front-wedocs-template-functions.php:94
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "继续阅读％s <span class=\"meta-nav\">→</span>"
+
+#: inc/wedocs/front-wedocs-template-functions.php:267
+#: inc/wedocs/front-wedocs-template-functions.php:273
+#: inc/wedocs/front-wedocs-template-functions.php:281
+msgid "post thumbnail"
+msgstr "发布缩略图"
+
+#: inc/woocommerce/classes/class-front-categories.php:51
+#: inc/woocommerce/classes/class-front-categories.php:227
+msgid "Jumbotron"
+msgstr "巨无霸"
+
+#: inc/woocommerce/classes/class-front-categories.php:53
+#: inc/woocommerce/classes/class-front-categories.php:65
+#: inc/woocommerce/classes/class-front-categories.php:77
+#: inc/woocommerce/classes/class-front-categories.php:122
+#: inc/woocommerce/classes/class-front-categories.php:151
+#: inc/woocommerce/classes/class-front-categories.php:180
+msgid "Select a Static Block"
+msgstr "选择一个静态块"
+
+#: inc/woocommerce/classes/class-front-categories.php:63
+#: inc/woocommerce/classes/class-front-categories.php:135
+#: inc/woocommerce/classes/class-front-categories.php:228
+msgid "Middle Jumbotron"
+msgstr "中超大tron"
+
+#: inc/woocommerce/classes/class-front-categories.php:75
+#: inc/woocommerce/classes/class-front-categories.php:164
+#: inc/woocommerce/classes/class-front-categories.php:229
+msgid "Bottom Jumbotron"
+msgstr "底部巨型"
+
+#: inc/woocommerce/classes/class-front-categories.php:107
+msgid "Top Jumbotron"
+msgstr "顶级巨无霸"
+
+#: inc/woocommerce/front-wc-template-functions-overrides.php:47
+#: woocommerce/loop/sale-flash.php:27
+#: woocommerce/single-product/sale-flash.php:27
+msgid "Sale!"
+msgstr "特价！"
+
+#: inc/woocommerce/front-wc-template-functions-overrides.php:51
+#: inc/woocommerce/template-tags/product-item.php:141
+msgid "Sold Out"
+msgstr "卖光了"
+
+#: inc/woocommerce/front-wc-template-functions-overrides.php:99
+msgid "View cart"
+msgstr "查看购物车"
+
+#: inc/woocommerce/front-wc-template-functions-overrides.php:106
+msgid "Checkout"
+msgstr "查看"
+
+#: inc/woocommerce/front-wc-template-functions-overrides.php:216
+msgid "required"
+msgstr "需要"
+
+#: inc/woocommerce/front-wc-template-functions-overrides.php:280
+#: woocommerce/cart/shipping-calculator.php:31
+msgid "Select a country&hellip;"
+msgstr "选择一个国家…"
+
+#: inc/woocommerce/front-wc-template-functions-overrides.php:288
+msgid "Update country"
+msgstr "更新国家"
+
+#: inc/woocommerce/front-wc-template-functions-overrides.php:306
+#: inc/woocommerce/front-wc-template-functions-overrides.php:307
+#: woocommerce/cart/shipping-calculator.php:55
+msgid "Select an option&hellip;"
+msgstr "选择一个选项…"
+
+#: inc/woocommerce/front-wc-template-functions-overrides.php:355
+msgid "Choose an option"
+msgstr "选择一个选项"
+
+#: inc/woocommerce/front-woocommerce-template-functions.php:187
+msgid "View your shopping cart"
+msgstr "查看您的购物车"
+
+#: inc/woocommerce/front-woocommerce-template-functions.php:258
+#: woocommerce/cart/mini-cart.php:35 woocommerce/cart/mini-cart.php:42
+#: woocommerce/cart/mini-cart.php:73
+msgid "Your Shopping Cart"
+msgstr "你的购物车"
+
+#: inc/woocommerce/front-woocommerce-template-functions.php:354
+#: woocommerce/cart/cart.php:131
+msgid "Remove this item"
+msgstr "删除该项目"
+
+#: inc/woocommerce/front-woocommerce-template-functions.php:368
+msgid "Quantity: %s"
+msgstr "数量：％s"
+
+#: inc/woocommerce/front-woocommerce-template-functions.php:400
+msgid "Order Subtotal"
+msgstr "订单小计"
+
+#: inc/woocommerce/front-woocommerce-template-functions.php:449
+msgid "Review Bag and Checkout"
+msgstr "审核行李和结帐"
+
+#: inc/woocommerce/front-woocommerce-template-hooks.php:72
+msgid "Your cart is currently empty"
+msgstr "您的购物车目前是空的"
+
+#: inc/woocommerce/front-woocommerce-template-hooks.php:73
+msgid ""
+"Before proceed to checkout you must add some products to your shopping cart. "
+"You will find a lot of interesting products on our \"Shop\" page."
+msgstr "在进行结帐之前，您必须将一些产品添加到购物车中。您会在我们的“商店”页面上找到很多有趣的产品。"
+
+#: inc/woocommerce/template-tags/my-account.php:64
+msgid "Howdy, %s!"
+msgstr "你好，％s！"
+
+#: inc/woocommerce/template-tags/my-account.php:131
+msgid "Front partners"
+msgstr "前台合作伙伴"
+
+#: inc/woocommerce/template-tags/my-account.php:134
+#: inc/woocommerce/template-tags/my-account.php:137
+#: inc/woocommerce/template-tags/my-account.php:140
+msgid "Image Description"
+msgstr "图片描述"
+
+#: inc/woocommerce/template-tags/my-account.php:161
+msgid "privacy policy"
+msgstr "隐私政策"
+
+#: inc/woocommerce/template-tags/my-account.php:162
+msgid "terms and conditions"
+msgstr "条款和条件"
+
+#: inc/woocommerce/template-tags/my-account.php:176
+msgid "Passwords do not match."
+msgstr "密码不匹配。"
+
+#: inc/woocommerce/template-tags/product-item.php:260
+msgid "Grid View"
+msgstr "网格视图"
+
+#: inc/woocommerce/template-tags/product-item.php:266
+msgid "List View"
+msgstr "列表显示"
+
+#: inc/woocommerce/template-tags/product-item.php:394
+msgid "Page:"
+msgstr "页："
+
+#: inc/woocommerce/template-tags/product-item.php:401
+msgid "of"
+msgstr "的"
+
+#: inc/woocommerce/template-tags/product-item.php:402
+msgid "%s"
+msgstr "％s"
+
+#: inc/woocommerce/template-tags/product-item.php:433
+msgid "Sort by"
+msgstr "排序方式"
+
+#: inc/woocommerce/template-tags/product-item.php:434
+msgid "Popularity"
+msgstr "人气度"
+
+#: inc/woocommerce/template-tags/product-item.php:435
+msgid "Average rating"
+msgstr "平均评分"
+
+#: inc/woocommerce/template-tags/product-item.php:436
+msgid "Newness"
+msgstr "新颖性"
+
+#: inc/woocommerce/template-tags/product-item.php:437
+msgid "Price (high - low)"
+msgstr "价格（高-低）"
+
+#: inc/woocommerce/template-tags/product-item.php:438
+msgid "Price (low - high)"
+msgstr "价格（从低到高）"
+
+#: inc/woocommerce/template-tags/product-item.php:583
+msgid "%s Categories"
+msgstr "％s类别"
+
+#: inc/woocommerce/template-tags/product-item.php:698
+msgid "View All"
+msgstr "查看全部"
+
+#: inc/woocommerce/template-tags/single-product.php:96
+#: templates/shop/single-product-advanced-reviews.php:106
+msgid "Write a review"
+msgstr "写评论"
+
+#: inc/woocommerce/template-tags/single-product.php:98
+msgid "Read %s review"
+msgid_plural "Read all %s reviews"
+msgstr[0] "阅读％s评论"
+msgstr[1] ""
+
+#: inc/woocommerce/template-tags/single-product.php:123
+msgid "Total price:"
+msgstr "总价："
+
+#: inc/woocommerce/template-tags/single-product.php:141
+msgid "Select quantity"
+msgstr "选择数量"
+
+#: inc/woocommerce/template-tags/single-product.php:317
+#: inc/woocommerce/template-tags/single-product.php:347
+msgid "Awaiting product image"
+msgstr "等待产品图片"
+
+#: inc/woocommerce/template-tags/single-product.php:443
+msgid "Upsell Products"
+msgstr "加售产品"
+
+#: inc/woocommerce/template-tags/single-product.php:450
+msgid "Related Products"
+msgstr "相关产品"
+
+#: inc/wp-job-manager/class-front-wpjm.php:115
+msgid "Jobs Sidebar"
+msgstr "乔布斯侧边栏"
+
+#: inc/wp-job-manager/class-front-wpjm.php:117
+msgid "Widgets added to this region will appear in the jobs page."
+msgstr "添加到该区域的小部件将显示在作业页面中。"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:129
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:245
+msgid "Last Hour"
+msgstr "上一个小时"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:130
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:246
+msgid "Last 24 Hours"
+msgstr "最近24小时"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:131
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:247
+msgid "Last 7 Days"
+msgstr "最近7天"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:132
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:248
+msgid "Last 14 Days"
+msgstr "最近14天"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:133
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:249
+msgid "Last 30 Days"
+msgstr "最近30天"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:785
+msgid "Please select a form"
+msgstr "请选择一个表格"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:848
+msgid "User Can't Apply for this Job"
+msgstr "用户无法申请此职位"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:970
+msgid "New Job"
+msgstr "新工作"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:971
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:774
+msgid "Menu Order"
+msgstr "菜单顺序"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:972
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:775
+msgid "Name: Ascending"
+msgstr "名称：升序"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:973
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:776
+msgid "Name: Descending"
+msgstr "名称：降序"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:980
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:783
+msgid "Relevance"
+msgstr "关联"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:1071
+#: inc/wp-job-manager/front-wpjm-template-functions.php:955
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:826
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:511
+#: job_manager/job-filters.php:23
+msgid "what"
+msgstr "什么"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:1072
+#: inc/wp-job-manager/front-wpjm-template-functions.php:956
+#: job_manager/job-filters.php:24
+msgid "job title, keywords, or company"
+msgstr "职务，关键字或公司"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:1073
+#: inc/wp-job-manager/front-wpjm-template-functions.php:957
+#: job_manager/job-filters.php:25
+msgid "Keyword or title"
+msgstr "关键字或标题"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:1074
+#: inc/wp-job-manager/front-wpjm-template-functions.php:958
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:829
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:514
+#: job_manager/job-filters.php:26
+msgid "where"
+msgstr "哪里"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:1075
+#: inc/wp-job-manager/front-wpjm-template-functions.php:959
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:830
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:515
+#: job_manager/job-filters.php:27
+msgid "city, state, or zip code"
+msgstr "城市，州或邮递区号"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:1077
+#: inc/wp-job-manager/front-wpjm-template-functions.php:961
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:832
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:517
+#: job_manager/job-filters.php:29
+msgid "which"
+msgstr "哪一个"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:1078
+#: inc/wp-job-manager/front-wpjm-template-functions.php:962
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:833
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:518
+#: job_manager/job-filters.php:30
+msgid "department, industry, or specialism"
+msgstr "部门，行业或专业"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:1079
+#: inc/wp-job-manager/front-wpjm-template-functions.php:963
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:834
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:519
+#: job_manager/job-filters.php:31
+msgid "All Category"
+msgstr "所有类别"
+
+#: inc/wp-job-manager/front-wpjm-functions.php:1080
+#: inc/wp-job-manager/front-wpjm-template-functions.php:964
+#: job_manager/job-filters.php:32
+msgid "Find Jobs"
+msgstr "找工作"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:6
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:6
+msgid "Maximum of %d."
+msgstr "最多％d。"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:10
+msgid "Branch/Contact Email"
+msgstr "分行/联系电子邮件"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:13
+msgid "you@yourdomain.com"
+msgstr "you@yourdomain.com"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:18
+msgid "Branch/Contact No."
+msgstr "分行/联系电话"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:21
+msgid "Branch/Contact phome no"
+msgstr "分公司/联系方式phome否"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:26
+msgid "Job Qualification"
+msgstr "工作资格"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:29
+msgid "Qualification required to apply this job"
+msgstr "申请此职位所需的资格"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:36
+#: inc/wp-job-manager/front-wpjm-template-functions.php:39
+msgid "Branch/Contact Address"
+msgstr "分行/联系地址"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:45
+msgid "Job Skills"
+msgstr "工作技巧"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:48
+msgid "Relevant skills to this Job"
+msgstr "与这项工作相关的技能"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:49
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:10
+msgid "list of relevant skills seperate with Enter key"
+msgstr "与输入键分开的相关技能列表"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:56
+msgid "Job Salary"
+msgstr "工作工资"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:60
+msgid "Choose a salary &hellip;"
+msgstr "选择薪水..."
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:67
+msgid "Project Length"
+msgstr "项目长度"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:71
+msgid "Choose a project length &hellip;"
+msgstr "选择项目长度..."
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:78
+msgid "Working Environment"
+msgstr "工作环境"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:82
+msgid "Choose a Job Working environment &hellip;"
+msgstr "选择工作环境..."
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:88
+msgid "Short Desciption"
+msgstr "简短的描述"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:91
+msgid "short description about job"
+msgstr "关于工作的简短描述"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:96
+msgid "Job Resposibility"
+msgstr "工作职责"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:97
+msgid "Add Resposibility"
+msgstr "增加责任"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:104
+#: inc/wp-job-manager/front-wpjm-template-functions.php:121
+#: inc/wp-job-manager/front-wpjm-template-functions.php:138
+msgid "Notes"
+msgstr "笔记"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:113
+msgid "Job Requirement"
+msgstr "职位需要"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:114
+msgid "Add Requirement"
+msgstr "添加要求"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:130
+#: inc/wp-job-manager/front-wpjm-template-functions.php:570
+msgid "Bonus Points"
+msgstr "奖励积分"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:131
+msgid "Add Bonus Points"
+msgstr "添加奖励积分"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:147
+msgid "About Branch"
+msgstr "关于分公司"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:147
+msgid "About Company / Branch"
+msgstr "关于公司/分公司"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:150
+msgid "short description about branch"
+msgstr "关于分支的简短描述"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:150
+msgid "short description about company/branch"
+msgstr "关于公司/分公司的简短说明"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:171
+msgid "Please enter no more than %d skills."
+msgstr "请输入不超过％d个技能。"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:456
+msgid "Job Description"
+msgstr "职位描述"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:496
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:331
+msgid "Skills:"
+msgstr "技能专长："
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:514
+msgid "Responsibilities"
+msgstr "职责范围"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:542
+msgid "Requirements"
+msgstr "要求"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:606
+msgid "Job Summary"
+msgstr "工作总结"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:648
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1191
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1299
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:767
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:904
+#: wp-job-manager-alerts/my-alerts.php:31
+msgid "Location"
+msgstr "位置"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:653
+msgid "Job Type"
+msgstr "工作类型"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:658
+msgid "Project length"
+msgstr "项目长度"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:662
+#: inc/wp-job-manager/front-wpjm-template-functions.php:997
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1201
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1304
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:34
+msgid "Salary"
+msgstr "薪水"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:667
+msgid "Entry level"
+msgstr "入门级"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:713
+msgid "About"
+msgstr "关于"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:719
+msgid "View company profile"
+msgstr "查看公司简介"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:735
+msgid "Contacts"
+msgstr "联络人"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:741
+msgid "Email:"
+msgstr "电子邮件："
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:744
+msgid "Phone:"
+msgstr "电话："
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:766
+msgid "Similar Jobs"
+msgstr "类似职位"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:767
+msgid ""
+"The largest community on the web to find and list jobs that aren't "
+"restricted by commutes or a specific location."
+msgstr "网络上最大的社区，用于查找和列出不受通勤或特定地点限制的工作。"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:827
+msgid "See All Jobs"
+msgstr "查看所有工作"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:881
+msgid "Apply Now"
+msgstr "现在申请"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:929
+msgid "Join Front"
+msgstr "加盟前线"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:930
+msgid "Apply for this Job"
+msgstr "申请这份工作"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:994
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:549
+msgid "Category"
+msgstr "类别"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1003
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:555
+msgid "Search results"
+msgstr "搜索结果"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1054
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:606
+msgid "Clear All"
+msgstr "全部清除"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1196
+msgid "Posted"
+msgstr "发表于"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1197
+msgid "%s ago"
+msgstr "％s前"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1399
+msgid "Overal Rating"
+msgstr "总体评价"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1401
+msgid "Based on %s review"
+msgid_plural "Based on %s reviews"
+msgstr[0] "根据％s的评论"
+msgstr[1] ""
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1410
+msgid "NaN"
+msgstr "N"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1537
+msgid "View Details"
+msgstr "查看详情"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1582
+#: wp-job-manager-alerts/my-alerts.php:38
+msgid "Add alert"
+msgstr "添加提醒"
+
+#: inc/wp-job-manager/front-wpjm-template-functions.php:1626
+msgid "Alert me to jobs like this"
+msgstr "提醒我这样的工作"
+
+#: inc/wp-job-manager-resumes/class-front-wpjmr.php:80
+msgid "Resume Sidebar"
+msgstr "恢复边栏"
+
+#: inc/wp-job-manager-resumes/class-front-wpjmr.php:82
+msgid "Widgets added to this region will appear in the Resume page."
+msgstr "添加到该区域的小部件将显示在“恢复”页面中。"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:56
+msgid "Showing %s - %s of %s resumes"
+msgstr "显示％s-％s的％s个简历"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:58
+msgid "Showing one job"
+msgid_plural "Showing all %s resumes"
+msgstr[0] "显示一份工作"
+msgstr[1] ""
+
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:63
+msgid "%s matching <span class=\"highlight\">%s</span>"
+msgstr "％s符合<span class=\"highlight\">％s</span>"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:67
+msgid "%s in <span class=\"highlight\">%s</span>"
+msgstr "％s在<span class=\"highlight\">％s中</span>"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:79
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:557
+msgid "Candidates"
+msgstr "候选人"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:773
+msgid "New Resume"
+msgstr "新简历"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:827
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:512
+msgid "candidate name, position or keywords"
+msgstr "候选人姓名，职位或关键字"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:828
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:513
+msgid "Keyword or name"
+msgstr "关键字或名称"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-functions.php:835
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:520
+msgid "Find Candidate"
+msgstr "寻找候选人"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:9
+msgid "List of Relevant skills"
+msgstr "相关技能清单"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:15
+msgid "your website link"
+msgstr "您的网站链接"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:22
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:57
+msgid "your twitter page link"
+msgstr "您的推特页面链接"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:29
+msgid "your facebook page link"
+msgstr "你的Facebook页面链接"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:36
+msgid "expected salery per hr/m/a"
+msgstr "每小时hr / m / a的预期销售量"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:41
+msgid "Jobs Done"
+msgstr "工作完成"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:43
+msgid "works done yet"
+msgstr "尚未完成的工作"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:48
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:238
+msgid "Success rate"
+msgstr "成功率"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:50
+msgid "rate of successful jobs yet"
+msgstr "成功工作率"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:62
+msgid "Candidate Bio"
+msgstr "候选人简历"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:64
+msgid "short notes about your self"
+msgstr "关于你自己的简短笔记"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:69
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:357
+msgid "Rewards"
+msgstr "奖赏"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:70
+msgid "Add Rewards"
+msgstr "添加奖励"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:77
+msgid "Reward Title"
+msgstr "奖励标题"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:84
+msgid "Image"
+msgstr "图片"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:93
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:287
+msgid "Languages"
+msgstr "语言能力"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:94
+msgid "Add Languages"
+msgstr "添加语言"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:101
+msgid "Language"
+msgstr "语言"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:108
+msgid "Level of known"
+msgstr "已知水平"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:178
+msgid "About Candidate"
+msgstr "关于候选人"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:206
+msgid "Joined %s"
+msgstr "已加入％s"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:228
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:772
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:909
+msgid "Working rate"
+msgstr "工作率"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:233
+msgid "Jobs done"
+msgstr "工作完成"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:243
+msgid "Repeat clients"
+msgstr "回头客"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:273
+msgid "Bio"
+msgstr "生化"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:374
+msgid "Industry expertise: %s"
+msgstr "行业专业知识：％s"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:389
+msgid "Education"
+msgstr "教育"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:429
+msgid "Work experience"
+msgstr "工作经验"
+
+#: inc/wp-job-manager-resumes/front-wpjmr-template-functions.php:777
+msgid "Projects"
+msgstr "专案"
+
+#: job_manager/content-single-job_listing.php:24
+msgid "This listing has expired."
+msgstr "此列表已过期。"
+
+#: job_manager/form-fields/repeated-field.php:24
+#: job_manager/form-fields/repeated-field.php:49
+#: wp-job-manager-resumes/form-fields/repeated-field.php:25
+#: wp-job-manager-resumes/form-fields/repeated-field.php:49
+#: wp-job-manager-resumes/resume-submit.php:37
+msgid "(optional)"
+msgstr "（可选的）"
+
+#: job_manager/form-fields/repeated-field.php:63
+msgid "Add Row"
+msgstr "添加行"
+
+#: job_manager/job-application.php:24
+msgid "Apply for job"
+msgstr "申请工作"
+
+#: job_manager/job-application.php:30
+msgid "Apply For Job"
+msgstr "申请工作"
+
+#: job_manager/job-dashboard.php:19
+msgid "Your listings are shown in the table below."
+msgstr "您的列表显示在下表中。"
+
+#: job_manager/job-dashboard.php:56
+msgid "You do not have any active listings."
+msgstr "您没有任何有效的列表。"
+
+#: job_manager/job-dashboard.php:69
+msgid "Featured Job"
+msgstr "特色工作"
+
+#: job_manager/job-dashboard.php:80
+msgid "Mark not filled"
+msgstr "标记未填充"
+
+#: job_manager/job-dashboard.php:82
+msgid "Mark filled"
+msgstr "标记已满"
+
+#: job_manager/job-dashboard.php:85
+msgid "Duplicate"
+msgstr "重复"
+
+#: job_manager/job-dashboard.php:89
+#: mas-wp-job-manager-company/company-dashboard.php:65
+#: wp-job-manager-resumes/candidate-dashboard.php:62
+msgid "Relist"
+msgstr "重新列出"
+
+#: job_manager/job-dashboard.php:100
+msgid "Continue Submission"
+msgstr "继续提交"
+
+#: job_manager/job-dashboard.php:104
+#: mas-wp-job-manager-company/company-dashboard.php:70
+#: wp-job-manager-alerts/my-alerts.php:70
+#: wp-job-manager-resumes/candidate-dashboard.php:67
+msgid "Delete"
+msgstr "删除"
+
+#: job_manager/job-filters.php:47
+msgid "Search Jobs"
+msgstr "搜索工作"
+
+#: job_manager/job-filters.php:62
+msgid "Search Locations"
+msgstr "搜索地点"
+
+#: job_manager/job-filters.php:82
+msgid "Select Category"
+msgstr "选择类别"
+
+#: job_manager/job-filters.php:103
+msgid ""
+"Your browser does not support JavaScript, or it is disabled. JavaScript must "
+"be enabled in order to view listings."
+msgstr "您的浏览器不支持JavaScript，或者已被禁用。必须启用JavaScript才能查看列表。"
+
+#: mas-wp-job-manager-company/comments.php:33
+msgid "Review"
+msgid_plural "Reviews"
+msgstr[0] "评论"
+msgstr[1] ""
+
+#: mas-wp-job-manager-company/comments.php:35
+msgid "Be a First Reviewer"
+msgstr "成为第一审稿人"
+
+#: mas-wp-job-manager-company/comments.php:72
+msgid "Newest First"
+msgstr "新的先来"
+
+#: mas-wp-job-manager-company/comments.php:73
+msgid "Oldest First"
+msgstr "最早的优先"
+
+#: mas-wp-job-manager-company/comments.php:134
+msgid "Leave a review"
+msgstr "发表评论"
+
+#: mas-wp-job-manager-company/comments.php:135
+#: templates/shop/single-product-advanced-reviews.php:142
+msgid "Leave a Reply to %s"
+msgstr "给％s回复"
+
+#: mas-wp-job-manager-company/comments.php:150
+msgid "Submit Review"
+msgstr "提交评论"
+
+#: mas-wp-job-manager-company/comments.php:152
+#: templates/shop/single-product-advanced-reviews.php:171
+msgid "Your Review"
+msgstr "你的意见"
+
+#: mas-wp-job-manager-company/company-dashboard.php:22
+msgid "Your company can be viewed, edited or removed below."
+msgid_plural "Your companies can be viewed, edited or removed below."
+msgstr[0] "您可以在下面查看，编辑或删除您的公司。"
+msgstr[1] ""
+
+#: mas-wp-job-manager-company/company-dashboard.php:34
+msgid "You do not have any active company listings."
+msgstr "您没有任何活跃的公司列表。"
+
+#: mas-wp-job-manager-company/company-dashboard.php:54
+#: wp-job-manager-resumes/candidate-dashboard.php:54
+msgid "Hide"
+msgstr "隐藏"
+
+#: mas-wp-job-manager-company/company-dashboard.php:57
+#: mas-wp-job-manager-company/company-dashboard.php:61
+#: wp-job-manager-resumes/candidate-dashboard.php:58
+msgid "Publish"
+msgstr "发布"
+
+#: mas-wp-job-manager-company/company-dashboard.php:99
+msgid "Add Company"
+msgstr "新增公司"
+
+#: searchform.php:8
+msgid "Search for:"
+msgstr "搜索："
+
+#: templates/blog/home/business/content-gallery.php:19
+#: templates/blog/home/business/content.php:33
+msgid "on %s"
+msgstr "在％s上"
+
+#: templates/blog/home/startup/content.php:31
+msgid "%s Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "％s <span class=\"screen-reader-text\">对％s</span>发表评论"
+
+#: templates/blog/home/startup/content.php:32
+msgid "%s 1 comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+"％s <span class=\"screen-reader-text\">对％s</span>发表<span class=\"screen-"
+"reader-text\">了</span> 1条评论"
+
+#: templates/contents/content-none.php:14
+msgid "Nothing Found"
+msgstr "没有发现"
+
+#: templates/contents/content-none.php:22
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "准备发布您的第一篇文章吗？ <a href=\"%1$s\">从这里开始</a> 。"
+
+#: templates/contents/content-none.php:26
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "抱歉，没有符合您的搜索条件。请使用其他不同的关键字再试一次。"
+
+#: templates/contents/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "看来我们找不到您想要的东西。也许搜索会有所帮助。"
+
+#: templates/docs/content-docs.php:55 wedocs/shortcode.php:58
+msgid "%s section in this topic"
+msgid_plural "%s sections in this topic"
+msgstr[0] "本主题中的“％s”部分"
+msgstr[1] ""
+
+#: templates/docs/content-docs.php:60 wedocs/shortcode.php:63
+msgid "and"
+msgstr "和"
+
+#: templates/footer/primary-background/v6.php:10
+msgid "We're here to help"
+msgstr "我们在这里为您提供帮助"
+
+#: templates/footer/primary-background/v6.php:11
+msgid ""
+"Find the right solution and get tailored pricing options. Or, find fast "
+"answers in our"
+msgstr "找到正确的解决方案并获得量身定制的定价选项。或者，在我们的网站中找到快速解答"
+
+#: templates/footer/primary-background/v6.php:11
+msgid "Help Center."
+msgstr "帮助中心。"
+
+#: templates/header/topbar-search-form.php:12
+msgid "Search %s"
+msgstr "搜索％s"
+
+#: templates/shop/single-product-advanced-reviews.php:30
+msgid "Rated %s out of 5"
+msgstr "评分％s（满分5分）"
+
+#: templates/shop/single-product-advanced-reviews.php:41
+msgid "Rating breakdown"
+msgstr "评级细目"
+
+#: templates/shop/single-product-advanced-reviews.php:47
+msgid "%s stars"
+msgstr "％s颗星"
+
+#: templates/shop/single-product-advanced-reviews.php:100
+msgid "There are no reviews yet."
+msgstr "还没有评论。"
+
+#: templates/shop/single-product-advanced-reviews.php:110
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr "只有已购买此产品的登录客户才能发表评论。"
+
+#: templates/shop/single-product-advanced-reviews.php:128
+#: templates/shop/single-product-advanced-reviews.php:141
+msgid "Add a review"
+msgstr "添加评论"
+
+#: templates/shop/single-product-advanced-reviews.php:141
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr "成为第一个评论“％s”的人"
+
+#: templates/shop/single-product-advanced-reviews.php:151
+#: woocommerce/myaccount/form-reset-password.php:47
+msgid "Save"
+msgstr "救"
+
+#: templates/shop/single-product-advanced-reviews.php:157
+msgid "You must be <a href=\"%s\">logged in</a> to post a review."
+msgstr "您必须先<a href=\"%s\">登录</a>才能发表评论。"
+
+#: templates/shop/single-product-advanced-reviews.php:161
+msgid "Your Rating"
+msgstr "你的评分"
+
+#: templates/shop/single-product-advanced-reviews.php:162
+msgid "Rate&hellip;"
+msgstr "率…"
+
+#: templates/shop/single-product-advanced-reviews.php:163
+msgid "Perfect"
+msgstr "完善"
+
+#: templates/shop/single-product-advanced-reviews.php:164
+msgid "Good"
+msgstr "好"
+
+#: templates/shop/single-product-advanced-reviews.php:165
+msgid "Average"
+msgstr "平均"
+
+#: templates/shop/single-product-advanced-reviews.php:166
+msgid "Not that bad"
+msgstr "没有那么糟糕"
+
+#: templates/shop/single-product-advanced-reviews.php:167
+msgid "Very Poor"
+msgstr "很穷"
+
+#: templates/widgets/front-posts-widget.php:32
+msgid "No posts found."
+msgstr "找不到帖子。"
+
+#: wedocs/content-feedback.php:8
+msgid "%d person found this useful"
+msgid_plural "%d persons found this useful"
+msgstr[0] "％d个人认为这很有用"
+msgstr[1] ""
+
+#: wedocs/content-feedback.php:8 wedocs/content-feedback.php:9
+msgid "No votes yet"
+msgstr "暂无投票"
+
+#: wedocs/content-feedback.php:9
+msgid "%d person found this not useful"
+msgid_plural "%d persons found this not useful"
+msgstr[0] "％d个人发现这没有用"
+msgstr[1] ""
+
+#: wedocs/content-feedback.php:12
+msgid "Was this article helpful to you?"
+msgstr "本文对您有帮助吗？"
+
+#: woocommerce/cart/cart-empty.php:32
+msgid "Start Shopping"
+msgstr "开始购物"
+
+#. Translators: $s shipping destination.
+#: woocommerce/cart/cart-shipping.php:73
+msgid "Shipping to %s."
+msgstr "运送至％s。"
+
+#: woocommerce/cart/cart-shipping.php:74
+msgid "Change address"
+msgstr "更换地址"
+
+#: woocommerce/cart/cart-shipping.php:76
+msgid "Shipping options will be updated during checkout."
+msgstr "结帐期间将更新运输选项。"
+
+#: woocommerce/cart/cart-shipping.php:83
+msgid "Enter your address to view shipping options."
+msgstr "输入您的地址以查看运送选项。"
+
+#: woocommerce/cart/cart-shipping.php:85
+msgid ""
+"There are no shipping options available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr "没有可用的运送方式。请确保您输入的地址正确无误，或者如果需要任何帮助，请与我们联系。"
+
+#. Translators: $s shipping destination.
+#: woocommerce/cart/cart-shipping.php:88
+msgid "No shipping options were found for %s."
+msgstr "找不到％s的运送选项。"
+
+#: woocommerce/cart/cart-shipping.php:89
+msgid "Enter a different address"
+msgstr "输入其他地址"
+
+#: woocommerce/cart/cart-totals.php:28
+#: woocommerce/checkout/form-checkout.php:42
+msgid "Order Summary"
+msgstr "订单摘要"
+
+#: woocommerce/cart/cart-totals.php:33
+msgid "Cart subtotal (%s)"
+msgstr "购物车小计（％s）"
+
+#: woocommerce/cart/cart-totals.php:60
+msgid "Shipping"
+msgstr "运输"
+
+#: woocommerce/cart/cart-totals.php:80
+msgid "(estimated for %s)"
+msgstr "（估计为％s）"
+
+#: woocommerce/cart/cart-totals.php:105 woocommerce/cart/cart.php:44
+#: woocommerce/checkout/review-order.php:119
+msgid "Total"
+msgstr "总"
+
+#: woocommerce/cart/cart.php:29
+msgid "%s items"
+msgstr "％s个项目"
+
+#: woocommerce/cart/cart.php:41
+msgid "Product"
+msgstr "产品"
+
+#: woocommerce/cart/cart.php:42
+msgid "Price"
+msgstr "价钱"
+
+#: woocommerce/cart/cart.php:43 woocommerce/global/quantity-input.php:28
+#: woocommerce/global/quantity-input.php:51
+msgid "Quantity"
+msgstr "数量"
+
+#: woocommerce/cart/cart.php:97
+msgid "Available on backorder"
+msgstr "缺货可用"
+
+#: woocommerce/cart/cart.php:160
+msgid "Update cart"
+msgstr "更新购物车"
+
+#: woocommerce/cart/cart.php:202 woocommerce/cart/cart.php:209
+msgid "Promo Code?"
+msgstr "促销代码？"
+
+#: woocommerce/cart/cart.php:210
+msgid "Promo code"
+msgstr "促销代码"
+
+#: woocommerce/cart/cart.php:212
+msgid "Apply coupon"
+msgstr "申请优惠券"
+
+#: woocommerce/cart/cart.php:212
+msgid "Apply"
+msgstr "应用"
+
+#: woocommerce/cart/cross-sells.php:25
+msgid "You may be interested in&hellip;"
+msgstr "您可能对…感兴趣"
+
+#: woocommerce/cart/mini-cart.php:66
+msgid "Your cart is empty."
+msgstr "您的购物车是空的。"
+
+#: woocommerce/cart/proceed-to-checkout-button.php:26
+msgid "Proceed to checkout"
+msgstr "进行结算"
+
+#: woocommerce/cart/shipping-calculator.php:24
+msgid "Calculate shipping"
+msgstr "计算运费"
+
+#: woocommerce/cart/shipping-calculator.php:50
+#: woocommerce/cart/shipping-calculator.php:54
+#: woocommerce/cart/shipping-calculator.php:65
+msgid "State / County"
+msgstr "州/县"
+
+#: woocommerce/cart/shipping-calculator.php:74
+msgid "City"
+msgstr "市"
+
+#: woocommerce/cart/shipping-calculator.php:80
+msgid "Postcode / ZIP"
+msgstr "邮政编码"
+
+#: woocommerce/checkout/form-billing.php:27
+msgid "Billing &amp; Shipping"
+msgstr "计费与运输"
+
+#: woocommerce/checkout/form-billing.php:31
+msgid "Billing details"
+msgstr "结算明细"
+
+#: woocommerce/checkout/form-billing.php:78
+msgid "Additional information"
+msgstr "附加信息"
+
+#: woocommerce/checkout/form-billing.php:110
+msgid "My Shipping address is different than my billing address."
+msgstr "我的收货地址与我的账单地址不同。"
+
+#: woocommerce/checkout/form-billing.php:131
+msgid "Create an account?"
+msgstr "创建一个帐户？"
+
+#: woocommerce/checkout/form-checkout.php:24
+msgid "You must be logged in to checkout."
+msgstr "您必须登录才能签出。"
+
+#: woocommerce/checkout/form-shipping.php:27
+msgid "Shipping Address"
+msgstr "收件地址"
+
+#: woocommerce/checkout/payment.php:27
+msgid "Payment Method"
+msgstr "付款方法"
+
+#: woocommerce/checkout/payment.php:36
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr "抱歉，您所在的州似乎没有可用的付款方式。如果您需要帮助或希望进行其他安排，请与我们联系。"
+
+#: woocommerce/checkout/payment.php:36
+msgid "Please fill in your details above to see available payment methods."
+msgstr "请填写上面的详细信息，以查看可用的付款方式。"
+
+#. translators: $1 and $2 opening and closing emphasis tags respectively
+#: woocommerce/checkout/payment.php:45
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the %1$sUpdate Totals%2$s button before placing your order. "
+"You may be charged more than the amount stated above if you fail to do so."
+msgstr ""
+"由于您的浏览器不支持JavaScript或已禁用JavaScript，请确保在下订单之前单击％1 $ sUpdate Totals％2 $ "
+"s按钮。如果您不这样做，可能向您收取的费用超过上述金额。"
+
+#: woocommerce/checkout/payment.php:47
+msgid "Update totals"
+msgstr "更新总数"
+
+#: woocommerce/checkout/review-order.php:42
+msgid "Price: "
+msgstr "价钱："
+
+#: woocommerce/checkout/review-order.php:58
+msgid "Subtotal"
+msgstr "小计"
+
+#: woocommerce/checkout/thankyou.php:29
+msgid ""
+"Unfortunately your order cannot be processed as the originating "
+"bank/merchant has declined your transaction. Please attempt your purchase "
+"again."
+msgstr "很遗憾，您的订单无法处理，因为发起银行/商家已拒绝您的交易。请再次尝试购买。"
+
+#: woocommerce/checkout/thankyou.php:32
+msgid "Pay"
+msgstr "工资"
+
+#: woocommerce/checkout/thankyou.php:34
+msgid "My account"
+msgstr "我的帐户"
+
+#: woocommerce/checkout/thankyou.php:40
+msgid "Your order is completed!"
+msgstr "您的订单已完成！"
+
+#: woocommerce/checkout/thankyou.php:41
+msgid ""
+"Thank you for your order! Your order is being processed. You will receive an "
+"email confirmation when your order is completed."
+msgstr "谢谢您的订单！您的订单正在处理中。您的订单完成后，您将收到一封电子邮件确认。"
+
+#: woocommerce/checkout/thankyou.php:53
+msgid "Continue Shopping"
+msgstr "继续购物"
+
+#: woocommerce/checkout/thankyou.php:70
+msgid "Thank you. Your order has been received."
+msgstr "谢谢。您的订单已收到。"
+
+#. translators: %s: Quantity.
+#: woocommerce/global/quantity-input.php:21
+msgid "%s quantity"
+msgstr "％s数量"
+
+#: woocommerce/loop/orderby.php:24
+msgid "Shop order"
+msgstr "车间订单"
+
+#. translators: %d: total results
+#: woocommerce/loop/result-count.php:28
+msgid "Showing the single result"
+msgid_plural "%d products"
+msgstr[0] "显示单个结果"
+msgstr[1] ""
+
+#: woocommerce/myaccount/dashboard.php:34
+msgid "Your Order"
+msgstr "你的订单"
+
+#: woocommerce/myaccount/dashboard.php:35
+msgid "Track, return or buy things again"
+msgstr "再次追踪，退货或购买东西"
+
+#: woocommerce/myaccount/dashboard.php:50
+msgid "Login & Security"
+msgstr "登录和安全"
+
+#: woocommerce/myaccount/dashboard.php:51
+msgid "Edit login, name and mobile number"
+msgstr "修改登录名，姓名和手机号码"
+
+#: woocommerce/myaccount/dashboard.php:66
+msgid "Your Address"
+msgstr "你的地址"
+
+#: woocommerce/myaccount/dashboard.php:67
+msgid "Edit Addresses for orders and gifts"
+msgstr "编辑订单和礼物的地址"
+
+#: woocommerce/myaccount/downloads.php:40 woocommerce/myaccount/orders.php:156
+msgid "Go shop"
+msgstr "去商店"
+
+#: woocommerce/myaccount/downloads.php:42 woocommerce/myaccount/orders.php:158
+msgid "No order has been made yet."
+msgstr "尚未下订单。"
+
+#: woocommerce/myaccount/form-edit-account.php:28
+msgid "First name"
+msgstr "名字"
+
+#: woocommerce/myaccount/form-edit-account.php:34
+msgid "Last name"
+msgstr "姓"
+
+#: woocommerce/myaccount/form-edit-account.php:43
+msgid "Display name"
+msgstr "显示名称"
+
+#: woocommerce/myaccount/form-edit-account.php:45
+msgid ""
+"This will be how your name will be displayed in the account section and in "
+"reviews"
+msgstr "这将是您的姓名在帐户部分和评论中显示的方式"
+
+#: woocommerce/myaccount/form-edit-account.php:62
+msgid "Password change"
+msgstr "密码变更"
+
+#: woocommerce/myaccount/form-edit-account.php:66
+msgid "Current password (leave blank to leave unchanged)"
+msgstr "当前密码（保留空白以保持不变）"
+
+#: woocommerce/myaccount/form-edit-account.php:72
+msgid "New password (leave blank to leave unchanged)"
+msgstr "新密码（保留空白以保持不变）"
+
+#: woocommerce/myaccount/form-edit-account.php:76
+msgid "Confirm new password"
+msgstr "确认新密码"
+
+#: woocommerce/myaccount/form-edit-account.php:87
+msgid "Save changes"
+msgstr "保存更改"
+
+#: woocommerce/myaccount/form-edit-address.php:20
+#: woocommerce/myaccount/my-address.php:26
+#: woocommerce/myaccount/my-address.php:31
+msgid "Billing address"
+msgstr "帐单地址"
+
+#: woocommerce/myaccount/form-edit-address.php:20
+#: woocommerce/myaccount/my-address.php:27
+msgid "Shipping address"
+msgstr "收件地址"
+
+#: woocommerce/myaccount/form-edit-address.php:69
+msgid "Save address"
+msgstr "保存地址"
+
+#: woocommerce/myaccount/form-lost-password.php:46
+msgid "Back to sign in"
+msgstr "返回登录"
+
+#: woocommerce/myaccount/form-lost-password.php:51
+msgid "Reset password"
+msgstr "重设密码"
+
+#: woocommerce/myaccount/form-lost-password.php:51
+msgid "Request Reset Link"
+msgstr "请求重置链接"
+
+#: woocommerce/myaccount/form-reset-password.php:27
+msgid "Enter a new password below."
+msgstr "在下面输入新密码。"
+
+#: woocommerce/myaccount/form-reset-password.php:30
+msgid "New password"
+msgstr "新密码"
+
+#: woocommerce/myaccount/form-reset-password.php:34
+msgid "Re-enter new password"
+msgstr "重新输入新的密码"
+
+#: woocommerce/myaccount/lost-password-confirmation.php:26
+msgid "Password reset email has been sent."
+msgstr "密码重置电子邮件已发送。"
+
+#: woocommerce/myaccount/lost-password-confirmation.php:28
+msgid ""
+"A password reset email has been sent to the email address on file for your "
+"account, but may take several minutes to show up in your inbox. Please wait "
+"at least 10 minutes before attempting another reset."
+msgstr "密码重设电子邮件已发送到您帐户的归档电子邮件地址，但可能需要几分钟才能显示在您的收件箱中。请至少等待10分钟，然后再尝试重新设置。"
+
+#: woocommerce/myaccount/my-address.php:40
+msgid "The following addresses will be used on the checkout page by default."
+msgstr "默认情况下，以下地址将在结帐页面上使用。"
+
+#: woocommerce/myaccount/my-address.php:97
+msgid "You have not set up this type of address yet."
+msgstr "您尚未设置此类型的地址。"
+
+#. translators: 1: formatted order total 2: total order items
+#: woocommerce/myaccount/orders.php:115
+msgid "%1$s for %2$s item"
+msgid_plural "%1$s for %2$s items"
+msgstr[0] "％2 $ s项的％1 $ s"
+msgstr[1] ""
+
+#: woocommerce/myaccount/view-order.php:26
+msgid "Order details"
+msgstr "订单详细信息"
+
+#: woocommerce/myaccount/view-order.php:29
+msgid "Order Number:"
+msgstr "订单号："
+
+#: woocommerce/myaccount/view-order.php:33
+msgid "Order Date:"
+msgstr "订购日期："
+
+#: woocommerce/myaccount/view-order.php:37
+msgid "Order Status:"
+msgstr "订单状态："
+
+#: woocommerce/myaccount/view-order.php:43
+msgid "Order updates"
+msgstr "订单更新"
+
+#: woocommerce/order/order-again.php:22
+msgid "Order again"
+msgstr "再次订购"
+
+#: woocommerce/order/order-details-customer.php:30
+msgid "Billing address:"
+msgstr "帐单地址："
+
+#: woocommerce/order/order-details-customer.php:55
+#: woocommerce/order/order-details-customer.php:99
+#: woocommerce/single-product/meta.php:30
+msgid "N/A"
+msgstr "不适用"
+
+#: woocommerce/order/order-details-customer.php:74
+msgid "Shipping address:"
+msgstr "收件地址："
+
+#: woocommerce/order/order-details-item.php:27
+msgid "Product Info:"
+msgstr "产品信息："
+
+#: woocommerce/order/order-details-item.php:30
+msgid "Product Name:"
+msgstr "产品名称："
+
+#: woocommerce/order/order-details-item.php:58
+msgid "Product Quantity:"
+msgstr "产品数量："
+
+#: woocommerce/order/order-details-item.php:65
+msgid "Product Total:"
+msgstr "产品总计："
+
+#: woocommerce/order/order-details.php:64
+msgid "Transaction details:"
+msgstr "交易明细："
+
+#: woocommerce/order/order-details.php:78
+msgid "Note:"
+msgstr "注意："
+
+#: woocommerce/order/order-downloads.php:24
+msgid "Downloads"
+msgstr "资料下载"
+
+#: woocommerce/order/order-downloads.php:90
+msgid "&infin;"
+msgstr "∞"
+
+#: woocommerce/order/order-downloads.php:96
+msgid "Never"
+msgstr "决不"
+
+#: woocommerce/single-product/add-to-cart/variable.php:32
+msgid "This product is currently out of stock and unavailable."
+msgstr "该产品目前无货，无法使用。"
+
+#: woocommerce/single-product/add-to-cart/variable.php:40
+msgid "Clear"
+msgstr "明确"
+
+#: woocommerce/single-product/meta.php:30
+msgid "SKU:"
+msgstr "SKU："
+
+#: woocommerce/single-product/meta.php:34
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] "类别："
+msgstr[1] ""
+
+#: woocommerce/single-product/meta.php:36
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] "标签："
+msgstr[1] ""
+
+#: woocommerce/single-product/related.php:26
+msgid "Related products"
+msgstr "相关产品"
+
+#: woocommerce/single-product/review-meta.php:27
+msgid "Your review is awaiting approval"
+msgstr "您的评论正在等待批准"
+
+#: woocommerce/single-product/review-meta.php:37
+msgid "verified owner"
+msgstr "经过验证的所有者"
+
+#: woocommerce/single-product/up-sells.php:27
+msgid "You may also like&hellip;"
+msgstr "你也许也喜欢…"
+
+#: wp-job-manager-alerts/my-alerts.php:19
+msgid "Your job alerts are shown in the table below and will be emailed to %s."
+msgstr "您的工作警报显示在下表中，并将通过电子邮件发送给％s。"
+
+#: wp-job-manager-alerts/my-alerts.php:23
+msgid "Alert Name"
+msgstr "警报名称"
+
+#: wp-job-manager-alerts/my-alerts.php:24
+msgid "Keywords"
+msgstr "关键词"
+
+#: wp-job-manager-alerts/my-alerts.php:26
+msgid "Categories"
+msgstr "分类目录"
+
+#: wp-job-manager-alerts/my-alerts.php:29
+msgid "Tags"
+msgstr "标签"
+
+#: wp-job-manager-alerts/my-alerts.php:32
+msgid "Frequency"
+msgstr "频率"
+
+#: wp-job-manager-alerts/my-alerts.php:54
+msgid "Results"
+msgstr "结果"
+
+#: wp-job-manager-alerts/my-alerts.php:58
+msgid "Send&nbsp;Now"
+msgstr "现在发送"
+
+#: wp-job-manager-alerts/my-alerts.php:148
+msgid "Next: %s at %s"
+msgstr "下一个：％s在％s"
+
+#: wp-job-manager-bookmarks/bookmark-form.php:29
+msgid "Notes:"
+msgstr "笔记："
+
+#: wp-job-manager-bookmarks/bookmark-form.php:35
+msgid "Update Bookmark"
+msgstr "更新书签"
+
+#: wp-job-manager-bookmarks/bookmark-form.php:35
+msgid "Add Bookmark"
+msgstr "添加书签"
+
+#: wp-job-manager-bookmarks/bookmark-form.php:41
+msgid "Remove Bookmark"
+msgstr "删除书签"
+
+#: wp-job-manager-resumes/candidate-dashboard.php:22
+msgid "Your resume can be viewed, edited or removed below."
+msgid_plural "Your resume(s) can be viewed, edited or removed below."
+msgstr[0] "您的简历可以在下面查看，编辑或删除。"
+msgstr[1] ""
+
+#: wp-job-manager-resumes/candidate-dashboard.php:34
+msgid "You do not have any active resume listings."
+msgstr "您没有任何有效的简历列表。"
+
+#: wp-job-manager-resumes/candidate-dashboard.php:90
+msgid "Expires %s"
+msgstr "到期％s"
+
+#: wp-job-manager-resumes/candidate-dashboard.php:108
+msgid "Add Resume"
+msgstr "添加简历"
+
+#: wp-job-manager-resumes/form-fields/repeated-field.php:62
+msgid "Add URL"
+msgstr "添加网址"
+
+#. Theme URI of the plugin/theme
+msgid "https://demo2.madrasthemes.com/front-demos/main/"
+msgstr "https://demo2.madrasthemes.com/front-demos/main/"
+
+#. Description of the plugin/theme
+msgid ""
+"Front - Multipurpose Business WordPress Theme is an incredibly beautiful, "
+"fully responsive and cleanly coded WordPress theme. It is the perfect "
+"starting point for your creative business."
+msgstr "前端-多功能商务WordPress主题是一个非常漂亮，响应灵敏且编码清晰的WordPress主题。这是您进行创意业务的完美起点。"
+
+#. Author of the plugin/theme
+msgid "MadrasThemes"
+msgstr "Madras主题"
+
+#. Author URI of the plugin/theme
+msgid "https://themeforest.net/user/madrasthemes/"
+msgstr "https://themeforest.net/user/madrasthemes/"
+
+#. Template Name of the plugin/theme
+msgid "Blog Agency"
+msgstr "博客代理"
+
+#. Template Name of the plugin/theme
+msgid "Blog Business"
+msgstr "博客业务"
+
+#. Template Name of the plugin/theme
+msgid "Blog Start-up"
+msgstr "博客启动"
+
+#. Template Name of the plugin/theme
+msgid "Login & My Account"
+msgstr "登录名和我的帐户"
+
+#. Template Name of the plugin/theme
+msgid "Privacy Policy"
+msgstr "隐私政策"
+
+#. Template Name of the plugin/theme
+msgid "Terms & Conditions"
+msgstr "条款及细则"
+
+#: classes/class-tgm-plugin-activation.php:1206
+#: classes/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "和"
+
+#. translators: 1: install status, 2: update status
+#: classes/class-tgm-plugin-activation.php:2427
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "％1 $ s，％2 $ s"
+
+#. translators: 1: number of plugins.
+#: classes/class-tgm-plugin-activation.php:2473
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "全部<span class=\"count\">（％s）</span>"
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "未知"
+
+#: comments.php:33
+msgctxt "comments title"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] "％1 $ s评论"
+msgstr[1] ""
+
+#. translators: %s: post title
+#: comments.php:43 mas-wp-job-manager-company/comments.php:40
+msgctxt "comments title"
+msgid "One reply on &ldquo;%s&rdquo;"
+msgstr "一则回复“％s”"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:47 mas-wp-job-manager-company/comments.php:44
+msgctxt "comments title"
+msgid "%1$s reply on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
+msgstr[0] "％1 $ s回复了“％2 $ s”"
+msgstr[1] ""
+
+#: inc/front-functions.php:249
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "ÿ"
+
+#: inc/front-functions.php:251
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "Y"
+
+#: inc/front-template-functions.php:954
+msgctxt "%s = human-readable time difference"
+msgid "%s ago"
+msgstr "％s前"
+
+#: inc/wedocs/front-wedocs-template-functions.php:122
+msgctxt "Used before tag names."
+msgid "Tags:"
+msgstr "标签："
+
+#: inc/wp-job-manager-resumes/class-front-wpjmr.php:37
+msgctxt "Resume permalink - resave permalinks after changing this"
+msgid "resume"
+msgstr "恢复"
+
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "搜索…"
+
+#: searchform.php:12
+msgctxt "submit button"
+msgid "Search"
+msgstr "搜索"
+
+#: woocommerce/global/quantity-input.php:61
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr "数量"
+
+#. translators: 1: first result 2: last result 3: total results
+#: woocommerce/loop/result-count.php:33
+msgctxt "with first and last result"
+msgid "Showing the single result"
+msgid_plural "%3$d products"
+msgstr[0] "显示单个结果"
+msgstr[1] ""
+
+#: woocommerce/myaccount/orders.php:101
+msgctxt "hash before order number"
+msgid "#"
+msgstr "＃"

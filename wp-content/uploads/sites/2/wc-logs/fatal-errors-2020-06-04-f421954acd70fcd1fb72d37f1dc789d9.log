@@ -1,0 +1,455 @@
+2020-06-04T18:16:27+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/06/laughte...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(1493)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process. in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T18:21:40+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/06/laughte...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(1493)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process. in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T18:48:39+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T18:53:42+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T18:58:40+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T19:03:40+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T19:08:40+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T19:13:49+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T19:18:41+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T19:23:49+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T19:28:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T19:33:49+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T19:38:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T19:43:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T19:48:49+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T19:53:49+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T19:58:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T20:03:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T20:08:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T20:13:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T20:18:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T20:23:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T20:28:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T20:33:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T20:38:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T20:43:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T20:48:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T20:53:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T20:58:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T21:03:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T21:08:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T21:13:55+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T21:18:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T21:23:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T21:28:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T21:33:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T21:38:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T21:43:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T21:48:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T21:53:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T21:58:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T22:03:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T22:08:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T22:13:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T22:18:49+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T22:23:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T22:28:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T22:33:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T22:38:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T22:43:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T22:48:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T22:53:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T22:58:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T23:03:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T23:08:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T23:13:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T23:18:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T23:23:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T23:28:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T23:33:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T23:38:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T23:43:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T23:48:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T23:53:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+
+2020-06-04T23:58:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_tempnam() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php:91
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php(139): Leopard_Wordpress_Offload_Media_Webp->convert('2020/05/960x0.j...')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/functions/global.php(644): Leopard_Wordpress_Offload_Media_Webp->do_converts()
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-copy-to-cloud-process.php(51): leopard_offload_media_build_webp_function(542)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-background-process.p in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/leopard-wordpress-offload-media/includes/class-leopard-wordpress-offload-media-webp.php on line 91
+

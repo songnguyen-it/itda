@@ -1,0 +1,10 @@
+2020-06-02T10:52:35+00:00 CRITICAL Uncaught Error: Call to undefined function front_companies_header_search_form() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/companies-search-form/index.php:51
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-block-type.php(109): frontgb_render_companies_search_form_block(Array, '')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(487): WP_Block_Type->render(Array, '')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(537): render_block(Array)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(287): do_blocks('<!-- wp:paragra...')
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/plugin.php(206): WP_Hook->apply_filters('<!-- wp:paragra...', Array)
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:paragra...')
+#6 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/companies-search-form/index.php on line 51
+

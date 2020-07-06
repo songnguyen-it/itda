@@ -1,0 +1,9 @@
+2020-06-07T07:05:07+00:00 CRITICAL Uncaught Error: Class 'LDQIE\stdClass' not found in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/learndash-quiz-import-export/includes/Plugin_Updater.php:153
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(289): LDQIE\Plugin_Updater->show_update_notification('learndash-quiz-...', Array)
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-admin/includes/class-wp-plugins-list-table.php(1012): do_action('after_plugin_ro...', 'learndash-quiz-...', Array, 'search')
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-admin/includes/class-wp-plugins-list-table.php(605): WP_Plugins_List_Table->single_row(Array)
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-admin/includes/class-wp-list-table.php(1273): WP_Plugins_List_Table->display_rows in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/learndash-quiz-import-export/includes/Plugin_Updater.php on line 153
+

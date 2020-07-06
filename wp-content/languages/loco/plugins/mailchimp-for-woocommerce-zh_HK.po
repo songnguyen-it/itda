@@ -1,0 +1,860 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mailchimp for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-28 19:06+0000\n"
+"PO-Revision-Date: 2020-05-28 19:07+0000\n"
+"Last-Translator: Andy Ng\n"
+"Language-Team: Chinese (Hong Kong)\n"
+"Language: zh_HK\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.1"
+
+#: admin/partials/tabs/store_sync.php:146
+msgid "Account Connected"
+msgstr "帐户已连接"
+
+#: admin/partials/tabs/newsletter_settings.php:147
+msgid ""
+"Add a comma separated list of tags to add to the subscriber at Mailchimp"
+msgstr "添加以逗号分隔的标签列表，以添加到Mailchimp的订户"
+
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:96
+msgid ""
+"Add Mailchimp for WooCommerce to build custom segments,<br/>send automations,"
+" and track purchase activity in Mailchimp"
+msgstr "添加Mailchimp for WooCommerce以构建自定义细分，<br/>发送自动化并跟踪Mailchimp中的购买活动"
+
+#: admin/partials/tabs/newsletter_settings.php:92
+#: admin/partials/tabs/newsletter_settings.php:104
+msgid ""
+"Add text to go along with the other opt-in checkboxes. <br/>Customers can "
+"click a box at checkout to opt in to your newsletter."
+msgstr "添加文本以及其他选择加入复选框。 <br/>客户可以在结帐时单击一个框以选择加入您的新闻通讯。"
+
+#: admin/partials/tabs/api_key_create_account.php:67
+msgid "Address Line 1"
+msgstr "地址第一行"
+
+#: admin/partials/tabs/api_key_create_account.php:74
+msgid "Address Line 2"
+msgstr "地址行2"
+
+#: admin/partials/tabs/store_info.php:160
+msgid "Administrators Only"
+msgstr "仅限管理员"
+
+#: admin/partials/tabs/store_sync.php:208
+msgid "Advanced"
+msgstr "高级"
+
+#: admin/partials/tabs/newsletter_settings.php:125
+msgid "Advanced Checkbox Settings"
+msgstr "高级复选框设置"
+
+#: admin/partials/tabs/logs.php:47
+msgid ""
+"Advanced troubleshooting can be conducted with the logging capability turned "
+"on.\n"
+"            By default, it’s set to “standard” and you may toggle to either "
+"“debug” or “none” as needed.\n"
+"            With standard logging, you can see basic information about the "
+"data submission to Mailchimp including any errors.\n"
+"            “Debug” gives a much deeper insight that is useful to share with "
+"support if problems arise."
+msgstr ""
+"可以在打开日志记录功能的情况下进行高级故障排除。\n"
+"            默认情况下，它设置为“标准”，您可以根据需要切换到“调试”或“无”。\n"
+"            使用标准日志记录，您可以查看有关向Mailchimp提交数据的基本信息，包括任何错误。\n"
+"            “调试”提供了更深入的见解，可在出现问题时与支持人员共享。"
+
+#: admin/partials/tabs/api_key.php:14
+msgid ""
+"Already connected. You can reconnect with another Mailchimp account if you "
+"want."
+msgstr "已经连接。您可以根据需要与另一个Mailchimp帐户重新连接。"
+
+#: admin/class-mailchimp-woocommerce-admin.php:884
+msgid ""
+"As part of the Mailchimp Terms of Use, we require a contact email and a "
+"physical mailing address."
+msgstr "作为Mailchimp使用条款的一部分，我们需要联系电子邮件和实际的邮寄地址。"
+
+#: admin/class-mailchimp-woocommerce-admin.php:892
+msgid ""
+"As part of the Mailchimp Terms of Use, we require a valid phone number for "
+"your store."
+msgstr "作为Mailchimp使用条款的一部分，我们需要您商店的有效电话号码。"
+
+#: admin/partials/tabs/store_sync.php:148
+msgid "Audience Connected"
+msgstr "受众群体已连接"
+
+#: admin/class-mailchimp-woocommerce-admin.php:160
+#: admin/class-mailchimp-woocommerce-admin.php:161
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:143
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:175
+#: admin/partials/tabs/campaign_defaults.php:19
+msgid "Audience Defaults"
+msgstr "受众群体默认值"
+
+#: admin/class-mailchimp-woocommerce-admin.php:169
+#: admin/class-mailchimp-woocommerce-admin.php:170
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:155
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:178
+#: admin/partials/tabs/newsletter_settings.php:36
+msgid "Audience Settings"
+msgstr "受众群体设置"
+
+#. %s - Mailchimp legal pages
+#: admin/partials/tabs/api_key_create_account.php:161
+#, php-format
+msgid ""
+"By clicking the \"Get Started!\" button, you are creating a Mailchimp "
+"account, and you agree to Mailchimp's <a href=%s target=_blank>Terms of "
+"Use</a> and <a href=%s target=_blank>Privacy Policy</a>."
+msgstr ""
+"通过单击“入门！”按钮，表示您正在创建Mailchimp帐户，并且您同意Mailchimp的<a href=%s target=_blank>"
+"使用条款</a>和<a href=%s target=_blank>隐私政策</a> 。"
+
+#. %s - Mailchimp Privacy Policy URL.
+#: admin/partials/tabs/store_sync.php:221
+#, php-format
+msgid ""
+"By using this plugin, Mailchimp will process customer information in "
+"accordance with their <a href=%s target=_blank>Privacy Policy</a>."
+msgstr "通过使用此插件，Mailchimp将根据其<a href=%s target=_blank>隐私政策</a>处理客户信息。"
+
+#: admin/partials/tabs/newsletter_settings.php:103
+msgid "Checkbox Display Options"
+msgstr "复选框显示选项"
+
+#: admin/partials/tabs/api_key_create_account.php:82
+#: admin/partials/tabs/store_info.php:40
+msgid "City"
+msgstr "市"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:371
+msgid "Close"
+msgstr "关"
+
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:122
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:169
+#: admin/partials/tabs/api_key.php:10
+msgid "Connect"
+msgstr "连接"
+
+#: admin/partials/tabs/api_key.php:6 admin/partials/tabs/api_key.php:11
+msgid "Connect your store to Mailchimp"
+msgstr "将您的商店连接到Mailchimp"
+
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:111
+msgid ""
+"Connect your WooCommerce store to a<br/>Mailchimp audience in less than 60 "
+"seconds"
+msgstr "在不到60秒的时间内将您的WooCommerce商店与<br/> Mailchimp的受众群体建立联系"
+
+#: admin/partials/tabs/api_key.php:19
+msgid "Connected! Please wait while loading next step"
+msgstr "连接的！加载下一步时请稍候"
+
+#: admin/partials/tabs/api_key.php:16
+msgid ""
+"Connecting. A new window will open with Mailchimp's OAuth service. Please "
+"log-in an we will take care of the rest."
+msgstr "正在连线。 Mailchimp的OAuth服务将打开一个新窗口。请登录，我们将全力以赴。"
+
+#: admin/partials/tabs/api_key_create_account.php:183
+msgid "Connecting..."
+msgstr "正在连线..."
+
+#: admin/partials/tabs/api_key.php:18
+msgid "Connection in progress"
+msgstr "正在进行连接"
+
+#. Description of the plugin
+msgid ""
+"Connects WooCommerce to Mailchimp to sync your store data, send targeted "
+"campaigns to your customers, and sell more stuff."
+msgstr "将WooCommerce连接到Mailchimp，以同步您的商店数据，向您的客户发送定向广告系列，并销售更多商品。"
+
+#: admin/partials/tabs/logs.php:101
+msgid "Copy log"
+msgstr "复制日志"
+
+#. %s - Wordpress.org plugin review URL.
+#: admin/class-mailchimp-woocommerce-admin.php:1579
+#, php-format
+msgid ""
+"Could you please do us a favor and leave the plugin a 5-star <a href=%s "
+"target='_blank'>rating on Wordpress.org</a>? It helps our community know "
+"that we're working hard to make it better each day."
+msgstr ""
+"您能否帮我们一个忙， <a href=%s target='_blank'>在Wordpress.org上</a>"
+"将该插件保留5星级？它可以帮助我们的社区了解我们正在努力使每一天都变得更好。"
+
+#: admin/partials/tabs/api_key_create_account.php:103
+#: admin/partials/tabs/store_info.php:61
+msgid "Country"
+msgstr "国家"
+
+#: admin/partials/tabs/store_sync.php:77
+msgid "Coupons"
+msgstr "优惠券"
+
+#: admin/partials/tabs/newsletter_settings.php:47
+msgid "Create New Audience"
+msgstr "建立新的目标对象"
+
+#: includes/class-mailchimp-woocommerce-rest-api.php:140
+#: admin/partials/tabs/store_sync.php:164
+msgid "D, M j, Y g:i A"
+msgstr "D，M j，Y g：i A"
+
+#: admin/partials/tabs/logs.php:59
+msgid "Debug"
+msgstr "除错"
+
+#: admin/partials/tabs/campaign_defaults.php:31
+msgid "Default from email"
+msgstr "电子邮件默认"
+
+#: admin/partials/tabs/campaign_defaults.php:24
+msgid "Default from name"
+msgstr "名称默认"
+
+#: admin/partials/tabs/campaign_defaults.php:45
+msgid "Default language"
+msgstr "预设语言"
+
+#: admin/partials/tabs/campaign_defaults.php:38
+msgid "Default subject"
+msgstr "默认主题"
+
+#: admin/partials/tabs/newsletter_settings.php:158
+msgid ""
+"Define the product image size used by abandoned carts, order notifications, "
+"and product recommendations."
+msgstr "定义废弃的购物车，订单通知和产品推荐使用的产品图像尺寸。"
+
+#: admin/partials/tabs/logs.php:97
+msgid "Delete log"
+msgstr "删除日志"
+
+#: admin/partials/tabs/store_sync.php:194
+msgid "disabled"
+msgstr "残障人士"
+
+#: admin/partials/tabs/store_sync.php:143
+msgid "DISCONNECT STORE"
+msgstr "断开商店"
+
+#: admin/partials/tabs/newsletter_settings.php:76
+msgid "During initial sync, auto subscribe the existing customers."
+msgstr "在初始同步期间，自动订阅现有客户。"
+
+#: admin/partials/tabs/api_key_create_account.php:33
+#: admin/partials/tabs/store_info.php:26
+msgid "Email"
+msgstr "电子邮件"
+
+#: admin/partials/tabs/store_sync.php:193
+msgid "enabled"
+msgstr "已启用"
+
+#: admin/partials/tabs/newsletter_settings.php:132
+msgid "Enter a WooCommerce form action"
+msgstr "输入WooCommerce表单操作"
+
+#: admin/class-mailchimp-woocommerce-admin.php:1612
+msgid "Error setting communications status"
+msgstr "设置通讯状态时出错"
+
+#: admin/partials/tabs/api_key.php:17
+msgid "Error, can't login."
+msgstr "错误，无法登录。"
+
+#: admin/partials/tabs/store_sync.php:212
+msgid "Force Resync"
+msgstr "强制重新同步"
+
+#: admin/partials/tabs/api_key_create_account.php:171
+msgid "Get Started!"
+msgstr "开始吧！"
+
+#: admin/partials/tabs/api_key_create_account.php:167
+msgid "Go Back"
+msgstr "回去"
+
+#. %s - WP-CLI URL.
+#: admin/partials/tabs/store_sync.php:218
+#, php-format
+msgid ""
+"Have a larger store or having issues syncing? Consider using <a href=%s "
+"target=_blank>WP-CLI</a>."
+msgstr "拥有较大的商店或在同步方面遇到问题？考虑使用<a href=%s target=_blank>WP-CLI</a> 。"
+
+#: admin/partials/tabs/newsletter_settings.php:118
+msgid "Hidden, unchecked by default"
+msgstr "隐藏，默认未选中"
+
+#: admin/partials/tabs/newsletter_settings.php:98
+msgid "HTML tags allowed: <a href=\"\" target=\"\" title=\"\"></a> and <br>"
+msgstr "允许使用HTML标签： <a href=\"\" target=\"\" title=\"\"></a>和<br>"
+
+#. Author URI of the plugin
+msgid "https://mailchimp.com"
+msgstr "https://mailchimp.com"
+
+#. URI of the plugin
+msgid "https://mailchimp.com/connect-your-store/"
+msgstr "https://mailchimp.com/connect-your-store/"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:351
+msgid "I no longer use this integration."
+msgstr "我不再使用此集成。"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:327
+msgid "I want to change the audience associated with this integration."
+msgstr "我想更改与此集成相关的受众。"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:331
+msgid "I want to change the site or store connected through this integration."
+msgstr "我想更改通过此集成连接的站点或商店。"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:347
+msgid "I was instructed to disconnect by Mailchimp Support."
+msgstr "Mailchimp支持指示我断开连接。"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:343
+msgid "I'm trying to troubleshoot the integration."
+msgstr "我正在尝试对集成进行故障排除。"
+
+#. %s - plugin name.
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:378
+#, php-format
+msgid "If you have a moment, please share why you are deactivating %s:"
+msgstr "如果有时间，请分享您停用％s的原因："
+
+#: admin/partials/tabs/store_sync.php:157
+msgid "Initial sync in progress"
+msgstr "正在进行初始同步"
+
+#: admin/partials/tabs/api_key_create_account.php:176
+msgid "Invalid Address"
+msgstr "无效地址"
+
+#: admin/partials/tabs/api_key_create_account.php:177
+msgid "Invalid City"
+msgstr "无效的城市"
+
+#: admin/partials/tabs/api_key_create_account.php:180
+msgid "Invalid Country"
+msgstr "无效的国家"
+
+#: admin/partials/tabs/api_key_create_account.php:53
+msgid "Invalid Email. Please double check."
+msgstr "不合规电邮。请仔细检查。"
+
+#: admin/partials/tabs/api_key_create_account.php:181
+msgid "Invalid Phone"
+msgstr "手机无效"
+
+#: admin/partials/tabs/api_key_create_account.php:178
+msgid "Invalid State"
+msgstr "无效状态"
+
+#: admin/partials/tabs/api_key_create_account.php:182
+msgid "Invalid Timezone"
+msgstr "时区无效"
+
+#: admin/partials/tabs/api_key_create_account.php:179
+msgid "Invalid Zip"
+msgstr "邮递区号无效"
+
+#. %s - Plugin review URL.
+#: admin/partials/tabs/store_sync.php:217
+#, php-format
+msgid ""
+"Is this plugin helping your e-commerce business? <a href=%s target=_blank>"
+"Please leave us a ★★★★★ review!</a>."
+msgstr "这个插件对您的电子商务有帮助吗？ <a href=%s target=_blank>请给我们★★★★★评论！</a> 。"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:355
+msgid "It's a temporary deactivation."
+msgstr "这是暂时的停用。"
+
+#: admin/partials/tabs/store_sync.php:161
+msgid "Last Updated:"
+msgstr "最近更新时间："
+
+#: admin/class-mailchimp-woocommerce-admin.php:1582
+msgid "Leave a Review"
+msgstr "发表评论"
+
+#: admin/partials/tabs/store_info.php:100
+msgid "Locale"
+msgstr "语言环境"
+
+#: admin/partials/tabs/store_info.php:93
+msgid "Locale Settings"
+msgstr "区域设置"
+
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:115
+msgid "Log events from the <br/>Mailchimp plugin"
+msgstr "记录来自<br/> Mailchimp插件的事件"
+
+#: admin/partials/tabs/logs.php:38
+msgid "Logging Preference"
+msgstr "记录首选项"
+
+#: admin/partials/tabs/logs.php:42
+msgid "Logging Preferences"
+msgstr "记录首选项"
+
+#: admin/class-mailchimp-woocommerce-admin.php:178
+#: admin/class-mailchimp-woocommerce-admin.php:179
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:181
+msgid "Logs"
+msgstr "日志"
+
+#. Author of the plugin
+msgid "Mailchimp"
+msgstr "Mailchimp"
+
+#: admin/class-mailchimp-woocommerce-admin.php:129
+msgid "Mailchimp - WooCommerce Setup"
+msgstr "Mailchimp-WooCommerce设置"
+
+#. Name of the plugin
+#: admin/class-mailchimp-woocommerce-admin.php:219
+msgid "Mailchimp for WooCommerce"
+msgstr "Mailchimp for WooCommerce"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:379
+#: admin/class-mailchimp-woocommerce-admin.php:375
+msgid "Mailchimp for Woocommerce"
+msgstr "适用于Woocommerce的Mailchimp"
+
+#: admin/class-mailchimp-woocommerce-admin.php:900
+msgid "Mailchimp for WooCommerce requires a Store Name to connect your store."
+msgstr "Mailchimp for WooCommerce需要一个商店名称来连接您的商店。"
+
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:65
+msgid "Mailchimp says: Please upgrade your PHP version to a minimum of 7.0"
+msgstr "Mailchimp说：请升级您的PHP版本至最低7.0"
+
+#: admin/partials/tabs/notices.php:9
+msgid ""
+"Mailchimp says: Sorry you must set up your campaign defaults before you "
+"proceed!"
+msgstr "Mailchimp说：抱歉，您必须先设置广告系列的默认设置，然后再继续！"
+
+#: admin/partials/tabs/notices.php:15
+msgid "Mailchimp says: Sorry you must set up your store before you proceed!"
+msgstr "Mailchimp说：对不起，您必须先设置商店，然后才能继续！"
+
+#: admin/partials/tabs/notices.php:18
+msgid ""
+"Mailchimp says: You are not fully ready to run the Store Sync, please verify "
+"your settings before proceeding."
+msgstr "Mailchimp说：您尚未完全准备好运行商店同步，请在继续操作之前验证您的设置。"
+
+#: admin/partials/tabs/notices.php:6
+msgid "Mailchimp says: You must enter in a valid API key."
+msgstr "Mailchimp说：您必须输入有效的API密钥。"
+
+#: admin/partials/tabs/notices.php:12
+msgid "Mailchimp says: You must select a marketing audience."
+msgstr "Mailchimp说：您必须选择一个市场受众。"
+
+#: admin/partials/tabs/notices.php:32
+msgid "Mailchimp says: Your re-sync has been started!"
+msgstr "Mailchimp说：您的重新同步已经开始！"
+
+#: includes/class-mailchimp-woocommerce-privacy.php:78
+msgid "MailChimp Shopping Cart Data"
+msgstr "MailChimp购物车数据"
+
+#: admin/partials/tabs/newsletter_settings.php:91
+msgid "Message for the opt-in checkbox"
+msgstr "选择加入消息框"
+
+#: admin/partials/tabs/store_sync.php:215
+msgid "More Information"
+msgstr "更多信息"
+
+#: admin/partials/tabs/store_info.php:19
+msgid "Name"
+msgstr "名称"
+
+#. %s - Mailchimp Support URL.
+#: admin/partials/tabs/store_sync.php:220
+#, php-format
+msgid "Need help? Visit Mailchimp <a href=%s target=_blank>support</a>."
+msgstr "需要帮忙？访问Mailchimp <a href=%s target=_blank>支持</a> 。"
+
+#: admin/partials/tabs/api_key_create_account.php:48
+msgid "Next Step"
+msgstr "下一步"
+
+#: admin/partials/tabs/logs.php:59
+msgid "None"
+msgstr "没有"
+
+#: admin/class-mailchimp-woocommerce-admin.php:923
+#: admin/class-mailchimp-woocommerce-admin.php:1018
+msgid "One or more fields were not updated"
+msgstr "一个或多个字段未更新"
+
+#: admin/partials/tabs/newsletter_settings.php:86
+msgid "Opt-in Settings"
+msgstr "启用设定"
+
+#: admin/partials/tabs/newsletter_settings.php:81
+msgid "Optional Audience Settings"
+msgstr "可选的受众群体设置"
+
+#: admin/partials/tabs/store_info.php:146
+msgid "Optional Store Settings"
+msgstr "可选的商店设置"
+
+#: admin/partials/tabs/store_sync.php:219
+msgid ""
+"Order and customer information will not sync if they contain an Amazon or "
+"generic email address."
+msgstr "如果订单和客户信息包含Amazon或通用电子邮件地址，则不会同步。"
+
+#: admin/partials/tabs/store_sync.php:97
+msgid "Orders"
+msgstr "命令"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:359
+msgid "Other"
+msgstr "其他"
+
+#: admin/class-mailchimp-woocommerce-admin.php:142
+#: admin/class-mailchimp-woocommerce-admin.php:143
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:171
+msgid "Overview"
+msgstr "总览"
+
+#: admin/partials/tabs/campaign_defaults.php:62
+msgid "Permission reminder message"
+msgstr "权限提醒消息"
+
+#: admin/partials/tabs/api_key_create_account.php:128
+msgid "Phone"
+msgstr "电话"
+
+#: admin/partials/tabs/store_info.php:87
+msgid "Phone Number"
+msgstr "电话号码"
+
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:108
+msgid ""
+"Please apply your audience settings. If you don’t<br/>have an audience, you "
+"can choose to create one"
+msgstr "请应用您的受众群体设置。如果您没有<br/>受众群体，则可以选择创建一个"
+
+#: admin/partials/tabs/store_info.php:95
+msgid ""
+"Please apply your locale settings. If you're unsure about these, use the "
+"defaults."
+msgstr "请应用您的区域设置。如果不确定这些，请使用默认值。"
+
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:104
+msgid "Please fill out the audience default<br/>campaign information"
+msgstr "请填写受众群体默认<br/>广告系列信息"
+
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:100
+msgid "Please provide a bit of information<br/>about your WooCommerce store"
+msgstr "请提供一些有关您的WooCommerce商店的信息<br/>"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:179
+msgid "Please select an option"
+msgstr "请选择一个选项"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:361
+msgid "Please share the reason"
+msgstr "请分享原因"
+
+#: admin/partials/tabs/store_info.php:152
+msgid "Plugin Permission Level"
+msgstr "插件权限级别"
+
+#: admin/partials/tabs/store_info.php:54
+msgid "Postal Code"
+msgstr "邮政编码"
+
+#: admin/partials/tabs/newsletter_settings.php:157
+msgid "Product Image Size"
+msgstr "产品图片尺寸"
+
+#: admin/partials/tabs/newsletter_settings.php:151
+msgid "Product Settings"
+msgstr "产品设定"
+
+#: admin/partials/tabs/store_sync.php:87
+msgid "Products"
+msgstr "产品展示"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:370
+msgid "Quick Feedback"
+msgstr "快速反馈"
+
+#: admin/partials/tabs/logs.php:71
+msgid "Recent Logs"
+msgstr "最近的日志"
+
+#: admin/partials/tabs/api_key.php:10
+msgid "Reconnect"
+msgstr "重新连接"
+
+#: admin/class-mailchimp-woocommerce-admin.php:1607
+msgid "Saved"
+msgstr "已保存"
+
+#: admin/partials/tabs/newsletter_settings.php:51
+msgid "Select Audience"
+msgstr "选择受众"
+
+#: admin/partials/tabs/store_info.php:104
+msgid "Select store's locale"
+msgstr "选择商店的区域设置"
+
+#: admin/partials/tabs/store_info.php:130
+msgid "Select store's timezone"
+msgstr "选择商店的时区"
+
+#: admin/partials/tabs/store_info.php:153
+msgid ""
+"Select the minimum permission capability to manage Mailchimp for Woocommerce "
+"options"
+msgstr "选择最低权限功能来管理Mailchimp for Woocommerce选项"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:182
+msgid "Sending Feedback"
+msgstr "发送反馈"
+
+#: admin/partials/tabs/store_info.php:163
+msgid "Shop Managers and Administrators"
+msgstr "店铺经理和管理员"
+
+#: admin/partials/tabs/newsletter_settings.php:164
+msgid "Size"
+msgstr "尺寸"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:399
+msgid "Skip & Deactivate"
+msgstr "跳过并停用"
+
+#: admin/class-mailchimp-woocommerce-admin.php:1552
+msgid ""
+"Sometimes the sync can take a while, especially on sites with lots of orders "
+"and/or products. It is safe to navigate away from this screen while it is "
+"running."
+msgstr "有时同步可能需要一段时间，尤其是在具有大量订单和/或产品的网站上。运行该屏幕时可以安全地离开该屏幕。"
+
+#: admin/partials/tabs/logs.php:59
+msgid "Standard"
+msgstr "标准"
+
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:200
+msgid "Start sync"
+msgstr "开始同步"
+
+#: admin/class-mailchimp-woocommerce-admin.php:1548
+msgid "Starting the sync process..."
+msgstr "正在启动同步过程..."
+
+#: admin/partials/tabs/store_sync.php:166
+msgid "Starting..."
+msgstr "开始..."
+
+#: admin/partials/tabs/api_key_create_account.php:89
+#: admin/partials/tabs/store_info.php:47
+msgid "State"
+msgstr "州"
+
+#: admin/partials/tabs/store_sync.php:154
+msgid "Status:"
+msgstr "状态："
+
+#: admin/class-mailchimp-woocommerce-admin.php:541
+msgid "Store Disconnect Failed"
+msgstr "存储断开连接失败"
+
+#: admin/class-mailchimp-woocommerce-admin.php:537
+msgid "Store Disconnected"
+msgstr "商店已断开连接"
+
+#: admin/partials/tabs/campaign_defaults.php:40
+msgid "Store Newsletter"
+msgstr "店铺通讯"
+
+#: admin/class-mailchimp-woocommerce-admin.php:151
+#: admin/class-mailchimp-woocommerce-admin.php:152
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:131
+#: admin/partials/mailchimp-woocommerce-admin-tabs.php:172
+#: admin/partials/tabs/store_info.php:15
+msgid "Store Settings"
+msgstr "商店设定"
+
+#: admin/partials/tabs/store_info.php:33
+msgid "Street address"
+msgstr "街道地址"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:398
+msgid "Submit & Deactivate"
+msgstr "提交并停用"
+
+#: includes/class-mailchimp-woocommerce-newsletter.php:43
+#: admin/class-mailchimp-woocommerce-admin.php:970
+#: admin/partials/tabs/newsletter_settings.php:97
+msgid "Subscribe to our newsletter"
+msgstr "订阅我们的新闻"
+
+#: admin/partials/tabs/newsletter_settings.php:136
+#: admin/partials/tabs/newsletter_settings.php:141
+msgid "Subscriber Tags"
+msgstr "订户标签"
+
+#: admin/partials/tabs/store_sync.php:110
+msgid "Subscribers"
+msgstr "订户"
+
+#: admin/partials/tabs/api_key_create_account.php:43
+msgid "Suggested username: "
+msgstr "建议的用户名："
+
+#: admin/partials/tabs/newsletter_settings.php:41
+msgid "Sync audience with your store"
+msgstr "将受众群体与您的商店同步"
+
+#: admin/partials/tabs/store_sync.php:155
+msgid "Sync Completed"
+msgstr "同步完成"
+
+#: admin/partials/tabs/store_sync.php:155
+msgid "Syncing..."
+msgstr "同步中..."
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:335
+msgid "The order data isn't syncing."
+msgstr "订单数据未同步。"
+
+#: admin/class-mailchimp-woocommerce-admin.php:1550
+msgid ""
+"The plugin has started the initial sync with your store, and the process "
+"will work in the background automatically."
+msgstr "该插件已开始与您的商店进行初始同步，并且该过程将在后台自动进行。"
+
+#: includes/class-mailchimp-woocommerce-deactivation-survey.php:339
+msgid "The promo codes aren't showing up."
+msgstr "促销代码未显示。"
+
+#: admin/class-mailchimp-woocommerce-admin.php:378
+msgid ""
+"These constants are deprecated since Mailchimp for Woocommerce version 2.3. "
+"Please refer to the <a href=\"https://github.com/mailchimp/mc-"
+"woocommerce/wiki/\">plugin official wiki</a> for further details."
+msgstr ""
+"自Mailchimp for Woocommerce 2.3版以来，不建议使用这些常量。有关更多详细信息，请参阅<a href=\"https:"
+"//github.com/mailchimp/mc-woocommerce/wiki/\">插件官方Wiki</a> 。"
+
+#: admin/partials/tabs/api_key_create_account.php:135
+#: admin/partials/tabs/store_info.php:126
+msgid "Timezone"
+msgstr "时区"
+
+#. %s - Woocommerce Actions documentation URL.
+#: admin/partials/tabs/newsletter_settings.php:126
+#, php-format
+msgid ""
+"To change the location of the opt-in <br/>checkbox at checkout, input one of "
+"the <a href=%s target=_blank>available WooCommerce form actions</a>."
+msgstr ""
+"更改选择加入的位置<br/>结帐时选中复选框，输入<a href=%s target=_blank>可用的WooCommerce表单操作之一</a> 。"
+
+#: admin/partials/tabs/store_sync.php:117
+msgid "Transactional"
+msgstr "交易性"
+
+#: admin/partials/tabs/store_sync.php:124
+msgid "Unsubscribed"
+msgstr "取消订阅"
+
+#: includes/class-mailchimp-woocommerce-privacy.php:82
+msgid "User ID"
+msgstr "用户身份"
+
+#: admin/partials/tabs/api_key_create_account.php:40
+msgid "Username"
+msgstr "用户名"
+
+#: admin/partials/tabs/newsletter_settings.php:112
+msgid "Visible, checked by default"
+msgstr "可见，默认情况下选中"
+
+#: admin/partials/tabs/newsletter_settings.php:115
+msgid "Visible, unchecked by default"
+msgstr "可见，默认情况下未选中"
+
+#: admin/class-mailchimp-woocommerce-admin.php:376
+msgid ""
+"We dectected that this site has the following constants defined, likely at "
+"wp-config.php file"
+msgstr "我们确定该站点已定义以下常量，可能在wp-config.php文件中"
+
+#. %1$s: Number of synced orders %2$s: Audience name
+#: admin/class-mailchimp-woocommerce-admin.php:1571
+#, php-format
+msgid ""
+"We've successfully synced %1$s orders to your Audience %2$s, that's awesome!"
+msgstr "我们已成功将％1 $ s的订单同步到您的受众群体％2 $ s，太棒了！"
+
+#. %s - Mailchimp Privacy Policy URL.
+#: includes/class-mailchimp-woocommerce-privacy.php:12
+#, php-format
+msgid ""
+"When shopping, we keep a record of your email and the cart contents for up "
+"to 30 days on our server. This record is kept to repopulate the contents of "
+"your cart if you switch devices or needed to come back another day. Read our "
+"privacy policy <a href=\"%s\">here</a>."
+msgstr ""
+"购物时，我们会在我们的服务器上将您的电子邮件和购物车内容记录最多保留30天。如果您切换设备或需要第二天回来，此记录将保留以重新填充购物车中的内容。 <a "
+"href=\"%s\">在此处</a>阅读我们的隐私政策。"
+
+#: admin/partials/tabs/store_info.php:119
+msgid "Woocommerce Currency"
+msgstr "Woocommerce货币"
+
+#: admin/partials/tabs/store_sync.php:210
+msgid ""
+"You can resync your audience at any time without losing any of your e-"
+"commerce data."
+msgstr "您可以随时重新同步受众，而不会丢失任何电子商务数据。"
+
+#: admin/class-mailchimp-woocommerce-admin.php:1083
+msgid "You must supply your Mailchimp API key to pull the audiences."
+msgstr "您必须提供Mailchimp API密钥才能吸引受众。"
+
+#. %s - plugin name.
+#: admin/class-mailchimp-woocommerce-admin.php:918
+#: admin/partials/tabs/campaign_defaults.php:68
+#, php-format
+msgid "You were subscribed to the newsletter from %s"
+msgstr "您已从％s订阅了新闻通讯"
+
+#: admin/class-mailchimp-woocommerce-admin.php:1568
+msgid "Your store is synced with Mailchimp!"
+msgstr "您的商店已与Mailchimp同步！"
+
+#: admin/partials/tabs/api_key_create_account.php:96
+msgid "Zip"
+msgstr "压缩"

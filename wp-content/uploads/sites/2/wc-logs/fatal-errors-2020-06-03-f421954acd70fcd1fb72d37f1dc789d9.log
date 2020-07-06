@@ -1,0 +1,73 @@
+2020-06-03T08:15:33+00:00 CRITICAL Uncaught Error: Call to undefined function resume_manager_user_can_edit_pending_submissions() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/jobhunt/wp-job-manager-resumes/candidate-dashboard.php:83
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/6-WPJM-wp-job-manager-resumes/includes/class-wp-resume-manager-shortcodes.php(176): get_job_manager_template('candidate-dashb...', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Resume_Manager_Shortcodes->candidate_dashboard('', '', 'candidate_dashb...')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(past_a...', 'do_shortcode_ta...', '<h1>My resumes,...')
+#5 /home4/linkinhr/public_html/linkinhr in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/jobhunt/wp-job-manager-resumes/candidate-dashboard.php on line 83
+
+2020-06-03T08:16:26+00:00 CRITICAL Uncaught Error: Call to undefined function resume_manager_user_can_edit_pending_submissions() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/jobhunt/wp-job-manager-resumes/candidate-dashboard.php:83
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/6-WPJM-wp-job-manager-resumes/includes/class-wp-resume-manager-shortcodes.php(176): get_job_manager_template('candidate-dashb...', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Resume_Manager_Shortcodes->candidate_dashboard('', '', 'candidate_dashb...')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(past_a...', 'do_shortcode_ta...', '<h1>My resumes,...')
+#5 /home4/linkinhr/public_html/linkinhr in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/jobhunt/wp-job-manager-resumes/candidate-dashboard.php on line 83
+
+2020-06-03T08:18:32+00:00 CRITICAL Uncaught Error: Call to undefined function resume_manager_user_can_edit_published_submissions() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/jobhunt/wp-job-manager-resumes/candidate-dashboard.php:58
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/6-WPJM-wp-job-manager-resumes/includes/class-wp-resume-manager-shortcodes.php(176): get_job_manager_template('candidate-dashb...', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Resume_Manager_Shortcodes->candidate_dashboard('', '', 'candidate_dashb...')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(past_a...', 'do_shortcode_ta...', '<h1>My resumes,...')
+#5 /home4/linkinhr/public_html/linkin in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/jobhunt/wp-job-manager-resumes/candidate-dashboard.php on line 58
+
+2020-06-03T08:19:12+00:00 CRITICAL Uncaught Error: Call to undefined function resume_manager_user_can_edit_published_submissions() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/jobhunt/wp-job-manager-resumes/candidate-dashboard.php:58
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/6-WPJM-wp-job-manager-resumes/includes/class-wp-resume-manager-shortcodes.php(176): get_job_manager_template('candidate-dashb...', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Resume_Manager_Shortcodes->candidate_dashboard('', '', 'candidate_dashb...')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(past_a...', 'do_shortcode_ta...', '<h1>My resumes,...')
+#5 /home4/linkinhr/public_html/linkin in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/jobhunt/wp-job-manager-resumes/candidate-dashboard.php on line 58
+
+2020-06-03T08:52:30+00:00 CRITICAL Uncaught Error: Call to undefined function front_job_header_search_form() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/jobs-hero-search-form/index.php:38
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-block-type.php(109): frontgb_render_jobs_search_form_block(Array, '')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(487): WP_Block_Type->render(Array, '')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(478): render_block(Array)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(537): render_block(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(287): do_blocks('<!-- wp:fgb/job...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/plugin.php(206): WP_Hook->apply_filters('<!-- wp:fgb/job...', Array)
+#6 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/post-template.php(253): apply_filters('the_content', ' in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/jobs-hero-search-form/index.php on line 38
+
+2020-06-03T11:27:31+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '<h2>Previous ap...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/c in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+
+2020-06-03T11:29:45+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '<h2>Previous ap...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/c in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+
+2020-06-03T11:30:28+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '<h2>Previous ap...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/c in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+

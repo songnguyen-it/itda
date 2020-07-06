@@ -1,0 +1,98 @@
+2020-05-31T03:05:01+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '<pre><code>[job...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/c in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+
+2020-05-31T06:05:56+00:00 CRITICAL Uncaught Error: Call to undefined function get_current_screen() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/buddyboss-theme/inc/plugins/buddyboss-menu-icons/includes/picker.php:302
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(287): Menu_Icons_Picker::_save(41, 676, Array)
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/nav-menu.php(589): do_action('wp_update_nav_m...', 41, 676, Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/nav-menu.php(1114): wp_update_nav_menu_item(41, 676, Array)
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(287): _wp_auto_add_pages_to_menu('publish', 'draft', Object(WP_Post))
+#6 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/buddyboss-theme/inc/plugins/buddyboss-menu-icons/includes/picker.php on line 302
+
+2020-05-31T06:17:06+00:00 CRITICAL Uncaught Error: Call to undefined function get_current_screen() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/buddyboss-theme/inc/plugins/buddyboss-menu-icons/includes/picker.php:302
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(287): Menu_Icons_Picker::_save(41, 681, Array)
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/nav-menu.php(589): do_action('wp_update_nav_m...', 41, 681, Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/nav-menu.php(1114): wp_update_nav_menu_item(41, 681, Array)
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(287): _wp_auto_add_pages_to_menu('publish', 'auto-draft', Object(WP_Post))
+#6 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/ in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/buddyboss-theme/inc/plugins/buddyboss-menu-icons/includes/picker.php on line 302
+
+2020-05-31T07:32:25+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Job_Manager_Alerts_Post_Types::get_alert_search_terms() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php:45
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/wp-job-manager/wp-job-manager-template.php(27): include()
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/3-WPJM-wp-job-manager-alerts/includes/class-wp-job-manager-alerts-shortcodes.php(237): get_job_manager_template('my-alerts.php', Array, 'wp-job-manager-...', '/home4/linkinhr...')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(343): WP_Job_Manager_Alerts_Shortcodes->job_alerts('', '', 'job_alerts')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(job_al...', 'do_shortcode_ta...', '<pre><code>[job...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/c in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/themes/front/wp-job-manager-alerts/my-alerts.php on line 45
+
+2020-05-31T15:34:11+00:00 CRITICAL Uncaught Error: Call to undefined function front_job_header_search_form() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/jobs-hero-search-form/index.php:38
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-block-type.php(109): frontgb_render_jobs_search_form_block(Array, '')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(487): WP_Block_Type->render(Array, '')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(478): render_block(Array)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(537): render_block(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(287): do_blocks('<!-- wp:fgb/job...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/plugin.php(206): WP_Hook->apply_filters('<!-- wp:fgb/job...', Array)
+#6 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php( in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/jobs-hero-search-form/index.php on line 38
+
+2020-05-31T15:36:15+00:00 CRITICAL Uncaught Error: Call to undefined function front_job_header_search_form() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/jobs-hero-search-form/index.php:38
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-block-type.php(109): frontgb_render_jobs_search_form_block(Array, '')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(487): WP_Block_Type->render(Array, '')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(478): render_block(Array)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(537): render_block(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(287): do_blocks('<!-- wp:fgb/job...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/plugin.php(206): WP_Hook->apply_filters('<!-- wp:fgb/job...', Array)
+#6 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php( in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/jobs-hero-search-form/index.php on line 38
+
+2020-05-31T15:36:45+00:00 CRITICAL Uncaught Error: Call to undefined function front_job_header_search_form() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/jobs-hero-search-form/index.php:38
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-block-type.php(109): frontgb_render_jobs_search_form_block(Array, '')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(487): WP_Block_Type->render(Array, '')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(478): render_block(Array)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(537): render_block(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(287): do_blocks('<!-- wp:fgb/job...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/plugin.php(206): WP_Hook->apply_filters('<!-- wp:fgb/job...', Array)
+#6 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php( in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/jobs-hero-search-form/index.php on line 38
+
+2020-05-31T15:46:40+00:00 CRITICAL Uncaught Error: Call to undefined function front_job_header_search_form() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/jobs-hero-search-form/index.php:38
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-block-type.php(109): frontgb_render_jobs_search_form_block(Array, '')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(487): WP_Block_Type->render(Array, '')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(478): render_block(Array)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(537): render_block(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(287): do_blocks('<!-- wp:fgb/job...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/plugin.php(206): WP_Hook->apply_filters('<!-- wp:fgb/job...', Array)
+#6 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php( in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/jobs-hero-search-form/index.php on line 38
+
+2020-05-31T16:24:46+00:00 CRITICAL Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/premium-addons-pro/admin/includes/admin-notices.php on line 3
+
+2020-05-31T16:25:26+00:00 CRITICAL Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/premium-addons-pro/admin/includes/admin-notices.php on line 3
+
+2020-05-31T16:25:35+00:00 CRITICAL Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/premium-addons-pro/admin/includes/admin-notices.php on line 3
+
+2020-05-31T16:28:04+00:00 CRITICAL Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/premium-addons-pro/admin/includes/admin-notices.php on line 3
+
+2020-05-31T16:28:19+00:00 CRITICAL Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/premium-addons-pro/admin/includes/admin-notices.php on line 3
+
+2020-05-31T18:09:29+00:00 CRITICAL Uncaught Error: Call to undefined function front_job_header_search_form() in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/jobs-hero-search-form/index.php:38
+Stack trace:
+#0 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-block-type.php(109): frontgb_render_jobs_search_form_block(Array, '')
+#1 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(487): WP_Block_Type->render(Array, '')
+#2 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(478): render_block(Array)
+#3 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/blocks.php(537): render_block(Array)
+#4 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/class-wp-hook.php(287): do_blocks('<!-- wp:fgb/job...')
+#5 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/plugin.php(206): WP_Hook->apply_filters('<!-- wp:fgb/job...', Array)
+#6 /home4/linkinhr/public_html/linkinhr.org/lms/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php( in /home4/linkinhr/public_html/linkinhr.org/lms/wp-content/plugins/front-gutenberg-blocks/src/block/jobs-hero-search-form/index.php on line 38
+

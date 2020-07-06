@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPJM Extra Fields\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-28 19:50+0000\n"
+"PO-Revision-Date: 2020-05-28 19:51+0000\n"
+"Last-Translator: Andy Ng\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.1"
+
+#. Description of the plugin
+msgid ""
+"Adds an extra Salary and Important Information fields to WP Job Manager job "
+"listings"
+msgstr ""
+
+#: wpjm-extra-fields.php:189
+msgid ""
+"An error has occurred. WP Job Manager must be installed in order to use this "
+"plugin"
+msgstr ""
+
+#. Author of the plugin
+msgid "Gabriel Maldonado"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://tilcode.blog/"
+msgstr ""
+
+#. URI of the plugin
+msgid ""
+"https://tilcode.blog/wpjm-extra-fields-adds-extra-fields-to-wp-job-manager-"
+"job-listings"
+msgstr ""
+
+#: wpjm-extra-fields.php:142
+msgid "Important information"
+msgstr ""
+
+#: wpjm-extra-fields.php:108
+msgid "Important information: "
+msgstr ""
+
+#: wpjm-extra-fields.php:41 wpjm-extra-fields.php:90 wpjm-extra-fields.php:126
+msgid "Salary"
+msgstr ""
+
+#: wpjm-extra-fields.php:79
+msgid "Support"
+msgstr ""
+
+#. Name of the plugin
+msgid "WPJM Extra Fields"
+msgstr ""

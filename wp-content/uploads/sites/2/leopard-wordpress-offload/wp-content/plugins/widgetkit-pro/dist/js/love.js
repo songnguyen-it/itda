@@ -1,0 +1,1 @@
+jQuery(document).on("click",".love-button",function(){var o=jQuery(this).data("id");return console.log("post id "+postlove.ajax_url),jQuery.ajax({url:postlove.ajax_url,type:"post",data:{action:"post_love_add_love",post_id:o},success:function(o){jQuery("#love-count").html(o)}}),!1})
