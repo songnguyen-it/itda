@@ -80,11 +80,12 @@ jQuery(document).ready(function ($) {
   $("#add_field").click(function () {
 
     ++uuid;
-    $("#field_type").append('<div class="row" id="siphen'+uuid+'"><div class="col"><input type="text" class="form-control form-control-sm" placeholder="Value" name="value'+uuid+'"></div><div class="col"><input type="text" class="form-control form-control-sm" placeholder="Caption" name="caption'+uuid+'"></div></div> <div class="row d-flex justify-content-end m-1"><button type="button" class="btn btn-danger btn-sm" id="uuid-' + uuid + '">Remove</button></div>');
+    $("#field_type").append('<div class="row mt-3 px-2 mx-1" id="siphen'+uuid+'"><div class="col"><input type="text" class="form-control form-control-sm" placeholder="Value" name="value'+uuid+'"></div><div class="col"><input type="text" class="form-control form-control-sm" placeholder="Caption" name="caption'+uuid+'"></div></div> <div class="row d-flex justify-content-end m-1"><button type="button" class="btn btn-danger btn-sm" id="uuid-' + uuid + '">Remove</button></div>');
 
     $("#uuid-" + uuid).click(function () {
       let idDropdownFieldRemove = "siphen" + $(this).attr("id").split("-")[1];
       $("#"+idDropdownFieldRemove).remove();
+      $(this).remove();
     });
   });
 

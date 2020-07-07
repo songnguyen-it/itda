@@ -171,7 +171,6 @@ function ncbpn_view_guid()
 
                                     <div class="form-group d-flex justify-content-between">
                                         <label for="formGroupExampleInput2">Type <span class="text-danger font-weight-bold">*</span></label>
-
                                         <select class="custom-select custom-select-sm" id="type" name="type">
                                             <option selected>Field type</option>
                                             <option value="text-box">Text Box</option>
@@ -179,12 +178,11 @@ function ncbpn_view_guid()
                                             <option value="dropdown">Dropdown</option>
                                             <option value="file-upload">File Upload</option>
                                         </select>
-
                                     </div>
 
 
-                                    <div id="field_type">
-                                        <div class="row my-2">
+                                    <div id="field_type" class="border">
+                                        <div class="row my-2 p-2 m-1">
                                           <div class="col">
                                             <input type="text" class="form-control form-control-sm" placeholder="Value" name="value0">
                                           </div>
@@ -192,27 +190,14 @@ function ncbpn_view_guid()
                                             <input type="text" class="form-control form-control-sm" placeholder="Caption" name="caption0">
                                           </div>
                                         </div>
+                                       
                                     </div>
 
-                                    <div class="row m-1" >
+                                    <div class="row my-2 m-1" >
                                       <button type="button" class="btn btn-info btn-sm" id="add_field">Add Another</button>
                                     </div>
 
 
-                            
-
-                                    <script>
-                                      document.addEventListener("DOMContentLoaded", function(){
-                                        var name = document.getElementById("test-btn");
-                                        name.onclick = function(){
-                                          console.log("hello");
-                                        }
-                                      });  
-                                    </script>
-
-
-
-                                    
                                     <div class="form-group">
                                         <label for="formGroupExampleInput2">Label <span class="text-danger font-weight-bold">*</span></label>
                                         <input type="text" class="form-control form-control-sm" id="label"
