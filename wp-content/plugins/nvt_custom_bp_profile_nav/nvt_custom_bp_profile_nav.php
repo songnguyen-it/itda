@@ -162,7 +162,7 @@ function ncbpn_view_guid()
                             </div>
 
                             <div class="modal-body">
-                                <form>
+                                <form id="dropdown_child">
                                     <div class="form-group">
                                         <label for="formGroupExampleInput2">Meta Key <span class="text-danger font-weight-bold">*</span></label>
                                         <input type="text" class="form-control form-control-sm" id="meta_key"
@@ -181,17 +181,18 @@ function ncbpn_view_guid()
                                     </div>
 
 
-                                    <div id="field_type" class="border">
-                                        <div class="row my-2 p-2 m-1">
+
+                                      <div id="field_type" class="border">
+                                        <div class="row my-2 p-2 m-1" id="dropdown_child">
                                           <div class="col">
-                                            <input type="text" class="form-control form-control-sm" placeholder="Value" name="value0">
+                                            <input type="text" class="form-control form-control-sm" placeholder="Value" name="value0" id="v1">
                                           </div>
                                           <div class="col">
                                             <input type="text" class="form-control form-control-sm" placeholder="Caption" name="caption0">
                                           </div>
                                         </div>
-                                       
-                                    </div>
+                                      </div>
+                                    
 
                                     <div class="row my-2 m-1" >
                                       <button type="button" class="btn btn-info btn-sm" id="add_field">Add Another</button>
@@ -412,14 +413,54 @@ function ncbpn_recent_posts_content() {
   $formInput = "";
   $dataForm = $wpdb->get_results("SELECT * FROM wp8i_company_field");
 
-  print_r($dataForm);
+  // print_r($dataForm);
   foreach ($dataForm as $val ) {
-    $formInput .= '
-        <div class="form-group">
-          <label for="formGroupExampleInput">' . $val->label . '</label>
-          <input type="hidden" id="'. $val-> id .'" class="justiknow">
-          <input type="text" class="form-control" name="'. $val->meta_key .'" id="'. $val-> id .'" placeholder="' . $val-> placeholder .'">
-        </div>';
+    if($val->type == "text-box"){
+      $formInput .= '
+      <div class="form-group">
+        <label for="formGroupExampleInput">' . $val->label . '</label>
+        <input type="text" class="form-control" name="'. $val->meta_key .'" id="'. $val-> id .'" placeholder="' . $val-> placeholder .'">
+      </div>';
+    }
+
+    if($val->type == "dropdown"){
+      $selectOptionStart = '<select class="form-control form-control-sm" name="'. $val->meta_key  .'"> <option selected>Choose option</option>';
+      $selectOptionEnd = '</select>';
+      $jsondecodeDropdown = json_decode($val -> dropdown);
+      foreach ($jsondecodeDropdown as $item) {
+        // var_dump($item);
+        $selectOptionStart .= 
+            '<option  value="'. $item->value .'">'. $item->value .'</option>';
+      }
+    
+      $formInput .= '
+      <div class="form-group">
+        <label for="formGroupExampleInput">' . $val->label . '</label>
+        ' . $selectOptionStart . $selectOptionEnd .'
+      </div>';
+    }
+
+    if($val->type == "file-upload"){
+      $formInput .= '
+      <div class="form-group">
+        <label for="">' . $val->label . '    </label>
+        <input accept="image/png, image/jpeg" type="file" class="form-control" name="'. $val->meta_key .'" >
+      </div>';
+    }
+
+    if($val->type == "text-area"){
+      $formInput .= '
+      <div class="form-group">
+        <label>' . $val->label . '</label>
+        <textarea name="'. $val->meta_key .'" rows="4" cols="50"></textarea>
+      </div>';
+    }
+
+    
+
+
+ 
+    
   }
 
   $listStart = '<div id="accordion">';
@@ -465,6 +506,7 @@ function ncbpn_recent_posts_content() {
         
       }
       $dataDecode =  json_decode($val-> meta_value);
+    
       foreach ($dataDecode as $val2) {
 
         $nameOk = strtoupper(str_replace("_"," ",$val2->name));
@@ -769,6 +811,8 @@ function addCompanyField(){
   $description =  $_POST['description'];
   $placeholder =  $_POST['placeholder'];
   $priority =  $_POST['priority'];
+  $dropdown =  $_POST['dropdown'];
+  $dropdownJsonData = json_encode($dropdown);
 
   if( empty($meta_key) || empty($label) || empty($type)){
     wp_send_json( array('code'=> 400, 'msg'=>'Form field required') );
@@ -784,10 +828,12 @@ function addCompanyField(){
         'label' => $label, 
         'description' => $description, 
         'placeholder' => $placeholder, 
-        'priority' => $priority
+        'priority' => $priority,
+        'dropdown' => $dropdownJsonData
       ), 
       array( 
         '%s', 
+        '%s',
         '%s',
         '%s',
         '%s',

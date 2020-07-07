@@ -3,6 +3,7 @@ jQuery(document).ready(function ($) {
  *                                     need first load then all
  ************************************************************************************************************************************************************/
   console.log("plugin script is running nvt_custom_bp_profile_nav");
+  
   // get a list of company
   $.ajax({
     type: "post",
@@ -31,7 +32,6 @@ jQuery(document).ready(function ($) {
             }
           });
         }
-        // if(count == 0){} else{$("#user-ibenic_budypress_recent_posts").append("<span class='count'>"+ count+"</span>")}
       }
 
       if (response.code == 400) {
@@ -93,12 +93,6 @@ jQuery(document).ready(function ($) {
 
 
 
-
-
-
-
-
-
   // set name company in buddyboss
   $("#list_company").change(function () {
     let company = $("#list_company option:selected").text();
@@ -109,7 +103,7 @@ jQuery(document).ready(function ($) {
   });
 
 
-  // test for data-bp-item-id
+  // for data-bp-item-id not login
   let val = "-1";
   $(window).on('hashchange', function (e) {
     let kenburn = $("#item-header").attr("data-bp-item-id");
@@ -215,12 +209,41 @@ jQuery(document).ready(function ($) {
 
 
   /************************************************************************************************************************************************************
-   *                                    issac newton for add new company form action need
+   *                                    add new company form action need
    ************************************************************************************************************************************************************/
+  $('#company_form_field input[type="file"]').change(function(e){
+    var fileName = e.target.files[0];
+    alert('The file "' + fileName +  '" has been selected.');
+  });
+
+  //   $('#upload').on('click', function() {
+  //     var file_data = $('#sortpicture').prop('files')[0];   
+  //     var form_data = new FormData();                  
+  //     form_data.append('file', file_data);
+  //     alert(form_data);                             
+  //     $.ajax({
+  //         url: 'upload.php', // point to server-side PHP script 
+  //         dataType: 'text',  // what to expect back from the PHP script, if anything
+  //         cache: false,
+  //         contentType: false,
+  //         processData: false,
+  //         data: form_data,                         
+  //         type: 'post',
+  //         success: function(php_script_response){
+  //             alert(php_script_response); // display response from the PHP script, if any
+  //         }
+  //     });
+  // });
+
+
+
   $("#submit").click(function () {
 
-    // get value in form
     var data = $("#company_form_field").serializeArray();
+    console.log(data);
+    
+    
+
 
     //  send ajax
     $.ajax({
@@ -296,8 +319,6 @@ jQuery(document).ready(function ($) {
         }
       });
     }
-
-
   });
 
 
@@ -330,11 +351,8 @@ jQuery(document).ready(function ($) {
 
       },
       beforeSend: function () {
-        //$('#elm-load-data').html('Updating ...');
       },
       success: function (response) {
-
-
         if (response.code == 200) {
           $("#form-company-edit").modal("hide");
           window.location.reload();
@@ -352,7 +370,9 @@ jQuery(document).ready(function ($) {
 
   });
 
-  //  edit and render data to form edit
+  //******** */  edit and render data to form edit
+  //******** */  edit and render data to form edit
+  //******** */  edit and render data to form edit
   $(".edit").click(function () {
     $("#meta_key_edit").val("");
     $("#type_edit").val("");
@@ -362,7 +382,6 @@ jQuery(document).ready(function ($) {
     $("#priority_edit").val("");
     $("#id_hidden").val("");
 
-    // console.log($(this).attr("id"));
     var id = $(this).attr("id");
 
     $("#form-company-edit").modal("show");
@@ -373,10 +392,8 @@ jQuery(document).ready(function ($) {
       data: {
         action: "editCompanyField",
         idEdit: id
-
       },
       beforeSend: function () {
-        //$('#elm-load-data').html('Updating ...');
       },
       success: function (response) {
 
@@ -399,16 +416,10 @@ jQuery(document).ready(function ($) {
           $("#label_edit").val(label);
           $("#priority_edit").val(priority);
 
-
-
-          // $("#form-company-field").modal("hide");
-          // window.location.reload();
         }
 
         if (response.code == 400) {
-          // $("#alert-company-form").show();
         }
-        // console.log(response.msg);
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.log('The following error occured: ' + textStatus + errorThrown);
@@ -428,26 +439,54 @@ jQuery(document).ready(function ($) {
     var description = $("#description").val();
     var placeholder = $("#placeholder").val();
     var priority = $("#priority").val();
+    var dropdownValue = [];
 
-    $.ajax({
-      type: "post",
-      dataType: "json",
-      url: ajaxobject.ajaxurl,
-      data: {
+    var dataSend = {};
+    var allDataCompanyField = $('#dropdown_child').serializeArray();
+    if(type == "dropdown" && allDataCompanyField != undefined){
+      // var tempArrDropdown = [];
+      for (var item of allDataCompanyField) {
+       if(item.name.includes("caption")){
+        dropdownValue.push(item);         
+       }
+      }
+      // dropdownValue += JSON.stringify(tempArrDropdown);
+
+      dataSend = {
         action: "addCompanyField",
-        // status_field: status_field,
         meta_key: meta_key,
         type: type,
         label: label,
         description: description,
         placeholder: placeholder,
-        priority: priority
-      },
+        priority: priority,
+        dropdown : dropdownValue
+      }
+    }
+    else{
+      dataSend = {
+        action: "addCompanyField",
+        meta_key: meta_key,
+        type: type,
+        label: label,
+        description: description,
+        placeholder: placeholder,
+        priority: priority,
+      }
+    }
+    
+
+    $.ajax({
+      type: "post",
+      dataType: "json",
+      url: ajaxobject.ajaxurl,
+      data: dataSend,
       beforeSend: function () {
         //$('#elm-load-data').html('Updating ...');
       },
       success: function (response) {
         if (response.code == 200) {
+
 
           $("#form-company-field").modal("hide");
           window.location.reload();
