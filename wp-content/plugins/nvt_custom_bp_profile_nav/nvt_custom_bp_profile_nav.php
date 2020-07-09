@@ -541,9 +541,10 @@ function ncbpn_recent_posts_content() {
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#xxx'.$val->meta_id.'" aria-expanded="true" aria-controls="collapseOne">
-              Company: '.  $companyName.'
+              <button class="btn btn-link btn-sm" data-toggle="collapse" data-target="#xxx'.$val->meta_id.'" aria-expanded="true" aria-controls="collapseOne">
+              Company: '.  $companyName.' 
               </button>
+              <a href="'.home_url().'/company-info/'. $val->meta_id. '" class="badge badge-pill badge-danger text-white p-2">Detail</a>
             </h5>
           </div>
           <div id="xxx'.$val->meta_id.'" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
@@ -556,7 +557,10 @@ function ncbpn_recent_posts_content() {
             </div>
           </div>
         </div>
-      ';
+        
+      
+      
+        ';
     } 
   }
 
@@ -587,6 +591,8 @@ function ncbpn_recent_posts_content() {
         </div>
       </div>
     </div>
+
+    
     ';
 
   $content1 = '<div class="content">';
@@ -823,12 +829,6 @@ function updateInfoMember(){
 
 
 
-
-
-
-
-
-
 /************************************************************************************************************************************************************
  *                                     Admin Dashboard
  ************************************************************************************************************************************************************/
@@ -977,15 +977,13 @@ function updateCompanyField(){
 function npp_plugin_register_query_vars( $vars ) {
   global $wp_query;
   $vars[] = 'uid';
-  print_r($vars);
-  // print_r($wp_query->query_vars['uid']);
   return $vars;
 }
 add_filter( 'query_vars', 'npp_plugin_register_query_vars' );
 
 
 function npp_plugin_rewrite_tag_rule() {
-  add_rewrite_rule( '^company/([^/]*)/?', 'index.php?pagename=company&uid=$matches[1]','top' );
+  add_rewrite_rule( '^company-info/([^/]*)/?', 'index.php?pagename=company-info&uid=$matches[1]','top' );
   flush_rewrite_rules();
 }
 add_action('init', 'npp_plugin_rewrite_tag_rule', 10, 0);
@@ -993,14 +991,15 @@ add_filter( 'template_include', 'npp_psychic_profile' );
 
 function npp_psychic_profile( $original_template ) {
   global $wp_query;
-  if (array_key_exists ('pagename', $wp_query->query_vars ) && $wp_query->query_vars['pagename']==='company' ) {
-        $db = new Psychic_Data();
-        $mem_det = $db->memberDetail($wp_query->query_vars['uid']);
-        if (count($mem_det)>0) {
-            set_query_var( 'mem_detail', $mem_det[0]);
-            set_query_var( 'mem_review', $db->getAllMemberRevByPin($mem_det[0]->pin_no) );
-        }
-
+  if (array_key_exists ('pagename', $wp_query->query_vars ) && $wp_query->query_vars['pagename']==='company-info' ) {
+        // $db = new Psychic_Data();
+        // $mem_det = $db->memberDetail($wp_query->query_vars['uid']);
+        // if (count($mem_det)>0) {
+        //     set_query_var( 'mem_detail', $mem_det[0]);
+        //     set_query_var( 'mem_review', $db->getAllMemberRevByPin($mem_det[0]->pin_no) );
+        // }
+        // print_r("hello test");
+        set_query_var( 'id_user', $wp_query->query_vars['uid']);
         add_filter( 'document_title_parts', 'custom_title', 11, 1);
         return dirname(__FILE__) . '/single-movie-image.php';
   } else {
