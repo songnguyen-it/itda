@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
  *                                     need first load then all
  ************************************************************************************************************************************************************/
   console.log("plugin script is running nvt_custom_bp_profile_nav");
-  
+
   // get a list of company
   $.ajax({
     type: "post",
@@ -53,6 +53,11 @@ jQuery(document).ready(function ($) {
   $(".bp-member-type").text("...");
 
 
+  // hide dropdown field when load
+  $("#field_dropdown_update").hide();
+  $("#add_field_dropdown_update").hide();
+
+
   //company name
   // $("label[for='company_name']").text("Company Name");
   // $("label[for='company_id']").text("List of Company");
@@ -74,23 +79,17 @@ jQuery(document).ready(function ($) {
 
   });
 
-  
   var uuid = 0;
-
   $("#add_field").click(function () {
-
     ++uuid;
-    $("#field_type").append('<div class="row mt-3 px-2 mx-1" id="siphen'+uuid+'"><div class="col"><input type="text" class="form-control form-control-sm" placeholder="Value" name="value'+uuid+'"></div><div class="col"><input type="text" class="form-control form-control-sm" placeholder="Caption" name="caption'+uuid+'"></div></div> <div class="row d-flex justify-content-end m-1"><button type="button" class="btn btn-danger btn-sm" id="uuid-' + uuid + '">Remove</button></div>');
+    $("#field_type").append('<div class="row mt-3 px-2 mx-1" id="siphen' + uuid + '"><div class="col"><input type="text" class="form-control form-control-sm" placeholder="Value" name="value' + uuid + '"></div><div class="col"><input type="text" class="form-control form-control-sm" placeholder="Caption" name="caption' + uuid + '"></div></div> <div class="row d-flex justify-content-end m-1"><button type="button" class="btn btn-danger btn-sm" id="uuid-' + uuid + '">Remove</button></div>');
 
     $("#uuid-" + uuid).click(function () {
       let idDropdownFieldRemove = "siphen" + $(this).attr("id").split("-")[1];
-      $("#"+idDropdownFieldRemove).remove();
+      $("#" + idDropdownFieldRemove).remove();
       $(this).remove();
     });
   });
-
-
-
 
 
   // set name company in buddyboss
@@ -117,7 +116,6 @@ jQuery(document).ready(function ($) {
   $.ajax({
     type: "post",
     dataType: "json",
-    // url : "<?php echo admin_url('admin-ajax.php');?>",
     url: ajaxobject.ajaxurl,
     data: {
       action: "updateInfoMember",
@@ -206,45 +204,71 @@ jQuery(document).ready(function ($) {
   }); // end of send ajax remove_company
 
 
-
-
   /************************************************************************************************************************************************************
    *                                    add new company form action need
    ************************************************************************************************************************************************************/
-  $('#company_form_field input[type="file"]').change(function(e){
-    var fileName = e.target.files[0];
-    alert('The file "' + fileName +  '" has been selected.');
-  });
 
-  //   $('#upload').on('click', function() {
-  //     var file_data = $('#sortpicture').prop('files')[0];   
-  //     var form_data = new FormData();                  
-  //     form_data.append('file', file_data);
-  //     alert(form_data);                             
-  //     $.ajax({
-  //         url: 'upload.php', // point to server-side PHP script 
-  //         dataType: 'text',  // what to expect back from the PHP script, if anything
-  //         cache: false,
-  //         contentType: false,
-  //         processData: false,
-  //         data: form_data,                         
-  //         type: 'post',
-  //         success: function(php_script_response){
-  //             alert(php_script_response); // display response from the PHP script, if any
-  //         }
-  //     });
+
+  // upload file
+  // $('#company_form_field input[type="file"]').change(function (e) {
+
+  //   var file = e.target.files[0];
+  //   console.log(file);
+  //   var form_data = new FormData();                  
+  //   form_data.append('file', file);
+
+  //   $.ajax({
+  //     type: "POST",
+  //     dataType: "json",
+  //     url: 'upload.php',
+  //     cache : false,
+  //     processData: false,
+  //     contentType: false,
+  //     data: {
+  //       action: "saveFile",
+  //       data: form_data
+  //     },
+
+  //     beforeSend: function () {
+  //     },
+
+  //     success: function (response) {
+  //       if (response.code == 200) {
+  //       }
+  //       if (response.code == 400) {
+  //       }
+  //       console.log(response.msg);
+  //     },
+  //     error: function (jqXHR, textStatus, errorThrown) {
+  //       console.log('The following error occured: ' + textStatus, errorThrown);
+  //     }
+  //   });
+
   // });
 
+  // $('#upload').on('click', function () {
+  //   var file_data = $('#sortpicture').prop('files')[0];
+  //   var form_data = new FormData();
+  //   form_data.append('file', file_data);
 
+
+  //   $.ajax({
+  //     url: 'upload.php', // point to server-side PHP script 
+  //     dataType: 'text',  // what to expect back from the PHP script, if anything
+  //     cache: false,
+  //     contentType: false,
+  //     processData: false,
+  //     data: form_data,
+  //     type: 'post',
+  //     success: function (php_script_response) {
+  //       alert(php_script_response); // display response from the PHP script, if any
+  //     }
+  //   });
+  // });
 
   $("#submit").click(function () {
 
     var data = $("#company_form_field").serializeArray();
-    console.log(data);
-    
-    
-
-
     //  send ajax
     $.ajax({
       type: "post",
@@ -281,17 +305,9 @@ jQuery(document).ready(function ($) {
   ************************************************************************************************************************************************************/
 
   //  *************** delete company field *****************
-  //  *************** delete company field *****************
-  //  *************** delete company field *****************
   $(".delete").click(function () {
-
-
     var confirmDelete = confirm("Do you want to delete this company field?");
     var idDel = $(this).attr("id");
-
-
-    console.log($(this).attr("id"));
-
     if (confirmDelete) {
       $.ajax({
         type: "post",
@@ -323,7 +339,7 @@ jQuery(document).ready(function ($) {
 
 
 
-  //  ******** update edit form to database ******** 
+  //  ******** update edit form company field to database ******** 
   //  ******** update edit form to database ******** 
   //  ******** update edit form to database ******** 
   $("#update-company-field").click(function () {
@@ -334,6 +350,19 @@ jQuery(document).ready(function ($) {
     var place = $("#placeholder_edit").val();
     var label = $("#label_edit").val();
     var priority = $("#priority_edit").val();
+    var captionValueJoin = [];
+
+    if (type == "dropdown") {
+
+      var value = $(".value-uuid").serializeArray();
+      var caption = $(".caption-uuid").serializeArray();
+      for (let index = 0; index < value.length; index++) {
+        captionValueJoin.push({ name: caption[index].value, value: value[index].value });
+
+      }
+
+      console.log(captionValueJoin);
+    }
 
     $.ajax({
       type: "post",
@@ -347,7 +376,8 @@ jQuery(document).ready(function ($) {
         description: desc,
         placeholder: place,
         label: label,
-        priority: priority
+        priority: priority,
+        dropdown: captionValueJoin
 
       },
       beforeSend: function () {
@@ -370,9 +400,29 @@ jQuery(document).ready(function ($) {
 
   });
 
-  //******** */  edit and render data to form edit
-  //******** */  edit and render data to form edit
-  //******** */  edit and render data to form edit
+
+
+
+
+
+  //  add new dropdown field
+  var uuidUpdate = 0;
+  $("#field_dropdown_update").show();
+  $("#add_field_dropdown_update").click(function () {
+    $("#field_dropdown_update").append('<div class="row my-2 p-2 m-1" id="dropdown_child' + uuidUpdate + '"><div class="col"><input type="text" placeholder="Value" class="form-control form-control-sm value-uuid" name="value' + uuidUpdate + '"></div><div class="col"><input type="text" placeholder="Caption" class="form-control form-control-sm caption-uuid" name="caption' + uuidUpdate + '"></div></div><div class="row d-flex justify-content-end m-1" id="allBtn' + uuidUpdate + '"><button type="button" class="btn btn-danger btn-sm remove_dropdown_field" id="uuid-' + uuidUpdate + '">Remove</button></div>');
+    ++uuidUpdate;
+
+    $(".remove_dropdown_field").click(function () {
+      let id = $(this).attr("id").split("-")[1];
+      $("#dropdown_child" + id).remove();
+      $("#allBtn" + id).remove();
+      let count = $("#field_dropdown_update").children().length;
+      console.log(count);
+    });
+  });
+  //******** */  edit and inner data to form edit
+  //******** */  edit and inner data to form edit
+  //******** */  edit and inner data to form edit
   $(".edit").click(function () {
     $("#meta_key_edit").val("");
     $("#type_edit").val("");
@@ -397,7 +447,6 @@ jQuery(document).ready(function ($) {
       },
       success: function (response) {
 
-
         if (response.code == 200) {
           var id = response.msg[0]['id'];
           var metaKey = response.msg[0]['meta_key'];
@@ -406,6 +455,38 @@ jQuery(document).ready(function ($) {
           var placeholder = response.msg[0]['placeholder'];
           var label = response.msg[0]['label'];
           var priority = response.msg[0]['priority'];
+
+          if (type == "dropdown") {
+            var dropdown = response.msg[0]['dropdown'];
+            $("#field_dropdown_update").show();
+            $("#add_field_dropdown_update").show();
+
+            let arrDropdown = JSON.parse(dropdown);
+            
+            // console.log(response.msg[0]['dropdown'] instanceof Array);
+            $("#field_dropdown_update").empty();
+
+            arrDropdown.forEach(item => {
+              let id = item.name.substring(item.name.length - 1, item.name.length);
+              $("#field_dropdown_update").append('<div class="row my-2 p-2 m-1" id="dropdown_child' + id + '"><div class="col"><input type="text" class="form-control form-control-sm value-uuid" value="' + item.value + '" name="value' + id + '"></div><div class="col"><input type="text" class="form-control form-control-sm caption-uuid" value="' + item.name + '" name="caption' + id + '"></div></div><div class="row d-flex justify-content-end m-1" id="allBtn' + id + '"><button type="button" class="btn btn-danger btn-sm remove_dropdown_field" id="uuid-' + id + '">Remove</button></div>');
+
+              uuidUpdate = parseInt(item.name.substring(item.name.length - 1, item.name.length));
+              console.log(uuidUpdate);
+            });
+            ++uuidUpdate;
+            $(".remove_dropdown_field").click(function () {
+              let count = $("#field_dropdown_update").children().length;
+              console.log(count);
+              let id = $(this).attr("id").split("-")[1];
+              $("#dropdown_child" + id).remove();
+              $("#allBtn" + id).remove();
+            });
+
+          }
+          else {
+            $("#field_dropdown_update").hide();
+            $("#add_field_dropdown_update").hide();
+          }
 
           $("#id_hidden").val(id);
           $("#meta_key_edit").val(metaKey);
@@ -443,12 +524,12 @@ jQuery(document).ready(function ($) {
 
     var dataSend = {};
     var allDataCompanyField = $('#dropdown_child').serializeArray();
-    if(type == "dropdown" && allDataCompanyField != undefined){
+    if (type == "dropdown" && allDataCompanyField != undefined) {
       // var tempArrDropdown = [];
       for (var item of allDataCompanyField) {
-       if(item.name.includes("caption")){
-        dropdownValue.push(item);         
-       }
+        if (item.name.includes("caption")) {
+          dropdownValue.push(item);
+        }
       }
       // dropdownValue += JSON.stringify(tempArrDropdown);
 
@@ -460,10 +541,10 @@ jQuery(document).ready(function ($) {
         description: description,
         placeholder: placeholder,
         priority: priority,
-        dropdown : dropdownValue
+        dropdown: dropdownValue
       }
     }
-    else{
+    else {
       dataSend = {
         action: "addCompanyField",
         meta_key: meta_key,
@@ -474,7 +555,7 @@ jQuery(document).ready(function ($) {
         priority: priority,
       }
     }
-    
+
 
     $.ajax({
       type: "post",

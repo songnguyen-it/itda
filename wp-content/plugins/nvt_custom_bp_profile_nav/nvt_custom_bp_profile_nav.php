@@ -84,16 +84,17 @@ function ncbpn_view_guid()
               </div>
            
               <div class="modal-body">
-                  <form>
+                  <form id="form_update_dropdown">
                       <div class="form-group">
                           <label for="meta_key_edit">Meta Key <span class="text-danger font-weight-bold">*</span></label>
                           <input type="text" class="form-control form-control-sm"
-                              placeholder="Meta Key" id="meta_key_edit">
-                          <input type="hidden"  value="" id="id_hidden">
+                              placeholder="Meta Key" id="meta_key_edit" name="meta_key_edit">
+
+                          <input type="hidden"  value="" id="id_hidden" name="id_hidden">
                       </div>
                       <div class="form-group d-flex justify-content-between">
                           <label for="type_edit">Type <span class="text-danger font-weight-bold">*</span></label>
-                          <select class="custom-select custom-select-sm" id="type_edit">
+                          <select class="custom-select custom-select-sm" id="type_edit" name="type_edit">
                               <option selected>Choose Field Type</option>
                               <option value="text-box">Text Box</option>
                               <option value="text-area">Text Area</option>
@@ -101,21 +102,32 @@ function ncbpn_view_guid()
                               <option value="file-upload">File Upload</option>
                           </select>
                       </div>
+
+
+                      <div id="field_dropdown_update" class="border" style="display: block;">
+                          
+                      </div>
+
+                      <div class="row my-2 m-1">
+                        <button type="button" class="btn btn-info btn-sm" id="add_field_dropdown_update" style="display: block;">Add Another</button>
+                      </div>
+
+
                       <div class="form-group">
                           <label for="label_edit">Label <span class="text-danger font-weight-bold">*</span></label>
-                          <input type="text" class="form-control form-control-sm" placeholder="Label" id="label_edit">
+                          <input type="text" class="form-control form-control-sm" placeholder="Label" id="label_edit" name="label_edit">
                           </div>
                           <div class="form-group">
                               <label for="description_edit">Description</label>
-                              <input type="text" class="form-control form-control-sm" placeholder="Description" id="description_edit">
+                              <input type="text" class="form-control form-control-sm" placeholder="Description" id="description_edit" name="description_edit">
                           </div>
                           <div class="form-group">
                               <label for="placeholder_edit">Placeholder</label>
-                              <input type="text" class="form-control form-control-sm" placeholder="Placeholder" id="placeholder_edit">
+                              <input type="text" class="form-control form-control-sm" placeholder="Placeholder" id="placeholder_edit" name="placeholder_edit">
                           </div>
                           <div class="form-group">
                               <label for="priority_edit">Priority</label>
-                              <input type="number" class="form-control form-control-sm" placeholder="Priority" id="priority_edit">
+                              <input type="number" class="form-control form-control-sm" placeholder="Priority" id="priority_edit" name="priority_edit">
                       </div>
                   </form>
               </div>
@@ -127,6 +139,15 @@ function ncbpn_view_guid()
           </div>
         </div>';
     }
+
+    // <div class="row my-2 p-2 m-1" id="dropdown_child">
+    //   <div class="col">
+    //     <input type="text" class="form-control form-control-sm" placeholder="Value" name="value0">
+    //   </div>
+    //   <div class="col">
+    //   <input type="text" class="form-control form-control-sm" placeholder="Caption" name="caption0">
+    //   </div>
+    // </div>
 
 
     echo '
@@ -176,7 +197,7 @@ function ncbpn_view_guid()
                                             <option value="text-box">Text Box</option>
                                             <option value="text-area">Text Area</option>
                                             <option value="dropdown">Dropdown</option>
-                                            <option value="file-upload">File Upload</option>
+                                            
                                         </select>
                                     </div>
 
@@ -260,6 +281,8 @@ function ncbpn_view_guid()
     ';
 
 }
+// backup option of dropdown field
+// <option value="file-upload">File Upload</option>
 
 add_action('admin_menu', 'ncbpn_add_admin_menu');
 function ncbpn_add_tabs(){
@@ -365,16 +388,10 @@ add_action("wp_ajax_getListCompany", "getListCompany");
 add_action("wp_ajax_nopriv_getListCompany", "getListCompany");
 function getListCompany(){
 
-  
-  
-
-
-
   $user_id = get_current_user_id();
   global $wpdb;
   $result = [];
  
-
   global $wp;
   $fullUrl =  add_query_arg( $wp->query_vars, home_url( $wp->request ) );
   // $fullUrl =  add_query_arg( $wp->query_vars, home_url( $wp->request ) ) . '<br>';
@@ -384,13 +401,8 @@ function getListCompany(){
   $the_user = get_user_by('login', $men[9]);
   $the_user_id = $the_user-> ID;
 
-
-
-
   $result = $wpdb->get_results("SELECT * FROM wp8i_postmeta WHERE meta_key = 'company_ahihi' and post_id =" . $user_id );
-  wp_send_json( array('code'=> 200, 'msg'=> $result) );
-  
-  
+  wp_send_json( array('code'=> 200, 'msg'=> $result) );  
 }
 
 
@@ -440,13 +452,13 @@ function ncbpn_recent_posts_content() {
       </div>';
     }
 
-    if($val->type == "file-upload"){
-      $formInput .= '
-      <div class="form-group">
-        <label for="">' . $val->label . '    </label>
-        <input accept="image/png, image/jpeg" type="file" class="form-control" name="'. $val->meta_key .'" >
-      </div>';
-    }
+    // if($val->type == "file-upload"){
+    //   $formInput .= '
+    //   <div class="form-group">
+    //     <label for="">' . $val->label . '    </label>
+    //     <input accept="image/png, image/jpeg" type="file" class="form-control" name="'. $val->meta_key .'" >
+    //   </div>';
+    // }
 
     if($val->type == "text-area"){
       $formInput .= '
@@ -792,6 +804,28 @@ function updateInfoMember(){
 }
 
 
+// add_action("wp_ajax_saveFile", "saveFile");
+// add_action("wp_ajax_nopriv_saveFile", "saveFile");
+// function saveFile(){
+
+//   // $dataFile = $_FILES['data'];
+//   // wp_send_json( array('code'=> 200, 'msg'=> "respone") );
+//   // if ( 0 < $_FILES['fileImage']['error'] ) {
+//   //   wp_send_json( array('code'=> 400, 'msg'=> 'error') );
+//   // }
+//   // else {
+//   //     move_uploaded_file($_FILES['fileImage']['tmp_name'], 'uploads/' . $_FILES['fileImage']['name']);
+//   //     wp_send_json( array('code'=> 200, 'msg'=> 'file add ok') );
+//   // }
+
+// }
+
+
+
+
+
+
+
 
 
 
@@ -916,9 +950,16 @@ function updateCompanyField(){
   $placeholder = $_POST['placeholder'];
   $label = $_POST['label'];
   $priority = $_POST['priority'];
+  $dropdown = $_POST['dropdown'];
+
+  $dropdownJson = json_encode($dropdown);
+
+
+  // wp_send_json( array('code'=> 401, 'msg'=> $dropdownJson));
+
 
   global $wpdb;
-  $result = $wpdb->update('wp8i_company_field', array( 'meta_key'=>$meta_key, 'type'=>$type, 'description'=>$description, 'placeholder'=>$placeholder, 'label'=>$label, 'priority'=>$priority, ), array('id'=>$id));
+  $result = $wpdb->update('wp8i_company_field', array( 'meta_key'=>$meta_key,'dropdown'=>$dropdownJson, 'type'=>$type, 'description'=>$description, 'placeholder'=>$placeholder, 'label'=>$label, 'priority'=>$priority, ), array('id'=>$id));
 
   if(!empty($result)){
     wp_send_json( array('code'=> 200, 'msg'=> "Update company field OK"));
