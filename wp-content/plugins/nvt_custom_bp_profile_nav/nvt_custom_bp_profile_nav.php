@@ -972,8 +972,40 @@ function updateCompanyField(){
 
 
 
+// add custom url and template
+
+function npp_plugin_register_query_vars( $vars ) {
+  global $wp_query;
+  $vars[] = 'uid';
+  print_r($vars);
+  // print_r($wp_query->query_vars['uid']);
+  return $vars;
+}
+add_filter( 'query_vars', 'npp_plugin_register_query_vars' );
 
 
+function npp_plugin_rewrite_tag_rule() {
+  add_rewrite_rule( '^company/([^/]*)/?', 'index.php?pagename=company&uid=$matches[1]','top' );
+  flush_rewrite_rules();
+}
+add_action('init', 'npp_plugin_rewrite_tag_rule', 10, 0);
+add_filter( 'template_include', 'npp_psychic_profile' );
 
+function npp_psychic_profile( $original_template ) {
+  global $wp_query;
+  if (array_key_exists ('pagename', $wp_query->query_vars ) && $wp_query->query_vars['pagename']==='company' ) {
+        $db = new Psychic_Data();
+        $mem_det = $db->memberDetail($wp_query->query_vars['uid']);
+        if (count($mem_det)>0) {
+            set_query_var( 'mem_detail', $mem_det[0]);
+            set_query_var( 'mem_review', $db->getAllMemberRevByPin($mem_det[0]->pin_no) );
+        }
 
+        add_filter( 'document_title_parts', 'custom_title', 11, 1);
+        return dirname(__FILE__) . '/single-movie-image.php';
+  } else {
+      return $original_template;
+  }
+}
 
+// backup page
