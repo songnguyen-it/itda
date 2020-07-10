@@ -140,14 +140,6 @@ function ncbpn_view_guid()
         </div>';
     }
 
-    // <div class="row my-2 p-2 m-1" id="dropdown_child">
-    //   <div class="col">
-    //     <input type="text" class="form-control form-control-sm" placeholder="Value" name="value0">
-    //   </div>
-    //   <div class="col">
-    //   <input type="text" class="form-control form-control-sm" placeholder="Caption" name="caption0">
-    //   </div>
-    // </div>
 
 
     echo '
@@ -646,6 +638,7 @@ function ncbpn_recent_posts_content() {
               <button class="btn btn-link" data-toggle="collapse" data-target="#xxx'.$val->meta_id.'" aria-expanded="true" aria-controls="collapseOne">
               Company: '. $companyName.'
               </button>
+              <a href="'.home_url().'/company-info/'. $val->meta_id. '" class="badge badge-pill badge-danger text-white p-2">Detail</a>
             </h5>
           </div>
 
@@ -707,6 +700,7 @@ function ncbpn_recent_posts_content() {
               <button class="btn btn-link" data-toggle="collapse" data-target="#xxx'.$val->meta_id.'" aria-expanded="true" aria-controls="collapseOne">
               Company: '. $companyName.'
               </button>
+              <a href="'.home_url().'/company-info/'. $val->meta_id. '" class="badge badge-pill badge-danger text-white p-2">Detail</a>
             </h5>
           </div>
           <div id="xxx'.$val->meta_id.'" class="collapse" aria-labelledby="headingOne" data-parent="#accordion ">
@@ -724,7 +718,6 @@ function ncbpn_recent_posts_content() {
         </script>
       ';
     } 
-
 
 
     // check value type safe and render to view
@@ -971,6 +964,28 @@ function updateCompanyField(){
 }
 
 
+add_action("wp_ajax_followingButtonClicked", "followingButtonClicked");
+add_action("wp_ajax_nopriv_followingButtonClicked", "followingButtonClicked");
+function followingButtonClicked(){
+
+
+
+  wp_send_json( array('code'=> 200, 'msg'=> "button clicked"));
+
+  // global $wpdb;
+  // $result = $wpdb->update('wp8i_company_field', array( 'meta_key'=>$meta_key,'dropdown'=>$dropdownJson, 'type'=>$type, 'description'=>$description, 'placeholder'=>$placeholder, 'label'=>$label, 'priority'=>$priority, ), array('id'=>$id));
+
+  // if(!empty($result)){
+  //   wp_send_json( array('code'=> 200, 'msg'=> "Update company field OK"));
+  // }
+  // else{
+  //   wp_send_json( array('code'=> 401, 'msg'=> 'Cant update company field'));
+  // }
+
+}
+
+
+
 
 // add custom url and template
 
@@ -992,13 +1007,32 @@ add_filter( 'template_include', 'npp_psychic_profile' );
 function npp_psychic_profile( $original_template ) {
   global $wp_query;
   if (array_key_exists ('pagename', $wp_query->query_vars ) && $wp_query->query_vars['pagename']==='company-info' ) {
-        // $db = new Psychic_Data();
-        // $mem_det = $db->memberDetail($wp_query->query_vars['uid']);
-        // if (count($mem_det)>0) {
-        //     set_query_var( 'mem_detail', $mem_det[0]);
-        //     set_query_var( 'mem_review', $db->getAllMemberRevByPin($mem_det[0]->pin_no) );
-        // }
-        // print_r("hello test");
+   
+        $id = $wp_query->query_vars['uid'];
+        global $wpdb;
+        $result = $wpdb->get_results("SELECT * FROM wp8i_postmeta WHERE meta_key='company_ahihi' AND meta_id = ".$id);
+
+        $userId = $result[0]->post_id;
+        $nameUserOwner = "";
+        $userInTable = $wpdb->get_results("SELECT user_nicename FROM wp8i_users WHERE ID = ".$userId);
+  
+        $nameUserOwner = $userInTable[0]->user_nicename;
+        $jsonDataCompany = json_decode($result[0]->meta_value);
+
+        $companyName = "";
+        $companyDescription = "";
+
+        foreach ($jsonDataCompany as $key) {
+          if($key->name == "company_name"){ $companyName = $key->value;}// get company name
+          if($key->name == "description"){ $companyDescription = $key->value;}// get company descriptiop
+        
+        }
+        // var_dump($jsonDataCompany);
+
+        set_query_var( 'info_company_array', $jsonDataCompany );
+        set_query_var( 'name_userowner_string', $nameUserOwner );
+        set_query_var( 'company_name_string', $companyName );
+        set_query_var( 'company_description_string', $companyDescription );
         set_query_var( 'id_user', $wp_query->query_vars['uid']);
         add_filter( 'document_title_parts', 'custom_title', 11, 1);
         return dirname(__FILE__) . '/single-movie-image.php';

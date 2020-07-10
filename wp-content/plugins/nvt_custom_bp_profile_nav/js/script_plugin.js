@@ -583,7 +583,51 @@ jQuery(document).ready(function ($) {
       }
     });
   });
-});
+
+
+
+
+  /**
+   * ******************************* process for button following clicked in custom company page
+   */
+
+  $('.songnguyen_follow').click(function(){
+    alert("Following button clicked - TEST");
+
+    $.ajax({
+      type: "post",
+      dataType: "json",
+      url: ajaxobject.ajaxurl,
+      data: {
+        action: "followingButtonClicked",
+    
+      },
+      beforeSend: function () {
+      },
+      success: function (response) {
+        if (response.code == 200) {
+         console.log("ok");
+        }
+
+        if (response.code == 400) {
+          console.log("fail follow button clicked");
+        }
+        
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        console.log('The following error occured: ' + textStatus + errorThrown);
+      }
+    });
+
+  });
+
+
+  
+}); //end ready
+
+
+
+
 
 
 
