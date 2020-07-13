@@ -30,7 +30,7 @@ global $wp_query;
                                                     style="width: 200px;height:200px; ">';
                                                 }
                                                 else{
-                                                 echo ' <img src="http://192.168.1.11/blog/wp-content/uploads/company/c1.jpg"
+                                                 echo ' <img src="http://192.168.1.11/blog/wp-content/plugins/buddyboss-platform/bp-core/images/mystery-group.png"
                                                   class="img-thumbnail shadow " alt="chicken"
                                                   style="width: 200px;height:200px; ">';
                                                 }
@@ -174,16 +174,11 @@ global $wp_query;
                                                   }
                                                 
                                                 ?>
-                                            <!--                                             
-                                            <img src="http://192.168.1.11/blog/wp-content/uploads/company/c2.jpg"
-                                                class="img-thumbnail" alt="boring" style="width: 200px;height:200px">
-                                            <img src="http://192.168.1.11/blog/wp-content/uploads/company/c3.jpg"
-                                                class="img-thumbnail" alt="boring" style="width: 200px;height:200px"> -->
+
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="nav-demo2" role="tabpanel"
                                         aria-labelledby="nav-contact-tab">
-
 
                                         <!-- <div class="row d-flex justify-content-end">
 
@@ -196,10 +191,6 @@ global $wp_query;
                                             </form>
 
                                         </div> -->
-
-
-
-
 
                                         <div class="col-md-3">
                                             <ul class="list-group">
