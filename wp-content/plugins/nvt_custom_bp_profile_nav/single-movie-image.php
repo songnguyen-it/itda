@@ -20,9 +20,22 @@ global $wp_query;
 
                                     <div id="item-header-avatar" class="mx-4 d-flex justify-content-start">
                                         <div class="text-left mr-4 ">
-                                            <img src="http://192.168.1.11/blog/wp-content/uploads/company/c1.jpg"
-                                                class="img-thumbnail shadow " alt="boring"
-                                                style="width: 200px;height:200px; ">
+
+
+                                            <?php 
+                                                $logoPath = get_query_var('logo_string');
+                                                if($logoPath != ''){
+                                                    echo '<img src="'.$logoPath.'"
+                                                    class="img-thumbnail shadow " alt="chicken"
+                                                    style="width: 200px;height:200px; ">';
+                                                }
+                                                else{
+                                                 echo ' <img src="http://192.168.1.11/blog/wp-content/uploads/company/c1.jpg"
+                                                  class="img-thumbnail shadow " alt="chicken"
+                                                  style="width: 200px;height:200px; ">';
+                                                }
+
+                                            ?>
 
                                         </div>
                                         <div id="item-header-content">
@@ -151,12 +164,21 @@ global $wp_query;
 
                                         </div>
                                         <div class="text-left">
-                                            <img src="http://192.168.1.11/blog/wp-content/uploads/company/c1.jpg"
-                                                class="img-thumbnail" alt="boring" style="width: 200px;height:200px">
+                                            <?php
+                                                  $photoArray = get_query_var('photo_array');
+                                                  if(!empty($photoArray)){
+                                                    foreach ($photoArray as $imagePath) {
+                                                      echo '<img src="'.$imagePath.'"
+                                                      class="img-thumbnail" alt="boring" style="width: 200px;height:200px">';
+                                                    }
+                                                  }
+                                                
+                                                ?>
+                                            <!--                                             
                                             <img src="http://192.168.1.11/blog/wp-content/uploads/company/c2.jpg"
                                                 class="img-thumbnail" alt="boring" style="width: 200px;height:200px">
                                             <img src="http://192.168.1.11/blog/wp-content/uploads/company/c3.jpg"
-                                                class="img-thumbnail" alt="boring" style="width: 200px;height:200px">
+                                                class="img-thumbnail" alt="boring" style="width: 200px;height:200px"> -->
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="nav-demo2" role="tabpanel"

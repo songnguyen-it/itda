@@ -190,7 +190,7 @@ function ncbpn_view_guid()
                                             <option value="text-area">Text Area</option>
                                             <option value="dropdown">Dropdown</option>
                                             <option value="file-upload">File Upload</option>
-                                            
+                                            <option value="file-upload">Document Upload</option>
                                         </select>
                                     </div>
 
@@ -452,7 +452,7 @@ function ncbpn_recent_posts_content() {
         <br/>
         <input type="file"  name="'. $val->meta_key .'" class="form-control upload_document"  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px">
 
-        <input hidden value="" name="img'. $val->meta_key .'"/>
+        <input hidden value="" name="img_'. $val->meta_key .'"/>
         
       </div>';
     }
@@ -810,31 +810,10 @@ function updateInfoMember(){
 }
 
 
-// add_action("wp_ajax_saveFile", "saveFile");
-// add_action("wp_ajax_nopriv_saveFile", "saveFile");
-// function saveFile(){
-
-//   // $dataFile = $_FILES['data'];
-//   // wp_send_json( array('code'=> 200, 'msg'=> "respone") );
-//   // if ( 0 < $_FILES['fileImage']['error'] ) {
-//   //   wp_send_json( array('code'=> 400, 'msg'=> 'error') );
-//   // }
-//   // else {
-//   //     move_uploaded_file($_FILES['fileImage']['tmp_name'], 'uploads/' . $_FILES['fileImage']['name']);
-//   //     wp_send_json( array('code'=> 200, 'msg'=> 'file add ok') );
-//   // }
-
-// }
-
-
-
-
 /************************************************************************************************************************************************************
  *                                     Admin Dashboard
  ************************************************************************************************************************************************************/
 
-//  *************add company field*************
-//  *************add company field*************
 //  *************add company field*************
 add_action("wp_ajax_addCompanyField", "addCompanyField");
 add_action("wp_ajax_nopriv_addCompanyField", "addCompanyField");
@@ -916,8 +895,7 @@ function removeCompanyField(){
   }
 }
 
-//  ************require data for from edit***************
-//  ************require data for from edit***************
+
 //  ************require data for from edit***************
 add_action("wp_ajax_editCompanyField", "editCompanyField");
 add_action("wp_ajax_nopriv_editCompanyField", "editCompanyField");
@@ -937,8 +915,6 @@ function editCompanyField(){
 
 
 //  ***************update company field***************
-//  ***************update company field***************
-//  ***************update company field***************
 add_action("wp_ajax_updateCompanyField", "updateCompanyField");
 add_action("wp_ajax_nopriv_updateCompanyField", "updateCompanyField");
 function updateCompanyField(){
@@ -953,11 +929,6 @@ function updateCompanyField(){
   $dropdown = $_POST['dropdown'];
 
   $dropdownJson = json_encode($dropdown);
-
-
-  // wp_send_json( array('code'=> 401, 'msg'=> $dropdownJson));
-
-
   global $wpdb;
   $result = $wpdb->update('wp8i_company_field', array( 'meta_key'=>$meta_key,'dropdown'=>$dropdownJson, 'type'=>$type, 'description'=>$description, 'placeholder'=>$placeholder, 'label'=>$label, 'priority'=>$priority, ), array('id'=>$id));
 
@@ -974,8 +945,6 @@ function updateCompanyField(){
 add_action("wp_ajax_followingButtonClicked", "followingButtonClicked");
 add_action("wp_ajax_nopriv_followingButtonClicked", "followingButtonClicked");
 function followingButtonClicked(){
-
-
 
   wp_send_json( array('code'=> 200, 'msg'=> "button clicked"));
 
@@ -995,7 +964,6 @@ function followingButtonClicked(){
 
 
 // add custom url and template
-
 function npp_plugin_register_query_vars( $vars ) {
   global $wp_query;
   $vars[] = 'uid';
@@ -1028,15 +996,29 @@ function npp_psychic_profile( $original_template ) {
 
         $companyName = "";
         $companyDescription = "";
+        $companyLogo = "";
+        $listPhotoPath = [];
 
         foreach ($jsonDataCompany as $key) {
-          if($key->name == "company_name"){ $companyName = $key->value;}// get company name
-          if($key->name == "description"){ $companyDescription = $key->value;}// get company descriptiop
+          $checkImage = strpos($key->name , "img");
+
+          if($key->name == "company_name"){ $companyName = $key->value;} // get company name
+          if($key->name == "description"){ $companyDescription = $key->value;} // get company description
+          if($key->name == "img_company_logo"){ $companyLogo = $key->value;} // get company logo
+
+          if(is_numeric($checkImage)){
+          
+            array_push($listPhotoPath, $key->value);
+  
+          }
+      
         
         }
-        // var_dump($jsonDataCompany);
+
 
         set_query_var( 'info_company_array', $jsonDataCompany );
+        set_query_var( 'logo_string', $companyLogo );
+        set_query_var( 'photo_array', $listPhotoPath );
         set_query_var( 'name_userowner_string', $nameUserOwner );
         set_query_var( 'company_name_string', $companyName );
         set_query_var( 'company_description_string', $companyDescription );
@@ -1057,13 +1039,16 @@ add_action("wp_ajax_saveDocument", "saveDocument");
 add_action("wp_ajax_nopriv_saveDocument", "saveDocument");
 function saveDocument(){
 
+
+
+
   $arr_img_ext = array('image/png', 'image/jpeg', 'image/jpg', 'image/gif');
     if (in_array($_FILES['file']['type'], $arr_img_ext)) {
         $upload = wp_upload_bits($_FILES["file"]["name"], null, file_get_contents($_FILES["file"]["tmp_name"]));
 
         if ($upload['error'] == false) {
           $data = array('url' => $upload['url']);
-          wp_send_json( array('code'=> 200, 'msg'=> $upload['url'] ));
+          wp_send_json( array('code'=> 200, 'msg'=> $upload['url'], 'field_name' => $_REQUEST['name'] ));
 
         } else {
           $data = array('msg' => $upload['error']);

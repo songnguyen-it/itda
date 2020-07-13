@@ -212,6 +212,8 @@ jQuery(document).ready(function ($) {
   $("#submit").click(function () {
 
     var data = $("#company_form_field").serializeArray();
+    console.log(data);
+
     //  send ajax
     $.ajax({
       type: "post",
@@ -575,37 +577,46 @@ jQuery(document).ready(function ($) {
     var form_data = new FormData();
     form_data.append('file', file_data);
     form_data.append('action', 'saveDocument');
+    
     var name =  $(this).prop("name")
+    form_data.append("name",name);
+    // $(`input[name ="img${name}"]`).val("i am here");
 
-    $(`input[name ="img${name}"]`).val("i am here");
+    // var b = $(`input[name ="img${name}"]`).val();
 
-    var b = $(`input[name ="img${name}"]`).val();
-
-    console.log(b);
+    // console.log(b);
 
     
-    // $.ajax({  
-    //   type: 'POST',
-    //     url: ajaxobject.ajaxurl,
-    //     data: form_data,
-    //     contentType: false,
-    //     processData: false,
-    //   beforeSend: function () {
-    //   },
-    //   success: function (response) {
-    //     if (response.code == 200) {
-    //       console.log(response.msg);
-    //     }
+    $.ajax({  
+      type: 'POST',
+        url: ajaxobject.ajaxurl,
+        data: form_data,
+        contentType: false,
+        processData: false,
+      beforeSend: function () {
+      },
+      success: function (response) {
+        if (response.code == 200) {
+          let pathImage = response.msg;
+          let hidden_field_name = response.field_name;
 
-    //     if (response.code == 400) {
-    //       console.log("fail follow button clicked");
-    //     }
+          if(pathImage.length > 0 && hidden_field_name.length > 0){
+            $(`input[name ="img_${hidden_field_name}"]`).val(pathImage);
+          }
 
-    //   },
-    //   error: function (jqXHR, textStatus, errorThrown) {
-    //     console.log('The following error occured: ' + textStatus + errorThrown);
-    //   }
-    // });
+          console.log(response.msg);
+          console.log(response.field_name);
+        }
+
+        if (response.code == 400) {
+          console.log("fail follow button clicked");
+        }
+
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        console.log('The following error occured: ' + textStatus + errorThrown);
+      }
+    });
 
 
    
