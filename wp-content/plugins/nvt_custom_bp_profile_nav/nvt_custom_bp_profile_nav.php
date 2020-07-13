@@ -189,6 +189,7 @@ function ncbpn_view_guid()
                                             <option value="text-box">Text Box</option>
                                             <option value="text-area">Text Area</option>
                                             <option value="dropdown">Dropdown</option>
+                                            <option value="file-upload">File Upload</option>
                                             
                                         </select>
                                     </div>
@@ -444,13 +445,19 @@ function ncbpn_recent_posts_content() {
       </div>';
     }
 
-    // if($val->type == "file-upload"){
-    //   $formInput .= '
-    //   <div class="form-group">
-    //     <label for="">' . $val->label . '    </label>
-    //     <input accept="image/png, image/jpeg" type="file" class="form-control" name="'. $val->meta_key .'" >
-    //   </div>';
-    // }
+    if($val->type == "file-upload"){
+      $formInput .= '
+      <div class="form-group">
+        <label for="">' . $val->label . '</label>
+        <br/>
+        <input type="file"  name="'. $val->meta_key .'" class="form-control upload_document"  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px">
+
+        <input hidden value="" name="img'. $val->meta_key .'"/>
+        
+      </div>';
+    }
+    // <input type="file" id="uploadDocument" style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 210px">
+    // <input accept="image/png, image/jpeg" type="file" class="form-control" name="'. $val->meta_key .'" >
 
     if($val->type == "text-area"){
       $formInput .= '
@@ -1041,4 +1048,27 @@ function npp_psychic_profile( $original_template ) {
   }
 }
 
-// backup page
+
+
+
+
+// upload file
+add_action("wp_ajax_saveDocument", "saveDocument");
+add_action("wp_ajax_nopriv_saveDocument", "saveDocument");
+function saveDocument(){
+
+  $arr_img_ext = array('image/png', 'image/jpeg', 'image/jpg', 'image/gif');
+    if (in_array($_FILES['file']['type'], $arr_img_ext)) {
+        $upload = wp_upload_bits($_FILES["file"]["name"], null, file_get_contents($_FILES["file"]["tmp_name"]));
+
+        if ($upload['error'] == false) {
+          $data = array('url' => $upload['url']);
+          wp_send_json( array('code'=> 200, 'msg'=> $upload['url'] ));
+
+        } else {
+          $data = array('msg' => $upload['error']);
+          wp_send_json( array('code'=> 200, 'msg'=> $response->output() ));
+        }
+    }
+    
+}

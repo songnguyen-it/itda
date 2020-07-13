@@ -209,63 +209,6 @@ jQuery(document).ready(function ($) {
    ************************************************************************************************************************************************************/
 
 
-  // upload file
-  // $('#company_form_field input[type="file"]').change(function (e) {
-
-  //   var file = e.target.files[0];
-  //   console.log(file);
-  //   var form_data = new FormData();                  
-  //   form_data.append('file', file);
-
-  //   $.ajax({
-  //     type: "POST",
-  //     dataType: "json",
-  //     url: 'upload.php',
-  //     cache : false,
-  //     processData: false,
-  //     contentType: false,
-  //     data: {
-  //       action: "saveFile",
-  //       data: form_data
-  //     },
-
-  //     beforeSend: function () {
-  //     },
-
-  //     success: function (response) {
-  //       if (response.code == 200) {
-  //       }
-  //       if (response.code == 400) {
-  //       }
-  //       console.log(response.msg);
-  //     },
-  //     error: function (jqXHR, textStatus, errorThrown) {
-  //       console.log('The following error occured: ' + textStatus, errorThrown);
-  //     }
-  //   });
-
-  // });
-
-  // $('#upload').on('click', function () {
-  //   var file_data = $('#sortpicture').prop('files')[0];
-  //   var form_data = new FormData();
-  //   form_data.append('file', file_data);
-
-
-  //   $.ajax({
-  //     url: 'upload.php', // point to server-side PHP script 
-  //     dataType: 'text',  // what to expect back from the PHP script, if anything
-  //     cache: false,
-  //     contentType: false,
-  //     processData: false,
-  //     data: form_data,
-  //     type: 'post',
-  //     success: function (php_script_response) {
-  //       alert(php_script_response); // display response from the PHP script, if any
-  //     }
-  //   });
-  // });
-
   $("#submit").click(function () {
 
     var data = $("#company_form_field").serializeArray();
@@ -462,7 +405,7 @@ jQuery(document).ready(function ($) {
             $("#add_field_dropdown_update").show();
 
             let arrDropdown = JSON.parse(dropdown);
-            
+
             // console.log(response.msg[0]['dropdown'] instanceof Array);
             $("#field_dropdown_update").empty();
 
@@ -591,7 +534,7 @@ jQuery(document).ready(function ($) {
    * ******************************* process for button following clicked in custom company page
    */
 
-  $('.songnguyen_follow').click(function(){
+  $('.songnguyen_follow').click(function () {
     alert("Following button clicked - TEST");
 
     $.ajax({
@@ -600,19 +543,19 @@ jQuery(document).ready(function ($) {
       url: ajaxobject.ajaxurl,
       data: {
         action: "followingButtonClicked",
-    
+
       },
       beforeSend: function () {
       },
       success: function (response) {
         if (response.code == 200) {
-         console.log("ok");
+          console.log("ok");
         }
 
         if (response.code == 400) {
           console.log("fail follow button clicked");
         }
-        
+
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.log('The following error occured: ' + textStatus + errorThrown);
@@ -622,7 +565,54 @@ jQuery(document).ready(function ($) {
   });
 
 
-  
+
+
+  /** upload documents and photos */
+  $(".upload_document").change(function (e) {
+
+
+    var file_data = $(this).prop('files')[0];
+    var form_data = new FormData();
+    form_data.append('file', file_data);
+    form_data.append('action', 'saveDocument');
+    var name =  $(this).prop("name")
+
+    $(`input[name ="img${name}"]`).val("i am here");
+
+    var b = $(`input[name ="img${name}"]`).val();
+
+    console.log(b);
+
+    
+    // $.ajax({  
+    //   type: 'POST',
+    //     url: ajaxobject.ajaxurl,
+    //     data: form_data,
+    //     contentType: false,
+    //     processData: false,
+    //   beforeSend: function () {
+    //   },
+    //   success: function (response) {
+    //     if (response.code == 200) {
+    //       console.log(response.msg);
+    //     }
+
+    //     if (response.code == 400) {
+    //       console.log("fail follow button clicked");
+    //     }
+
+    //   },
+    //   error: function (jqXHR, textStatus, errorThrown) {
+    //     console.log('The following error occured: ' + textStatus + errorThrown);
+    //   }
+    // });
+
+
+   
+
+  });
+
+
 }); //end ready
 
 

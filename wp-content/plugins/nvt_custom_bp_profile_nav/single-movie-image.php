@@ -16,17 +16,26 @@ global $wp_query;
                         <div id="item-header" role="complementary" data-bp-item-id="2" data-bp-item-component="groups"
                             class="groups-header single-headers">
                             <div id="cover-image-container">
-                                <div id="item-header-cover-image" class="item-header-wrap bb-enable-cover-img p-4">
-                                    <div id="item-header-avatar">
+                                <div id="item-header-cover-image" class="item-header-wrap bb-enable-cover-img p-4 ">
+
+                                    <div id="item-header-avatar" class="mx-4 d-flex justify-content-start">
+                                        <div class="text-left mr-4 ">
+                                            <img src="http://192.168.1.11/blog/wp-content/uploads/company/c1.jpg"
+                                                class="img-thumbnail shadow " alt="boring"
+                                                style="width: 200px;height:200px; ">
+
+                                        </div>
                                         <div id="item-header-content">
                                             <div class="flex align bp-group-title-wrap">
-                                                <h2 class="bb-bp-group-title">
-                                                    <?php echo get_query_var('company_name_string'); ?></h2>
 
-                                                <p class="bp-group-meta bp-group-status" data-balloon-pos="up"
-                                                    data-balloon-length="large">
-                                                    <span class="group-visibility bg-danger text-white">Company<span
-                                                            class="type-separator">/</span></p>
+
+                                                <h2>
+                                                    <?php echo get_query_var('company_name_string'); ?>
+                                                    <span class="badge badge-pill badge-danger p-2 shadow"
+                                                        style="font-size: 0.8rem">Company</span>
+                                                </h2>
+
+
                                             </div>
                                             <div class="group-description">
                                                 <p><?php echo get_query_var('company_description_string'); ?></p>
@@ -35,36 +44,17 @@ global $wp_query;
 
 
                                                 <div>
-                                                    <h4 class="bp-title">Owner: <?php echo get_query_var('name_userowner_string');?></h4>
+                                                    <h4 class="bp-title">Owner:
+                                                        <span
+                                                            class="badge badge-pill badge-success p-2"><?php echo get_query_var('name_userowner_string');?></span>
 
-                                                    <!-- <dl class="moderators-lists">
-                                                        <dt class="moderators-title">Organized by</dt>
-                                                        <dd class="user-list admins">
-                                                            <ul id="group-admins">
-                                                                <li>
-                                                                    <a href="#" class="bp-tooltip"
-                                                                        data-bp-tooltip-pos="up"
-                                                                        data-bp-tooltip="<?php echo get_query_var('name_userowner_string');?>">
-                                                                        <img src="http://192.168.1.11/blog/wp-content/plugins/buddyboss-platform/bp-core/images/mystery-man.jpg"
-                                                                            class="avatar user-5-avatar avatar-150 photo"
-                                                                            width="150" height="150"
-                                                                            alt="Profile photo of jessica-sanders"> </a>
-                                                                </li>
-                                                            </ul>
-                                                        </dd>
-                                                    </dl> -->
+
+                                                    </h4>
                                                 </div>
 
 
                                             </div>
-                                            <!-- 
-                                            <div id="item-actions" class="group-item-actions">
-                                                <dl class="moderators-lists">
-                                                    <dt class="moderators-title">Organized by</dt>
-                                                    <dd class="user-list admins">
-                                                    </dd>
-                                                </dl>
-                                            </div> -->
+
                                         </div>
                                     </div>
                                 </div>
@@ -150,6 +140,16 @@ global $wp_query;
                                     </div>
                                     <div class="tab-pane fade" id="nav-demo1" role="tabpanel"
                                         aria-labelledby="nav-contact-tab">
+                                        <div class="row d-flex justify-content-end">
+                                            <!-- <form>
+                                                <div class="form-group col-md-3">
+                                                    <input type="file" id="uploadPhoto"
+                                                        style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 210px">
+                                                </div>
+
+                                            </form> -->
+
+                                        </div>
                                         <div class="text-left">
                                             <img src="http://192.168.1.11/blog/wp-content/uploads/company/c1.jpg"
                                                 class="img-thumbnail" alt="boring" style="width: 200px;height:200px">
@@ -161,133 +161,55 @@ global $wp_query;
                                     </div>
                                     <div class="tab-pane fade" id="nav-demo2" role="tabpanel"
                                         aria-labelledby="nav-contact-tab">
-                                        <div class="document-data-table-head">
-                                            <div class="data-head data-head-name " data-target="name">
-                                                <span>
-                                                    Name <i class="bb-icon-triangle-fill"></i>
-                                                </span>
-                                            </div>
-                                            <div class="data-head data-head-modified " data-target="modified">
-                                                <span>
-                                                    Modified <i class="bb-icon-triangle-fill"></i>
-                                                </span>
-                                            </div>
-                                            <div class="data-head data-head-origin " data-target="group">
-                                            </div>
 
-                                            <div class="data-head data-head-visibility " data-target="visibility">
-                                                <span>
-                                                    Visibility <i class="bb-icon-triangle-fill"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="media-folder_items ac-document-list" data-author="1"
-                                            data-group-id="2" data-activity-id="83" data-id="1" data-parent-id="0"
-                                            id="div-listing-1">
-                                            <div class="media-folder_icon">
-                                                <a
-                                                    href="http://192.168.1.11/blog/?attachment=1035&amp;document_type=document&amp;download_document_file=1&amp;document_file=1">
-                                                    <i class="bb-icon-file-apk"></i>
-                                                </a>
-                                            </div>
-                                            <div class="media-folder_details">
-                                                <a class="media-folder_name bb-open-document-theatre"
-                                                    href="http://192.168.1.11/blog/?attachment=1035&amp;document_type=document&amp;download_document_file=1&amp;document_file=1"
-                                                    data-id="1" data-attachment-full="" data-attachment-id="1035"
-                                                    data-privacy="grouponly" data-extension="apk"
-                                                    data-parent-activity-id="83" data-activity-id="83" data-author="1"
-                                                    data-preview=""
-                                                    data-text-preview="http://192.168.1.11/blog/wp-content/uploads/bb_documents/2020/07/apkfile.apk"
-                                                    data-mp3-preview="" data-album-id="1" data-group-id="2"
-                                                    data-document-title="apkfile.apk" data-mirror-text=""
-                                                    data-icon-class="bb-icon-file-apk">
 
-                                                    <span>apkfile</span>.apk <i class="media-document-id"
-                                                        data-item-id="1" style="display: none;"></i>
-                                                    <i class="media-document-attachment-id" data-item-id="1035"
-                                                        style="display: none;"></i>
-                                                    <i class="media-document-type" data-item-id="document"
-                                                        style="display: none;"></i>
-                                                </a>
-                                                <div class="media-folder_name_edit_wrap">
-                                                    <input type="text" value="" class="media-folder_name_edit">
-                                                    <small class="error-box">Following special characters are not
-                                                        supported:<br> ' " \ * | / &gt; &lt; ? ` ; : {space}</small>
+                                        <!-- <div class="row d-flex justify-content-end">
+
+                                            <form>
+                                                <div class="form-group col-md-3">
+                                                    <input type="file" id="uploadDocument"
+                                                        style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 210px">
                                                 </div>
-                                            </div>
-                                           
-                                       
-                                            <div class="media-folder_visibility">
-                                                <div class="media-folder_details__bottom">
-                                                    <span class="bp-tooltip" data-bp-tooltip-pos="down"
-                                                        data-bp-tooltip="Based on group privacy">
-                                                        Public </span>
-                                                    <select data-item-type="document" data-item-id="1"
-                                                        id="bb-folder-privacy" class="hide">
-                                                        <option value="public">Public</option>
-                                                        <option value="loggedin">All Members</option>
-                                                        <option value="friends">My Connections</option>
-                                                        <option value="onlyme">Only Me</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="media-folder_actions">
-                                                <a href="#" class="media-folder_action__anchor"> <i
-                                                        class="bb-icon-menu-dots-v"></i> </a>
-                                                <div class="media-folder_action__list">
-                                                    <ul>
-                                                        <li class="download_file">
+                                        
+                                            </form>
+
+                                        </div> -->
+
+
+
+
+
+                                        <div class="col-md-3">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <div class="media-folder_items ac-document-list" data-author="1"
+                                                        data-group-id="2" data-activity-id="83" data-id="1"
+                                                        data-parent-id="0" id="div-listing-1">
+                                                        <div class="media-folder_icon">
                                                             <a
-                                                                href="http://192.168.1.11/blog/?attachment=1035&amp;document_type=document&amp;download_document_file=1&amp;document_file=1">Download</a>
-                                                        </li>
-                                                        <li class="copy_download_file_url">
-                                                            <a
-                                                                href="http://192.168.1.11/blog/?attachment=1035&amp;document_type=document&amp;download_document_file=1&amp;document_file=1">Copy
-                                                                Download Link</a>
-                                                        </li>
-                                                        <li class="rename_file">
-                                                            <a href="#" data-type="document"
-                                                                class="ac-document-rename">Rename</a>
-                                                        </li>
-                                                        <li class="move_file">
-                                                            <a href="#" data-action="document" data-parent-id="0"
-                                                                data-id="1" data-type="group" id="2"
-                                                                class="ac-document-move">Move</a>
-                                                        </li>
-                                                        <li class="delete_file">
-                                                            <a class="document-file-delete" data-item-from="listing"
-                                                                data-item-preview-attachment-id="1035"
-                                                                data-item-attachment-id="1035" data-item-id="1"
-                                                                data-type="document" href="#">Delete</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                                href="http://192.168.1.11/blog/?attachment=1035&amp;document_type=document&amp;download_document_file=1&amp;document_file=1">
+                                                                test file document
+                                                                <i class="bb-icon-file-apk"></i>
+                                                            </a>
+                                                        </div>
 
+                                                    </div>
 
-
-
-
-
-
-
-
-
-
-                                        <!-- remove backup file upload -->
-                                        <div class="media-folder_items ac-document-list" data-author="1"
-                                            data-group-id="2" data-activity-id="83" data-id="1" data-parent-id="0"
-                                            id="div-listing-1">
-                                            <div class="media-folder_icon">
-                                                <a
-                                                    href="http://192.168.1.11/blog/?attachment=1035&amp;document_type=document&amp;download_document_file=1&amp;document_file=1">
-                                                    test file document
-                                                    <i class="bb-icon-file-apk"></i>
-                                                </a>
-                                            </div>
+                                                </li>
+                                                <li class="list-group-item">Document01</li>
+                                                <li class="list-group-item">Document02</li>
+                                                <li class="list-group-item">Document03</li>
+                                                <li class="list-group-item">Document04</li>
+                                            </ul>
 
                                         </div>
+
+
+
+
+
+
+
                                     </div>
                                 </div>
                             </div>
