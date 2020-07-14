@@ -393,8 +393,16 @@ function getListCompany(){
   // user login here
   $the_user = get_user_by('login', $men[9]);
   $the_user_id = $the_user-> ID;
+  
 
   $result = $wpdb->get_results("SELECT * FROM wp8i_postmeta WHERE meta_key = 'company_ahihi' and post_id =" . $user_id );
+  // print_r("<br/>");
+  // print_r("<br/>");
+  // print_r("<br/>");
+  // print_r($result);
+  // print_r("<br/>");
+  // print_r("<br/>");
+  // print_r("<br/>");
   wp_send_json( array('code'=> 200, 'msg'=> $result) );  
 }
 
@@ -415,6 +423,13 @@ function ncbpn_recent_posts_content() {
   $dataForm = [];
 
   $result = $wpdb->get_results("SELECT * FROM wp8i_postmeta WHERE meta_key = 'company_ahihi' and post_id = " . $user_id );
+  print_r("<br/>");
+  print_r("<br/>");
+  print_r("<br/>");
+  print_r($result);
+  print_r("<br/>");
+  print_r("<br/>");
+  print_r("<br/>");
   $formInput = "";
   $dataForm = $wpdb->get_results("SELECT * FROM wp8i_company_field");
 
@@ -602,8 +617,11 @@ function ncbpn_recent_posts_content() {
   // $fullUrl =  add_query_arg( $wp->query_vars, home_url( $wp->request ) ) . '<br>';
   $men = explode("/",$fullUrl);
 
+  // print_r($men['members']);
+  // print_r($men[count($men) - 2]);
+
   // user login here
-  $the_user = get_user_by('login', $men[9]);
+  $the_user = get_user_by('login', $men[count($men) - 2]);
   $the_user_id = $the_user-> ID;
 
   if($userIslogin && $checkUserOwnThisCompany && $the_user_id == $user_id){
@@ -798,14 +816,15 @@ add_action("wp_ajax_updateInfoMember", "updateInfoMember");
 add_action("wp_ajax_nopriv_updateInfoMember", "updateInfoMember");
 function updateInfoMember(){
 
+
   $bbID = $_POST['bp_id'];
 
   global $wpdb;
   $result = $wpdb->get_results("SELECT COUNT(*) as number FROM wp8i_posts WHERE post_type = 'job_listing' and  post_status= 'publish' and post_author = " . $bbID );
   
-  $countCompany = $wpdb->get_results("SELECT COUNT(*) as company FROM wp8i_postmeta WHERE meta_key  = 'company_ahihi' ");
+  $countCompany = $wpdb->get_results("SELECT COUNT(*) as company FROM wp8i_postmeta WHERE meta_key  = 'company_ahihi' and post_id = " . $bbID);
 
-  wp_send_json( array('code'=> 200, 'msg'=> $result , 'id' => $bbID, 'company_count' => $countCompany ) );
+  wp_send_json( array('code'=> 200, 'msg'=> $result , 'id' => $bbID, 'company_count' => $countCompany , 'id_user' => $bbID) );
   
 }
 
@@ -1038,9 +1057,6 @@ function npp_psychic_profile( $original_template ) {
 add_action("wp_ajax_saveDocument", "saveDocument");
 add_action("wp_ajax_nopriv_saveDocument", "saveDocument");
 function saveDocument(){
-
-
-
 
   $arr_img_ext = array('image/png', 'image/jpeg', 'image/jpg', 'image/gif');
     if (in_array($_FILES['file']['type'], $arr_img_ext)) {

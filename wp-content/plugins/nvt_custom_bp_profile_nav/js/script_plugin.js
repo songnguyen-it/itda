@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
   /************************************************************************************************************************************************************
  *                                     need first load then all
  ************************************************************************************************************************************************************/
-  console.log("plugin script is running nvt_custom_bp_profile_nav");
+  // console.log("plugin script is running nvt_custom_bp_profile_nav");
 
   // get a list of company
   $.ajax({
@@ -126,9 +126,15 @@ jQuery(document).ready(function ($) {
     },
     success: function (response) {
       if (response.code == 200) {
-        // console.log(response.company_count[0].company);
+        console.log(response);
         if (response.company_count[0].company != undefined) {
+          let company_count = response.company_count[0].company;
+          
           let numberCompany = response.company_count[0].company;
+          
+          console.log('company_count in response= '+ numberCompany);
+          console.log('user_id in response= '+ response.id_user);
+
           $("#user-ibenic_budypress_recent_posts").append("<span class='count'>" + numberCompany + "</span>")
         }
 
@@ -136,8 +142,10 @@ jQuery(document).ready(function ($) {
         let parseNumber = parseInt(data[0].number);
         if (parseNumber > 0) {
           $(".bp-member-type").text("Company");
+          console.log('number_joblisting in if= '+ parseNumber);
         }
         else {
+          console.log('number joblisting in else= '+ parseNumber);
           $(".bp-member-type").text("Member");
         }
       }
