@@ -292,8 +292,6 @@ jQuery(document).ready(function ($) {
 
 
 
-  //  ******** update edit form company field to database ******** 
-  //  ******** update edit form to database ******** 
   //  ******** update edit form to database ******** 
   $("#update-company-field").click(function () {
     var id = $("#id_hidden").val();
@@ -354,10 +352,6 @@ jQuery(document).ready(function ($) {
   });
 
 
-
-
-
-
   //  add new dropdown field
   var uuidUpdate = 0;
   $("#field_dropdown_update").show();
@@ -373,8 +367,7 @@ jQuery(document).ready(function ($) {
       console.log(count);
     });
   });
-  //******** */  edit and inner data to form edit
-  //******** */  edit and inner data to form edit
+ 
   //******** */  edit and inner data to form edit
   $(".edit").click(function () {
     $("#meta_key_edit").val("");
@@ -462,7 +455,7 @@ jQuery(document).ready(function ($) {
   });
 
 
-
+// save the company field
   $("#save-company-field").click(function () {
 
     // get value in form
@@ -484,8 +477,6 @@ jQuery(document).ready(function ($) {
           dropdownValue.push(item);
         }
       }
-      // dropdownValue += JSON.stringify(tempArrDropdown);
-
       dataSend = {
         action: "addCompanyField",
         meta_key: meta_key,
@@ -516,7 +507,6 @@ jQuery(document).ready(function ($) {
       url: ajaxobject.ajaxurl,
       data: dataSend,
       beforeSend: function () {
-        //$('#elm-load-data').html('Updating ...');
       },
       success: function (response) {
         if (response.code == 200) {
@@ -539,13 +529,20 @@ jQuery(document).ready(function ($) {
 
 
 
-
   /**
-   * ******************************* process for button following clicked in custom company page
+   * process for button following clicked in custom company page
    */
 
   $('.songnguyen_follow').click(function () {
-    alert("Following button clicked - TEST");
+    // alert("Following button clicked - TEST");
+    let idOfCompany = $(this).prop("id");
+    let currentButtonState = $(this).text();
+
+    let currentNumber = $("#number_follow_" + idOfCompany).text();
+    let currentNumberInt = parseInt(currentNumber) + 1;
+
+    $("#number_follow_" + idOfCompany).text(currentNumberInt);
+    $(this).text("Followed");
 
     $.ajax({
       type: "post",
@@ -559,7 +556,7 @@ jQuery(document).ready(function ($) {
       },
       success: function (response) {
         if (response.code == 200) {
-          console.log("ok");
+          console.log(response.msg);
         }
 
         if (response.code == 400) {
@@ -573,8 +570,6 @@ jQuery(document).ready(function ($) {
     });
 
   });
-
-
 
 
   /** upload documents and photos */

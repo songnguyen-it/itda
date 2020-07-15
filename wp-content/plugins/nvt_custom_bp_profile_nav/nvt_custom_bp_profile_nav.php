@@ -9,7 +9,7 @@ Author URI: https://songnguyenit.com/
 License: GPL
 */
 
-
+//  register plugin with wordpress
 if (!class_exists("Nvt_Custom_BP_Profile_Nav")) {
     class Nvt_Custom_BP_Profile_Nav
     {
@@ -27,15 +27,19 @@ if (!class_exists("Nvt_Custom_BP_Profile_Nav")) {
         }
     }
 }
+
 function ncbpn_load()
 {
     global $mfpd;
     $mfpd = new Nvt_Custom_BP_Profile_Nav();
 }
+
 add_action( 'plugins_loaded', 'ncbpn_load' );
-function ncbpn_show_tab($text){
+function ncbpn_show_tab($text)
+{
     echo "Will show list company here !!";
 }
+
 function ncbpn_add_admin_menu()
 {
     add_menu_page (
@@ -48,9 +52,10 @@ function ncbpn_add_admin_menu()
         '2'
     );
 }
+
+//  admin dashboard
 function ncbpn_view_guid()
 {
-
 //  id	  status_field	  meta_key	  type	  label	  description	  placeholder	  priority	
     global $wpdb;
     $result = $wpdb->get_results("SELECT * FROM wp8i_company_field");
@@ -59,17 +64,15 @@ function ncbpn_view_guid()
       foreach ($result as $val) {
         $data .=  
           '<tr>
-            
               <td>'             .  $val -> meta_key .        '</td>
               <td>'             .  $val -> type .            '</td>
               <td>'             .  $val -> label .           '</td>
               <td>'             .  $val -> description .     '</td>
               <td>'             .  $val -> placeholder .     '</td>
               <td>'             .  $val -> priority .        '</td>
-
               <td>
-                  <button type="button" class="btn btn-danger btn-sm delete" id=' .  $val->id  . '>Delete</button>
-                  <button type="button" class="btn btn-info btn-sm edit" id='.$val->id.'>Edit</button>
+                  <button type="button" class="btn btn-danger btn-sm delete" id=' .  $val->id  . ' style="font-size: 12px">Delete</button>
+                  <button type="button" class="btn btn-info btn-sm edit" id='.$val->id.' style="font-size: 12px">Edit</button>
               </td>
           </tr> ';
       }
@@ -116,7 +119,7 @@ function ncbpn_view_guid()
                       <div class="form-group">
                           <label for="label_edit">Label <span class="text-danger font-weight-bold">*</span></label>
                           <input type="text" class="form-control form-control-sm" placeholder="Label" id="label_edit" name="label_edit">
-                          </div>
+                      </div>
                           <div class="form-group">
                               <label for="description_edit">Description</label>
                               <input type="text" class="form-control form-control-sm" placeholder="Description" id="description_edit" name="description_edit">
@@ -128,19 +131,17 @@ function ncbpn_view_guid()
                           <div class="form-group">
                               <label for="priority_edit">Priority</label>
                               <input type="number" class="form-control form-control-sm" placeholder="Priority" id="priority_edit" name="priority_edit">
-                      </div>
+                          </div>
                   </form>
               </div>
                   <div class="modal-footer">
                       <button type="button" class="btn btn-info btn-sm" id="update-company-field">Update</button>
                   </div>
-              </div>
-              </div>
+            </div>
+          </div>
           </div>
         </div>';
     }
-
-
 
     echo '
     <!DOCTYPE html>
@@ -274,9 +275,8 @@ function ncbpn_view_guid()
     ';
 
 }
-// backup option of dropdown field
-// <option value="file-upload">File Upload</option>
 
+// display on menu admin dashboard
 add_action('admin_menu', 'ncbpn_add_admin_menu');
 function ncbpn_add_tabs(){
     global $bp;
@@ -295,14 +295,14 @@ function ibenic_budypress_recent_posts () {
     add_action( 'bp_template_content', 'ncbpn_recent_posts_content' );
     bp_core_load_template( apply_filters( 'bp_core_template_plugin', 'members/single/plugins' ) );
 }
+
+//  not use
 /*function ncbpn_recent_posts_title() {
     echo "Company";
 }*/
 
 
-/************************************************************************************************************************************************************
- *                                      add css and js file
- ************************************************************************************************************************************************************/
+//  add css and js to plugin
 function npp_enqueue_scripts_and_styles()
 {
     wp_register_style( 'bootstrap.min', plugin_dir_url( __FILE__ ).'css/bootstrap.min.css' );
@@ -313,12 +313,10 @@ function npp_enqueue_scripts_and_styles()
 
     wp_register_script( "bootstrap_js", WP_PLUGIN_URL.'/nvt_custom_bp_profile_nav/js/bootstrap.min.js', array('jquery') );
     
-    // đăng ký ajax và script
+    // register ajax for plugin script
     wp_register_script( "js", WP_PLUGIN_URL.'/nvt_custom_bp_profile_nav/js/script_plugin.js', array('jquery') );
     wp_localize_script( 'js', 'ajaxobject', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'rootURL'=>site_url()));  
     
-
-
     wp_enqueue_script( 'bootstrap_js' );
     wp_enqueue_script( 'js' );
 }
@@ -328,11 +326,7 @@ add_action( 'wp_enqueue_scripts', 'npp_enqueue_scripts_and_styles' );
 add_action( 'admin_enqueue_scripts', 'npp_enqueue_scripts_and_styles' );
 
 
-
-
-/************************************************************************************************************************************************************
- *                                      add Isaac Newton process for and new company form
- ************************************************************************************************************************************************************/
+// handle and new company
 add_action("wp_ajax_form", "handle_form");
 add_action("wp_ajax_nopriv_form", "handle_form");
 function handle_form(){
@@ -374,9 +368,7 @@ function handle_form(){
 }
 
 
-/************************************************************************************************************************************************************
- *                                      add Isaac Newton process for and new company form
- ************************************************************************************************************************************************************/
+// get list company when user login
 add_action("wp_ajax_getListCompany", "getListCompany");
 add_action("wp_ajax_nopriv_getListCompany", "getListCompany");
 function getListCompany(){
@@ -384,36 +376,22 @@ function getListCompany(){
   $user_id = get_current_user_id();
   global $wpdb;
   $result = [];
- 
   global $wp;
   $fullUrl =  add_query_arg( $wp->query_vars, home_url( $wp->request ) );
-  // $fullUrl =  add_query_arg( $wp->query_vars, home_url( $wp->request ) ) . '<br>';
   $men = explode("/",$fullUrl);
 
   // user login here
   $the_user = get_user_by('login', $men[9]);
   $the_user_id = $the_user-> ID;
   
-
   $result = $wpdb->get_results("SELECT * FROM wp8i_postmeta WHERE meta_key = 'company_ahihi' and post_id =" . $user_id );
-  // print_r("<br/>");
-  // print_r("<br/>");
-  // print_r("<br/>");
-  // print_r($result);
-  // print_r("<br/>");
-  // print_r("<br/>");
-  // print_r("<br/>");
   wp_send_json( array('code'=> 200, 'msg'=> $result) );  
 }
 
 
-
+// company tab display and process (user view)
 // add_filter( 'template_include', 'ncbpn_recent_posts_content' );
 function ncbpn_recent_posts_content() {
-/********************************************************************
- ******************** Tổng tài hành chính ***************************
- *******************************************************************
- */
   $checkUserOwnThisCompany = false;
 
   $user_id = get_current_user_id();
@@ -423,17 +401,9 @@ function ncbpn_recent_posts_content() {
   $dataForm = [];
 
   $result = $wpdb->get_results("SELECT * FROM wp8i_postmeta WHERE meta_key = 'company_ahihi' and post_id = " . $user_id );
-  print_r("<br/>");
-  print_r("<br/>");
-  print_r("<br/>");
-  print_r($result);
-  print_r("<br/>");
-  print_r("<br/>");
-  print_r("<br/>");
   $formInput = "";
   $dataForm = $wpdb->get_results("SELECT * FROM wp8i_company_field");
 
-  // print_r($dataForm);
   foreach ($dataForm as $val ) {
     if($val->type == "text-box"){
       $formInput .= '
@@ -448,7 +418,6 @@ function ncbpn_recent_posts_content() {
       $selectOptionEnd = '</select>';
       $jsondecodeDropdown = json_decode($val -> dropdown);
       foreach ($jsondecodeDropdown as $item) {
-        // var_dump($item);
         $selectOptionStart .= 
             '<option  value="'. $item->value .'">'. $item->value .'</option>';
       }
@@ -471,8 +440,6 @@ function ncbpn_recent_posts_content() {
         
       </div>';
     }
-    // <input type="file" id="uploadDocument" style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 210px">
-    // <input accept="image/png, image/jpeg" type="file" class="form-control" name="'. $val->meta_key .'" >
 
     if($val->type == "text-area"){
       $formInput .= '
@@ -481,12 +448,6 @@ function ncbpn_recent_posts_content() {
         <textarea name="'. $val->meta_key .'" rows="4" cols="50"></textarea>
       </div>';
     }
-
-    
-
-
- 
-    
   }
 
   $listStart = '<div id="accordion">';
@@ -494,7 +455,7 @@ function ncbpn_recent_posts_content() {
 
   if(empty($result) && $userIslogin){
     echo '<div class="text-right">
-    <button type="button" class="btn btn-outline-primary btn-sm mb-4" data-toggle="modal" data-target="#exampleModalCenter">Add Company </button>
+    <button type="button" class="btn btn-outline-primary btn-sm mb-4" data-toggle="modal" data-target="#exampleModalCenter" style="font-size:12px">Add Company </button>
     </div>
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -512,8 +473,8 @@ function ncbpn_recent_posts_content() {
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal" style="background-color: red; border: 1px solid red !important">Close</button>
-            <button type="button" class="btn btn-success btn-sm" id="submit">Save</button>
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal" style="background-color: red; border: 1px solid red !important; font-size: 12px">Close</button>
+            <button type="button" class="btn btn-success btn-sm" id="submit" style="font-size: 12px">Save</button>
           </div>
         </div>
       </div>
@@ -526,39 +487,143 @@ function ncbpn_recent_posts_content() {
       $buttonDelete = '';
       $infoCompany = '';
       $companyName = "";
+      $infoCompanyEdit = "";
+      $dataDecodeEditCompanyForm =  json_decode($val-> meta_value);
+    
+      // loop get company info for edit form
+      foreach ($dataDecodeEditCompanyForm as $companyEdit) {
+        $nameFieldOk = ucwords(str_replace("_"," ",$companyEdit->name)); 
+
+
+        $checkIsImage = strpos($companyEdit->name , "img");
+    
+        if (is_numeric($checkIsImage)) {
+
+          $nameImgOk = ucwords(str_replace("Img","",$nameFieldOk));
+
+          if($companyEdit->value != ''){
+            $infoCompanyEdit .= '
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
+              <div class="col-sm-8">
+                <img src="'.$companyEdit->value. '" class="img-thumbnail shadow" alt="chicken" style="width: 100px;height:100px; ">
+                <input type="file"  name="'. $val->meta_key .'" class="form-control upload_document"  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px">
+
+                <input hidden value="" name="img_'. $val->meta_key .'"/>
+              </div>
+            </div>
+          ';
+          }
+          else{ 
+            $infoCompanyEdit .= '
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
+              <div class="col-sm-8">
+              
+              <input type="file"  name="'. $val->meta_key .'" class="form-control upload_document"  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px">
+
+              <input hidden value="" name="img_'. $val->meta_key .'"/>
+              </div>
+            </div>';
+          }
+         
+        }
+        else{
+          $infoCompanyEdit .= '
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameFieldOk.':</label>
+              <div class="col-sm-8">
+              <textarea name="'.$companyEdit->name.'" rows="2" cols="30">'.$companyEdit->value.'</textarea>
+              </div>
+            </div>
+            ';
+        }
+      }
+      
       if($databaseUserID == $user_id){
-        $buttonDelete .=  '<button type="button" class="btn btn-danger remove_company" ' . 'id="'. $val -> meta_id . '" style="background-color: #DC3545; border: solid 1px #DC3545;">Delete</button>';
-        $checkUserOwnThisCompany = true;
+        $buttonDelete .=  '
+        <button type="button" class="btn btn-  primary edit_company" ' . 'id="'. $val -> meta_id . '" style="background-color: #006FE5; border: solid 1px #006FE5; font-size:12px; color: white; height: 21px; line-height: 3px; text-align:center;" data-toggle="modal" data-target="#edit_company'. $val -> meta_id . '">
+          Edit
+        </button>
+      
+        <div class="modal fade" id="edit_company'. $val -> meta_id . '" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">  
+                <h5 class="modal-title" id="exampleModalLongTitle">Edit 1111111 Company</h5>
+              </div>
+              <div class="modal-body">
+                '. $infoCompanyEdit .'
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: grey; border: solid 1px grey; font-size: 12px;">Close</button>
+                <button type="button" class="btn btn-primary submit_edit_company" style="font-size: 12px" id="'. $val -> meta_id . '">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button type="button" class="remove_company" ' . 'id="'. $val -> meta_id . '" style="background-color: #DC3545; border: solid 1px #DC3545; font-size:12px; color: white; height: 21px; line-height: 3px; text-align:center">Delete</button>
+        
+        ';
+          $checkUserOwnThisCompany = true;
         
       }
+
       $dataDecode =  json_decode($val-> meta_value);
     
+      // get data information for each company
       foreach ($dataDecode as $val2) {
-
-        $nameOk = strtoupper(str_replace("_"," ",$val2->name));
-
+        $nameOk = ucwords(str_replace("_"," ",$val2->name)); 
 
         // add company name to top of collapse  
         if($val2->name == 'company_name'){$companyName = $val2->value;}
-          $infoCompany .= '
-          <div class="form-group row">
-            <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameOk.':</label>
-            <div class="col-sm-8">
-              <p type="text" readonly class="form-control-plaintext" id="company-infomation">'.$val2->value.'</p>
-            </div>
-          </div>
-        ';
-      }
 
+        $checkIsImage = strpos($val2->name , "img");
+    
+        if (is_numeric($checkIsImage)) {
+          $nameImgOk = ucwords(str_replace("Img","",$nameOk));
+          if($val2->value != ''){
+            $infoCompany .= '
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
+              <div class="col-sm-8">
+                <img src="'.$val2->value. '" class="img-thumbnail shadow" alt="chicken" style="width: 100px;height:100px; ">
+              </div>
+            </div>
+          ';
+          }
+          else{
+            $infoCompany .= '
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
+              <div class="col-sm-8">
+              <p type="text" readonly class="form-control-plaintext" id="company-infomation">No have information</p>
+              </div>
+            </div>';
+          }
+         
+        }
+        else{
+          $infoCompany .= '
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameOk.':</label>
+              <div class="col-sm-8">
+                <p type="text" readonly class="form-control-plaintext" id="company-infomation">'.$val2->value.'</p>
+              </div>
+            </div>
+            ';
+        }
+      }
 
       $listStart .= '
         <div class="card">
-          <div class="card-header" id="headingOne">
+          <div class="card-header" style="margin-bottom: 5px;">
             <h5 class="mb-0">
-              <button class="btn btn-link btn-sm" data-toggle="collapse" data-target="#xxx'.$val->meta_id.'" aria-expanded="true" aria-controls="collapseOne">
+              <button class="btn btn-link btn-sm" data-toggle="collapse" data-target="#xxx'.$val->meta_id.'" aria-expanded="true" aria-controls="collapseOne" style="font-size:12px; background-color: white; color: #006FE5; border: solid 1px #006FE5; height: 30px; line-height: 1px">
               Company: '.  $companyName.' 
               </button>
-              <a href="'.home_url().'/company-info/'. $val->meta_id. '" class="badge badge-pill badge-danger text-white p-2">Detail</a>
+              <a href="'.home_url().'/company-info/'. $val->meta_id. '" class="badge badge-pill p-2" style="font-size:10px; background-color: white; color: #DC3545; border: solid 1px #DC3545; height: 20px; line-height: 1px">Detail</a>
             </h5>
           </div>
           <div id="xxx'.$val->meta_id.'" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
@@ -570,18 +635,14 @@ function ncbpn_recent_posts_content() {
             <div class="text-right">' . $buttonDelete.'</div>
             </div>
           </div>
-        </div>
-        
-      
-      
+        </div>     
         ';
     } 
   }
 
-
   $form =  '
     <div class="text-right">
-    <button type="button" class="btn btn-primary mb-4 btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Add Company </button>
+    <button type="button" class="mb-4 " data-toggle="modal" data-target="#exampleModalCenter" style="font-size: 12px; height: 28px; line-height: 1px; background-color: white; border: solid 1px #006FE5; color: #006FE5">Add Company </button>
     </div>
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -599,26 +660,19 @@ function ncbpn_recent_posts_content() {
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal" style="background-color: gray; border: 1px solid gray !important">Close</button>
-            <button type="button" class="btn btn-success btn-sm" id="submit">Save</button>
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal" style="background-color: gray; border: 1px solid gray !important; font-size: 12px">Close</button>
+            <button type="button" class="btn btn-success btn-sm" id="submit" style="font-size: 12px">Save</button>
           </div>
         </div>
       </div>
-    </div>
-
-    
+    </div>    
     ';
 
   $content1 = '<div class="content">';
   $content2 = '</div>'; 
-
   global $wp;
   $fullUrl =  add_query_arg( $wp->query_vars, home_url( $wp->request ) );
-  // $fullUrl =  add_query_arg( $wp->query_vars, home_url( $wp->request ) ) . '<br>';
   $men = explode("/",$fullUrl);
-
-  // print_r($men['members']);
-  // print_r($men[count($men) - 2]);
 
   // user login here
   $the_user = get_user_by('login', $men[count($men) - 2]);
@@ -644,26 +698,43 @@ function ncbpn_recent_posts_content() {
       $dataDecode =  json_decode($val-> meta_value);
       foreach ($dataDecode as $val2) {
 
-        $nameOk = strtoupper(str_replace("_"," ",$val2->name));
+        $nameOk = ucwords(str_replace("_"," ",$val2->name));
         if($val2->name == 'company_name'){$companyName = $val2->value; $countCompany = $countCompany + 1;}
-        $infoCompany .= '
-        <div class="form-group row">
-          <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameOk.':</label>
-          <div class="col-sm-8">
-            <p type="text" readonly class="form-control-plaintext" id="company-infomation">'.$val2->value.'</p>
-          </div>
-        </div>
-      ';
+
+        $checkIsImage = strpos($val2->name , "img");
+        print_r($val2->name);
+
+        if (is_numeric($checkIsImage)) {
+          $nameImgOk = ucwords(str_replace("Img","",$nameOk));
+          $infoCompany .= '
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
+              <div class="col-sm-8">
+                <img src="'.$val2->value.'" class="img-thumbnail shadow " alt="chicken" style="width: 100px;height:100px; ">
+              </div>
+            </div>
+          ';
+        }
+        else{
+          $infoCompany .= '
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-4 col-form-label">'.$val2->name.':</label>
+              <div class="col-sm-8">
+                <p type="text" readonly class="form-control-plaintext" id="company-infomation">'.$val2->value.'</p>
+              </div>
+            </div>
+            ';
+        }
       }
  
       $listStartNoLogin .= '
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#xxx'.$val->meta_id.'" aria-expanded="true" aria-controls="collapseOne">
+              <button class="" data-toggle="collapse" data-target="#xxx'.$val->meta_id.'" aria-expanded="true" aria-controls="collapseOne" style="font-size:12px; background-color: white; color: #006FE5; border: solid 1px #006FE5; height: 30px; line-height: 1px">
               Company: '. $companyName.'
               </button>
-              <a href="'.home_url().'/company-info/'. $val->meta_id. '" class="badge badge-pill badge-danger text-white p-2">Detail</a>
+              <a href="'.home_url().'/company-info/'. $val->meta_id. '" class="badge badge-pill p-2" style="font-size:10px; background-color: white; color: #DC3545; border: solid 1px #DC3545; height: 20px; line-height: 1px">Detail</a>
             </h5>
           </div>
 
@@ -679,8 +750,6 @@ function ncbpn_recent_posts_content() {
       ';
     } 
 
-
-   
     // check value type safe and render to view
     if(empty($resultNotLogin)){
       echo "No have information";
@@ -690,9 +759,8 @@ function ncbpn_recent_posts_content() {
     }    
   }
   else{
-    // echo "i am login buton i am not own someone who post";
+    // echo "i am login but i am not own the post";
     $resultNotLogin = [];
-
     $resultNotLogin = $wpdb->get_results("SELECT * FROM wp8i_postmeta WHERE meta_key = 'company_ahihi' and post_id =" . $the_user_id );
 
     // group component list
@@ -706,26 +774,43 @@ function ncbpn_recent_posts_content() {
       $dataDecode =  json_decode($val-> meta_value);
       foreach ($dataDecode as $val2) {
 
-        $nameOk = strtoupper(str_replace("_"," ",$val2->name));
+        $nameOk = ucwords(str_replace("_"," ",$val2->name));
         if($val2->name == 'company_name'){$companyName = $val2->value; $countCompany = $countCompany + 1;}
-        $infoCompany .= '
-        <div class="form-group row">
-          <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameOk.':</label>
-          <div class="col-sm-8">
-            <p type="text" readonly class="form-control-plaintext" id="company-infomation">'.$val2->value.'</p>
-          </div>
-        </div>
-      ';
+        
+        $checkIsImage = strpos($val2->name , "img");
+        print_r($val2->name);
+
+        if (is_numeric($checkIsImage)) {
+          $nameImgOk = ucwords(str_replace("Img","",$nameOk));
+          $infoCompany .= '
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
+              <div class="col-sm-8">
+                <img src="'.$val2->value.'" class="img-thumbnail shadow " alt="chicken" style="width: 100px;height:100px; ">
+              </div>
+            </div>
+          ';
+        }
+        else{
+          $infoCompany .= '
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameOk.':</label>
+              <div class="col-sm-8">
+                <p type="text" readonly class="form-control-plaintext" id="company-infomation">'.$val2->value.'</p>
+              </div>
+            </div>
+            ';
+        }
       }
  
       $listStartNoLogin .= '
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#xxx'.$val->meta_id.'" aria-expanded="true" aria-controls="collapseOne">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#xxx'.$val->meta_id.'" aria-expanded="true" aria-controls="collapseOne" style="font-size:12px; background-color: white; color: #006FE5; border: solid 1px #006FE5; height: 30px; line-height: 1px">
               Company: '. $companyName.'
               </button>
-              <a href="'.home_url().'/company-info/'. $val->meta_id. '" class="badge badge-pill badge-danger text-white p-2">Detail</a>
+              <a href="'.home_url().'/company-info/'. $val->meta_id. '" class="badge badge-pill p-2" style="font-size:10px; background-color: white; color: #DC3545; border: solid 1px #DC3545; height: 20px; line-height: 1px">Detail</a>
             </h5>
           </div>
           <div id="xxx'.$val->meta_id.'" class="collapse" aria-labelledby="headingOne" data-parent="#accordion ">
@@ -737,13 +822,8 @@ function ncbpn_recent_posts_content() {
             </div>
           </div>
         </div>
-
-        <script>
-          console.log("xin chao");
-        </script>
       ';
     } 
-
 
     // check value type safe and render to view
     if(empty($resultNotLogin)){
@@ -756,16 +836,12 @@ function ncbpn_recent_posts_content() {
 }
 
 
+// add shorcut tempalate
 
-
-/************************************************************************************************************************************************************
- *                                      add shortcut to template
- ************************************************************************************************************************************************************/
 function create_shortcode_songnguyen($args) {
   return $args['company'];
 }
 add_shortcode( 'company_name', 'create_shortcode_songnguyen' );
-
 
 function create_shortcode_test() {
   return "test ok shortcode nha ba con";
@@ -774,14 +850,10 @@ add_shortcode( 'company_test', 'create_shortcode_test' );
 
 
 
-
-/************************************************************************************************************************************************************
- *                                     handle for delete company action clicked
- ************************************************************************************************************************************************************/
+// handle for delete company when delete button click
 add_action("wp_ajax_deleteCompany", "deleteCompany");
 add_action("wp_ajax_nopriv_deleteCompany", "deleteCompany");
 function deleteCompany(){
-
   $idNeedRemove =  $_POST['id'];
   if(!empty($idNeedRemove)){
     global $wpdb;
@@ -794,7 +866,6 @@ function deleteCompany(){
         '%d'
       ) 
     );
-
     if(!$result){
       wp_send_json( array('code'=> 400, 'msg'=>'Can not delete ') );
     }
@@ -806,22 +877,14 @@ function deleteCompany(){
 }
 
 
-
-
-
-/************************************************************************************************************************************************************
- *                                     handle for delete company action clicked
- ************************************************************************************************************************************************************/
+// update member -> company when user own at least one post
 add_action("wp_ajax_updateInfoMember", "updateInfoMember");
 add_action("wp_ajax_nopriv_updateInfoMember", "updateInfoMember");
 function updateInfoMember(){
 
-
   $bbID = $_POST['bp_id'];
-
   global $wpdb;
   $result = $wpdb->get_results("SELECT COUNT(*) as number FROM wp8i_posts WHERE post_type = 'job_listing' and  post_status= 'publish' and post_author = " . $bbID );
-  
   $countCompany = $wpdb->get_results("SELECT COUNT(*) as company FROM wp8i_postmeta WHERE meta_key  = 'company_ahihi' and post_id = " . $bbID);
 
   wp_send_json( array('code'=> 200, 'msg'=> $result , 'id' => $bbID, 'company_count' => $countCompany , 'id_user' => $bbID) );
@@ -829,11 +892,9 @@ function updateInfoMember(){
 }
 
 
-/************************************************************************************************************************************************************
- *                                     Admin Dashboard
- ************************************************************************************************************************************************************/
+/** ******************* Process in dashboard tempale ******************* */
 
-//  *************add company field*************
+//  add company custom field
 add_action("wp_ajax_addCompanyField", "addCompanyField");
 add_action("wp_ajax_nopriv_addCompanyField", "addCompanyField");
 function addCompanyField(){
@@ -884,13 +945,10 @@ function addCompanyField(){
 }
 
 
-
-//  remove company field
+//  remove company custom field
 add_action("wp_ajax_removeCompanyField", "removeCompanyField");
 add_action("wp_ajax_nopriv_removeCompanyField", "removeCompanyField");
 function removeCompanyField(){
-
-
   $idDelete =  $_POST['idDelete'];
   if(!empty($idDelete)){
     global $wpdb;
@@ -903,7 +961,6 @@ function removeCompanyField(){
         '%d'
       ) 
     );
-
     if(!$result){
       wp_send_json( array('code'=> 400, 'msg'=>'Can not delete company field') );
     }
@@ -915,7 +972,7 @@ function removeCompanyField(){
 }
 
 
-//  ************require data for from edit***************
+//  require data for custom field company form edit
 add_action("wp_ajax_editCompanyField", "editCompanyField");
 add_action("wp_ajax_nopriv_editCompanyField", "editCompanyField");
 function editCompanyField(){
@@ -932,12 +989,10 @@ function editCompanyField(){
 }
 
 
-
-//  ***************update company field***************
+//  update company field infomation when custom field company form edit submit
 add_action("wp_ajax_updateCompanyField", "updateCompanyField");
 add_action("wp_ajax_nopriv_updateCompanyField", "updateCompanyField");
 function updateCompanyField(){
-
   $id = $_POST['id'];
   $meta_key = $_POST['meta_key'];
   $type = $_POST['type'];
@@ -946,8 +1001,8 @@ function updateCompanyField(){
   $label = $_POST['label'];
   $priority = $_POST['priority'];
   $dropdown = $_POST['dropdown'];
-
   $dropdownJson = json_encode($dropdown);
+
   global $wpdb;
   $result = $wpdb->update('wp8i_company_field', array( 'meta_key'=>$meta_key,'dropdown'=>$dropdownJson, 'type'=>$type, 'description'=>$description, 'placeholder'=>$placeholder, 'label'=>$label, 'priority'=>$priority, ), array('id'=>$id));
 
@@ -957,16 +1012,13 @@ function updateCompanyField(){
   else{
     wp_send_json( array('code'=> 401, 'msg'=> 'Cant update company field'));
   }
-
 }
 
-
-add_action("wp_ajax_followingButtonClicked", "followingButtonClicked");
-add_action("wp_ajax_nopriv_followingButtonClicked", "followingButtonClicked");
+// process follow button click
+add_action("wp_ajax_followingButtonClick", "followingButtonClicked");
+add_action("wp_ajax_nopriv_followingButtonClick", "followingButtonClicked");
 function followingButtonClicked(){
-
-  wp_send_json( array('code'=> 200, 'msg'=> "button clicked"));
-
+  wp_send_json( array('code'=> 200, 'msg'=> "server say: button clicked"));
   // global $wpdb;
   // $result = $wpdb->update('wp8i_company_field', array( 'meta_key'=>$meta_key,'dropdown'=>$dropdownJson, 'type'=>$type, 'description'=>$description, 'placeholder'=>$placeholder, 'label'=>$label, 'priority'=>$priority, ), array('id'=>$id));
 
@@ -978,8 +1030,6 @@ function followingButtonClicked(){
   // }
 
 }
-
-
 
 
 // add custom url and template
@@ -1030,10 +1080,7 @@ function npp_psychic_profile( $original_template ) {
             array_push($listPhotoPath, $key->value);
   
           }
-      
-        
         }
-
 
         set_query_var( 'info_company_array', $jsonDataCompany );
         set_query_var( 'logo_string', $companyLogo );
@@ -1050,10 +1097,7 @@ function npp_psychic_profile( $original_template ) {
 }
 
 
-
-
-
-// upload file
+// process upload file (general)
 add_action("wp_ajax_saveDocument", "saveDocument");
 add_action("wp_ajax_nopriv_saveDocument", "saveDocument");
 function saveDocument(){

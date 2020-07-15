@@ -95,9 +95,61 @@ global $wp_query;
                                         <div class="card-body">
                                             <?php
                                               $jsonDataCompany = get_query_var('info_company_array');
+
                                                 foreach ($jsonDataCompany as $key) {
-                                                  $labelUppercase = str_replace("_"," ",strtoupper($key->name)); ;
+                                                  $labelUppercase = str_replace("_"," ",ucwords($key->name));;
                                                   $valueOflabel =  $key->value == "" ? "Not have infomation yet" : $key->value;
+                                                  $nameFieldOk = ucwords(str_replace("_"," ",$key->name)); 
+                                                  $checkIsImage = strpos($key->name , "img");
+                                              
+                                                  if (is_numeric($checkIsImage)) {
+                                          
+                                                    $nameImgOk = ucwords(str_replace("Img","",$nameFieldOk));
+                                          
+                                                    if($key->value != ''){
+                                                      echo '
+                                                      <div class="form-group row">
+                                                        <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
+                                                        <div class="col-sm-8">
+                                                          <img src="'.$key->value. '" class="img-thumbnail shadow" alt="chicken" style="width: 100px;height:100px; ">
+                                                          <input type="file"  class="form-control upload_document"  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px">
+                                          
+                                                        </div>
+                                                      </div>
+                                                    ';
+                                                    }
+
+                                                    
+                                                    else{ 
+                                                      echo '
+                                                      <div class="form-group row">
+                                                        <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
+                                                        <div class="col-sm-8">
+                                                        
+                                                        <p type="text" readonly="" class="form-control-plaintext"
+                                                                  id="company-infomation">No have information</p>
+                                                        </div>
+                                                      </div>';
+                                                    }
+                                                   
+                                                  }
+
+
+                                                  else{
+                                                    echo\'
+                                                      <div class="form-group row">
+                                                        <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameFieldOk.':</label>
+                                                        <div class="col-sm-8">
+                                                        <textarea name="'.$key->name.'" rows="2" cols="30">'.$key->value.'</textarea>
+                                                        </div>
+                                                      </div>
+                                                      ';
+                                                  }
+
+
+
+
+
                                                   echo '<div class="form-group row">
                                                   <label for="staticEmail" class="col-sm-4 col-form-label">'.$labelUppercase.'</label>
                                                   <div class="col-sm-8">
@@ -126,10 +178,8 @@ global $wp_query;
                                                                       echo $comname=="" ? "" : $comname;
                                                                     ?>
                                                                 </a></h2>
-                                                            <p class="item-meta group-details only-list-view">Followed /
-                                                                0 members</p>
-                                                            <p class="last-activity item-meta">
-                                                                active 2 hours, 23 minutes ago </p>
+                                                            <p class="item-meta group-details only-list-view"><span id="number_follow_<?php echo get_query_var('id_user'); ?>">0</span> / Followed</p>
+                                                           
                                                         </div>
                                                         <div class="item-desc group-item-desc only-list-view">
                                                             <p>
@@ -142,7 +192,7 @@ global $wp_query;
                                                         <div class="groups-loop-buttons footer-button-wrap">
                                                             <div class="bp-generic-meta groups-meta action">
                                                                 <div id="groupbutton-2" class="generic-button"><button
-                                                                        class="group-button leave-group bp-toggle-action-button button songnguyen_follow">Follow</button>
+                                                                        class="group-button leave-group bp-toggle-action-button button songnguyen_follow" id="<?php echo  get_query_var('id_user'); ?>">Follow</button>
                                                                 </div>
                                                             </div>
                                                         </div>
