@@ -156,7 +156,7 @@ function ncbpn_view_guid()
         <div class="container-fluid">
             <div class="m-3">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#form-company-field">
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#form-company-field" >
                     Add Company Field
                 </button>
     
@@ -455,7 +455,7 @@ function ncbpn_recent_posts_content() {
 
   if(empty($result) && $userIslogin){
     echo '<div class="text-right">
-    <button type="button" class="btn btn-outline-primary btn-sm mb-4" data-toggle="modal" data-target="#exampleModalCenter" style="font-size:12px">Add Company </button>
+    <button type="button" class="btn btn-outline-primary btn-sm mb-4" data-toggle="modal" data-target="#exampleModalCenter" style="font-size: 12px; height: 28px; line-height: 1px; background-color: white; border: solid 1px #006FE5; color: #006FE5">Add Company </button>
     </div>
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -527,7 +527,7 @@ function ncbpn_recent_posts_content() {
             </div>';
           }
          
-        }
+        } 
         else{
           $infoCompanyEdit .= '
             <div class="form-group row">
@@ -702,8 +702,7 @@ function ncbpn_recent_posts_content() {
         if($val2->name == 'company_name'){$companyName = $val2->value; $countCompany = $countCompany + 1;}
 
         $checkIsImage = strpos($val2->name , "img");
-        print_r($val2->name);
-
+   
         if (is_numeric($checkIsImage)) {
           $nameImgOk = ucwords(str_replace("Img","",$nameOk));
           $infoCompany .= '
@@ -778,7 +777,7 @@ function ncbpn_recent_posts_content() {
         if($val2->name == 'company_name'){$companyName = $val2->value; $countCompany = $countCompany + 1;}
         
         $checkIsImage = strpos($val2->name , "img");
-        print_r($val2->name);
+    
 
         if (is_numeric($checkIsImage)) {
           $nameImgOk = ucwords(str_replace("Img","",$nameOk));
@@ -1116,4 +1115,35 @@ function saveDocument(){
         }
     }
     
+}
+
+
+
+// handle for delete company when delete button click
+add_action("wp_ajax_updateInfomationCompany", "updateInfomationCompany");
+add_action("wp_ajax_updateInfomationCompany", "updateInfomationCompany");
+function updateInfomationCompany(){
+
+
+  wp_send_json( array('code'=> 200, 'msg'=>'server sent updateInfomationCompany ') );
+
+  // if(!empty($idNeedRemove)){
+  //   global $wpdb;
+  //   $result = $wpdb->delete( 
+  //     "wp8i_postmeta", 
+  //     array( 
+  //       'meta_id' => $idNeedRemove
+  //     ), 
+  //     array( 
+  //       '%d'
+  //     ) 
+  //   );
+  //   if(!$result){
+  //     wp_send_json( array('code'=> 400, 'msg'=>'Can not delete ') );
+  //   }
+  //   else{
+  //     wp_send_json( array('code'=> 200, 'msg'=>'Delete ok men ') );
+  //   }
+
+  // }
 }

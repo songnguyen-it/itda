@@ -2,7 +2,6 @@ jQuery(document).ready(function ($) {
   /************************************************************************************************************************************************************
  *                                     need first load then all
  ************************************************************************************************************************************************************/
-  // console.log("plugin script is running nvt_custom_bp_profile_nav");
 
   // get a list of company
   $.ajax({
@@ -122,19 +121,12 @@ jQuery(document).ready(function ($) {
       bp_id: val
     },
     beforeSend: function () {
-      //$('#elm-load-data').html('Updating ...');
     },
     success: function (response) {
       if (response.code == 200) {
-        console.log(response);
         if (response.company_count[0].company != undefined) {
           let company_count = response.company_count[0].company;
-          
           let numberCompany = response.company_count[0].company;
-          
-          console.log('company_count in response= '+ numberCompany);
-          console.log('user_id in response= '+ response.id_user);
-
           $("#user-ibenic_budypress_recent_posts").append("<span class='count'>" + numberCompany + "</span>")
         }
 
@@ -142,10 +134,8 @@ jQuery(document).ready(function ($) {
         let parseNumber = parseInt(data[0].number);
         if (parseNumber > 0) {
           $(".bp-member-type").text("Company");
-          console.log('number_joblisting in if= '+ parseNumber);
         }
         else {
-          console.log('number joblisting in else= '+ parseNumber);
           $(".bp-member-type").text("Member");
         }
       }
@@ -172,9 +162,7 @@ jQuery(document).ready(function ($) {
   $(".remove_company").click(function (obj) {
 
     let confirmDelete = confirm("Do you want to remove this company ?");
-    console.log(confirmDelete);
 
-    console.log($(this).attr('id'));
     let idNeedRemove = $(this).attr('id');
     // check if user confirm to delete company 
     if (confirmDelete) {
@@ -198,8 +186,6 @@ jQuery(document).ready(function ($) {
           if (response.code == 400) {
             alert("Netword Error");
           }
-
-          console.log(response.msg);
         },
         error: function (jqXHR, textStatus, errorThrown) {
           //$(this).val($val);
@@ -238,12 +224,10 @@ jQuery(document).ready(function ($) {
           // $("#form-company-field").modal("hide");
           window.location.reload();
         }
-
         if (response.code == 400) {
           $("#kitchen_floor").text("Form must be fill some field");
           $("#kitchen_floor").show();
         }
-        console.log(response.msg);
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.log('The following error occured: ' + textStatus, errorThrown);
@@ -281,7 +265,6 @@ jQuery(document).ready(function ($) {
           }
           if (response.code == 400) {
           }
-          console.log(response.msg);
         },
         error: function (jqXHR, textStatus, errorThrown) {
           console.log('The following error occured: ' + textStatus + errorThrown);
@@ -311,8 +294,6 @@ jQuery(document).ready(function ($) {
         captionValueJoin.push({ name: caption[index].value, value: value[index].value });
 
       }
-
-      console.log(captionValueJoin);
     }
 
     $.ajax({
@@ -342,7 +323,6 @@ jQuery(document).ready(function ($) {
         if (response.code == 400) {
 
         }
-        console.log(response.msg);
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.log('The following error occured: ' + textStatus + errorThrown);
@@ -364,7 +344,6 @@ jQuery(document).ready(function ($) {
       $("#dropdown_child" + id).remove();
       $("#allBtn" + id).remove();
       let count = $("#field_dropdown_update").children().length;
-      console.log(count);
     });
   });
  
@@ -409,7 +388,6 @@ jQuery(document).ready(function ($) {
 
             let arrDropdown = JSON.parse(dropdown);
 
-            // console.log(response.msg[0]['dropdown'] instanceof Array);
             $("#field_dropdown_update").empty();
 
             arrDropdown.forEach(item => {
@@ -417,12 +395,10 @@ jQuery(document).ready(function ($) {
               $("#field_dropdown_update").append('<div class="row my-2 p-2 m-1" id="dropdown_child' + id + '"><div class="col"><input type="text" class="form-control form-control-sm value-uuid" value="' + item.value + '" name="value' + id + '"></div><div class="col"><input type="text" class="form-control form-control-sm caption-uuid" value="' + item.name + '" name="caption' + id + '"></div></div><div class="row d-flex justify-content-end m-1" id="allBtn' + id + '"><button type="button" class="btn btn-danger btn-sm remove_dropdown_field" id="uuid-' + id + '">Remove</button></div>');
 
               uuidUpdate = parseInt(item.name.substring(item.name.length - 1, item.name.length));
-              console.log(uuidUpdate);
             });
             ++uuidUpdate;
             $(".remove_dropdown_field").click(function () {
               let count = $("#field_dropdown_update").children().length;
-              console.log(count);
               let id = $(this).attr("id").split("-")[1];
               $("#dropdown_child" + id).remove();
               $("#allBtn" + id).remove();
@@ -519,7 +495,6 @@ jQuery(document).ready(function ($) {
         if (response.code == 400) {
           $("#alert-company-form").show();
         }
-        console.log(response.msg);
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.log('The following error occured: ' + textStatus + errorThrown);
@@ -583,13 +558,7 @@ jQuery(document).ready(function ($) {
     
     var name =  $(this).prop("name")
     form_data.append("name",name);
-    // $(`input[name ="img${name}"]`).val("i am here");
 
-    // var b = $(`input[name ="img${name}"]`).val();
-
-    // console.log(b);
-
-    
     $.ajax({  
       type: 'POST',
         url: ajaxobject.ajaxurl,
@@ -607,8 +576,6 @@ jQuery(document).ready(function ($) {
             $(`input[name ="img_${hidden_field_name}"]`).val(pathImage);
           }
 
-          console.log(response.msg);
-          console.log(response.field_name);
         }
 
         if (response.code == 400) {
@@ -624,6 +591,37 @@ jQuery(document).ready(function ($) {
 
    
 
+  });
+
+
+  // submit edit compay send
+  $(".submit_edit_company").click(function(){
+    alert("edit infomation company have clicked");
+
+    $.ajax({
+      type: "post",
+      dataType: "json",
+      url: ajaxobject.ajaxurl,
+      data: {
+        action: "updateInfomationCompany",
+
+      },
+      beforeSend: function () {
+      },
+      success: function (response) {
+        if (response.code == 200) {
+          console.log(response.msg);
+        }
+
+        if (response.code == 400) {
+          console.log("fail follow button clicked");
+        }
+
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        console.log('The following error occured: ' + textStatus + errorThrown);
+      }
+    });
   });
 
 

@@ -97,29 +97,25 @@ global $wp_query;
                                               $jsonDataCompany = get_query_var('info_company_array');
 
                                                 foreach ($jsonDataCompany as $key) {
-                                                  $labelUppercase = str_replace("_"," ",ucwords($key->name));;
+                                                  $labelUppercase = str_replace("_"," ",ucwords($key->name));
                                                   $valueOflabel =  $key->value == "" ? "Not have infomation yet" : $key->value;
                                                   $nameFieldOk = ucwords(str_replace("_"," ",$key->name)); 
                                                   $checkIsImage = strpos($key->name , "img");
                                               
+                                                  // check label is image
                                                   if (is_numeric($checkIsImage)) {
-                                          
                                                     $nameImgOk = ucwords(str_replace("Img","",$nameFieldOk));
-                                          
                                                     if($key->value != ''){
                                                       echo '
                                                       <div class="form-group row">
                                                         <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
                                                         <div class="col-sm-8">
                                                           <img src="'.$key->value. '" class="img-thumbnail shadow" alt="chicken" style="width: 100px;height:100px; ">
-                                                          <input type="file"  class="form-control upload_document"  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px">
-                                          
+                                                      
                                                         </div>
                                                       </div>
                                                     ';
                                                     }
-
-                                                    
                                                     else{ 
                                                       echo '
                                                       <div class="form-group row">
@@ -133,30 +129,16 @@ global $wp_query;
                                                     }
                                                    
                                                   }
-
-
                                                   else{
-                                                    echo\'
+                                                    echo '
                                                       <div class="form-group row">
                                                         <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameFieldOk.':</label>
                                                         <div class="col-sm-8">
-                                                        <textarea name="'.$key->name.'" rows="2" cols="30">'.$key->value.'</textarea>
+                                                        <p>'.$valueOflabel.'</p>
                                                         </div>
                                                       </div>
                                                       ';
                                                   }
-
-
-
-
-
-                                                  echo '<div class="form-group row">
-                                                  <label for="staticEmail" class="col-sm-4 col-form-label">'.$labelUppercase.'</label>
-                                                  <div class="col-sm-8">
-                                                      <p type="text" readonly="" class="form-control-plaintext"
-                                                          id="company-infomation">'.$valueOflabel.'</p>
-                                                  </div>
-                                              </div>';
                                                 }
                                             ?>
                                         </div>
