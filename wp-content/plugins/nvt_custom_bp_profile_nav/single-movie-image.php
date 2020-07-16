@@ -1,8 +1,9 @@
 <?php
 get_header();
-// get_sidebar();
+get_sidebar();  
 global $wp_query;
 ?>
+
 <!-- <section>
     <h1>Test Company Ok with. ID Company :<?php $id = get_query_var('id_user'); echo $id; ?> </h1>
 
@@ -22,26 +23,24 @@ global $wp_query;
                   <div id="item-header-avatar" class="mx-4 d-flex justify-content-start">
                     <div class="text-left mr-4 ">
 
-
                       <?php 
-                                                $logoPath = get_query_var('logo_string');
-                                                if($logoPath != ''){
-                                                    echo '<img src="'.$logoPath.'"
-                                                    class="img-thumbnail shadow " alt="chicken"
-                                                    style="width: 200px;height:200px; ">';
-                                                }
-                                                else{
-                                                 echo ' <img src="http://192.168.1.11/blog/wp-content/plugins/buddyboss-platform/bp-core/images/mystery-group.png"
-                                                  class="img-thumbnail shadow " alt="chicken"
-                                                  style="width: 200px;height:200px; ">';
-                                                }
+                          $logoPath = get_query_var('logo_string');
+                          if($logoPath != ''){
+                              echo '<img src="'.$logoPath.'"
+                              class="img-thumbnail shadow " alt="chicken"
+                              style="width: 200px;height:200px; ">';
+                          }
+                          else{
+                            echo ' <img src="http://192.168.1.11/blog/wp-content/plugins/buddyboss-platform/bp-core/images/mystery-group.png"
+                            class="img-thumbnail shadow " alt="chicken"
+                            style="width: 200px;height:200px; ">';
+                          }
 
-                                            ?>
+                      ?>
 
                     </div>
                     <div id="item-header-content">
                       <div class="flex align bp-group-title-wrap">
-
 
                         <h2>
                           <?php echo get_query_var('company_name_string'); ?>
@@ -49,13 +48,11 @@ global $wp_query;
                             style="font-size: 0.8rem">Company</span>
                         </h2>
 
-
                       </div>
                       <div class="group-description">
                         <p><?php echo get_query_var('company_description_string'); ?></p>
                       </div>
                       <div id="item-actions" class="group-item-actions">
-
 
                         <div>
                           <h4 class="bp-title">Owner:
@@ -65,8 +62,6 @@ global $wp_query;
 
                           </h4>
                         </div>
-
-
                       </div>
 
                     </div>
@@ -90,53 +85,52 @@ global $wp_query;
                   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class="card-body">
                       <?php
-                                              $jsonDataCompany = get_query_var('info_company_array');
+                        $jsonDataCompany = get_query_var('info_company_array');
 
-                                                foreach ($jsonDataCompany as $key) {
-                                                  $labelUppercase = str_replace("_"," ",ucwords($key->name));
-                                                  $valueOflabel =  $key->value == "" ? "Not have infomation yet" : $key->value;
-                                                  $nameFieldOk = ucwords(str_replace("_"," ",$key->name)); 
-                                                  $checkIsImage = strpos($key->name , "img");
-                                              
-                                                  // check label is image
-                                                  if (is_numeric($checkIsImage)) {
-                                                    $nameImgOk = ucwords(str_replace("Img","",$nameFieldOk));
-                                                    if($key->value != ''){
-                                                      echo '
-                                                      <div class="form-group row">
-                                                        <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
-                                                        <div class="col-sm-8">
-                                                          <img src="'.$key->value. '" class="img-thumbnail shadow" alt="chicken" style="width: 100px;height:100px; ">
-                                                      
-                                                        </div>
-                                                      </div>
-                                                    ';
-                                                    }
-                                                    else{ 
-                                                      echo '
-                                                      <div class="form-group row">
-                                                        <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
-                                                        <div class="col-sm-8">
-                                                        
-                                                        <p type="text" readonly="" class="form-control-plaintext"
-                                                                  id="company-infomation">No have information</p>
-                                                        </div>
-                                                      </div>';
-                                                    }
-                                                   
-                                                  }
-                                                  else{
-                                                    echo '
-                                                      <div class="form-group row">
-                                                        <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameFieldOk.':</label>
-                                                        <div class="col-sm-8">
-                                                        <p>'.$valueOflabel.'</p>
-                                                        </div>
-                                                      </div>
-                                                      ';
-                                                  }
-                                                }
-                                            ?>
+                          foreach ($jsonDataCompany as $key) {
+                            $labelUppercase = str_replace("_"," ",ucwords($key->name));
+                            $valueOflabel =  $key->value == "" ? "Not have infomation yet" : $key->value;
+                            $nameFieldOk = ucwords(str_replace("_"," ",$key->name)); 
+                            $checkIsImage = strpos($key->name , "img");
+                        
+                            // check label is image
+                            if (is_numeric($checkIsImage)) {
+                              $nameImgOk = ucwords(str_replace("Img","",$nameFieldOk));
+                              if($key->value != ''){
+                                echo '
+                                <div class="form-group row">
+                                  <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
+                                  <div class="col-sm-8">
+                                    <img src="'.$key->value. '" class="img-thumbnail shadow" alt="chicken" style="width: 100px;height:100px; ">
+                                
+                                  </div>
+                                </div>
+                              ';
+                              }
+                              else{ 
+                                echo '
+                                <div class="form-group row">
+                                  <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
+                                  <div class="col-sm-8">
+                                  
+                                  <p type="text" readonly="" class="form-control-plaintext"
+                                            id="company-infomation">No have information</p>
+                                  </div>
+                                </div>';
+                              }
+                            }
+                            else{
+                              echo '
+                                <div class="form-group row">
+                                  <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameFieldOk.':</label>
+                                  <div class="col-sm-8">
+                                  <p>'.$valueOflabel.'</p>
+                                  </div>
+                                </div>
+                                ';
+                            }
+                          }
+                      ?>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
@@ -145,27 +139,29 @@ global $wp_query;
                         data-bp-item-component="groups">
                         <div class="list-wrap">
                           <div class="item">
+
                             <div class="item-block">
                               <h2 class="list-title groups-title"><a
                                   href="<?php echo home_url() . "/company-info/" . $id;?>"
                                   class="bp-group-home-link nature-lovers-home-link">
                                   <?php 
-                                                                      $comname = get_query_var('company_name_string');
-                                                                      echo $comname=="" ? "" : $comname;
-                                                                    ?>
+                                    $comname = get_query_var('company_name_string');
+                                    echo $comname=="" ? "" : $comname;
+                                  ?>
                                 </a></h2>
                               <p class="item-meta group-details only-list-view"><span
                                   id="number_follow_<?php echo get_query_var('id_user'); ?>">0</span> / Followed</p>
-
                             </div>
+
                             <div class="item-desc group-item-desc only-list-view">
                               <p>
                                 <?php 
-                                                              $desc = get_query_var('company_description_string');
-                                                              echo $desc=="" ? "No have description yet" : $desc;
-                                                              ?>
+                                  $desc = get_query_var('company_description_string');
+                                  echo $desc=="" ? "No have description yet" : $desc;
+                                ?>
                               </p>
                             </div>
+
                             <div class="groups-loop-buttons footer-button-wrap">
                               <div class="bp-generic-meta groups-meta action">
                                 <div id="groupbutton-2" class="generic-button"><button
@@ -173,11 +169,12 @@ global $wp_query;
                                     id="<?php echo  get_query_var('id_user'); ?>">Follow</button>
                                 </div>
 
+
+                                <!-- test follow start -->
                                 <button type="button" class="btn btn-primary" data-toggle="modal"
                                   data-target="#exampleModalCenter111">
                                   test follow
                                 </button>
-
 
                                 <div class="modal fade" id="exampleModalCenter111" tabindex="-1" role="dialog"
                                   aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -193,19 +190,17 @@ global $wp_query;
                                         Please login to follow this company
                                       </div>
                                       <div class="modal-footer">
-                                        <!-- <button type="button" class="btn btn-secondary"
-                                          data-dismiss="modal">Close</button> -->
-                                          <button class="group-button leave-group bp-toggle-action-button button"  data-dismiss="modal">Okay</button> 
+                                        <button class="group-button leave-group bp-toggle-action-button button"
+                                          data-dismiss="modal">Okay</button>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-
-
-
+                                <!-- test follow end -->
 
                               </div>
                             </div>
+                            
                           </div>
                         </div>
                       </li>
@@ -214,42 +209,35 @@ global $wp_query;
                   <div class="tab-pane fade" id="nav-demo1" role="tabpanel" aria-labelledby="nav-contact-tab">
                     <div class="row d-flex justify-content-end">
                       <!-- <form>
-                                                <div class="form-group col-md-3">
-                                                    <input type="file" id="uploadPhoto"
-                                                        style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 210px">
-                                                </div>
-
-                                            </form> -->
-
+                          <div class="form-group col-md-3">
+                              <input type="file" id="uploadPhoto"
+                                  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 210px">
+                          </div>
+                      </form> -->
                     </div>
                     <div class="text-left">
+
                       <?php
-                                                  $photoArray = get_query_var('photo_array');
-                                                  if(!empty($photoArray)){
-                                                    foreach ($photoArray as $imagePath) {
-                                                      echo '<img src="'.$imagePath.'"
-                                                      class="img-thumbnail" alt="boring" style="width: 200px;height:200px">';
-                                                    }
-                                                  }
-                                                
-                                                ?>
+                        $photoArray = get_query_var('photo_array');
+                        if(!empty($photoArray)){
+                          foreach ($photoArray as $imagePath) {
+                            echo '<img src="'.$imagePath.'"
+                            class="img-thumbnail" alt="boring" style="width: 200px;height:200px">';
+                          }
+                        }
+                      ?>
 
                     </div>
                   </div>
                   <div class="tab-pane fade" id="nav-demo2" role="tabpanel" aria-labelledby="nav-contact-tab">
-
-                    <!-- <div class="row d-flex justify-content-end">
-
-                                            <form>
-                                                <div class="form-group col-md-3">
-                                                    <input type="file" id="uploadDocument"
-                                                        style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 210px">
-                                                </div>
-                                        
-                                            </form>
-
-                                        </div> -->
-
+                    <!-- <div class="row d-flex justify-content-end"
+                          <form>
+                              <div class="form-group col-md-3">
+                                  <input type="file" id="uploadDocument"
+                                      style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 210px">
+                              </div>
+                          </form>
+                        </div> -->
                     <div class="col-md-3">
                       <ul class="list-group">
                         <li class="list-group-item">
@@ -264,22 +252,13 @@ global $wp_query;
                             </div>
 
                           </div>
-
                         </li>
                         <li class="list-group-item">Document01</li>
                         <li class="list-group-item">Document02</li>
                         <li class="list-group-item">Document03</li>
                         <li class="list-group-item">Document04</li>
                       </ul>
-
                     </div>
-
-
-
-
-
-
-
                   </div>
                 </div>
               </div>
