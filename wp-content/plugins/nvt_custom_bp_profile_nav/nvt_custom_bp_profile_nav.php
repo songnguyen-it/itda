@@ -683,6 +683,7 @@ function ncbpn_recent_posts_content() {
 
   // user login here
   $the_user = get_user_by('login', $men[count($men) - 2]);
+  
   $the_user_id = $the_user-> ID;
 
   if($userIslogin && $checkUserOwnThisCompany && $the_user_id == $user_id){
@@ -1021,10 +1022,24 @@ function updateCompanyField(){
 }
 
 // process follow button click
-add_action("wp_ajax_followingButtonClick", "followingButtonClicked");
-add_action("wp_ajax_nopriv_followingButtonClick", "followingButtonClicked");
+add_action("wp_ajax_followingButtonClicked", "followingButtonClicked");
+add_action("wp_ajax_nopriv_followingButtonClicked", "followingButtonClicked");
 function followingButtonClicked(){
-  wp_send_json( array('code'=> 200, 'msg'=> "server say: button clicked"));
+  $idCompany = "";
+
+  $userId = get_current_user_id();
+  $userIslogin = is_user_logged_in();
+
+
+
+  if($userIslogin){
+    wp_send_json( array('code'=> 200, 'msg'=> "user id login is " . $userIslogin));
+  }
+  else{
+    wp_send_json( array('code'=> 203, 'msg'=> "user is not login "));
+  }
+
+  
   // global $wpdb;
   // $result = $wpdb->update('wp8i_company_field', array( 'meta_key'=>$meta_key,'dropdown'=>$dropdownJson, 'type'=>$type, 'description'=>$description, 'placeholder'=>$placeholder, 'label'=>$label, 'priority'=>$priority, ), array('id'=>$id));
 

@@ -9,21 +9,21 @@ global $wp_query;
 </section> -->
 
 <section class="mt-5">
-    <div id="primary" class="content-area bs-bp-container">
-        <main id="main" class="site-main">
-            <article id="post-0" class="bp_group type-bp_group post-0 page type-page status-publish hentry">
-                <div class="entry-content">
-                    <div id="buddypress" class="buddypress-wrap bp-dir-hori-nav">
-                        <div id="item-header" role="complementary" data-bp-item-id="2" data-bp-item-component="groups"
-                            class="groups-header single-headers">
-                            <div id="cover-image-container">
-                                <div id="item-header-cover-image" class="item-header-wrap bb-enable-cover-img p-4 ">
+  <div id="primary" class="content-area bs-bp-container">
+    <main id="main" class="site-main">
+      <article id="post-0" class="bp_group type-bp_group post-0 page type-page status-publish hentry">
+        <div class="entry-content">
+          <div id="buddypress" class="buddypress-wrap bp-dir-hori-nav">
+            <div id="item-header" role="complementary" data-bp-item-id="2" data-bp-item-component="groups"
+              class="groups-header single-headers">
+              <div id="cover-image-container">
+                <div id="item-header-cover-image" class="item-header-wrap bb-enable-cover-img p-4 ">
 
-                                    <div id="item-header-avatar" class="mx-4 d-flex justify-content-start">
-                                        <div class="text-left mr-4 ">
+                  <div id="item-header-avatar" class="mx-4 d-flex justify-content-start">
+                    <div class="text-left mr-4 ">
 
 
-                                            <?php 
+                      <?php 
                                                 $logoPath = get_query_var('logo_string');
                                                 if($logoPath != ''){
                                                     echo '<img src="'.$logoPath.'"
@@ -38,63 +38,58 @@ global $wp_query;
 
                                             ?>
 
-                                        </div>
-                                        <div id="item-header-content">
-                                            <div class="flex align bp-group-title-wrap">
+                    </div>
+                    <div id="item-header-content">
+                      <div class="flex align bp-group-title-wrap">
 
 
-                                                <h2>
-                                                    <?php echo get_query_var('company_name_string'); ?>
-                                                    <span class="badge badge-pill badge-danger p-2 shadow"
-                                                        style="font-size: 0.8rem">Company</span>
-                                                </h2>
+                        <h2>
+                          <?php echo get_query_var('company_name_string'); ?>
+                          <span class="badge badge-pill badge-danger p-2 shadow"
+                            style="font-size: 0.8rem">Company</span>
+                        </h2>
 
 
-                                            </div>
-                                            <div class="group-description">
-                                                <p><?php echo get_query_var('company_description_string'); ?></p>
-                                            </div>
-                                            <div id="item-actions" class="group-item-actions">
+                      </div>
+                      <div class="group-description">
+                        <p><?php echo get_query_var('company_description_string'); ?></p>
+                      </div>
+                      <div id="item-actions" class="group-item-actions">
 
 
-                                                <div>
-                                                    <h4 class="bp-title">Owner:
-                                                        <span
-                                                            class="badge badge-pill badge-success p-2"><?php echo get_query_var('name_userowner_string');?></span>
+                        <div>
+                          <h4 class="bp-title">Owner:
+                            <span
+                              class="badge badge-pill badge-success p-2"><?php echo get_query_var('name_userowner_string');?></span>
 
 
-                                                    </h4>
-                                                </div>
+                          </h4>
+                        </div>
 
 
-                                            </div>
+                      </div>
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bp-wrap">
-                                <nav>
-                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
-                                            href="#nav-home" role="tab" aria-controls="nav-home"
-                                            aria-selected="true">Infomation</a>
-                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
-                                            href="#nav-profile" role="tab" aria-controls="nav-profile"
-                                            aria-selected="false">Members</a>
-                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
-                                            href="#nav-demo1" role="tab" aria-controls="nav-contact"
-                                            aria-selected="false">Photos</a>
-                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
-                                            href="#nav-demo2" role="tab" aria-controls="nav-contact"
-                                            aria-selected="false">Documents</a>
-                                    </div>
-                                </nav>
-                                <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                                        aria-labelledby="nav-home-tab">
-                                        <div class="card-body">
-                                            <?php
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bp-wrap">
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                      aria-controls="nav-home" aria-selected="true">Infomation</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                      aria-controls="nav-profile" aria-selected="false">Members</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-demo1" role="tab"
+                      aria-controls="nav-contact" aria-selected="false">Photos</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-demo2" role="tab"
+                      aria-controls="nav-contact" aria-selected="false">Documents</a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="card-body">
+                      <?php
                                               $jsonDataCompany = get_query_var('info_company_array');
 
                                                 foreach ($jsonDataCompany as $key) {
@@ -142,52 +137,83 @@ global $wp_query;
                                                   }
                                                 }
                                             ?>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel"
-                                        aria-labelledby="nav-profile-tab">
-                                        <ul id="groups-list"
-                                            class="item-list groups-list bp-list list bb-cover-enabled">
-                                            <li class="item-entry odd public is-admin is-member group-has-avatar"
-                                                data-bp-item-id="2" data-bp-item-component="groups">
-                                                <div class="list-wrap">
-                                                    <div class="item">
-                                                        <div class="item-block">
-                                                            <h2 class="list-title groups-title"><a
-                                                                    href="<?php echo home_url() . "/company-info/" . $id;?>"
-                                                                    class="bp-group-home-link nature-lovers-home-link">
-                                                                    <?php 
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <ul id="groups-list" class="item-list groups-list bp-list list bb-cover-enabled">
+                      <li class="item-entry odd public is-admin is-member group-has-avatar" data-bp-item-id="2"
+                        data-bp-item-component="groups">
+                        <div class="list-wrap">
+                          <div class="item">
+                            <div class="item-block">
+                              <h2 class="list-title groups-title"><a
+                                  href="<?php echo home_url() . "/company-info/" . $id;?>"
+                                  class="bp-group-home-link nature-lovers-home-link">
+                                  <?php 
                                                                       $comname = get_query_var('company_name_string');
                                                                       echo $comname=="" ? "" : $comname;
                                                                     ?>
-                                                                </a></h2>
-                                                            <p class="item-meta group-details only-list-view"><span id="number_follow_<?php echo get_query_var('id_user'); ?>">0</span> / Followed</p>
-                                                           
-                                                        </div>
-                                                        <div class="item-desc group-item-desc only-list-view">
-                                                            <p>
-                                                                <?php 
+                                </a></h2>
+                              <p class="item-meta group-details only-list-view"><span
+                                  id="number_follow_<?php echo get_query_var('id_user'); ?>">0</span> / Followed</p>
+
+                            </div>
+                            <div class="item-desc group-item-desc only-list-view">
+                              <p>
+                                <?php 
                                                               $desc = get_query_var('company_description_string');
                                                               echo $desc=="" ? "No have description yet" : $desc;
                                                               ?>
-                                                            </p>
-                                                        </div>
-                                                        <div class="groups-loop-buttons footer-button-wrap">
-                                                            <div class="bp-generic-meta groups-meta action">
-                                                                <div id="groupbutton-2" class="generic-button"><button
-                                                                        class="group-button leave-group bp-toggle-action-button button songnguyen_follow" id="<?php echo  get_query_var('id_user'); ?>">Follow</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                              </p>
+                            </div>
+                            <div class="groups-loop-buttons footer-button-wrap">
+                              <div class="bp-generic-meta groups-meta action">
+                                <div id="groupbutton-2" class="generic-button"><button
+                                    class="group-button leave-group bp-toggle-action-button button songnguyen_follow"
+                                    id="<?php echo  get_query_var('id_user'); ?>">Follow</button>
+                                </div>
+
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                  data-target="#exampleModalCenter111">
+                                  test follow
+                                </button>
+
+
+                                <div class="modal fade" id="exampleModalCenter111" tabindex="-1" role="dialog"
+                                  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Notifications</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        Please login to follow this company
+                                      </div>
+                                      <div class="modal-footer">
+                                        <!-- <button type="button" class="btn btn-secondary"
+                                          data-dismiss="modal">Close</button> -->
+                                          <button class="group-button leave-group bp-toggle-action-button button"  data-dismiss="modal">Okay</button> 
+                                      </div>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-demo1" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab">
-                                        <div class="row d-flex justify-content-end">
-                                            <!-- <form>
+                                  </div>
+                                </div>
+
+
+
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="nav-demo1" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="row d-flex justify-content-end">
+                      <!-- <form>
                                                 <div class="form-group col-md-3">
                                                     <input type="file" id="uploadPhoto"
                                                         style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 210px">
@@ -195,9 +221,9 @@ global $wp_query;
 
                                             </form> -->
 
-                                        </div>
-                                        <div class="text-left">
-                                            <?php
+                    </div>
+                    <div class="text-left">
+                      <?php
                                                   $photoArray = get_query_var('photo_array');
                                                   if(!empty($photoArray)){
                                                     foreach ($photoArray as $imagePath) {
@@ -208,12 +234,11 @@ global $wp_query;
                                                 
                                                 ?>
 
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-demo2" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-demo2" role="tabpanel" aria-labelledby="nav-contact-tab">
 
-                                        <!-- <div class="row d-flex justify-content-end">
+                    <!-- <div class="row d-flex justify-content-end">
 
                                             <form>
                                                 <div class="form-group col-md-3">
@@ -225,45 +250,44 @@ global $wp_query;
 
                                         </div> -->
 
-                                        <div class="col-md-3">
-                                            <ul class="list-group">
-                                                <li class="list-group-item">
-                                                    <div class="media-folder_items ac-document-list" data-author="1"
-                                                        data-group-id="2" data-activity-id="83" data-id="1"
-                                                        data-parent-id="0" id="div-listing-1">
-                                                        <div class="media-folder_icon">
-                                                            <a
-                                                                href="http://192.168.1.11/blog/?attachment=1035&amp;document_type=document&amp;download_document_file=1&amp;document_file=1">
-                                                                test file document
-                                                                <i class="bb-icon-file-apk"></i>
-                                                            </a>
-                                                        </div>
-
-                                                    </div>
-
-                                                </li>
-                                                <li class="list-group-item">Document01</li>
-                                                <li class="list-group-item">Document02</li>
-                                                <li class="list-group-item">Document03</li>
-                                                <li class="list-group-item">Document04</li>
-                                            </ul>
-
-                                        </div>
-
-
-
-
-
-
-
-                                    </div>
-                                </div>
+                    <div class="col-md-3">
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          <div class="media-folder_items ac-document-list" data-author="1" data-group-id="2"
+                            data-activity-id="83" data-id="1" data-parent-id="0" id="div-listing-1">
+                            <div class="media-folder_icon">
+                              <a
+                                href="http://192.168.1.11/blog/?attachment=1035&amp;document_type=document&amp;download_document_file=1&amp;document_file=1">
+                                test file document
+                                <i class="bb-icon-file-apk"></i>
+                              </a>
                             </div>
-                        </div>
+
+                          </div>
+
+                        </li>
+                        <li class="list-group-item">Document01</li>
+                        <li class="list-group-item">Document02</li>
+                        <li class="list-group-item">Document03</li>
+                        <li class="list-group-item">Document04</li>
+                      </ul>
+
                     </div>
-            </article>
-        </main>
-    </div>
+
+
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </article>
+    </main>
+  </div>
 </section>
 
 <script>

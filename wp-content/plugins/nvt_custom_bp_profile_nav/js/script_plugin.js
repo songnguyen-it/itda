@@ -511,13 +511,13 @@ jQuery(document).ready(function ($) {
   $('.songnguyen_follow').click(function () {
     // alert("Following button clicked - TEST");
     let idOfCompany = $(this).prop("id");
-    let currentButtonState = $(this).text();
+    // let currentButtonState = $(this).text();
 
-    let currentNumber = $("#number_follow_" + idOfCompany).text();
-    let currentNumberInt = parseInt(currentNumber) + 1;
+    // let currentNumber = $("#number_follow_" + idOfCompany).text();
+    // let currentNumberInt = parseInt(currentNumber) + 1;
 
-    $("#number_follow_" + idOfCompany).text(currentNumberInt);
-    $(this).text("Followed");
+    // $("#number_follow_" + idOfCompany).text(currentNumberInt);
+    // $(this).text("Followed");
 
     $.ajax({
       type: "post",
@@ -525,12 +525,19 @@ jQuery(document).ready(function ($) {
       url: ajaxobject.ajaxurl,
       data: {
         action: "followingButtonClicked",
+        companyId : idOfCompany
 
       },
       beforeSend: function () {
       },
       success: function (response) {
         if (response.code == 200) {
+          console.log(response.msg);
+        }
+
+        if (response.code == 203) {
+          // alert("You're not login");
+          // $("#no_login_follow").show();
           console.log(response.msg);
         }
 
