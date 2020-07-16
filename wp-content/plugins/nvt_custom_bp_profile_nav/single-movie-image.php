@@ -1,5 +1,6 @@
 <?php
 get_header();
+// get_sidebar();
 global $wp_query;
 ?>
 <!-- <section>

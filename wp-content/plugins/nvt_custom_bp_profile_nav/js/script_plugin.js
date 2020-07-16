@@ -594,9 +594,18 @@ jQuery(document).ready(function ($) {
   });
 
 
+
+  
+
   // submit edit compay send
   $(".submit_edit_company").click(function(){
-    alert("edit infomation company have clicked");
+    // alert("edit infomation company have clicked");
+
+    let edit_company_data = $("#edit_company_form").serializeArray();
+    let idCompany = $(this).prop("id");
+    console.log(idCompany);
+    console.log(edit_company_data);
+
 
     $.ajax({
       type: "post",
@@ -604,6 +613,8 @@ jQuery(document).ready(function ($) {
       url: ajaxobject.ajaxurl,
       data: {
         action: "updateInfomationCompany",
+        companyDataUpdate : edit_company_data,
+        idCompany : idCompany
 
       },
       beforeSend: function () {
@@ -611,6 +622,7 @@ jQuery(document).ready(function ($) {
       success: function (response) {
         if (response.code == 200) {
           console.log(response.msg);
+          window.location.reload();
         }
 
         if (response.code == 400) {
@@ -622,6 +634,60 @@ jQuery(document).ready(function ($) {
         console.log('The following error occured: ' + textStatus + errorThrown);
       }
     });
+  });
+
+
+  $(".upload_edit_image").change(function (e) {
+
+    var file_data = $(this).prop('files')[0];
+    var form_data = new FormData();
+    form_data.append('file', file_data);
+    form_data.append('action', 'saveDocument');
+    
+    var name =  $(this).prop("name")
+    form_data.append("name",name);
+
+    var thisId = $(this).prop("id");
+
+    var hiddenInput = $("#img_edit_"+thisId);
+ 
+    $.ajax({  
+      type: 'POST',
+        url: ajaxobject.ajaxurl,
+        data: form_data,
+        contentType: false,
+        processData: false,
+      beforeSend: function () {
+      },
+      success: function (response) {
+        if (response.code == 200) {
+          let pathImage = response.msg;
+          
+
+          if(pathImage.length > 0){
+
+            console.log(pathImage);
+
+            $("#img_edit_"+thisId).val(pathImage);
+            $("#img_current_"+thisId).attr("src",pathImage);
+         
+          }
+
+        }
+
+        if (response.code == 400) {
+          console.log("fail follow button clicked");
+        }
+
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        console.log('The following error occured: ' + textStatus + errorThrown);
+      }
+    });
+
+
+   
+
   });
 
 

@@ -448,6 +448,9 @@ function ncbpn_recent_posts_content() {
         <textarea name="'. $val->meta_key .'" rows="4" cols="50"></textarea>
       </div>';
     }
+    $formInput .= '
+      <input hidden value="" name="id_'. $val-> id .'"/>
+    ';
   }
 
   $listStart = '<div id="accordion">';
@@ -506,10 +509,10 @@ function ncbpn_recent_posts_content() {
             <div class="form-group row">
               <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
               <div class="col-sm-8">
-                <img src="'.$companyEdit->value. '" class="img-thumbnail shadow" alt="chicken" style="width: 100px;height:100px; ">
-                <input type="file"  name="'. $val->meta_key .'" class="form-control upload_document"  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px">
+                <img src="'.$companyEdit->value. '" class="img-thumbnail shadow" alt="chicken" style="width: 100px;height:100px; " id="img_current_'. $val -> post_id . '">
+                <input type="file"  name="'. $val->meta_key .'" class="form-control upload_edit_image"  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px" id="'. $val->post_id .'">
 
-                <input hidden value="" name="img_'. $val->meta_key .'"/>
+                <input hidden value="'.$companyEdit->value.'" name="'. $companyEdit->name .'" id="img_edit_'. $val->post_id .'"/>
               </div>
             </div>
           ';
@@ -542,15 +545,14 @@ function ncbpn_recent_posts_content() {
       
       if($databaseUserID == $user_id){
         $buttonDelete .=  '
-        <button type="button" class="btn btn-  primary edit_company" ' . 'id="'. $val -> meta_id . '" style="background-color: #006FE5; border: solid 1px #006FE5; font-size:12px; color: white; height: 21px; line-height: 3px; text-align:center;" data-toggle="modal" data-target="#edit_company'. $val -> meta_id . '">
-          Edit
-        </button>
+     
       
+        <form id="edit_company_form">
         <div class="modal fade" id="edit_company'. $val -> meta_id . '" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">  
-                <h5 class="modal-title" id="exampleModalLongTitle">Edit 1111111 Company</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Edit 1111 Company</h5>
               </div>
               <div class="modal-body">
                 '. $infoCompanyEdit .'
@@ -562,7 +564,11 @@ function ncbpn_recent_posts_content() {
             </div>
           </div>
         </div>
-        
+        </form>
+
+        <button type="button" class="btn btn-  primary edit_company" ' . 'id="'. $val -> meta_id . '" style="background-color: #006FE5; border: solid 1px #006FE5; font-size:12px; color: white; height: 21px; line-height: 3px; text-align:center;" data-toggle="modal" data-target="#edit_company'. $val -> meta_id . '">
+          Edit
+        </button>
         <button type="button" class="remove_company" ' . 'id="'. $val -> meta_id . '" style="background-color: #DC3545; border: solid 1px #DC3545; font-size:12px; color: white; height: 21px; line-height: 3px; text-align:center">Delete</button>
         
         ';
@@ -614,6 +620,7 @@ function ncbpn_recent_posts_content() {
             </div>
             ';
         }
+        
       }
 
       $listStart .= '
@@ -1054,7 +1061,7 @@ function npp_psychic_profile( $original_template ) {
         $id = $wp_query->query_vars['uid'];
         global $wpdb;
         $result = $wpdb->get_results("SELECT * FROM wp8i_postmeta WHERE meta_key='company_ahihi' AND meta_id = ".$id);
-
+        
         $userId = $result[0]->post_id;
         $nameUserOwner = "";
         $userInTable = $wpdb->get_results("SELECT user_nicename FROM wp8i_users WHERE ID = ".$userId);
@@ -1124,26 +1131,21 @@ add_action("wp_ajax_updateInfomationCompany", "updateInfomationCompany");
 add_action("wp_ajax_updateInfomationCompany", "updateInfomationCompany");
 function updateInfomationCompany(){
 
+  $updateData = $_REQUEST['companyDataUpdate'];
+  $idCompany = $_REQUEST['idCompany'];
+  $dataJsonEncode = json_encode($updateData);
 
-  wp_send_json( array('code'=> 200, 'msg'=>'server sent updateInfomationCompany ') );
+  global $wpdb;
+  $result = $wpdb->update('wp8i_postmeta', array( 'meta_value'=>$dataJsonEncode), array('meta_id'=>$idCompany));
+  
 
-  // if(!empty($idNeedRemove)){
-  //   global $wpdb;
-  //   $result = $wpdb->delete( 
-  //     "wp8i_postmeta", 
-  //     array( 
-  //       'meta_id' => $idNeedRemove
-  //     ), 
-  //     array( 
-  //       '%d'
-  //     ) 
-  //   );
-  //   if(!$result){
-  //     wp_send_json( array('code'=> 400, 'msg'=>'Can not delete ') );
-  //   }
-  //   else{
-  //     wp_send_json( array('code'=> 200, 'msg'=>'Delete ok men ') );
-  //   }
 
-  // }
+    if(!$result){
+      wp_send_json( array('code'=> 400, 'msg'=>'Can not update ') );
+    }
+    else{
+      wp_send_json( array('code'=> 200, 'msg'=>'update ok men ') );
+    }
+
+  
 }
