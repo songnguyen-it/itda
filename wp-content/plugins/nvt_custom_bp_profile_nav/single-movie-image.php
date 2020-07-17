@@ -161,8 +161,17 @@ global $wp_query;
                             <div class="groups-loop-buttons footer-button-wrap">
                               <div class="bp-generic-meta groups-meta action">
                                 <div id="groupbutton-2" class="generic-button"><button
-                                    class="group-button leave-group bp-toggle-action-button button songnguyen_follow"
-                                    id="<?php echo  get_query_var('id_user'); ?>">Follow</button>
+                                    class="group-button leave-group bp-toggle-action-button button songnguyen_follow font-weight-bold"
+                                    id="<?php echo  get_query_var('id_user'); ?>"><?php
+                                      $isCurrentUserFollow = get_query_var('is_user_follow_string');
+                                      if($isCurrentUserFollow == "1"){
+                                        echo "Followed";
+                                      }
+                                      else{
+                                        echo "Follow";
+                                      }
+                                      
+                                    ?></button>
                                 </div>
 
                               </div>

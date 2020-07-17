@@ -552,7 +552,7 @@ function ncbpn_recent_posts_content() {
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">  
-                <h5 class="modal-title" id="exampleModalLongTitle">Edit 1111 Company</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Edit Company</h5>
               </div>
               <div class="modal-body">
                 '. $infoCompanyEdit .'
@@ -1056,11 +1056,9 @@ function followingButtonClicked(){
       else{
         wp_send_json( array('code'=> 200, 'msg'=> "inser follow ok"));
       }
-
     }
     // is exist
     if(count($result2) > 0) {
-      // wp_send_json( array('code'=> 202, 'msg'=> "unfollow") );
 
       $res2 = $wpdb->delete( 
         "wp8i_company_follow", 
@@ -1079,27 +1077,12 @@ function followingButtonClicked(){
       else{
         wp_send_json( array('code'=> 202, 'msg'=>'Delete follow ok men ') );
       }
-      
     }
-
   }
   else{
     wp_send_json( array('code'=> 203, 'msg'=> "user is not login "));
   }
-
-  
-  // global $wpdb;
-  // $result = $wpdb->update('wp8i_company_field', array( 'meta_key'=>$meta_key,'dropdown'=>$dropdownJson, 'type'=>$type, 'description'=>$description, 'placeholder'=>$placeholder, 'label'=>$label, 'priority'=>$priority, ), array('id'=>$id));
-
-  // if(!empty($result)){
-  //   wp_send_json( array('code'=> 200, 'msg'=> "Update company field OK"));
-  // }
-  // else{
-  //   wp_send_json( array('code'=> 401, 'msg'=> 'Cant update company field'));
-  // }
-
 }
-
 
 // add custom url and template
 function npp_plugin_register_query_vars( $vars ) {
@@ -1108,7 +1091,6 @@ function npp_plugin_register_query_vars( $vars ) {
   return $vars;
 }
 add_filter( 'query_vars', 'npp_plugin_register_query_vars' );
-
 
 function npp_plugin_rewrite_tag_rule() {
   add_rewrite_rule( '^company-info/([^/]*)/?', 'index.php?pagename=company-info&uid=$matches[1]','top' );
@@ -1120,23 +1102,29 @@ add_filter( 'template_include', 'npp_psychic_profile' );
 function npp_psychic_profile( $original_template ) {
   global $wp_query;
   if (array_key_exists ('pagename', $wp_query->query_vars ) && $wp_query->query_vars['pagename']==='company-info' ) {
-   
+
         $id = $wp_query->query_vars['uid'];
+        $currentUserlogin = get_current_user_id();
+
         global $wpdb;
         $result = $wpdb->get_results("SELECT * FROM wp8i_postmeta WHERE meta_key='company_ahihi' AND meta_id = ".$id);
         $countFollowCompany  = $wpdb->get_results("SELECT count(*) as total_follow FROM wp8i_company_follow WHERE company_id = ".$id);
+       
         $userId = $result[0]->post_id;
         $nameUserOwner = "";
-        $userInTable = $wpdb->get_results("SELECT user_nicename FROM wp8i_users WHERE ID = ".$userId);
+
+        $userInTable = $wpdb->get_results("SELECT display_name FROM wp8i_users WHERE ID = ".$userId);
   
-        $nameUserOwner = $userInTable[0]->user_nicename;
+        $nameUserOwner = $userInTable[0]->display_name;
         $jsonDataCompany = json_decode($result[0]->meta_value);
 
         $companyName = "";
         $companyDescription = "";
         $companyLogo = "";
         $listPhotoPath = [];
+
         $totalFollow = $countFollowCompany[0]->total_follow;
+        $isUserFollow = "";
 
         foreach ($jsonDataCompany as $key) {
           $checkImage = strpos($key->name , "img");
@@ -1146,15 +1134,19 @@ function npp_psychic_profile( $original_template ) {
           if($key->name == "img_company_logo"){ $companyLogo = $key->value;} // get company logo
 
           if(is_numeric($checkImage)){
-          
             array_push($listPhotoPath, $key->value);
-  
           }
         }
-        
+
+        if($currentUserlogin){
+          $checkIsCurrentUserIsFollow = $wpdb->get_results("SELECT count(*) as is_login_user_follow FROM wp8i_company_follow WHERE company_id = ".$id . " AND user_id =".$currentUserlogin);
+          $isUserFollow = $checkIsCurrentUserIsFollow[0]->is_login_user_follow;
+
+        }
 
         set_query_var( 'info_company_array', $jsonDataCompany );
         set_query_var( 'follow_company_string', $totalFollow );
+        set_query_var( 'is_user_follow_string', $isUserFollow );
         set_query_var( 'logo_string', $companyLogo );
         set_query_var( 'photo_array', $listPhotoPath );
         set_query_var( 'name_userowner_string', $nameUserOwner );
@@ -1187,7 +1179,6 @@ function saveDocument(){
           wp_send_json( array('code'=> 200, 'msg'=> $response->output() ));
         }
     }
-    
 }
 
 

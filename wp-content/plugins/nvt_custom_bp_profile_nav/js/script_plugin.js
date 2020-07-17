@@ -533,18 +533,16 @@ jQuery(document).ready(function ($) {
         if (response.code == 200) {
           var currentNumberInt = parseInt(currentNumber) + 1;
 
-          // $("#number_follow_" + idOfCompany).text(currentNumberInt);
-          // $(that).text("Followed");
-
+          $("#number_follow_" + idOfCompany).text(currentNumberInt);
+          $(that).text("Followed");
           console.log(response.msg);
         }
 
         // delete ok (unfollow)
         if (response.code == 202) {
           var currentNumberInt = parseInt(currentNumber) - 1;
-
-          // $("#number_follow_" + idOfCompany).text(currentNumberInt);
-          // $(that).text("Follow");
+          $("#number_follow_" + idOfCompany).text(currentNumberInt);
+          $(that).text("Follow");
 
           console.log(response.msg);
         }
