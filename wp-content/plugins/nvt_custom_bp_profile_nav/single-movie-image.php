@@ -80,6 +80,8 @@ global $wp_query;
                   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class="card-body">
                       <?php
+
+                        $documentArrayList = [];
                         $jsonDataCompany = get_query_var('info_company_array');
 
                           foreach ($jsonDataCompany as $key) {
@@ -87,6 +89,7 @@ global $wp_query;
                             $valueOflabel =  $key->value == "" ? "Not have infomation yet" : $key->value;
                             $nameFieldOk = ucwords(str_replace("_"," ",$key->name)); 
                             $checkIsImage = strpos($key->name , "img");
+                            $checkIsDocument = strpos($key->name , "fike");
                         
                             // check label is image
                             if (is_numeric($checkIsImage)) {
@@ -102,6 +105,7 @@ global $wp_query;
                                 </div>
                               ';
                               }
+                              
                               else{ 
                                 echo '
                                 <div class="form-group row">
@@ -110,6 +114,38 @@ global $wp_query;
                                   
                                   <p type="text" readonly="" class="form-control-plaintext"
                                             id="company-infomation">No have information</p>
+                                  </div>
+                                </div>';
+                              }
+                            }
+
+                            // check label is document
+                            else if(is_numeric($checkIsDocument)){
+                  
+                              $nameImgOk = ucwords(str_replace("Fike","",$nameFieldOk));
+                              if($key->value != ''){
+                                array_push($documentArrayList, $key->value);
+                               echo '
+                                <div class="form-group row">
+                                  <label  class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
+                                  <div class="col-sm-8">
+                                    <div class="media-folder_icon">
+                                      <a href="'.$key->value. '">
+                                        Download
+                                        <i class="bb-icon-file-apk"></i>
+                                      </a>
+                                    </div>
+                                 
+                                  </div>
+                                </div>
+                              ';
+                              }
+                              else{
+                                echo '
+                                <div class="form-group row">
+                                  <label  class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
+                                  <div class="col-sm-8">
+                                  <p type="text" readonly class="form-control-plaintext" id="company-infomation">No have information</p>
                                   </div>
                                 </div>';
                               }
@@ -146,7 +182,8 @@ global $wp_query;
                                   ?>
                                 </a></h2>
                               <p class="item-meta group-details only-list-view"><span
-                                  id="number_follow_<?php echo get_query_var('id_user'); ?>"><?php echo get_query_var('follow_company_string'); ?></span> / Followed</p>
+                                  id="number_follow_<?php echo get_query_var('id_user'); ?>"><?php echo get_query_var('follow_company_string'); ?></span>
+                                / Followed</p>
                             </div>
 
                             <div class="item-desc group-item-desc only-list-view">
@@ -170,7 +207,6 @@ global $wp_query;
                                       else{
                                         echo "Follow";
                                       }
-                                      
                                     ?></button>
                                 </div>
 
@@ -216,7 +252,30 @@ global $wp_query;
                         </div> -->
                     <div class="col-md-3">
                       <ul class="list-group">
-                        <li class="list-group-item">
+                        <?php
+                        for ($index = 0; $index < count($documentArrayList); $index++) {
+                          echo '
+                          <li class="list-group-item">
+                          <div class="media-folder_items ac-document-list" data-author="1" data-group-id="2"
+                            data-activity-id="83" data-id="1" data-parent-id="0" id="div-listing-1">
+                            <div class="media-folder_icon">
+                              <a
+                                href="'. $documentArrayList[index]. '">
+                                  Document File '. ($index + 1) .'
+                                <i class="bb-icon-file-apk"></i>
+                              </a>
+                            </div>
+
+                          </div>
+                        </li>
+                        
+                        ';
+                        }
+                      
+                      
+                      ?>
+
+                        <!-- <li class="list-group-item">
                           <div class="media-folder_items ac-document-list" data-author="1" data-group-id="2"
                             data-activity-id="83" data-id="1" data-parent-id="0" id="div-listing-1">
                             <div class="media-folder_icon">
@@ -228,10 +287,11 @@ global $wp_query;
                             </div>
 
                           </div>
-                        </li>
-                        <li class="list-group-item">Document01</li>
+                        </li> -->
+
+                        <!-- <li class="list-group-item"><?php echo $id; ?></li>
                         <li class="list-group-item">Document02</li>
-                        <li class="list-group-item">Document03</li>
+                        <li class="list-group-item">Document03</li> -->
                       </ul>
                     </div>
                   </div>

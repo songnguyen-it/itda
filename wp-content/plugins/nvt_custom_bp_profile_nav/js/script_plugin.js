@@ -206,7 +206,6 @@ jQuery(document).ready(function ($) {
   $("#submit").click(function () {
 
     var data = $("#company_form_field").serializeArray();
-    console.log(data);
 
     //  send ajax
     $.ajax({
@@ -567,18 +566,14 @@ jQuery(document).ready(function ($) {
   });
 
 
-  /** upload documents and photos */
+  /** upload photos */
   $(".upload_document").change(function (e) {
-
-
     var file_data = $(this).prop('files')[0];
     var form_data = new FormData();
     form_data.append('file', file_data);
     form_data.append('action', 'saveDocument');
-    
     var name =  $(this).prop("name")
     form_data.append("name",name);
-
     $.ajax({  
       type: 'POST',
         url: ajaxobject.ajaxurl,
@@ -591,23 +586,59 @@ jQuery(document).ready(function ($) {
         if (response.code == 200) {
           let pathImage = response.msg;
           let hidden_field_name = response.field_name;
-
           if(pathImage.length > 0 && hidden_field_name.length > 0){
             $(`input[name ="img_${hidden_field_name}"]`).val(pathImage);
           }
-
         }
-
         if (response.code == 400) {
           console.log("fail follow button clicked");
         }
-
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.log('The following error occured: ' + textStatus + errorThrown);
       }
     });
   });
+
+    /** upload document */
+    $(".upload_file").change(function (e) {
+      var file_data = $(this).prop('files')[0];
+      var form_data = new FormData();
+      form_data.append('file', file_data);
+      form_data.append('action', 'uploadFile');
+      var name =  $(this).prop("name")
+      form_data.append("name",name);
+
+
+
+
+      $.ajax({  
+        type: 'POST',
+          url: ajaxobject.ajaxurl,
+          data: form_data,
+          contentType: false,
+          processData: false,
+        beforeSend: function () {
+        },
+        success: function (response) {
+          if (response.code == 200) {
+            console.log(response.msg);
+            let pathImage = response.msg;
+            let hidden_field_name = response.field_name;
+            if(pathImage.length > 0 && hidden_field_name.length > 0){
+              $(`input[name ="fike_${hidden_field_name}"]`).val(pathImage);
+              console.log( "value is set: " + $(`input[name ="fike_${hidden_field_name}"]`).val());
+            }
+          }
+          if (response.code == 400) {
+            console.log("fail follow button clicked");
+          }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          console.log('The following error occured: ' + textStatus + errorThrown);
+        }
+      });
+    });
 
 
 

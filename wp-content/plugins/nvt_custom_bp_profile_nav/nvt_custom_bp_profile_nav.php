@@ -98,7 +98,7 @@ function ncbpn_view_guid()
                       <div class="form-group d-flex justify-content-between">
                           <label for="type_edit">Type <span class="text-danger font-weight-bold">*</span></label>
                           <select class="custom-select custom-select-sm" id="type_edit" name="type_edit">
-                              <option selected>Choose Field Type</option>
+                            
                               <option value="text-box">Text Box</option>
                               <option value="text-area">Text Area</option>
                               <option value="dropdown">Dropdown</option>
@@ -186,12 +186,12 @@ function ncbpn_view_guid()
                                     <div class="form-group d-flex justify-content-between">
                                         <label for="formGroupExampleInput2">Type <span class="text-danger font-weight-bold">*</span></label>
                                         <select class="custom-select custom-select-sm" id="type" name="type">
-                                            <option selected>Field type</option>
-                                            <option value="text-box">Text Box</option>
+                                         
+                                            <option value="text-box" selected>Text Box</option>
                                             <option value="text-area">Text Area</option>
                                             <option value="dropdown">Dropdown</option>
                                             <option value="file-upload">File Upload</option>
-                                            <option value="file-upload">Document Upload</option>
+                                            <option value="document-upload">Document Upload</option>
                                         </select>
                                     </div>
 
@@ -276,6 +276,7 @@ function ncbpn_view_guid()
 
 }
 
+
 // display on menu admin dashboard
 add_action('admin_menu', 'ncbpn_add_admin_menu');
 function ncbpn_add_tabs(){
@@ -297,9 +298,9 @@ function ibenic_budypress_recent_posts () {
 }
 
 //  not use
-/*function ncbpn_recent_posts_title() {
-    echo "Company";
-}*/
+// function ncbpn_recent_posts_title() {
+//     echo "Company";
+// }
 
 
 //  add css and js to plugin
@@ -372,7 +373,6 @@ function handle_form(){
 add_action("wp_ajax_getListCompany", "getListCompany");
 add_action("wp_ajax_nopriv_getListCompany", "getListCompany");
 function getListCompany(){
-
   $user_id = get_current_user_id();
   global $wpdb;
   $result = [];
@@ -389,11 +389,11 @@ function getListCompany(){
 }
 
 
+
 // company tab display and process (user view)
 // add_filter( 'template_include', 'ncbpn_recent_posts_content' );
 function ncbpn_recent_posts_content() {
   $checkUserOwnThisCompany = false;
-
   $user_id = get_current_user_id();
   $userIslogin = is_user_logged_in();
   global $wpdb;
@@ -429,17 +429,28 @@ function ncbpn_recent_posts_content() {
       </div>';
     }
 
+    // 'image/png', 'image/jpeg', 'image/jpg', 'image/gif'
+
     if($val->type == "file-upload"){
       $formInput .= '
       <div class="form-group">
         <label for="">' . $val->label . '</label>
         <br/>
-        <input type="file"  name="'. $val->meta_key .'" class="form-control upload_document"  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px">
-
+        <input type="file"  name="'. $val->meta_key .'" class="form-control upload_document"  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px" accept="image/png, image/jpeg, image/jpg, image/gif" />
         <input hidden value="" name="img_'. $val->meta_key .'"/>
         
       </div>';
     }
+
+      if($val->type == "document-upload"){
+        $formInput .= '
+        <div class="form-group">
+          <label for="">' . $val->label . '</label>
+          <br/>
+          <input type="file" name="'. $val->meta_key .'" class="form-control upload_file" style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px">
+          <input hidden value="" name="fike_'. $val->meta_key .'"/>
+        </div>';
+      }
 
     if($val->type == "text-area"){
       $formInput .= '
@@ -448,9 +459,9 @@ function ncbpn_recent_posts_content() {
         <textarea name="'. $val->meta_key .'" rows="4" cols="50"></textarea>
       </div>';
     }
-    $formInput .= '
-      <input hidden value="" name="id_'. $val-> id .'"/>
-    ';
+    // $formInput .= '
+    //   <input hidden value="" name="id_'. $val-> id .'"/>
+    // ';
   }
 
   $listStart = '<div id="accordion">';
@@ -472,7 +483,6 @@ function ncbpn_recent_posts_content() {
           </div>
             <form id="company_form_field">
               '. $formInput.'
-              
             </form>
           </div>
           <div class="modal-footer">
@@ -496,18 +506,15 @@ function ncbpn_recent_posts_content() {
       // loop get company info for edit form
       foreach ($dataDecodeEditCompanyForm as $companyEdit) {
         $nameFieldOk = ucwords(str_replace("_"," ",$companyEdit->name)); 
-
-
         $checkIsImage = strpos($companyEdit->name , "img");
     
         if (is_numeric($checkIsImage)) {
-
           $nameImgOk = ucwords(str_replace("Img","",$nameFieldOk));
 
           if($companyEdit->value != ''){
             $infoCompanyEdit .= '
             <div class="form-group row">
-              <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
+              <label  class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
               <div class="col-sm-8">
                 <img src="'.$companyEdit->value. '" class="img-thumbnail shadow" alt="chicken" style="width: 100px;height:100px; " id="img_current_'. $val -> post_id . '">
                 <input type="file"  name="'. $val->meta_key .'" class="form-control upload_edit_image"  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px" id="'. $val->post_id .'">
@@ -520,7 +527,7 @@ function ncbpn_recent_posts_content() {
           else{ 
             $infoCompanyEdit .= '
             <div class="form-group row">
-              <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
+              <label  class="col-sm-4 col-form-label text-left">'.$nameImgOk.':</label>
               <div class="col-sm-8">
               
               <input type="file"  name="'. $val->meta_key .'" class="form-control upload_document"  style="border: solid 2px black; border-radius: 50px; background-color: black; color: white; width: 220px">
@@ -529,12 +536,11 @@ function ncbpn_recent_posts_content() {
               </div>
             </div>';
           }
-         
         } 
         else{
           $infoCompanyEdit .= '
             <div class="form-group row">
-              <label for="staticEmail" class="col-sm-4 col-form-label text-left">'.$nameFieldOk.':</label>
+              <label  class="col-sm-4 col-form-label text-left">'.$nameFieldOk.':</label>
               <div class="col-sm-8">
               <textarea name="'.$companyEdit->name.'" rows="2" cols="30">'.$companyEdit->value.'</textarea>
               </div>
@@ -546,7 +552,6 @@ function ncbpn_recent_posts_content() {
       if($databaseUserID == $user_id){
         $buttonDelete .=  '
      
-      
         <form id="edit_company_form">
         <div class="modal fade" id="edit_company'. $val -> meta_id . '" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -573,7 +578,6 @@ function ncbpn_recent_posts_content() {
         
         ';
           $checkUserOwnThisCompany = true;
-        
       }
 
       $dataDecode =  json_decode($val-> meta_value);
@@ -586,13 +590,14 @@ function ncbpn_recent_posts_content() {
         if($val2->name == 'company_name'){$companyName = $val2->value;}
 
         $checkIsImage = strpos($val2->name , "img");
+        $checkIsDocument = strpos($val2->name , "fike");
     
         if (is_numeric($checkIsImage)) {
           $nameImgOk = ucwords(str_replace("Img","",$nameOk));
           if($val2->value != ''){
             $infoCompany .= '
             <div class="form-group row">
-              <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
+              <label  class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
               <div class="col-sm-8">
                 <img src="'.$val2->value. '" class="img-thumbnail shadow" alt="chicken" style="width: 100px;height:100px; ">
               </div>
@@ -602,25 +607,51 @@ function ncbpn_recent_posts_content() {
           else{
             $infoCompany .= '
             <div class="form-group row">
-              <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
+              <label  class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
               <div class="col-sm-8">
               <p type="text" readonly class="form-control-plaintext" id="company-infomation">No have information</p>
               </div>
             </div>';
           }
-         
+        }
+        else if(is_numeric($checkIsDocument)){
+          $nameImgOk = ucwords(str_replace("Fike","",$nameOk));
+          if($val2->value != ''){
+            $infoCompany .= '
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
+              <div class="col-sm-8">
+                <div class="media-folder_icon">
+                  <a href="'.$val2->value. '">
+                    Download
+                    <i class="bb-icon-file-apk"></i>
+                  </a>
+                </div>
+             
+              </div>
+            </div>
+          ';
+          }
+          else{
+            $infoCompany .= '
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
+              <div class="col-sm-8">
+              <p type="text" readonly class="form-control-plaintext" id="company-infomation">No have information</p>
+              </div>
+            </div>';
+          }
         }
         else{
           $infoCompany .= '
             <div class="form-group row">
-              <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameOk.':</label>
+              <label  class="col-sm-4 col-form-label">'.$nameOk.':</label>
               <div class="col-sm-8">
                 <p type="text" readonly class="form-control-plaintext" id="company-infomation">'.$val2->value.'</p>
               </div>
             </div>
             ';
         }
-        
       }
 
       $listStart .= '
@@ -637,7 +668,6 @@ function ncbpn_recent_posts_content() {
             <div class="card-body">
             '
               .$infoCompany.
-
             '
             <div class="text-right">' . $buttonDelete.'</div>
             </div>
@@ -661,9 +691,7 @@ function ncbpn_recent_posts_content() {
           <div class="alert alert-danger" id="kitchen_floor" role="alert">
           </div>
             <form id="company_form_field">
-              
               ' . $formInput. '
-              
             </form>
           </div>
           <div class="modal-footer">
@@ -679,11 +707,11 @@ function ncbpn_recent_posts_content() {
   $content2 = '</div>'; 
   global $wp;
   $fullUrl =  add_query_arg( $wp->query_vars, home_url( $wp->request ) );
+  // get username in url param
   $men = explode("/",$fullUrl);
 
   // user login here
   $the_user = get_user_by('login', $men[count($men) - 2]);
-  
   $the_user_id = $the_user-> ID;
 
   if($userIslogin && $checkUserOwnThisCompany && $the_user_id == $user_id){
@@ -715,7 +743,7 @@ function ncbpn_recent_posts_content() {
           $nameImgOk = ucwords(str_replace("Img","",$nameOk));
           $infoCompany .= '
             <div class="form-group row">
-              <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
+              <label  class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
               <div class="col-sm-8">
                 <img src="'.$val2->value.'" class="img-thumbnail shadow " alt="chicken" style="width: 100px;height:100px; ">
               </div>
@@ -725,7 +753,7 @@ function ncbpn_recent_posts_content() {
         else{
           $infoCompany .= '
             <div class="form-group row">
-              <label for="staticEmail" class="col-sm-4 col-form-label">'.$val2->name.':</label>
+              <label  class="col-sm-4 col-form-label">'.$val2->name.':</label>
               <div class="col-sm-8">
                 <p type="text" readonly class="form-control-plaintext" id="company-infomation">'.$val2->value.'</p>
               </div>
@@ -749,7 +777,6 @@ function ncbpn_recent_posts_content() {
             <div class="card-body">
             '
               .$infoCompany.
-
             '
             </div>
           </div>
@@ -791,7 +818,7 @@ function ncbpn_recent_posts_content() {
           $nameImgOk = ucwords(str_replace("Img","",$nameOk));
           $infoCompany .= '
             <div class="form-group row">
-              <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
+              <label class="col-sm-4 col-form-label">'.$nameImgOk.':</label>
               <div class="col-sm-8">
                 <img src="'.$val2->value.'" class="img-thumbnail shadow " alt="chicken" style="width: 100px;height:100px; ">
               </div>
@@ -801,7 +828,7 @@ function ncbpn_recent_posts_content() {
         else{
           $infoCompany .= '
             <div class="form-group row">
-              <label for="staticEmail" class="col-sm-4 col-form-label">'.$nameOk.':</label>
+              <label class="col-sm-4 col-form-label">'.$nameOk.':</label>
               <div class="col-sm-8">
                 <p type="text" readonly class="form-control-plaintext" id="company-infomation">'.$val2->value.'</p>
               </div>
@@ -844,7 +871,6 @@ function ncbpn_recent_posts_content() {
 
 
 // add shorcut tempalate
-
 function create_shortcode_songnguyen($args) {
   return $args['company'];
 }
@@ -879,7 +905,6 @@ function deleteCompany(){
     else{
       wp_send_json( array('code'=> 200, 'msg'=>'Delete ok men ') );
     }
-
   }
 }
 
@@ -974,7 +999,6 @@ function removeCompanyField(){
     else{
       wp_send_json( array('code'=> 200, 'msg'=>'Delete company feild OK') );
     }
-
   }
 }
 
@@ -1161,7 +1185,8 @@ function npp_psychic_profile( $original_template ) {
 }
 
 
-// process upload file (general)
+
+// process upload image (general)
 add_action("wp_ajax_saveDocument", "saveDocument");
 add_action("wp_ajax_nopriv_saveDocument", "saveDocument");
 function saveDocument(){
@@ -1183,6 +1208,28 @@ function saveDocument(){
 
 
 
+// process update document
+add_action("wp_ajax_uploadFile", "uploadFile");
+add_action("wp_ajax_nopriv_uploadFile", "uploadFile");
+function uploadFile(){
+
+  // $arr_img_ext = array('image/png', 'image/jpeg', 'image/jpg', 'image/gif');
+    // if (in_array($_FILES['file']['type'], [])) {
+        $upload = wp_upload_bits($_FILES["file"]["name"], null, file_get_contents($_FILES["file"]["tmp_name"]));
+
+        if ($upload['error'] == false) {
+          $data = array('url' => $upload['url']);
+          wp_send_json( array('code'=> 200, 'msg'=> $upload['url'], 'field_name' => $_REQUEST['name'] ));
+
+        } else {
+          $data = array('msg' => $upload['error']);
+          wp_send_json( array('code'=> 200, 'msg'=> $response->output() ));
+        }
+    // }
+}
+
+
+
 // handle for delete company when delete button click
 add_action("wp_ajax_updateInfomationCompany", "updateInfomationCompany");
 add_action("wp_ajax_updateInfomationCompany", "updateInfomationCompany");
@@ -1195,14 +1242,10 @@ function updateInfomationCompany(){
   global $wpdb;
   $result = $wpdb->update('wp8i_postmeta', array( 'meta_value'=>$dataJsonEncode), array('meta_id'=>$idCompany));
   
-
-
     if(!$result){
       wp_send_json( array('code'=> 400, 'msg'=>'Can not update ') );
     }
     else{
       wp_send_json( array('code'=> 200, 'msg'=>'update ok men ') );
     }
-
-  
 }
