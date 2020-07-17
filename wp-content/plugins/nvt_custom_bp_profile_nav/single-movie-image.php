@@ -35,7 +35,6 @@ global $wp_query;
                             class="img-thumbnail shadow " alt="chicken"
                             style="width: 200px;height:200px; ">';
                           }
-
                       ?>
 
                     </div>
@@ -47,19 +46,15 @@ global $wp_query;
                           <span class="badge badge-pill badge-danger p-2 shadow"
                             style="font-size: 0.8rem">Company</span>
                         </h2>
-
                       </div>
                       <div class="group-description">
                         <p><?php echo get_query_var('company_description_string'); ?></p>
                       </div>
                       <div id="item-actions" class="group-item-actions">
-
                         <div>
                           <h4 class="bp-title">Owner:
                             <span
                               class="badge badge-pill badge-success p-2"><?php echo get_query_var('name_userowner_string');?></span>
-
-
                           </h4>
                         </div>
                       </div>
@@ -119,6 +114,7 @@ global $wp_query;
                                 </div>';
                               }
                             }
+
                             else{
                               echo '
                                 <div class="form-group row">
@@ -150,7 +146,7 @@ global $wp_query;
                                   ?>
                                 </a></h2>
                               <p class="item-meta group-details only-list-view"><span
-                                  id="number_follow_<?php echo get_query_var('id_user'); ?>">0</span> / Followed</p>
+                                  id="number_follow_<?php echo get_query_var('id_user'); ?>"><?php echo get_query_var('follow_company_string'); ?></span> / Followed</p>
                             </div>
 
                             <div class="item-desc group-item-desc only-list-view">
@@ -169,38 +165,9 @@ global $wp_query;
                                     id="<?php echo  get_query_var('id_user'); ?>">Follow</button>
                                 </div>
 
-
-                                <!-- test follow start -->
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                  data-target="#exampleModalCenter111">
-                                  test follow
-                                </button>
-
-                                <div class="modal fade" id="exampleModalCenter111" tabindex="-1" role="dialog"
-                                  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                  <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLongTitle">Notifications</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">&times;</span>
-                                        </button>
-                                      </div>
-                                      <div class="modal-body">
-                                        Please login to follow this company
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button class="group-button leave-group bp-toggle-action-button button"
-                                          data-dismiss="modal">Okay</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <!-- test follow end -->
-
                               </div>
                             </div>
-                            
+
                           </div>
                         </div>
                       </li>
@@ -256,7 +223,6 @@ global $wp_query;
                         <li class="list-group-item">Document01</li>
                         <li class="list-group-item">Document02</li>
                         <li class="list-group-item">Document03</li>
-                        <li class="list-group-item">Document04</li>
                       </ul>
                     </div>
                   </div>
@@ -267,6 +233,28 @@ global $wp_query;
       </article>
     </main>
   </div>
+
+  <!-- must login to follow start -->
+  <div class="modal fade" id="popup_not_login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Notifications</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Please login to follow this company
+        </div>
+        <div class="modal-footer">
+          <button class="group-button leave-group bp-toggle-action-button button" data-dismiss="modal">Okay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- must login to follow end -->
 </section>
 
 <script>

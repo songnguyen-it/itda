@@ -511,13 +511,10 @@ jQuery(document).ready(function ($) {
   $('.songnguyen_follow').click(function () {
     // alert("Following button clicked - TEST");
     let idOfCompany = $(this).prop("id");
-    // let currentButtonState = $(this).text();
-
-    // let currentNumber = $("#number_follow_" + idOfCompany).text();
-    // let currentNumberInt = parseInt(currentNumber) + 1;
-
-    // $("#number_follow_" + idOfCompany).text(currentNumberInt);
-    // $(this).text("Followed");
+    let currentButtonState = $(this).text();
+    var that = this;
+    var currentNumber = $("#number_follow_" + idOfCompany).text();
+    
 
     $.ajax({
       type: "post",
@@ -531,19 +528,37 @@ jQuery(document).ready(function ($) {
       beforeSend: function () {
       },
       success: function (response) {
+
+        // insert ok ( followed)
         if (response.code == 200) {
+          var currentNumberInt = parseInt(currentNumber) + 1;
+
+          // $("#number_follow_" + idOfCompany).text(currentNumberInt);
+          // $(that).text("Followed");
+
           console.log(response.msg);
         }
 
+        // delete ok (unfollow)
+        if (response.code == 202) {
+          var currentNumberInt = parseInt(currentNumber) - 1;
+
+          // $("#number_follow_" + idOfCompany).text(currentNumberInt);
+          // $(that).text("Follow");
+
+          console.log(response.msg);
+        }
+       
         if (response.code == 203) {
-          // alert("You're not login");
-          // $("#no_login_follow").show();
+          $("#popup_not_login").modal("show");
+          console.log(response.msg);
+        }
+        
+        if (response.code == 400) { 
           console.log(response.msg);
         }
 
-        if (response.code == 400) {
-          console.log("fail follow button clicked");
-        }
+       
 
       },
       error: function (jqXHR, textStatus, errorThrown) {
@@ -594,16 +609,11 @@ jQuery(document).ready(function ($) {
         console.log('The following error occured: ' + textStatus + errorThrown);
       }
     });
-
-
-   
-
   });
 
 
 
   
-
   // submit edit compay send
   $(".submit_edit_company").click(function(){
     // alert("edit infomation company have clicked");
@@ -612,7 +622,6 @@ jQuery(document).ready(function ($) {
     let idCompany = $(this).prop("id");
     console.log(idCompany);
     console.log(edit_company_data);
-
 
     $.ajax({
       type: "post",
@@ -653,9 +662,7 @@ jQuery(document).ready(function ($) {
     
     var name =  $(this).prop("name")
     form_data.append("name",name);
-
     var thisId = $(this).prop("id");
-
     var hiddenInput = $("#img_edit_"+thisId);
  
     $.ajax({  
@@ -669,17 +676,14 @@ jQuery(document).ready(function ($) {
       success: function (response) {
         if (response.code == 200) {
           let pathImage = response.msg;
-          
-
+        
           if(pathImage.length > 0){
-
             console.log(pathImage);
 
             $("#img_edit_"+thisId).val(pathImage);
             $("#img_current_"+thisId).attr("src",pathImage);
          
           }
-
         }
 
         if (response.code == 400) {
@@ -691,10 +695,6 @@ jQuery(document).ready(function ($) {
         console.log('The following error occured: ' + textStatus + errorThrown);
       }
     });
-
-
-   
-
   });
 
 

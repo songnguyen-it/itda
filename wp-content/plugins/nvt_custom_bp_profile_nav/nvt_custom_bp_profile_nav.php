@@ -1025,15 +1025,63 @@ function updateCompanyField(){
 add_action("wp_ajax_followingButtonClicked", "followingButtonClicked");
 add_action("wp_ajax_nopriv_followingButtonClicked", "followingButtonClicked");
 function followingButtonClicked(){
-  $idCompany = "";
 
-  $userId = get_current_user_id();
   $userIslogin = is_user_logged_in();
 
-
-
   if($userIslogin){
-    wp_send_json( array('code'=> 200, 'msg'=> "user id login is " . $userIslogin));
+    $idCompany = $_REQUEST['companyId'];
+
+    $idCompanyParseInt = (int) $idCompany;
+    $userId = get_current_user_id();
+    
+    global $wpdb;
+    $result = $wpdb->get_results("SELECT user_nicename FROM wp8i_users WHERE ID = ".$userId);
+
+    $userName = "";
+
+    if(!empty($result)){
+      $userName = $result[0]->user_nicename;
+    }
+
+    // check follow is exist ?
+    $result2 = $wpdb->get_results("SELECT * FROM wp8i_company_follow WHERE user_id = " .$userId . " AND company_id =".$idCompany);
+
+    // if not exist
+    if(count($result2) == 0){
+      $res = $wpdb->insert( "wp8i_company_follow", array( 'user_id' => $userId, 'company_id' => $idCompanyParseInt, 'list_user' => $userName), array( '%d', '%d','%s'));
+
+      if(!$res){
+        wp_send_json( array('code'=> 400, 'msg'=> 'Insert error'));
+      }
+      else{
+        wp_send_json( array('code'=> 200, 'msg'=> "inser follow ok"));
+      }
+
+    }
+    // is exist
+    if(count($result2) > 0) {
+      // wp_send_json( array('code'=> 202, 'msg'=> "unfollow") );
+
+      $res2 = $wpdb->delete( 
+        "wp8i_company_follow", 
+        array( 
+          'user_id' => $userId,
+          'company_id' => $idCompanyParseInt
+        ), 
+        array( 
+          '%d',
+          '%d'
+        ) 
+      );
+      if(!$res2){
+        wp_send_json( array('code'=> 400, 'msg'=>'Can not delete follow ') );
+      }
+      else{
+        wp_send_json( array('code'=> 202, 'msg'=>'Delete follow ok men ') );
+      }
+      
+    }
+
   }
   else{
     wp_send_json( array('code'=> 203, 'msg'=> "user is not login "));
@@ -1076,7 +1124,7 @@ function npp_psychic_profile( $original_template ) {
         $id = $wp_query->query_vars['uid'];
         global $wpdb;
         $result = $wpdb->get_results("SELECT * FROM wp8i_postmeta WHERE meta_key='company_ahihi' AND meta_id = ".$id);
-        
+        $countFollowCompany  = $wpdb->get_results("SELECT count(*) as total_follow FROM wp8i_company_follow WHERE company_id = ".$id);
         $userId = $result[0]->post_id;
         $nameUserOwner = "";
         $userInTable = $wpdb->get_results("SELECT user_nicename FROM wp8i_users WHERE ID = ".$userId);
@@ -1088,6 +1136,7 @@ function npp_psychic_profile( $original_template ) {
         $companyDescription = "";
         $companyLogo = "";
         $listPhotoPath = [];
+        $totalFollow = $countFollowCompany[0]->total_follow;
 
         foreach ($jsonDataCompany as $key) {
           $checkImage = strpos($key->name , "img");
@@ -1102,8 +1151,10 @@ function npp_psychic_profile( $original_template ) {
   
           }
         }
+        
 
         set_query_var( 'info_company_array', $jsonDataCompany );
+        set_query_var( 'follow_company_string', $totalFollow );
         set_query_var( 'logo_string', $companyLogo );
         set_query_var( 'photo_array', $listPhotoPath );
         set_query_var( 'name_userowner_string', $nameUserOwner );
